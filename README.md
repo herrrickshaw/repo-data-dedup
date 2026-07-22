@@ -1,5 +1,7 @@
 # repo-data-dedup — account-wide data redundancy reduction
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/herrrickshaw/repo-data-dedup/blob/main/notebooks/colab_test.ipynb)
+
 The `herrrickshaw` account's GitHub **LFS budget is exhausted**: every LFS object
 in every repo (including the `-archive-2026-07-17` backups) returns
 *"This repository exceeded its LFS budget"* — 403 for everyone, public clones
