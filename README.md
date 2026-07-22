@@ -28,6 +28,9 @@ Remediation recipe: [`PLAYBOOK.md`](PLAYBOOK.md)
 | `audit/lfs_inventory.csv` | Every pointer: repo, path at HEAD, sha256, size, at-HEAD flag |
 | `audit/repo_summary.csv` | Per-repo LFS object count and bytes |
 | `PLAYBOOK.md` | Per-repo recipe to get off LFS safely (rescue → dedup → rewrite → verify → delete) |
+| `SOP_DATA_SOURCES.md` | **Source catalogue**: every dataset's origin, collector, refresh cadence, gotchas |
+| `scripts/distribute_data_access_docs.py` | Pushes a per-repo `DATA_ACCESS.md` (LFS status + re-collection path) into every LFS-bearing repo — idempotent, rerun after audits change |
+| `scripts/refresh_audit.sh` | Weekly inventory refresh (cron Mon 08:45 local) — re-audits and commits updated CSVs here |
 
 ## Re-run the audit
 
@@ -44,3 +47,14 @@ python3 scripts/audit_lfs.py herrrickshaw /tmp/lfs_audit_clones
    **first**; it is the only partly irreplaceable dataset in the account.
 3. New repos never use LFS: one canonical format per dataset, gzip/parquet, files
    under 50 MB. Reference implementation: `cng-cgd-retail-outlet-mapping`.
+
+## Standing automation
+
+- **Weekly pointer-inventory refresh**: cron `45 8 * * 1` runs
+  `scripts/refresh_audit.sh` → re-audits all repos, commits updated
+  `audit/*.csv` + `audit/latest_totals.txt` here. Log: `state/cron.log`.
+  If `audit/latest_totals.txt` goes stale by >1 week, check `crontab -l`.
+- **Per-repo docs**: all 14 non-archive LFS-bearing repos carry a `DATA_ACCESS.md`
+  (pushed 2026-07-22, including the three GitHub-archived repos, which were
+  briefly unarchived for the commit and re-archived). Re-run the distributor
+  after each audit if footprints change.
