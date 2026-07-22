@@ -1,49 +1,58 @@
 #!/usr/bin/env bash
-# Versioned cloud backup of all durable market data — the third copy.
-# Target: DROPBOX (primary cloud copy; 1.6 TiB free, per user decision
-# 2026-07-22 "move to dropbox"). Google Drive redundancy is handled
-# separately by daily_pipeline step [16/16] -> googledrive:market-data-archive.
+# Multi-provider replication of all durable market data.
 #
-# Copy census for the jewels:
-#   1. GitHub (regular git objects, post-LFS migration)
-#   2. Local disk (~/repos clones + ~/repos/branch-archives bundles)
-#   3. Dropbox (this script, weekly)
-#   4. Google Drive (daily pipeline archive)
+# Policy (user decision 2026-07-22): NO paid LFS packs. Data must be secure
+# and recoverable across THREE independent stores, actively synced:
+#   local disk  <->  Dropbox (primary cloud, large files)  <->  Google Drive
+# GitHub carries the regular-git copies (post-LFS migration) as the 4th leg.
 #
-# Versioning: rclone sync --backup-dir means NOTHING is ever deleted in the
-# cloud — files that change or disappear locally are moved to
-# market-data-backup/versions/<YYYY-MM-DD>/ instead of being overwritten.
-# Retrieval:  rclone copy dropbox:market-data-backup/current/<name> <dest>
-# History:    rclone lsd dropbox:market-data-backup/versions
+# Layout on BOTH clouds (identical):
+#   market-data-backup/current/<dataset>     live mirror
+#   market-data-backup/versions/<date>/      superseded versions (append-only)
+#   market-data-backup/history/              recovered deleted data (append-only)
 #
-# Cron: weekly Sat 20:00. Manual run: just execute it.
+# Cron: daily 20:30 via disk_guard_daily.sh. Log: state/cloud_backup.log
 set -uo pipefail
 
-REMOTE="dropbox:market-data-backup"
+DBX="dropbox:market-data-backup"
+GDR="googledrive:market-data-backup"
 STAMP=$(date +%Y-%m-%d)
 LOG="$HOME/repos/repo-data-dedup/state/cloud_backup.log"
 RC="/opt/homebrew/bin/rclone"
-FLAGS=(--transfers 4 --timeout 60s --retries 3 --log-level NOTICE)
+FLAGS=(--transfers 4 --timeout 60s --retries 3 --log-level ERROR)
 
-echo "===== cloud_backup $STAMP $(date +%H:%M) -> dropbox =====" >> "$LOG"
+echo "===== cloud_backup $STAMP $(date +%H:%M) -> dropbox + gdrive =====" >> "$LOG"
 
-backup () {  # backup <local_dir> <name>
-  local src=$1 name=$2
+backup () {  # backup <local_dir> <name> <remote>
+  local src=$1 name=$2 rem=$3
   [ -d "$src" ] || { echo "SKIP missing $src" >> "$LOG"; return; }
-  $RC sync "$src" "$REMOTE/current/$name" \
-      --backup-dir "$REMOTE/versions/$STAMP/$name" \
+  $RC sync "$src" "$rem/current/$name" \
+      --backup-dir "$rem/versions/$STAMP/$name" \
       "${FLAGS[@]}" >> "$LOG" 2>&1 \
-    && $RC check "$src" "$REMOTE/current/$name" --one-way --size-only \
+    && $RC check "$src" "$rem/current/$name" --one-way --size-only \
         >> "$LOG" 2>&1 \
-    && echo "OK   $name" >> "$LOG" \
-    || echo "FAIL $name" >> "$LOG"
+    && echo "OK   $name -> $rem" >> "$LOG" \
+    || echo "FAIL $name -> $rem" >> "$LOG"
 }
 
-backup "$HOME/repos/global-market-data/warehouse"            gmd-warehouse
-backup "$HOME/repos/global-market-data/cache_seed"           gmd-cache_seed
-backup "$HOME/market-pipeline/code/python_files/cache_seed"  pipeline-cache_seed
-backup "$HOME/market-pipeline/code/python_files/reports"     pipeline-reports
-backup "$HOME/repos/branch-archives"                         branch-archives
+DATASETS=(
+  "$HOME/repos/global-market-data/warehouse|gmd-warehouse"
+  "$HOME/repos/global-market-data/cache_seed|gmd-cache_seed"
+  "$HOME/market-pipeline/code/python_files/cache_seed|pipeline-cache_seed"
+  "$HOME/market-pipeline/code/python_files/reports|pipeline-reports"
+  "$HOME/repos/branch-archives|branch-archives"
+)
+
+for rem in "$DBX" "$GDR"; do
+  for pair in "${DATASETS[@]}"; do
+    backup "${pair%%|*}" "${pair##*|}" "$rem"
+  done
+done
+
+# history/ is append-only: replicate dropbox's history tree to gdrive
+$RC copy "$DBX/history" "$GDR/history" "${FLAGS[@]}" >> "$LOG" 2>&1 \
+  && echo "OK   history -> gdrive (server-side relay)" >> "$LOG" \
+  || echo "FAIL history -> gdrive" >> "$LOG"
 
 echo "done $(date +%H:%M)" >> "$LOG"
-tail -8 "$LOG"
+tail -14 "$LOG"
