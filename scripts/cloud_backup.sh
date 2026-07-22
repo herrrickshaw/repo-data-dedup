@@ -41,6 +41,10 @@ DATASETS=(
   "$HOME/market-pipeline/code/python_files/cache_seed|pipeline-cache_seed"
   "$HOME/market-pipeline/code/python_files/reports|pipeline-reports"
   "$HOME/repos/branch-archives|branch-archives"
+  "$HOME/Downloads/market_cache|market_cache"
+  "$HOME/repos/global-stock-screener/cache_seed|gss-cache_seed"
+  "$HOME/repos/india-trade-tracker/data|tracker-trade-data"
+  "$HOME/repos/agri-commodity-tracker/data|tracker-agri-data"
 )
 
 for rem in "$DBX" "$GDR"; do
