@@ -45,6 +45,18 @@ DATASETS=(
   "$HOME/repos/global-stock-screener/cache_seed|gss-cache_seed"
   "$HOME/repos/india-trade-tracker/data|tracker-trade-data"
   "$HOME/repos/agri-commodity-tracker/data|tracker-agri-data"
+  # added 2026-07-23 coverage audit — the LIVE market_cache (the Downloads one
+  # above is the stale pre-move tree): nse_xbrl filing index+XMLs (the map that
+  # cannot be reconstructed), Korea dart cache, CA history + board-meeting
+  # intimations (the validated-claim source data), ohlc caches
+  "$HOME/market-pipeline/market_cache|pipeline-market_cache"
+  # bhavcopy_cache + dated scan outputs
+  "$HOME/market-pipeline/data|pipeline-data"
+  # recomputed 2026-07-23 correlation matrices — only copies (the 346MB
+  # predecessor duckdb is LFS-locked in deleted working-files history)
+  "$HOME/market-pipeline/code/python_files/correlation_scan|correlation-scan"
+  # IUDX flood sensor archive (tiny, irreplaceable time series)
+  "$HOME/iudx-flood-collector|iudx-flood-collector"
 )
 
 for rem in "$DBX" "$GDR"; do
