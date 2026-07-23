@@ -57,6 +57,11 @@ DATASETS=(
   "$HOME/market-pipeline/code/python_files/correlation_scan|correlation-scan"
   # IUDX flood sensor archive (tiny, irreplaceable time series)
   "$HOME/iudx-flood-collector|iudx-flood-collector"
+  # FULL MemPalace (user request 2026-07-23): live palace (5.9G) + damaged/
+  # pre-rebuild snapshots (7.5G — the only fallback if the 07-17 rebuild ever
+  # proves lossy). ~13G first upload per provider; embeddings (chroma) are
+  # technically regenerable by re-mining but the mined content is not.
+  "$HOME/.mempalace|mempalace"
 )
 
 for rem in "$DBX" "$GDR"; do
