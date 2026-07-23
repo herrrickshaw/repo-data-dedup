@@ -89,7 +89,10 @@ DATASETS=(
   "$HOME/market-pipeline/code/python_files/cache_seed|pipeline-cache_seed"
   "$HOME/market-pipeline/code/python_files/reports|pipeline-reports"
   "$HOME/repos/branch-archives|branch-archives"
-  "$HOME/Downloads/market_cache|market_cache"
+  # RETIRED 2026-07-23: ~/Downloads/market_cache (stale pre-move tree) evicted
+  # locally after cloud verification (7,661 files matched). Its remote copy at
+  # current/market_cache stays as an archival snapshot — do not re-add or prune.
+  # "$HOME/Downloads/market_cache|market_cache"
   "$HOME/repos/global-stock-screener/cache_seed|gss-cache_seed"
   "$HOME/repos/india-trade-tracker/data|tracker-trade-data"
   "$HOME/repos/agri-commodity-tracker/data|tracker-agri-data"
