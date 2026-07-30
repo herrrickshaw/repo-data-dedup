@@ -67,9 +67,27 @@ trap '[ "$ACCT_OWNED" = 1 ] && rm -rf "$ACCT_LOCK" 2>/dev/null' EXIT
 # (rebuilt only when their file-count:size fingerprint changes), EXCLUDED from
 # their dataset's raw sync, and the archives dir syncs as its own dataset.
 # To add one: append to STATIC_SUBDIRS and add its pattern in exclude_patterns_for.
+#
+# 🔴 market_cache/ohlc ADDED 2026-07-30, and it is NOT static or append-only —
+# 7,571 of its 7,682 parquets (98.6%) are rewritten every day (new price bar per
+# ticker). It qualifies for the SAME fix for a different reason: 7,682 individual
+# files still trip Dropbox's per-request throttling regardless of how often they
+# change (this repo's own log shows 2,705 "too_many_write_operations" errors
+# syncing it raw, 4h for what should be minutes — the exact shape of the
+# nse_xbrl/xml problem, just daily instead of append-only).
+#
+# That daily rewrite is exactly why the fingerprint below was widened to include
+# max-mtime. file-count:size-KB alone can understate a rewritten directory: parquet
+# compression means adding one day's row does not guarantee a size delta large
+# enough to survive `du -sk`'s KB rounding, and a same-day re-run must not skip a
+# real rebuild. mtime changes are unambiguous. This makes the check MORE correct
+# for every entry (nse_xbrl/xml gets no less protection, since a genuinely static
+# dir's mtimes do not move either — this is strictly additive) rather than adding
+# a special case only for the new directory.
 ARCH_ROOT="$HOME/.backup-archives"
 STATIC_SUBDIRS=(
   "$HOME/market-pipeline/market_cache/nse_xbrl/xml|nse_xbrl-xml"
+  "$HOME/market-pipeline/market_cache/ohlc|market_cache-ohlc"
 )
 
 archive_static () {
@@ -78,7 +96,7 @@ archive_static () {
   for pair in "${STATIC_SUBDIRS[@]}"; do
     src="${pair%%|*}"; name="${pair##*|}"
     [ -d "$src" ] || continue
-    fp="$(find "$src" -type f | wc -l | tr -d ' '):$(du -sk "$src" | cut -f1)"
+    fp="$(find "$src" -type f | wc -l | tr -d ' '):$(du -sk "$src" | cut -f1):$(find "$src" -type f -exec stat -f '%m' {} + 2>/dev/null | sort -rn | head -1)"
     stamp="$ARCH_ROOT/$name.fingerprint"
     old="$(cat "$stamp" 2>/dev/null || true)"
     if [ "$fp" != "$old" ] || [ ! -f "$ARCH_ROOT/$name.tar.zst" ]; then
@@ -94,7 +112,7 @@ archive_static () {
 
 exclude_patterns_for () {  # dataset name -> raw subdir patterns replaced by archives
   case "$1" in
-    pipeline-market_cache) echo "/nse_xbrl/xml/**" ;;
+    pipeline-market_cache) printf '%s\n' "/nse_xbrl/xml/**" "/ohlc/**" ;;
   esac
 }
 
