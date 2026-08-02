@@ -170,6 +170,11 @@ DATASETS=(
   "$HOME/.mempalace|mempalace"
   # single-file tar.zst archives of static many-small-file subdirs (see above)
   "$HOME/.backup-archives|static-archives"
+  # state-government press-release register (2026-08-02): 162k+ releases /
+  # 16 states, gitignored in digital-twin-for-ipa after the sqlite crossed
+  # GitHub's ~100MiB blob ceiling; archives (MH/MP/RJ) are re-collectable but
+  # slowly, and machine translations are not — this is the durable copy
+  "$HOME/digital-twin-for-ipa/data/registers|twin-state-registers"
 )
 
 for rem in "$DBX" "$GDR"; do
