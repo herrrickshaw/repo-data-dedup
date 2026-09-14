@@ -49,6 +49,12 @@ python3 scripts/audit_lfs.py herrrickshaw /tmp/lfs_audit_clones
    **first**; it is the only partly irreplaceable dataset in the account.
 3. New repos never use LFS: one canonical format per dataset, gzip/parquet, files
    under 50 MB. Reference implementation: `cng-cgd-retail-outlet-mapping`.
+4. Every rescue/dedup/rewrite/push step in the playbook operates on one specific
+   nested repo clone — always `cd` into that exact clone before running any broad
+   `git` command (`add -A`, filter-branch, etc.); running one from the wrong
+   working directory is the easiest way to corrupt an unrelated repo. After a
+   history rewrite + push, confirm it actually landed on the intended remote
+   (`git ls-remote <remote>`) rather than trusting "Everything up-to-date."
 
 ## Standing automation
 
