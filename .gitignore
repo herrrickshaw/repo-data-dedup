@@ -2,3 +2,4 @@ __pycache__/
 *.pyc
 .DS_Store
 clones/
+graphify-out/cache/stat-index.json
