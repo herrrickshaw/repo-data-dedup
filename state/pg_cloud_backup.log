@@ -1,0 +1,792 @@
+===== pg_cloud_backup 2026-08-14 20:00 =====
+-- dumping market_data --
+-- uploading market_data -> dropbox:market-pipeline-cache/pg_backups --
+OK   market_data -> dropbox:market-pipeline-cache/pg_backups (verified 1962311122 bytes)
+-- uploading market_data -> googledrive:market-data-backup/current/pg_backups --
+OK   market_data -> googledrive:market-data-backup/current/pg_backups (verified 1962311122 bytes)
+OK   market_data fully verified on both clouds, local dump deleted
+-- dumping vcrud --
+-- uploading vcrud -> dropbox:market-pipeline-cache/pg_backups --
+OK   vcrud -> dropbox:market-pipeline-cache/pg_backups (verified 1593802265 bytes)
+-- uploading vcrud -> googledrive:market-data-backup/current/pg_backups --
+OK   vcrud -> googledrive:market-data-backup/current/pg_backups (verified 1593802265 bytes)
+OK   vcrud fully verified on both clouds, local dump deleted
+-- dumping repo_csv_archive --
+-- uploading repo_csv_archive -> dropbox:market-pipeline-cache/pg_backups --
+2026/08/14 20:44:58 ERROR : Dropbox root 'market-pipeline-cache/pg_backups': sync batch commit: failed to commit batch length 1: batch had 1 errors: last error: upload failed: too_many_write_operations
+2026/08/14 20:44:58 ERROR : repo_csv_archive_2026-08-14.dump: Failed to copy: upload failed: batch upload failed: upload failed: too_many_write_operations
+2026/08/14 20:44:58 ERROR : Attempt 1/3 failed with 1 errors and: upload failed: batch upload failed: upload failed: too_many_write_operations
+2026/08/14 20:45:02 ERROR : Attempt 2/3 succeeded
+OK   repo_csv_archive -> dropbox:market-pipeline-cache/pg_backups (verified 38231 bytes)
+-- uploading repo_csv_archive -> googledrive:market-data-backup/current/pg_backups --
+OK   repo_csv_archive -> googledrive:market-data-backup/current/pg_backups (verified 38231 bytes)
+OK   repo_csv_archive fully verified on both clouds, local dump deleted
+done 20:45
+===== pg_cloud_backup 2026-08-16 20:00 =====
+-- dumping market_data --
+-- uploading market_data -> dropbox:market-pipeline-cache/pg_backups --
+OK   market_data -> dropbox:market-pipeline-cache/pg_backups (verified 1963003066 bytes)
+-- uploading market_data -> googledrive:market-data-backup/current/pg_backups --
+OK   market_data -> googledrive:market-data-backup/current/pg_backups (verified 1963003066 bytes)
+OK   market_data fully verified on both clouds, local dump deleted
+-- dumping vcrud --
+-- uploading vcrud -> dropbox:market-pipeline-cache/pg_backups --
+OK   vcrud -> dropbox:market-pipeline-cache/pg_backups (verified 1593802265 bytes)
+-- uploading vcrud -> googledrive:market-data-backup/current/pg_backups --
+OK   vcrud -> googledrive:market-data-backup/current/pg_backups (verified 1593802265 bytes)
+OK   vcrud fully verified on both clouds, local dump deleted
+-- dumping repo_csv_archive --
+-- uploading repo_csv_archive -> dropbox:market-pipeline-cache/pg_backups --
+OK   repo_csv_archive -> dropbox:market-pipeline-cache/pg_backups (verified 38231 bytes)
+-- uploading repo_csv_archive -> googledrive:market-data-backup/current/pg_backups --
+OK   repo_csv_archive -> googledrive:market-data-backup/current/pg_backups (verified 38231 bytes)
+OK   repo_csv_archive fully verified on both clouds, local dump deleted
+done 20:47
+===== pg_cloud_backup 2026-08-17 20:00 =====
+-- dumping market_data --
+-- uploading market_data -> dropbox:market-pipeline-cache/pg_backups --
+OK   market_data -> dropbox:market-pipeline-cache/pg_backups (verified 1963305159 bytes)
+-- uploading market_data -> googledrive:market-data-backup/current/pg_backups --
+OK   market_data -> googledrive:market-data-backup/current/pg_backups (verified 1963305159 bytes)
+OK   market_data fully verified on both clouds, local dump deleted
+-- dumping vcrud --
+-- uploading vcrud -> dropbox:market-pipeline-cache/pg_backups --
+OK   vcrud -> dropbox:market-pipeline-cache/pg_backups (verified 1593802265 bytes)
+-- uploading vcrud -> googledrive:market-data-backup/current/pg_backups --
+OK   vcrud -> googledrive:market-data-backup/current/pg_backups (verified 1593802265 bytes)
+OK   vcrud fully verified on both clouds, local dump deleted
+-- dumping repo_csv_archive --
+-- uploading repo_csv_archive -> dropbox:market-pipeline-cache/pg_backups --
+OK   repo_csv_archive -> dropbox:market-pipeline-cache/pg_backups (verified 38231 bytes)
+-- uploading repo_csv_archive -> googledrive:market-data-backup/current/pg_backups --
+OK   repo_csv_archive -> googledrive:market-data-backup/current/pg_backups (verified 38231 bytes)
+OK   repo_csv_archive fully verified on both clouds, local dump deleted
+done 21:00
+===== pg_cloud_backup 2026-08-20 20:00 =====
+-- dumping market_data --
+-- uploading market_data -> dropbox:market-pipeline-cache/pg_backups --
+OK   market_data -> dropbox:market-pipeline-cache/pg_backups (verified 1965425790 bytes)
+-- uploading market_data -> googledrive:market-data-backup/current/pg_backups --
+OK   market_data -> googledrive:market-data-backup/current/pg_backups (verified 1965425790 bytes)
+OK   market_data fully verified on both clouds, local dump deleted
+-- dumping vcrud --
+-- uploading vcrud -> dropbox:market-pipeline-cache/pg_backups --
+OK   vcrud -> dropbox:market-pipeline-cache/pg_backups (verified 1593802265 bytes)
+-- uploading vcrud -> googledrive:market-data-backup/current/pg_backups --
+OK   vcrud -> googledrive:market-data-backup/current/pg_backups (verified 1593802265 bytes)
+OK   vcrud fully verified on both clouds, local dump deleted
+-- dumping repo_csv_archive --
+-- uploading repo_csv_archive -> dropbox:market-pipeline-cache/pg_backups --
+OK   repo_csv_archive -> dropbox:market-pipeline-cache/pg_backups (verified 38231 bytes)
+-- uploading repo_csv_archive -> googledrive:market-data-backup/current/pg_backups --
+OK   repo_csv_archive -> googledrive:market-data-backup/current/pg_backups (verified 38231 bytes)
+OK   repo_csv_archive fully verified on both clouds, local dump deleted
+done 20:54
+===== pg_cloud_backup 2026-08-22 20:00 =====
+-- dumping market_data --
+-- uploading market_data -> dropbox:market-pipeline-cache/pg_backups --
+OK   market_data -> dropbox:market-pipeline-cache/pg_backups (verified 1967122145 bytes)
+-- uploading market_data -> googledrive:market-data-backup/current/pg_backups --
+2026/08/22 20:20:03 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/pg_backups": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL upload market_data -> googledrive:market-data-backup/current/pg_backups
+KEPT local dump for market_data (one or more clouds unverified): /Users/umashankar/.cache/pg_cloud_backup/market_data_2026-08-22.dump
+-- dumping vcrud --
+-- uploading vcrud -> dropbox:market-pipeline-cache/pg_backups --
+OK   vcrud -> dropbox:market-pipeline-cache/pg_backups (verified 1593802265 bytes)
+-- uploading vcrud -> googledrive:market-data-backup/current/pg_backups --
+2026/08/22 20:34:12 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/pg_backups": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL upload vcrud -> googledrive:market-data-backup/current/pg_backups
+KEPT local dump for vcrud (one or more clouds unverified): /Users/umashankar/.cache/pg_cloud_backup/vcrud_2026-08-22.dump
+-- dumping repo_csv_archive --
+-- uploading repo_csv_archive -> dropbox:market-pipeline-cache/pg_backups --
+OK   repo_csv_archive -> dropbox:market-pipeline-cache/pg_backups (verified 38231 bytes)
+-- uploading repo_csv_archive -> googledrive:market-data-backup/current/pg_backups --
+2026/08/22 20:34:17 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/pg_backups": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL upload repo_csv_archive -> googledrive:market-data-backup/current/pg_backups
+KEPT local dump for repo_csv_archive (one or more clouds unverified): /Users/umashankar/.cache/pg_cloud_backup/repo_csv_archive_2026-08-22.dump
+done 20:34
+===== pg_cloud_backup 2026-08-23 20:00 =====
+-- dumping market_data --
+-- uploading market_data -> dropbox:market-pipeline-cache/pg_backups --
+OK   market_data -> dropbox:market-pipeline-cache/pg_backups (verified 1967189849 bytes)
+-- uploading market_data -> googledrive:market-data-backup/current/pg_backups --
+2026/08/23 20:18:23 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/pg_backups": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL upload market_data -> googledrive:market-data-backup/current/pg_backups
+KEPT local dump for market_data (one or more clouds unverified): /Users/umashankar/.cache/pg_cloud_backup/market_data_2026-08-23.dump
+-- dumping vcrud --
+-- uploading vcrud -> dropbox:market-pipeline-cache/pg_backups --
+OK   vcrud -> dropbox:market-pipeline-cache/pg_backups (verified 1593802265 bytes)
+-- uploading vcrud -> googledrive:market-data-backup/current/pg_backups --
+2026/08/23 20:30:53 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/pg_backups": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL upload vcrud -> googledrive:market-data-backup/current/pg_backups
+KEPT local dump for vcrud (one or more clouds unverified): /Users/umashankar/.cache/pg_cloud_backup/vcrud_2026-08-23.dump
+-- dumping repo_csv_archive --
+-- uploading repo_csv_archive -> dropbox:market-pipeline-cache/pg_backups --
+OK   repo_csv_archive -> dropbox:market-pipeline-cache/pg_backups (verified 38231 bytes)
+-- uploading repo_csv_archive -> googledrive:market-data-backup/current/pg_backups --
+2026/08/23 20:30:58 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/pg_backups": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL upload repo_csv_archive -> googledrive:market-data-backup/current/pg_backups
+KEPT local dump for repo_csv_archive (one or more clouds unverified): /Users/umashankar/.cache/pg_cloud_backup/repo_csv_archive_2026-08-23.dump
+done 20:30
+===== pg_cloud_backup 2026-08-24 20:00 =====
+-- dumping market_data --
+-- uploading market_data -> dropbox:market-pipeline-cache/pg_backups --
+OK   market_data -> dropbox:market-pipeline-cache/pg_backups (verified 1967427761 bytes)
+-- uploading market_data -> googledrive:market-data-backup/current/pg_backups --
+2026/08/24 20:22:45 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/pg_backups": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL upload market_data -> googledrive:market-data-backup/current/pg_backups
+KEPT local dump for market_data (one or more clouds unverified): /Users/umashankar/.cache/pg_cloud_backup/market_data_2026-08-24.dump
+-- dumping vcrud --
+-- uploading vcrud -> dropbox:market-pipeline-cache/pg_backups --
+OK   vcrud -> dropbox:market-pipeline-cache/pg_backups (verified 1593802265 bytes)
+-- uploading vcrud -> googledrive:market-data-backup/current/pg_backups --
+2026/08/24 20:39:11 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/pg_backups": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL upload vcrud -> googledrive:market-data-backup/current/pg_backups
+KEPT local dump for vcrud (one or more clouds unverified): /Users/umashankar/.cache/pg_cloud_backup/vcrud_2026-08-24.dump
+-- dumping repo_csv_archive --
+-- uploading repo_csv_archive -> dropbox:market-pipeline-cache/pg_backups --
+OK   repo_csv_archive -> dropbox:market-pipeline-cache/pg_backups (verified 38231 bytes)
+-- uploading repo_csv_archive -> googledrive:market-data-backup/current/pg_backups --
+2026/08/24 20:39:17 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/pg_backups": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL upload repo_csv_archive -> googledrive:market-data-backup/current/pg_backups
+KEPT local dump for repo_csv_archive (one or more clouds unverified): /Users/umashankar/.cache/pg_cloud_backup/repo_csv_archive_2026-08-24.dump
+done 20:39
+===== pg_cloud_backup 2026-08-25 20:00 =====
+-- dumping market_data --
+-- uploading market_data -> dropbox:market-pipeline-cache/pg_backups --
+OK   market_data -> dropbox:market-pipeline-cache/pg_backups (verified 1965335197 bytes)
+-- uploading market_data -> googledrive:market-data-backup/current/pg_backups --
+OK   market_data -> googledrive:market-data-backup/current/pg_backups (verified 1965335197 bytes)
+OK   market_data fully verified on both clouds, local dump deleted
+-- dumping vcrud --
+-- uploading vcrud -> dropbox:market-pipeline-cache/pg_backups --
+OK   vcrud -> dropbox:market-pipeline-cache/pg_backups (verified 1593802265 bytes)
+-- uploading vcrud -> googledrive:market-data-backup/current/pg_backups --
+OK   vcrud -> googledrive:market-data-backup/current/pg_backups (verified 1593802265 bytes)
+OK   vcrud fully verified on both clouds, local dump deleted
+-- dumping repo_csv_archive --
+-- uploading repo_csv_archive -> dropbox:market-pipeline-cache/pg_backups --
+OK   repo_csv_archive -> dropbox:market-pipeline-cache/pg_backups (verified 38231 bytes)
+-- uploading repo_csv_archive -> googledrive:market-data-backup/current/pg_backups --
+OK   repo_csv_archive -> googledrive:market-data-backup/current/pg_backups (verified 38231 bytes)
+OK   repo_csv_archive fully verified on both clouds, local dump deleted
+done 20:50
+===== pg_cloud_backup 2026-08-26 20:00 =====
+-- dumping market_data --
+-- uploading market_data -> dropbox:market-pipeline-cache/pg_backups --
+OK   market_data -> dropbox:market-pipeline-cache/pg_backups (verified 1966260037 bytes)
+-- uploading market_data -> googledrive:market-data-backup/current/pg_backups --
+OK   market_data -> googledrive:market-data-backup/current/pg_backups (verified 1966260037 bytes)
+OK   market_data fully verified on both clouds, local dump deleted
+-- dumping vcrud --
+-- uploading vcrud -> dropbox:market-pipeline-cache/pg_backups --
+OK   vcrud -> dropbox:market-pipeline-cache/pg_backups (verified 1593802265 bytes)
+-- uploading vcrud -> googledrive:market-data-backup/current/pg_backups --
+OK   vcrud -> googledrive:market-data-backup/current/pg_backups (verified 1593802265 bytes)
+OK   vcrud fully verified on both clouds, local dump deleted
+-- dumping repo_csv_archive --
+-- uploading repo_csv_archive -> dropbox:market-pipeline-cache/pg_backups --
+OK   repo_csv_archive -> dropbox:market-pipeline-cache/pg_backups (verified 38231 bytes)
+-- uploading repo_csv_archive -> googledrive:market-data-backup/current/pg_backups --
+OK   repo_csv_archive -> googledrive:market-data-backup/current/pg_backups (verified 38231 bytes)
+OK   repo_csv_archive fully verified on both clouds, local dump deleted
+done 20:50
+===== pg_cloud_backup 2026-08-27 20:00 =====
+-- dumping market_data --
+-- uploading market_data -> dropbox:market-pipeline-cache/pg_backups --
+OK   market_data -> dropbox:market-pipeline-cache/pg_backups (verified 1967232982 bytes)
+-- uploading market_data -> googledrive:market-data-backup/current/pg_backups --
+OK   market_data -> googledrive:market-data-backup/current/pg_backups (verified 1967232982 bytes)
+OK   market_data fully verified on both clouds, local dump deleted
+-- dumping vcrud --
+-- uploading vcrud -> dropbox:market-pipeline-cache/pg_backups --
+OK   vcrud -> dropbox:market-pipeline-cache/pg_backups (verified 1593802265 bytes)
+-- uploading vcrud -> googledrive:market-data-backup/current/pg_backups --
+OK   vcrud -> googledrive:market-data-backup/current/pg_backups (verified 1593802265 bytes)
+OK   vcrud fully verified on both clouds, local dump deleted
+-- dumping repo_csv_archive --
+-- uploading repo_csv_archive -> dropbox:market-pipeline-cache/pg_backups --
+OK   repo_csv_archive -> dropbox:market-pipeline-cache/pg_backups (verified 38231 bytes)
+-- uploading repo_csv_archive -> googledrive:market-data-backup/current/pg_backups --
+OK   repo_csv_archive -> googledrive:market-data-backup/current/pg_backups (verified 38231 bytes)
+OK   repo_csv_archive fully verified on both clouds, local dump deleted
+done 20:50
+===== pg_cloud_backup 2026-08-29 20:00 =====
+-- dumping market_data --
+-- uploading market_data -> dropbox:market-pipeline-cache/pg_backups --
+OK   market_data -> dropbox:market-pipeline-cache/pg_backups (verified 1968484484 bytes)
+-- uploading market_data -> googledrive:market-data-backup/current/pg_backups --
+OK   market_data -> googledrive:market-data-backup/current/pg_backups (verified 1968484484 bytes)
+OK   market_data fully verified on both clouds, local dump deleted
+-- dumping vcrud --
+-- uploading vcrud -> dropbox:market-pipeline-cache/pg_backups --
+OK   vcrud -> dropbox:market-pipeline-cache/pg_backups (verified 1593802265 bytes)
+-- uploading vcrud -> googledrive:market-data-backup/current/pg_backups --
+OK   vcrud -> googledrive:market-data-backup/current/pg_backups (verified 1593802265 bytes)
+OK   vcrud fully verified on both clouds, local dump deleted
+-- dumping repo_csv_archive --
+-- uploading repo_csv_archive -> dropbox:market-pipeline-cache/pg_backups --
+OK   repo_csv_archive -> dropbox:market-pipeline-cache/pg_backups (verified 38231 bytes)
+-- uploading repo_csv_archive -> googledrive:market-data-backup/current/pg_backups --
+OK   repo_csv_archive -> googledrive:market-data-backup/current/pg_backups (verified 38231 bytes)
+OK   repo_csv_archive fully verified on both clouds, local dump deleted
+done 21:02
+===== pg_cloud_backup 2026-08-30 20:00 =====
+-- dumping market_data --
+-- uploading market_data -> dropbox:market-pipeline-cache/pg_backups --
+OK   market_data -> dropbox:market-pipeline-cache/pg_backups (verified 1968842755 bytes)
+-- uploading market_data -> googledrive:market-data-backup/current/pg_backups --
+OK   market_data -> googledrive:market-data-backup/current/pg_backups (verified 1968842755 bytes)
+OK   market_data fully verified on both clouds, local dump deleted
+-- dumping vcrud --
+-- uploading vcrud -> dropbox:market-pipeline-cache/pg_backups --
+OK   vcrud -> dropbox:market-pipeline-cache/pg_backups (verified 1593802265 bytes)
+-- uploading vcrud -> googledrive:market-data-backup/current/pg_backups --
+OK   vcrud -> googledrive:market-data-backup/current/pg_backups (verified 1593802265 bytes)
+OK   vcrud fully verified on both clouds, local dump deleted
+-- dumping repo_csv_archive --
+-- uploading repo_csv_archive -> dropbox:market-pipeline-cache/pg_backups --
+OK   repo_csv_archive -> dropbox:market-pipeline-cache/pg_backups (verified 38231 bytes)
+-- uploading repo_csv_archive -> googledrive:market-data-backup/current/pg_backups --
+OK   repo_csv_archive -> googledrive:market-data-backup/current/pg_backups (verified 38231 bytes)
+OK   repo_csv_archive fully verified on both clouds, local dump deleted
+done 20:52
+===== pg_cloud_backup 2026-09-01 20:00 =====
+-- dumping market_data --
+-- uploading market_data -> dropbox:market-pipeline-cache/pg_backups --
+OK   market_data -> dropbox:market-pipeline-cache/pg_backups (verified 1969853153 bytes)
+-- uploading market_data -> googledrive:market-data-backup/current/pg_backups --
+2026/09/01 20:26:50 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/pg_backups": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL upload market_data -> googledrive:market-data-backup/current/pg_backups
+KEPT local dump for market_data (one or more clouds unverified): /Users/umashankar/.cache/pg_cloud_backup/market_data_2026-09-01.dump
+-- dumping vcrud --
+-- uploading vcrud -> dropbox:market-pipeline-cache/pg_backups --
+OK   vcrud -> dropbox:market-pipeline-cache/pg_backups (verified 1593802265 bytes)
+-- uploading vcrud -> googledrive:market-data-backup/current/pg_backups --
+2026/09/01 20:49:10 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/pg_backups": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL upload vcrud -> googledrive:market-data-backup/current/pg_backups
+KEPT local dump for vcrud (one or more clouds unverified): /Users/umashankar/.cache/pg_cloud_backup/vcrud_2026-09-01.dump
+-- dumping repo_csv_archive --
+-- uploading repo_csv_archive -> dropbox:market-pipeline-cache/pg_backups --
+OK   repo_csv_archive -> dropbox:market-pipeline-cache/pg_backups (verified 38231 bytes)
+-- uploading repo_csv_archive -> googledrive:market-data-backup/current/pg_backups --
+2026/09/01 20:49:15 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/pg_backups": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL upload repo_csv_archive -> googledrive:market-data-backup/current/pg_backups
+KEPT local dump for repo_csv_archive (one or more clouds unverified): /Users/umashankar/.cache/pg_cloud_backup/repo_csv_archive_2026-09-01.dump
+done 20:49
+===== pg_cloud_backup 2026-09-06 20:00 =====
+-- dumping market_data --
+-- uploading market_data -> dropbox:market-pipeline-cache/pg_backups --
+OK   market_data -> dropbox:market-pipeline-cache/pg_backups (verified 1972266185 bytes)
+-- uploading market_data -> googledrive:market-data-backup/current/pg_backups --
+OK   market_data -> googledrive:market-data-backup/current/pg_backups (verified 1972266185 bytes)
+OK   market_data fully verified on both clouds, local dump deleted
+-- dumping vcrud --
+-- uploading vcrud -> dropbox:market-pipeline-cache/pg_backups --
+OK   vcrud -> dropbox:market-pipeline-cache/pg_backups (verified 1593802265 bytes)
+-- uploading vcrud -> googledrive:market-data-backup/current/pg_backups --
+OK   vcrud -> googledrive:market-data-backup/current/pg_backups (verified 1593802265 bytes)
+OK   vcrud fully verified on both clouds, local dump deleted
+-- dumping repo_csv_archive --
+-- uploading repo_csv_archive -> dropbox:market-pipeline-cache/pg_backups --
+OK   repo_csv_archive -> dropbox:market-pipeline-cache/pg_backups (verified 38231 bytes)
+-- uploading repo_csv_archive -> googledrive:market-data-backup/current/pg_backups --
+OK   repo_csv_archive -> googledrive:market-data-backup/current/pg_backups (verified 38231 bytes)
+OK   repo_csv_archive fully verified on both clouds, local dump deleted
+WARN stale dumps >3 days old, investigate: /Users/umashankar/.cache/pg_cloud_backup/repo_csv_archive_2026-09-01.dump
+done 20:54
+===== pg_cloud_backup 2026-09-07 20:00 =====
+-- dumping market_data --
+-- uploading market_data -> dropbox:market-pipeline-cache/pg_backups --
+OK   market_data -> dropbox:market-pipeline-cache/pg_backups (verified 1972833511 bytes)
+-- uploading market_data -> googledrive:market-data-backup/current/pg_backups --
+OK   market_data -> googledrive:market-data-backup/current/pg_backups (verified 1972833511 bytes)
+OK   market_data fully verified on both clouds, local dump deleted
+-- dumping vcrud --
+-- uploading vcrud -> dropbox:market-pipeline-cache/pg_backups --
+OK   vcrud -> dropbox:market-pipeline-cache/pg_backups (verified 1593802265 bytes)
+-- uploading vcrud -> googledrive:market-data-backup/current/pg_backups --
+OK   vcrud -> googledrive:market-data-backup/current/pg_backups (verified 1593802265 bytes)
+OK   vcrud fully verified on both clouds, local dump deleted
+-- dumping repo_csv_archive --
+-- uploading repo_csv_archive -> dropbox:market-pipeline-cache/pg_backups --
+OK   repo_csv_archive -> dropbox:market-pipeline-cache/pg_backups (verified 38231 bytes)
+-- uploading repo_csv_archive -> googledrive:market-data-backup/current/pg_backups --
+OK   repo_csv_archive -> googledrive:market-data-backup/current/pg_backups (verified 38231 bytes)
+OK   repo_csv_archive fully verified on both clouds, local dump deleted
+WARN stale dumps >3 days old, investigate: /Users/umashankar/.cache/pg_cloud_backup/repo_csv_archive_2026-09-01.dump
+done 20:53
+===== pg_cloud_backup 2026-09-08 20:00 =====
+-- dumping market_data --
+-- uploading market_data -> dropbox:market-pipeline-cache/pg_backups --
+OK   market_data -> dropbox:market-pipeline-cache/pg_backups (verified 1973557506 bytes)
+-- uploading market_data -> googledrive:market-data-backup/current/pg_backups --
+OK   market_data -> googledrive:market-data-backup/current/pg_backups (verified 1973557506 bytes)
+OK   market_data fully verified on both clouds, local dump deleted
+-- dumping vcrud --
+-- uploading vcrud -> dropbox:market-pipeline-cache/pg_backups --
+OK   vcrud -> dropbox:market-pipeline-cache/pg_backups (verified 1593802265 bytes)
+-- uploading vcrud -> googledrive:market-data-backup/current/pg_backups --
+OK   vcrud -> googledrive:market-data-backup/current/pg_backups (verified 1593802265 bytes)
+OK   vcrud fully verified on both clouds, local dump deleted
+-- dumping repo_csv_archive --
+-- uploading repo_csv_archive -> dropbox:market-pipeline-cache/pg_backups --
+OK   repo_csv_archive -> dropbox:market-pipeline-cache/pg_backups (verified 38231 bytes)
+-- uploading repo_csv_archive -> googledrive:market-data-backup/current/pg_backups --
+OK   repo_csv_archive -> googledrive:market-data-backup/current/pg_backups (verified 38231 bytes)
+OK   repo_csv_archive fully verified on both clouds, local dump deleted
+WARN stale dumps >3 days old, investigate: /Users/umashankar/.cache/pg_cloud_backup/repo_csv_archive_2026-09-01.dump
+done 20:48
+===== pg_cloud_backup 2026-09-10 20:00 =====
+-- dumping market_data --
+-- uploading market_data -> dropbox:market-pipeline-cache/pg_backups --
+2026/09/10 20:09:17 ERROR : Attempt 1/3 failed with 1 errors and: Post "https://api.dropboxapi.com/2/files/get_metadata": couldn't fetch token: Post "https://api.dropboxapi.com/oauth2/token": dial tcp: lookup api.dropboxapi.com: no such host
+2026/09/10 20:09:22 ERROR : Attempt 2/3 failed with 1 errors and: Post "https://api.dropboxapi.com/2/files/get_metadata": couldn't fetch token: Post "https://api.dropboxapi.com/oauth2/token": dial tcp: lookup api.dropboxapi.com: no such host
+2026/09/10 20:09:27 ERROR : Attempt 3/3 failed with 1 errors and: Post "https://api.dropboxapi.com/2/files/get_metadata": couldn't fetch token: Post "https://api.dropboxapi.com/oauth2/token": dial tcp: lookup api.dropboxapi.com: no such host
+FAIL upload market_data -> dropbox:market-pipeline-cache/pg_backups
+-- uploading market_data -> googledrive:market-data-backup/current/pg_backups --
+2026/09/10 20:09:33 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/pg_backups": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: Post "https://oauth2.googleapis.com/token": dial tcp: lookup oauth2.googleapis.com: no such host
+FAIL upload market_data -> googledrive:market-data-backup/current/pg_backups
+KEPT local dump for market_data (one or more clouds unverified): /Users/umashankar/.cache/pg_cloud_backup/market_data_2026-09-10.dump
+-- dumping vcrud --
+-- uploading vcrud -> dropbox:market-pipeline-cache/pg_backups --
+2026/09/10 20:15:51 ERROR : Attempt 1/3 failed with 1 errors and: Post "https://api.dropboxapi.com/2/files/get_metadata": couldn't fetch token: Post "https://api.dropboxapi.com/oauth2/token": dial tcp: lookup api.dropboxapi.com: no such host
+2026/09/10 20:15:56 ERROR : Attempt 2/3 failed with 1 errors and: Post "https://api.dropboxapi.com/2/files/get_metadata": couldn't fetch token: Post "https://api.dropboxapi.com/oauth2/token": dial tcp: lookup api.dropboxapi.com: no such host
+2026/09/10 20:16:01 ERROR : Attempt 3/3 failed with 1 errors and: Post "https://api.dropboxapi.com/2/files/get_metadata": couldn't fetch token: Post "https://api.dropboxapi.com/oauth2/token": dial tcp: lookup api.dropboxapi.com: no such host
+FAIL upload vcrud -> dropbox:market-pipeline-cache/pg_backups
+-- uploading vcrud -> googledrive:market-data-backup/current/pg_backups --
+2026/09/10 20:16:07 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/pg_backups": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: Post "https://oauth2.googleapis.com/token": dial tcp: lookup oauth2.googleapis.com: no such host
+FAIL upload vcrud -> googledrive:market-data-backup/current/pg_backups
+KEPT local dump for vcrud (one or more clouds unverified): /Users/umashankar/.cache/pg_cloud_backup/vcrud_2026-09-10.dump
+-- dumping repo_csv_archive --
+-- uploading repo_csv_archive -> dropbox:market-pipeline-cache/pg_backups --
+2026/09/10 20:16:17 ERROR : Attempt 1/3 failed with 1 errors and: Post "https://api.dropboxapi.com/2/files/get_metadata": couldn't fetch token: Post "https://api.dropboxapi.com/oauth2/token": dial tcp: lookup api.dropboxapi.com: no such host
+2026/09/10 20:16:22 ERROR : Attempt 2/3 failed with 1 errors and: Post "https://api.dropboxapi.com/2/files/get_metadata": couldn't fetch token: Post "https://api.dropboxapi.com/oauth2/token": dial tcp: lookup api.dropboxapi.com: no such host
+2026/09/10 20:16:27 ERROR : Attempt 3/3 failed with 1 errors and: Post "https://api.dropboxapi.com/2/files/get_metadata": couldn't fetch token: Post "https://api.dropboxapi.com/oauth2/token": dial tcp: lookup api.dropboxapi.com: no such host
+FAIL upload repo_csv_archive -> dropbox:market-pipeline-cache/pg_backups
+-- uploading repo_csv_archive -> googledrive:market-data-backup/current/pg_backups --
+2026/09/10 20:16:32 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/pg_backups": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: Post "https://oauth2.googleapis.com/token": dial tcp: lookup oauth2.googleapis.com: no such host
+FAIL upload repo_csv_archive -> googledrive:market-data-backup/current/pg_backups
+KEPT local dump for repo_csv_archive (one or more clouds unverified): /Users/umashankar/.cache/pg_cloud_backup/repo_csv_archive_2026-09-10.dump
+WARN stale dumps >3 days old, investigate: /Users/umashankar/.cache/pg_cloud_backup/repo_csv_archive_2026-09-01.dump
+done 20:16
+===== pg_cloud_backup 2026-09-11 20:00 =====
+-- dumping market_data --
+-- uploading market_data -> dropbox:market-pipeline-cache/pg_backups --
+OK   market_data -> dropbox:market-pipeline-cache/pg_backups (verified 1975567547 bytes)
+-- uploading market_data -> googledrive:market-data-backup/current/pg_backups --
+OK   market_data -> googledrive:market-data-backup/current/pg_backups (verified 1975567547 bytes)
+OK   market_data fully verified on both clouds, local dump deleted
+-- dumping vcrud --
+-- uploading vcrud -> dropbox:market-pipeline-cache/pg_backups --
+OK   vcrud -> dropbox:market-pipeline-cache/pg_backups (verified 1593802265 bytes)
+-- uploading vcrud -> googledrive:market-data-backup/current/pg_backups --
+OK   vcrud -> googledrive:market-data-backup/current/pg_backups (verified 1593802265 bytes)
+OK   vcrud fully verified on both clouds, local dump deleted
+-- dumping repo_csv_archive --
+-- uploading repo_csv_archive -> dropbox:market-pipeline-cache/pg_backups --
+OK   repo_csv_archive -> dropbox:market-pipeline-cache/pg_backups (verified 38231 bytes)
+-- uploading repo_csv_archive -> googledrive:market-data-backup/current/pg_backups --
+OK   repo_csv_archive -> googledrive:market-data-backup/current/pg_backups (verified 38231 bytes)
+OK   repo_csv_archive fully verified on both clouds, local dump deleted
+done 20:56
+===== pg_cloud_backup 2026-09-12 20:00 =====
+-- dumping market_data --
+-- uploading market_data -> dropbox:market-pipeline-cache/pg_backups --
+OK   market_data -> dropbox:market-pipeline-cache/pg_backups (verified 1976300171 bytes)
+-- uploading market_data -> googledrive:market-data-backup/current/pg_backups --
+2026/09/12 20:18:09 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/pg_backups": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL upload market_data -> googledrive:market-data-backup/current/pg_backups
+KEPT local dump for market_data (one or more clouds unverified): /Users/umashankar/.cache/pg_cloud_backup/market_data_2026-09-12.dump
+-- dumping vcrud --
+-- uploading vcrud -> dropbox:market-pipeline-cache/pg_backups --
+OK   vcrud -> dropbox:market-pipeline-cache/pg_backups (verified 1593802265 bytes)
+-- uploading vcrud -> googledrive:market-data-backup/current/pg_backups --
+2026/09/12 20:31:13 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/pg_backups": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL upload vcrud -> googledrive:market-data-backup/current/pg_backups
+KEPT local dump for vcrud (one or more clouds unverified): /Users/umashankar/.cache/pg_cloud_backup/vcrud_2026-09-12.dump
+-- dumping repo_csv_archive --
+-- uploading repo_csv_archive -> dropbox:market-pipeline-cache/pg_backups --
+OK   repo_csv_archive -> dropbox:market-pipeline-cache/pg_backups (verified 38231 bytes)
+-- uploading repo_csv_archive -> googledrive:market-data-backup/current/pg_backups --
+2026/09/12 20:31:19 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/pg_backups": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL upload repo_csv_archive -> googledrive:market-data-backup/current/pg_backups
+KEPT local dump for repo_csv_archive (one or more clouds unverified): /Users/umashankar/.cache/pg_cloud_backup/repo_csv_archive_2026-09-12.dump
+done 20:31
+===== pg_cloud_backup 2026-09-13 20:00 =====
+-- dumping market_data --
+-- uploading market_data -> dropbox:market-pipeline-cache/pg_backups --
+OK   market_data -> dropbox:market-pipeline-cache/pg_backups (verified 1976331713 bytes)
+-- uploading market_data -> googledrive:market-data-backup/current/pg_backups --
+2026/09/13 20:26:13 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/pg_backups": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL upload market_data -> googledrive:market-data-backup/current/pg_backups
+KEPT local dump for market_data (one or more clouds unverified): /Users/umashankar/.cache/pg_cloud_backup/market_data_2026-09-13.dump
+-- dumping vcrud --
+-- uploading vcrud -> dropbox:market-pipeline-cache/pg_backups --
+OK   vcrud -> dropbox:market-pipeline-cache/pg_backups (verified 1593802265 bytes)
+-- uploading vcrud -> googledrive:market-data-backup/current/pg_backups --
+2026/09/13 20:43:39 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/pg_backups": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL upload vcrud -> googledrive:market-data-backup/current/pg_backups
+KEPT local dump for vcrud (one or more clouds unverified): /Users/umashankar/.cache/pg_cloud_backup/vcrud_2026-09-13.dump
+-- dumping repo_csv_archive --
+-- uploading repo_csv_archive -> dropbox:market-pipeline-cache/pg_backups --
+OK   repo_csv_archive -> dropbox:market-pipeline-cache/pg_backups (verified 38231 bytes)
+-- uploading repo_csv_archive -> googledrive:market-data-backup/current/pg_backups --
+2026/09/13 20:43:45 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/pg_backups": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL upload repo_csv_archive -> googledrive:market-data-backup/current/pg_backups
+KEPT local dump for repo_csv_archive (one or more clouds unverified): /Users/umashankar/.cache/pg_cloud_backup/repo_csv_archive_2026-09-13.dump
+done 20:43
+===== pg_cloud_backup 2026-09-14 11:18 =====
+-- dumping market_data --
+-- uploading market_data -> dropbox:market-pipeline-cache/pg_backups --
+OK   market_data -> dropbox:market-pipeline-cache/pg_backups (verified 1998900706 bytes)
+-- uploading market_data -> googledrive:market-data-backup/current/pg_backups --
+OK   market_data -> googledrive:market-data-backup/current/pg_backups (verified 1998900706 bytes)
+OK   market_data fully verified on both clouds, local dump deleted
+-- dumping vcrud --
+-- uploading vcrud -> dropbox:market-pipeline-cache/pg_backups --
+OK   vcrud -> dropbox:market-pipeline-cache/pg_backups (verified 1593802265 bytes)
+-- uploading vcrud -> googledrive:market-data-backup/current/pg_backups --
+OK   vcrud -> googledrive:market-data-backup/current/pg_backups (verified 1593802265 bytes)
+OK   vcrud fully verified on both clouds, local dump deleted
+-- dumping repo_csv_archive --
+-- uploading repo_csv_archive -> dropbox:market-pipeline-cache/pg_backups --
+OK   repo_csv_archive -> dropbox:market-pipeline-cache/pg_backups (verified 38231 bytes)
+-- uploading repo_csv_archive -> googledrive:market-data-backup/current/pg_backups --
+OK   repo_csv_archive -> googledrive:market-data-backup/current/pg_backups (verified 38231 bytes)
+OK   repo_csv_archive fully verified on both clouds, local dump deleted
+done 12:19
+===== pg_cloud_backup 2026-09-14 20:00 =====
+-- dumping market_data --
+-- uploading market_data -> dropbox:market-pipeline-cache/pg_backups --
+OK   market_data -> dropbox:market-pipeline-cache/pg_backups (verified 1998909079 bytes)
+-- uploading market_data -> googledrive:market-data-backup/current/pg_backups --
+OK   market_data -> googledrive:market-data-backup/current/pg_backups (verified 1998909079 bytes)
+OK   market_data fully verified on both clouds, local dump deleted
+-- dumping vcrud --
+-- uploading vcrud -> dropbox:market-pipeline-cache/pg_backups --
+OK   vcrud -> dropbox:market-pipeline-cache/pg_backups (verified 1593802265 bytes)
+-- uploading vcrud -> googledrive:market-data-backup/current/pg_backups --
+OK   vcrud -> googledrive:market-data-backup/current/pg_backups (verified 1593802265 bytes)
+OK   vcrud fully verified on both clouds, local dump deleted
+-- dumping repo_csv_archive --
+-- uploading repo_csv_archive -> dropbox:market-pipeline-cache/pg_backups --
+OK   repo_csv_archive -> dropbox:market-pipeline-cache/pg_backups (verified 38231 bytes)
+-- uploading repo_csv_archive -> googledrive:market-data-backup/current/pg_backups --
+OK   repo_csv_archive -> googledrive:market-data-backup/current/pg_backups (verified 38231 bytes)
+OK   repo_csv_archive fully verified on both clouds, local dump deleted
+done 20:46
+===== pg_cloud_backup 2026-09-15 20:00 =====
+-- dumping market_data --
+-- uploading market_data -> dropbox:market-pipeline-cache/pg_backups --
+OK   market_data -> dropbox:market-pipeline-cache/pg_backups (verified 1999233954 bytes)
+-- uploading market_data -> googledrive:market-data-backup/current/pg_backups --
+OK   market_data -> googledrive:market-data-backup/current/pg_backups (verified 1999233954 bytes)
+OK   market_data fully verified on both clouds, local dump deleted
+-- dumping vcrud --
+-- uploading vcrud -> dropbox:market-pipeline-cache/pg_backups --
+OK   vcrud -> dropbox:market-pipeline-cache/pg_backups (verified 1593802265 bytes)
+-- uploading vcrud -> googledrive:market-data-backup/current/pg_backups --
+OK   vcrud -> googledrive:market-data-backup/current/pg_backups (verified 1593802265 bytes)
+OK   vcrud fully verified on both clouds, local dump deleted
+-- dumping repo_csv_archive --
+-- uploading repo_csv_archive -> dropbox:market-pipeline-cache/pg_backups --
+OK   repo_csv_archive -> dropbox:market-pipeline-cache/pg_backups (verified 38231 bytes)
+-- uploading repo_csv_archive -> googledrive:market-data-backup/current/pg_backups --
+OK   repo_csv_archive -> googledrive:market-data-backup/current/pg_backups (verified 38231 bytes)
+OK   repo_csv_archive fully verified on both clouds, local dump deleted
+done 20:59
+===== pg_cloud_backup 2026-09-16 20:00 =====
+-- dumping market_data --
+-- uploading market_data -> dropbox:market-pipeline-cache/pg_backups --
+OK   market_data -> dropbox:market-pipeline-cache/pg_backups (verified 1999843396 bytes)
+-- uploading market_data -> googledrive:market-data-backup/current/pg_backups --
+OK   market_data -> googledrive:market-data-backup/current/pg_backups (verified 1999843396 bytes)
+OK   market_data fully verified on both clouds, local dump deleted
+-- dumping vcrud --
+-- uploading vcrud -> dropbox:market-pipeline-cache/pg_backups --
+OK   vcrud -> dropbox:market-pipeline-cache/pg_backups (verified 1593802265 bytes)
+-- uploading vcrud -> googledrive:market-data-backup/current/pg_backups --
+OK   vcrud -> googledrive:market-data-backup/current/pg_backups (verified 1593802265 bytes)
+OK   vcrud fully verified on both clouds, local dump deleted
+-- dumping repo_csv_archive --
+-- uploading repo_csv_archive -> dropbox:market-pipeline-cache/pg_backups --
+OK   repo_csv_archive -> dropbox:market-pipeline-cache/pg_backups (verified 38231 bytes)
+-- uploading repo_csv_archive -> googledrive:market-data-backup/current/pg_backups --
+OK   repo_csv_archive -> googledrive:market-data-backup/current/pg_backups (verified 38231 bytes)
+OK   repo_csv_archive fully verified on both clouds, local dump deleted
+done 20:58
+===== pg_cloud_backup 2026-09-17 20:00 =====
+-- dumping market_data --
+-- uploading market_data -> dropbox:market-pipeline-cache/pg_backups --
+OK   market_data -> dropbox:market-pipeline-cache/pg_backups (verified 2000417175 bytes)
+-- uploading market_data -> googledrive:market-data-backup/current/pg_backups --
+OK   market_data -> googledrive:market-data-backup/current/pg_backups (verified 2000417175 bytes)
+OK   market_data fully verified on both clouds, local dump deleted
+-- dumping vcrud --
+-- uploading vcrud -> dropbox:market-pipeline-cache/pg_backups --
+OK   vcrud -> dropbox:market-pipeline-cache/pg_backups (verified 1593802265 bytes)
+-- uploading vcrud -> googledrive:market-data-backup/current/pg_backups --
+OK   vcrud -> googledrive:market-data-backup/current/pg_backups (verified 1593802265 bytes)
+OK   vcrud fully verified on both clouds, local dump deleted
+-- dumping repo_csv_archive --
+-- uploading repo_csv_archive -> dropbox:market-pipeline-cache/pg_backups --
+OK   repo_csv_archive -> dropbox:market-pipeline-cache/pg_backups (verified 38231 bytes)
+-- uploading repo_csv_archive -> googledrive:market-data-backup/current/pg_backups --
+OK   repo_csv_archive -> googledrive:market-data-backup/current/pg_backups (verified 38231 bytes)
+OK   repo_csv_archive fully verified on both clouds, local dump deleted
+done 20:56
+===== pg_cloud_backup 2026-09-18 20:00 =====
+-- dumping market_data --
+-- uploading market_data -> dropbox:market-pipeline-cache/pg_backups --
+OK   market_data -> dropbox:market-pipeline-cache/pg_backups (verified 2000792210 bytes)
+-- uploading market_data -> googledrive:market-data-backup/current/pg_backups --
+OK   market_data -> googledrive:market-data-backup/current/pg_backups (verified 2000792210 bytes)
+OK   market_data fully verified on both clouds, local dump deleted
+-- dumping vcrud --
+-- uploading vcrud -> dropbox:market-pipeline-cache/pg_backups --
+OK   vcrud -> dropbox:market-pipeline-cache/pg_backups (verified 1593802265 bytes)
+-- uploading vcrud -> googledrive:market-data-backup/current/pg_backups --
+OK   vcrud -> googledrive:market-data-backup/current/pg_backups (verified 1593802265 bytes)
+OK   vcrud fully verified on both clouds, local dump deleted
+-- dumping repo_csv_archive --
+-- uploading repo_csv_archive -> dropbox:market-pipeline-cache/pg_backups --
+OK   repo_csv_archive -> dropbox:market-pipeline-cache/pg_backups (verified 38231 bytes)
+-- uploading repo_csv_archive -> googledrive:market-data-backup/current/pg_backups --
+OK   repo_csv_archive -> googledrive:market-data-backup/current/pg_backups (verified 38231 bytes)
+OK   repo_csv_archive fully verified on both clouds, local dump deleted
+done 20:55
+===== pg_cloud_backup 2026-09-20 20:00 =====
+-- dumping market_data --
+-- uploading market_data -> dropbox:market-pipeline-cache/pg_backups --
+OK   market_data -> dropbox:market-pipeline-cache/pg_backups (verified 2001720389 bytes)
+-- uploading market_data -> googledrive:market-data-backup/current/pg_backups --
+OK   market_data -> googledrive:market-data-backup/current/pg_backups (verified 2001720389 bytes)
+OK   market_data fully verified on both clouds, local dump deleted
+-- dumping vcrud --
+-- uploading vcrud -> dropbox:market-pipeline-cache/pg_backups --
+OK   vcrud -> dropbox:market-pipeline-cache/pg_backups (verified 1593802265 bytes)
+-- uploading vcrud -> googledrive:market-data-backup/current/pg_backups --
+OK   vcrud -> googledrive:market-data-backup/current/pg_backups (verified 1593802265 bytes)
+OK   vcrud fully verified on both clouds, local dump deleted
+-- dumping repo_csv_archive --
+-- uploading repo_csv_archive -> dropbox:market-pipeline-cache/pg_backups --
+OK   repo_csv_archive -> dropbox:market-pipeline-cache/pg_backups (verified 38231 bytes)
+-- uploading repo_csv_archive -> googledrive:market-data-backup/current/pg_backups --
+OK   repo_csv_archive -> googledrive:market-data-backup/current/pg_backups (verified 38231 bytes)
+OK   repo_csv_archive fully verified on both clouds, local dump deleted
+done 20:48
+===== pg_cloud_backup 2026-09-21 20:00 =====
+-- dumping market_data --
+-- uploading market_data -> dropbox:market-pipeline-cache/pg_backups --
+OK   market_data -> dropbox:market-pipeline-cache/pg_backups (verified 2001865038 bytes)
+-- uploading market_data -> googledrive:market-data-backup/current/pg_backups --
+2026/09/21 20:17:08 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/pg_backups": couldn't find root directory ID: googleapi: Error 401: Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+More details:
+Reason: authError, Message: Invalid Credentials
+FAIL upload market_data -> googledrive:market-data-backup/current/pg_backups
+KEPT local dump for market_data (one or more clouds unverified): /Users/umashankar/.cache/pg_cloud_backup/market_data_2026-09-21.dump
+-- dumping vcrud --
+-- uploading vcrud -> dropbox:market-pipeline-cache/pg_backups --
+OK   vcrud -> dropbox:market-pipeline-cache/pg_backups (verified 1593802265 bytes)
+-- uploading vcrud -> googledrive:market-data-backup/current/pg_backups --
+2026/09/21 20:29:31 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/pg_backups": couldn't find root directory ID: googleapi: Error 401: Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+More details:
+Reason: authError, Message: Invalid Credentials
+FAIL upload vcrud -> googledrive:market-data-backup/current/pg_backups
+KEPT local dump for vcrud (one or more clouds unverified): /Users/umashankar/.cache/pg_cloud_backup/vcrud_2026-09-21.dump
+-- dumping repo_csv_archive --
+-- uploading repo_csv_archive -> dropbox:market-pipeline-cache/pg_backups --
+OK   repo_csv_archive -> dropbox:market-pipeline-cache/pg_backups (verified 38231 bytes)
+-- uploading repo_csv_archive -> googledrive:market-data-backup/current/pg_backups --
+2026/09/21 20:29:36 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/pg_backups": couldn't find root directory ID: googleapi: Error 401: Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+More details:
+Reason: authError, Message: Invalid Credentials
+FAIL upload repo_csv_archive -> googledrive:market-data-backup/current/pg_backups
+KEPT local dump for repo_csv_archive (one or more clouds unverified): /Users/umashankar/.cache/pg_cloud_backup/repo_csv_archive_2026-09-21.dump
+done 20:29
+===== pg_cloud_backup 2026-09-22 20:00 =====
+-- dumping market_data --
+-- uploading market_data -> dropbox:market-pipeline-cache/pg_backups --
+OK   market_data -> dropbox:market-pipeline-cache/pg_backups (verified 2002698666 bytes)
+-- uploading market_data -> googledrive:market-data-backup/current/pg_backups --
+2026/09/22 20:18:03 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/pg_backups": couldn't find root directory ID: googleapi: Error 401: Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+More details:
+Reason: authError, Message: Invalid Credentials
+FAIL upload market_data -> googledrive:market-data-backup/current/pg_backups
+KEPT local dump for market_data (one or more clouds unverified): /Users/umashankar/.cache/pg_cloud_backup/market_data_2026-09-22.dump
+-- dumping vcrud --
+-- uploading vcrud -> dropbox:market-pipeline-cache/pg_backups --
+OK   vcrud -> dropbox:market-pipeline-cache/pg_backups (verified 1593802265 bytes)
+-- uploading vcrud -> googledrive:market-data-backup/current/pg_backups --
+2026/09/22 20:30:26 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/pg_backups": couldn't find root directory ID: googleapi: Error 401: Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+More details:
+Reason: authError, Message: Invalid Credentials
+FAIL upload vcrud -> googledrive:market-data-backup/current/pg_backups
+KEPT local dump for vcrud (one or more clouds unverified): /Users/umashankar/.cache/pg_cloud_backup/vcrud_2026-09-22.dump
+-- dumping repo_csv_archive --
+-- uploading repo_csv_archive -> dropbox:market-pipeline-cache/pg_backups --
+OK   repo_csv_archive -> dropbox:market-pipeline-cache/pg_backups (verified 38231 bytes)
+-- uploading repo_csv_archive -> googledrive:market-data-backup/current/pg_backups --
+2026/09/22 20:30:31 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/pg_backups": couldn't find root directory ID: googleapi: Error 401: Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+More details:
+Reason: authError, Message: Invalid Credentials
+FAIL upload repo_csv_archive -> googledrive:market-data-backup/current/pg_backups
+KEPT local dump for repo_csv_archive (one or more clouds unverified): /Users/umashankar/.cache/pg_cloud_backup/repo_csv_archive_2026-09-22.dump
+done 20:30
+===== pg_cloud_backup 2026-09-23 20:00 =====
+-- dumping market_data --
+-- uploading market_data -> dropbox:market-pipeline-cache/pg_backups --
+OK   market_data -> dropbox:market-pipeline-cache/pg_backups (verified 2002709251 bytes)
+-- uploading market_data -> googledrive:market-data-backup/current/pg_backups --
+OK   market_data -> googledrive:market-data-backup/current/pg_backups (verified 2002709251 bytes)
+OK   market_data fully verified on both clouds, local dump deleted
+-- dumping vcrud --
+-- uploading vcrud -> dropbox:market-pipeline-cache/pg_backups --
+OK   vcrud -> dropbox:market-pipeline-cache/pg_backups (verified 1593802265 bytes)
+-- uploading vcrud -> googledrive:market-data-backup/current/pg_backups --
+OK   vcrud -> googledrive:market-data-backup/current/pg_backups (verified 1593802265 bytes)
+OK   vcrud fully verified on both clouds, local dump deleted
+-- dumping repo_csv_archive --
+-- uploading repo_csv_archive -> dropbox:market-pipeline-cache/pg_backups --
+OK   repo_csv_archive -> dropbox:market-pipeline-cache/pg_backups (verified 38231 bytes)
+-- uploading repo_csv_archive -> googledrive:market-data-backup/current/pg_backups --
+OK   repo_csv_archive -> googledrive:market-data-backup/current/pg_backups (verified 38231 bytes)
+OK   repo_csv_archive fully verified on both clouds, local dump deleted
+done 21:43
+===== pg_cloud_backup 2026-09-24 20:00 =====
+-- dumping market_data --
+-- uploading market_data -> dropbox:market-pipeline-cache/pg_backups --
+OK   market_data -> dropbox:market-pipeline-cache/pg_backups (verified 2003924724 bytes)
+-- uploading market_data -> googledrive:market-data-backup/current/pg_backups --
+OK   market_data -> googledrive:market-data-backup/current/pg_backups (verified 2003924724 bytes)
+OK   market_data fully verified on both clouds, local dump deleted
+-- dumping vcrud --
+-- uploading vcrud -> dropbox:market-pipeline-cache/pg_backups --
+OK   vcrud -> dropbox:market-pipeline-cache/pg_backups (verified 1593802265 bytes)
+-- uploading vcrud -> googledrive:market-data-backup/current/pg_backups --
+OK   vcrud -> googledrive:market-data-backup/current/pg_backups (verified 1593802265 bytes)
+OK   vcrud fully verified on both clouds, local dump deleted
+-- dumping repo_csv_archive --
+-- uploading repo_csv_archive -> dropbox:market-pipeline-cache/pg_backups --
+OK   repo_csv_archive -> dropbox:market-pipeline-cache/pg_backups (verified 38231 bytes)
+-- uploading repo_csv_archive -> googledrive:market-data-backup/current/pg_backups --
+OK   repo_csv_archive -> googledrive:market-data-backup/current/pg_backups (verified 38231 bytes)
+OK   repo_csv_archive fully verified on both clouds, local dump deleted
+done 21:46
+===== pg_cloud_backup 2026-09-26 20:00 =====
+-- dumping market_data --
+-- uploading market_data -> dropbox:market-pipeline-cache/pg_backups --
+2026/09/26 20:09:35 ERROR : Attempt 1/3 failed with 1 errors and: Post "https://api.dropboxapi.com/2/files/get_metadata": dial tcp: lookup api.dropboxapi.com: no such host
+2026/09/26 20:09:35 ERROR : Attempt 2/3 failed with 1 errors and: Post "https://api.dropboxapi.com/2/files/get_metadata": dial tcp: lookup api.dropboxapi.com: no such host
+2026/09/26 20:09:35 ERROR : Attempt 3/3 failed with 1 errors and: Post "https://api.dropboxapi.com/2/files/get_metadata": dial tcp: lookup api.dropboxapi.com: no such host
+FAIL upload market_data -> dropbox:market-pipeline-cache/pg_backups
+-- uploading market_data -> googledrive:market-data-backup/current/pg_backups --
+2026/09/26 20:09:40 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/pg_backups": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: Post "https://oauth2.googleapis.com/token": dial tcp: lookup oauth2.googleapis.com: no such host
+FAIL upload market_data -> googledrive:market-data-backup/current/pg_backups
+KEPT local dump for market_data (one or more clouds unverified): /Users/umashankar/.cache/pg_cloud_backup/market_data_2026-09-26.dump
+-- dumping vcrud --
+-- uploading vcrud -> dropbox:market-pipeline-cache/pg_backups --
+2026/09/26 20:15:58 ERROR : Attempt 1/3 failed with 1 errors and: Post "https://api.dropboxapi.com/2/files/get_metadata": dial tcp: lookup api.dropboxapi.com: no such host
+2026/09/26 20:15:58 ERROR : Attempt 2/3 failed with 1 errors and: Post "https://api.dropboxapi.com/2/files/get_metadata": dial tcp: lookup api.dropboxapi.com: no such host
+2026/09/26 20:15:58 ERROR : Attempt 3/3 failed with 1 errors and: Post "https://api.dropboxapi.com/2/files/get_metadata": dial tcp: lookup api.dropboxapi.com: no such host
+FAIL upload vcrud -> dropbox:market-pipeline-cache/pg_backups
+-- uploading vcrud -> googledrive:market-data-backup/current/pg_backups --
+2026/09/26 20:16:03 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/pg_backups": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: Post "https://oauth2.googleapis.com/token": dial tcp: lookup oauth2.googleapis.com: no such host
+FAIL upload vcrud -> googledrive:market-data-backup/current/pg_backups
+KEPT local dump for vcrud (one or more clouds unverified): /Users/umashankar/.cache/pg_cloud_backup/vcrud_2026-09-26.dump
+-- dumping repo_csv_archive --
+-- uploading repo_csv_archive -> dropbox:market-pipeline-cache/pg_backups --
+2026/09/26 20:16:03 ERROR : Attempt 1/3 failed with 1 errors and: Post "https://api.dropboxapi.com/2/files/get_metadata": dial tcp: lookup api.dropboxapi.com: no such host
+2026/09/26 20:16:03 ERROR : Attempt 2/3 failed with 1 errors and: Post "https://api.dropboxapi.com/2/files/get_metadata": dial tcp: lookup api.dropboxapi.com: no such host
+2026/09/26 20:16:03 ERROR : Attempt 3/3 failed with 1 errors and: Post "https://api.dropboxapi.com/2/files/get_metadata": dial tcp: lookup api.dropboxapi.com: no such host
+FAIL upload repo_csv_archive -> dropbox:market-pipeline-cache/pg_backups
+-- uploading repo_csv_archive -> googledrive:market-data-backup/current/pg_backups --
+2026/09/26 20:16:09 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/pg_backups": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: Post "https://oauth2.googleapis.com/token": dial tcp: lookup oauth2.googleapis.com: no such host
+FAIL upload repo_csv_archive -> googledrive:market-data-backup/current/pg_backups
+KEPT local dump for repo_csv_archive (one or more clouds unverified): /Users/umashankar/.cache/pg_cloud_backup/repo_csv_archive_2026-09-26.dump
+done 20:16
+===== pg_cloud_backup 2026-09-27 20:00 =====
+-- dumping market_data --
+-- uploading market_data -> dropbox:market-pipeline-cache/pg_backups --
+OK   market_data -> dropbox:market-pipeline-cache/pg_backups (verified 2005483791 bytes)
+-- uploading market_data -> googledrive:market-data-backup/current/pg_backups --
+OK   market_data -> googledrive:market-data-backup/current/pg_backups (verified 2005483791 bytes)
+OK   market_data fully verified on both clouds, local dump deleted
+-- dumping vcrud --
+-- uploading vcrud -> dropbox:market-pipeline-cache/pg_backups --
+OK   vcrud -> dropbox:market-pipeline-cache/pg_backups (verified 1593802265 bytes)
+-- uploading vcrud -> googledrive:market-data-backup/current/pg_backups --
+OK   vcrud -> googledrive:market-data-backup/current/pg_backups (verified 1593802265 bytes)
+OK   vcrud fully verified on both clouds, local dump deleted
+-- dumping repo_csv_archive --
+-- uploading repo_csv_archive -> dropbox:market-pipeline-cache/pg_backups --
+OK   repo_csv_archive -> dropbox:market-pipeline-cache/pg_backups (verified 38231 bytes)
+-- uploading repo_csv_archive -> googledrive:market-data-backup/current/pg_backups --
+OK   repo_csv_archive -> googledrive:market-data-backup/current/pg_backups (verified 38231 bytes)
+OK   repo_csv_archive fully verified on both clouds, local dump deleted
+done 20:50
+===== pg_cloud_backup 2026-09-28 20:00 =====
+-- dumping market_data --
+-- uploading market_data -> dropbox:market-pipeline-cache/pg_backups --
+OK   market_data -> dropbox:market-pipeline-cache/pg_backups (verified 2005584640 bytes)
+-- uploading market_data -> googledrive:market-data-backup/current/pg_backups --
+OK   market_data -> googledrive:market-data-backup/current/pg_backups (verified 2005584640 bytes)
+OK   market_data fully verified on both clouds, local dump deleted
+-- dumping vcrud --
+-- uploading vcrud -> dropbox:market-pipeline-cache/pg_backups --
+OK   vcrud -> dropbox:market-pipeline-cache/pg_backups (verified 1593802265 bytes)
+-- uploading vcrud -> googledrive:market-data-backup/current/pg_backups --
+OK   vcrud -> googledrive:market-data-backup/current/pg_backups (verified 1593802265 bytes)
+OK   vcrud fully verified on both clouds, local dump deleted
+-- dumping repo_csv_archive --
+-- uploading repo_csv_archive -> dropbox:market-pipeline-cache/pg_backups --
+OK   repo_csv_archive -> dropbox:market-pipeline-cache/pg_backups (verified 38231 bytes)
+-- uploading repo_csv_archive -> googledrive:market-data-backup/current/pg_backups --
+OK   repo_csv_archive -> googledrive:market-data-backup/current/pg_backups (verified 38231 bytes)
+OK   repo_csv_archive fully verified on both clouds, local dump deleted
+done 21:07
+===== pg_cloud_backup 2026-09-29 20:00 =====
+-- dumping market_data --
+-- uploading market_data -> dropbox:market-pipeline-cache/pg_backups --
+OK   market_data -> dropbox:market-pipeline-cache/pg_backups (verified 2006300158 bytes)
+-- uploading market_data -> googledrive:market-data-backup/current/pg_backups --
+OK   market_data -> googledrive:market-data-backup/current/pg_backups (verified 2006300158 bytes)
+OK   market_data fully verified on both clouds, local dump deleted
+-- dumping vcrud --
+-- uploading vcrud -> dropbox:market-pipeline-cache/pg_backups --
+OK   vcrud -> dropbox:market-pipeline-cache/pg_backups (verified 1593802265 bytes)
+-- uploading vcrud -> googledrive:market-data-backup/current/pg_backups --
+OK   vcrud -> googledrive:market-data-backup/current/pg_backups (verified 1593802265 bytes)
+OK   vcrud fully verified on both clouds, local dump deleted
+-- dumping repo_csv_archive --
+-- uploading repo_csv_archive -> dropbox:market-pipeline-cache/pg_backups --
+OK   repo_csv_archive -> dropbox:market-pipeline-cache/pg_backups (verified 38231 bytes)
+-- uploading repo_csv_archive -> googledrive:market-data-backup/current/pg_backups --
+OK   repo_csv_archive -> googledrive:market-data-backup/current/pg_backups (verified 38231 bytes)
+OK   repo_csv_archive fully verified on both clouds, local dump deleted
+done 20:52
+===== pg_cloud_backup 2026-09-30 20:00 =====
+-- dumping market_data --
+-- uploading market_data -> dropbox:market-pipeline-cache/pg_backups --
+OK   market_data -> dropbox:market-pipeline-cache/pg_backups (verified 2006312552 bytes)
+-- uploading market_data -> googledrive:market-data-backup/current/pg_backups --
+2026/09/30 20:17:38 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/pg_backups": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL upload market_data -> googledrive:market-data-backup/current/pg_backups
+KEPT local dump for market_data (one or more clouds unverified): /Users/umashankar/.cache/pg_cloud_backup/market_data_2026-09-30.dump
+-- dumping vcrud --
+-- uploading vcrud -> dropbox:market-pipeline-cache/pg_backups --
+OK   vcrud -> dropbox:market-pipeline-cache/pg_backups (verified 1593802265 bytes)
+-- uploading vcrud -> googledrive:market-data-backup/current/pg_backups --
+2026/09/30 20:30:23 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/pg_backups": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL upload vcrud -> googledrive:market-data-backup/current/pg_backups
+KEPT local dump for vcrud (one or more clouds unverified): /Users/umashankar/.cache/pg_cloud_backup/vcrud_2026-09-30.dump
+-- dumping repo_csv_archive --
+-- uploading repo_csv_archive -> dropbox:market-pipeline-cache/pg_backups --
+OK   repo_csv_archive -> dropbox:market-pipeline-cache/pg_backups (verified 38231 bytes)
+-- uploading repo_csv_archive -> googledrive:market-data-backup/current/pg_backups --
+2026/09/30 20:30:30 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/pg_backups": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL upload repo_csv_archive -> googledrive:market-data-backup/current/pg_backups
+KEPT local dump for repo_csv_archive (one or more clouds unverified): /Users/umashankar/.cache/pg_cloud_backup/repo_csv_archive_2026-09-30.dump
+WARN stale dumps >3 days old, investigate: /Users/umashankar/.cache/pg_cloud_backup/repo_csv_archive_2026-09-26.dump
+done 20:30

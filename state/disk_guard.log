@@ -1,0 +1,1524 @@
+===== disk_guard 2026-07-22 18:48 — free: 27 GB =====
+OK   pipeline-cache_seed
+2026/07/22 18:49:10 NOTICE: Dropbox root 'market-data-backup/current/pipeline-reports': 0 differences found
+2026/07/22 18:49:10 NOTICE: Dropbox root 'market-data-backup/current/pipeline-reports': 19 matching files
+OK   pipeline-reports
+2026/07/22 18:49:12 NOTICE: Dropbox root 'market-data-backup/current/branch-archives': 0 differences found
+2026/07/22 18:49:12 NOTICE: Dropbox root 'market-data-backup/current/branch-archives': 8 matching files
+OK   branch-archives
+done 18:49
+post-upload free: 27 GB
+done 18:49 — free: 27 GB
+===== disk_guard 2026-07-22 20:30 — free: 25 GB =====
+2026/07/23 00:38:14 ERROR : ohlc: Failed to update directory timestamp or metadata: Patch "https://www.googleapis.com/drive/v3/files/1dz-mW6PrYSdruD_LWP4FocrDLJd9NWMj?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Csha1Checksum%2Csha256Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&prettyPrint=false&supportsAllDrives=true": dial tcp: lookup www.googleapis.com: no such host
+2026/07/23 00:38:14 ERROR : Google drive root 'market-data-backup/current/market_cache': not deleting directories as there were IO errors
+2026/07/23 00:38:14 ERROR : Attempt 1/3 failed with 957 errors and: failed to set directory modtime: Patch "https://www.googleapis.com/drive/v3/files/1dz-mW6PrYSdruD_LWP4FocrDLJd9NWMj?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Csha1Checksum%2Csha256Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&prettyPrint=false&supportsAllDrives=true": dial tcp: lookup www.googleapis.com: no such host
+2026/07/23 00:38:14 ERROR : Fatal error received - not attempting retries
+FAIL market_cache -> googledrive:market-data-backup
+2026/07/23 00:38:14 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/gss-cache_seed": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": dial tcp: lookup www.googleapis.com: no such host
+FAIL gss-cache_seed -> googledrive:market-data-backup
+2026/07/23 00:38:14 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/tracker-trade-data": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": dial tcp: lookup www.googleapis.com: no such host
+FAIL tracker-trade-data -> googledrive:market-data-backup
+2026/07/23 00:38:15 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/tracker-agri-data": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": dial tcp: lookup www.googleapis.com: no such host
+FAIL tracker-agri-data -> googledrive:market-data-backup
+2026/07/23 00:38:15 CRITICAL: Failed to create file system for "googledrive:market-data-backup/history": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": dial tcp: lookup www.googleapis.com: no such host
+FAIL history -> gdrive
+done 00:38
+post-upload free: 27 GB
+done 00:38 — free: 27 GB
+===== disk_guard 2026-07-23 20:30 — free: 54 GB =====
+2026/07/24 14:19:58 NOTICE: googledrive: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/07/24 14:21:05 NOTICE: Google drive root 'market-data-backup/current/iudx-flood-collector': 0 differences found
+2026/07/24 14:21:05 NOTICE: Google drive root 'market-data-backup/current/iudx-flood-collector': 332 matching files
+OK   iudx-flood-collector -> googledrive:market-data-backup
+2026/07/24 14:44:55 NOTICE: googledrive: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/07/24 14:44:59 NOTICE: Google drive root 'market-data-backup/current/mempalace': 0 differences found
+2026/07/24 14:44:59 NOTICE: Google drive root 'market-data-backup/current/mempalace': 32 matching files
+OK   mempalace -> googledrive:market-data-backup
+2026/07/24 14:45:51 NOTICE: googledrive: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/07/24 14:45:53 NOTICE: Google drive root 'market-data-backup/current/static-archives': 0 differences found
+2026/07/24 14:45:53 NOTICE: Google drive root 'market-data-backup/current/static-archives': 2 matching files
+OK   static-archives -> googledrive:market-data-backup
+OK   history -> gdrive (server-side relay)
+done 14:45
+post-upload free: 50 GB
+done 14:45 — free: 50 GB
+===== disk_guard 2026-07-24 20:30 — free: 16 GB =====
+===== disk_guard 2026-07-25 20:30 — free: 35 GB =====
+===== disk_guard 2026-07-26 20:30 — free: 32 GB =====
+===== disk_guard 2026-07-27 20:30 — free: 50 GB =====
+2026/07/28 18:41:53 NOTICE: googledrive: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/07/28 18:42:55 NOTICE: Google drive root 'market-data-backup/current/iudx-flood-collector': 0 differences found
+2026/07/28 18:42:55 NOTICE: Google drive root 'market-data-backup/current/iudx-flood-collector': 348 matching files
+OK   iudx-flood-collector -> googledrive:market-data-backup
+2026/07/28 18:45:01 NOTICE: googledrive: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/07/28 18:45:55 NOTICE: Google drive root 'market-data-backup/current/mempalace': 0 differences found
+2026/07/28 18:45:55 NOTICE: Google drive root 'market-data-backup/current/mempalace': 28 matching files
+OK   mempalace -> googledrive:market-data-backup
+2026/07/28 18:48:58 NOTICE: googledrive: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/07/28 18:49:38 NOTICE: Google drive root 'market-data-backup/current/static-archives': 0 differences found
+2026/07/28 18:49:38 NOTICE: Google drive root 'market-data-backup/current/static-archives': 2 matching files
+OK   static-archives -> googledrive:market-data-backup
+OK   history -> gdrive (server-side relay)
+done 18:49
+post-upload free: 49 GB
+done 18:49 — free: 49 GB
+===== disk_guard 2026-07-28 20:30 — free: 44 GB =====
+2026/07/29 15:49:46 NOTICE: googledrive: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/07/29 15:49:56 NOTICE: Google drive root 'market-data-backup/current/iudx-flood-collector': 0 differences found
+2026/07/29 15:49:56 NOTICE: Google drive root 'market-data-backup/current/iudx-flood-collector': 348 matching files
+OK   iudx-flood-collector -> googledrive:market-data-backup
+2026/07/29 15:50:36 NOTICE: googledrive: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/07/29 15:50:40 NOTICE: Google drive root 'market-data-backup/current/mempalace': 0 differences found
+2026/07/29 15:50:40 NOTICE: Google drive root 'market-data-backup/current/mempalace': 28 matching files
+OK   mempalace -> googledrive:market-data-backup
+2026/07/29 15:52:00 NOTICE: googledrive: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/07/29 15:52:37 NOTICE: Google drive root 'market-data-backup/current/static-archives': 0 differences found
+2026/07/29 15:52:37 NOTICE: Google drive root 'market-data-backup/current/static-archives': 7 matching files
+OK   static-archives -> googledrive:market-data-backup
+OK   history -> gdrive (server-side relay)
+done 15:52
+post-upload free: 30 GB
+done 15:52 — free: 30 GB
+===== disk_guard 2026-07-29 20:30 — free: 26 GB =====
+/Users/umashankar/repos/repo-data-dedup/scripts/cloud_backup.sh: line 101: 54421 Terminated: 15          $RC sync "$src" "$rem/current/$name" --backup-dir "$rem/versions/$STAMP/$name" ${sync_x[@]+"${sync_x[@]}"} "${FLAGS[@]}" >> "$LOG" 2>&1
+post-upload free: 30 GB
+done 21:48 — free: 30 GB
+===== disk_guard 2026-07-30 20:30 — free: 34 GB =====
+2026/07/31 01:08:48 NOTICE: googledrive: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/07/31 01:08:57 NOTICE: Google drive root 'market-data-backup/current/iudx-flood-collector': 0 differences found
+2026/07/31 01:08:57 NOTICE: Google drive root 'market-data-backup/current/iudx-flood-collector': 348 matching files
+OK   iudx-flood-collector -> googledrive:market-data-backup
+2026/07/31 01:09:05 NOTICE: googledrive: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/07/31 01:09:18 NOTICE: Google drive root 'market-data-backup/current/mempalace': 0 differences found
+2026/07/31 01:09:18 NOTICE: Google drive root 'market-data-backup/current/mempalace': 28 matching files
+OK   mempalace -> googledrive:market-data-backup
+2026/07/31 01:10:45 NOTICE: googledrive: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/07/31 01:10:48 NOTICE: Google drive root 'market-data-backup/current/static-archives': 0 differences found
+2026/07/31 01:10:48 NOTICE: Google drive root 'market-data-backup/current/static-archives': 8 matching files
+OK   static-archives -> googledrive:market-data-backup
+OK   history -> gdrive (server-side relay)
+done 01:10
+post-upload free: 33 GB
+done 01:10 — free: 33 GB
+===== disk_guard 2026-07-31 20:30 — free: 37 GB =====
+2026/07/31 22:16:42 NOTICE: googledrive: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/07/31 22:16:51 NOTICE: Google drive root 'market-data-backup/current/iudx-flood-collector': 0 differences found
+2026/07/31 22:16:51 NOTICE: Google drive root 'market-data-backup/current/iudx-flood-collector': 348 matching files
+OK   iudx-flood-collector -> googledrive:market-data-backup
+2026/07/31 22:17:00 NOTICE: googledrive: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/07/31 22:17:04 NOTICE: Google drive root 'market-data-backup/current/mempalace': 0 differences found
+2026/07/31 22:17:04 NOTICE: Google drive root 'market-data-backup/current/mempalace': 28 matching files
+OK   mempalace -> googledrive:market-data-backup
+2026/07/31 22:33:25 NOTICE: googledrive: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/07/31 22:33:29 NOTICE: Google drive root 'market-data-backup/current/static-archives': 0 differences found
+2026/07/31 22:33:29 NOTICE: Google drive root 'market-data-backup/current/static-archives': 8 matching files
+OK   static-archives -> googledrive:market-data-backup
+OK   history -> gdrive (server-side relay)
+done 22:33
+post-upload free: 36 GB
+done 22:33 — free: 36 GB
+===== disk_guard 2026-08-01 20:30 — free: 33 GB =====
+2026/08/02 06:24:45 NOTICE: googledrive: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/08/02 06:24:55 NOTICE: Google drive root 'market-data-backup/current/iudx-flood-collector': 0 differences found
+2026/08/02 06:24:55 NOTICE: Google drive root 'market-data-backup/current/iudx-flood-collector': 348 matching files
+OK   iudx-flood-collector -> googledrive:market-data-backup
+2026/08/02 06:25:04 NOTICE: googledrive: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/08/02 06:25:40 NOTICE: Google drive root 'market-data-backup/current/mempalace': 0 differences found
+2026/08/02 06:25:40 NOTICE: Google drive root 'market-data-backup/current/mempalace': 28 matching files
+OK   mempalace -> googledrive:market-data-backup
+2026/08/02 06:28:30 NOTICE: googledrive: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/08/02 06:28:34 NOTICE: Google drive root 'market-data-backup/current/static-archives': 0 differences found
+2026/08/02 06:28:34 NOTICE: Google drive root 'market-data-backup/current/static-archives': 8 matching files
+OK   static-archives -> googledrive:market-data-backup
+OK   history -> gdrive (server-side relay)
+done 06:28
+post-upload free: 36 GB
+done 06:28 — free: 36 GB
+===== disk_guard 2026-08-02 20:30 — free: 28 GB =====
+2026/08/03 05:09:03 NOTICE: googledrive: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/08/03 05:09:40 NOTICE: Google drive root 'market-data-backup/current/mempalace': 0 differences found
+2026/08/03 05:09:40 NOTICE: Google drive root 'market-data-backup/current/mempalace': 28 matching files
+OK   mempalace -> googledrive:market-data-backup
+2026/08/03 05:10:57 NOTICE: googledrive: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/08/03 05:11:01 NOTICE: Google drive root 'market-data-backup/current/static-archives': 0 differences found
+2026/08/03 05:11:01 NOTICE: Google drive root 'market-data-backup/current/static-archives': 8 matching files
+OK   static-archives -> googledrive:market-data-backup
+2026/08/03 05:11:42 NOTICE: googledrive: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/08/03 05:11:45 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 0 differences found
+2026/08/03 05:11:45 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 2 matching files
+OK   twin-state-registers -> googledrive:market-data-backup
+OK   history -> gdrive (server-side relay)
+done 05:11
+post-upload free: 27 GB
+done 05:11 — free: 27 GB
+===== disk_guard 2026-08-03 20:30 — free: 12 GB =====
+2026/08/03 20:56:54 NOTICE: googledrive: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/08/03 20:56:58 NOTICE: Google drive root 'market-data-backup/current/mempalace': 0 differences found
+2026/08/03 20:56:58 NOTICE: Google drive root 'market-data-backup/current/mempalace': 28 matching files
+OK   mempalace -> googledrive:market-data-backup
+2026/08/03 20:57:48 NOTICE: googledrive: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/08/03 20:57:52 NOTICE: Google drive root 'market-data-backup/current/static-archives': 0 differences found
+2026/08/03 20:57:52 NOTICE: Google drive root 'market-data-backup/current/static-archives': 8 matching files
+OK   static-archives -> googledrive:market-data-backup
+2026/08/03 20:58:42 NOTICE: googledrive: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/08/03 20:58:45 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 0 differences found
+2026/08/03 20:58:45 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 2 matching files
+OK   twin-state-registers -> googledrive:market-data-backup
+OK   history -> gdrive (server-side relay)
+done 20:58
+post-upload free: 41 GB
+done 20:58 — free: 41 GB
+===== disk_guard 2026-08-04 20:30 — free: 44 GB =====
+2026/08/04 21:32:01 NOTICE: googledrive: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/08/04 21:47:36 NOTICE: Google drive root 'market-data-backup/current/mempalace': 0 differences found
+2026/08/04 21:47:36 NOTICE: Google drive root 'market-data-backup/current/mempalace': 28 matching files
+OK   mempalace -> googledrive:market-data-backup
+2026/08/04 22:18:51 NOTICE: googledrive: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/08/04 22:18:55 NOTICE: Google drive root 'market-data-backup/current/static-archives': 0 differences found
+2026/08/04 22:18:55 NOTICE: Google drive root 'market-data-backup/current/static-archives': 8 matching files
+OK   static-archives -> googledrive:market-data-backup
+2026/08/05 01:30:00 NOTICE: googledrive: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/08/05 01:45:39 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 0 differences found
+2026/08/05 01:45:39 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 6 matching files
+OK   twin-state-registers -> googledrive:market-data-backup
+OK   history -> gdrive (server-side relay)
+done 01:45
+post-upload free: 44 GB
+done 01:45 — free: 44 GB
+===== disk_guard 2026-08-05 20:30 — free: 45 GB =====
+2026/08/05 21:24:59 NOTICE: Google drive root 'market-data-backup/current/iudx-flood-collector': 0 differences found
+2026/08/05 21:24:59 NOTICE: Google drive root 'market-data-backup/current/iudx-flood-collector': 349 matching files
+OK   iudx-flood-collector -> googledrive:market-data-backup
+SKIP missing /Users/umashankar/.mempalace
+2026/08/05 21:26:43 NOTICE: googledrive: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/08/05 21:26:46 NOTICE: Google drive root 'market-data-backup/current/static-archives': 0 differences found
+2026/08/05 21:26:46 NOTICE: Google drive root 'market-data-backup/current/static-archives': 8 matching files
+OK   static-archives -> googledrive:market-data-backup
+2026/08/05 21:32:57 NOTICE: googledrive: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/08/05 21:33:35 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 0 differences found
+2026/08/05 21:33:35 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 6 matching files
+OK   twin-state-registers -> googledrive:market-data-backup
+OK   history -> gdrive (server-side relay)
+done 21:33
+post-upload free: 45 GB
+done 21:33 — free: 45 GB
+===== disk_guard 2026-08-08 20:30 — free: 41 GB =====
+2026/08/08 22:44:59 NOTICE: Google drive root 'market-data-backup/current/iudx-flood-collector': 0 differences found
+2026/08/08 22:44:59 NOTICE: Google drive root 'market-data-backup/current/iudx-flood-collector': 349 matching files
+OK   iudx-flood-collector -> googledrive:market-data-backup
+SKIP missing /Users/umashankar/.mempalace
+2026/08/08 22:47:30 NOTICE: googledrive: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/08/08 22:47:33 NOTICE: Google drive root 'market-data-backup/current/static-archives': 0 differences found
+2026/08/08 22:47:33 NOTICE: Google drive root 'market-data-backup/current/static-archives': 8 matching files
+OK   static-archives -> googledrive:market-data-backup
+2026/08/08 22:53:35 NOTICE: googledrive: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/08/08 22:53:38 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 0 differences found
+2026/08/08 22:53:38 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 6 matching files
+OK   twin-state-registers -> googledrive:market-data-backup
+OK   history -> gdrive (server-side relay)
+done 22:53
+post-upload free: 38 GB
+done 22:53 — free: 38 GB
+===== disk_guard 2026-08-09 20:30 — free: 55 GB =====
+2026/08/09 21:10:37 NOTICE: Google drive root 'market-data-backup/current/iudx-flood-collector': 349 matching files
+OK   iudx-flood-collector -> googledrive:market-data-backup
+SKIP missing /Users/umashankar/.mempalace
+2026/08/10 02:45:41 ERROR : nse_xbrl-xml.tar.zst: Failed to copy: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Csha1Checksum%2Csha256Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&supportsAllDrives=true&uploadType=resumable&upload_id=AKhXX7KjwHFyg3X92hnjAbyWpWqmlT74QON6DpLYFOTZ1som75mfVmSluSPTJpaQdDn2XVpgTEwwtNjeR18EWfis1J3IRLi_IkGG2hgExuhzlw&session_crd=AHSoBRWQK2uZ4UI98Jm1mFV0HG78aFcXWyl-n3MM41pkxXunh9N0BBDBQuo1yASwK5Aw-U-qdOALSLWFzy0": dial tcp: lookup www.googleapis.com: no such host
+2026/08/10 02:45:41 ERROR : Google drive root 'market-data-backup/current/static-archives': not deleting files as there were IO errors
+2026/08/10 02:45:41 ERROR : Google drive root 'market-data-backup/current/static-archives': not deleting directories as there were IO errors
+2026/08/10 02:45:41 ERROR : Attempt 1/3 failed with 1 errors and: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Csha1Checksum%2Csha256Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&supportsAllDrives=true&uploadType=resumable&upload_id=AKhXX7KjwHFyg3X92hnjAbyWpWqmlT74QON6DpLYFOTZ1som75mfVmSluSPTJpaQdDn2XVpgTEwwtNjeR18EWfis1J3IRLi_IkGG2hgExuhzlw&session_crd=AHSoBRWQK2uZ4UI98Jm1mFV0HG78aFcXWyl-n3MM41pkxXunh9N0BBDBQuo1yASwK5Aw-U-qdOALSLWFzy0": dial tcp: lookup www.googleapis.com: no such host
+2026/08/10 02:45:41 ERROR : Fatal error received - not attempting retries
+FAIL static-archives -> googledrive:market-data-backup
+2026/08/10 02:45:41 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/twin-state-registers": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": dial tcp: lookup www.googleapis.com: no such host
+FAIL twin-state-registers -> googledrive:market-data-backup
+2026/08/10 02:45:42 CRITICAL: Failed to create file system for "googledrive:market-data-backup/history": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": dial tcp: lookup www.googleapis.com: no such host
+FAIL history -> gdrive
+done 02:45
+post-upload free: 54 GB
+done 02:45 — free: 54 GB
+===== disk_guard 2026-08-12 20:30 — free: 41 GB =====
+2026/08/12 20:47:40 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/tracker-trade-data": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: unauthorized_client: if you're using your own client id/secret, make sure they're properly set up following the docs
+FAIL tracker-trade-data -> googledrive:market-data-backup
+2026/08/12 20:47:41 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/tracker-agri-data": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: unauthorized_client: if you're using your own client id/secret, make sure they're properly set up following the docs
+FAIL tracker-agri-data -> googledrive:market-data-backup
+2026/08/12 20:47:41 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/iudx-flood-collector": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: unauthorized_client: if you're using your own client id/secret, make sure they're properly set up following the docs
+FAIL iudx-flood-collector -> googledrive:market-data-backup
+SKIP missing /Users/umashankar/.mempalace
+2026/08/12 20:47:41 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/static-archives": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: unauthorized_client: if you're using your own client id/secret, make sure they're properly set up following the docs
+FAIL static-archives -> googledrive:market-data-backup
+2026/08/12 20:47:42 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/twin-state-registers": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: unauthorized_client: if you're using your own client id/secret, make sure they're properly set up following the docs
+FAIL twin-state-registers -> googledrive:market-data-backup
+2026/08/12 20:47:43 CRITICAL: Failed to create file system for "googledrive:market-data-backup/history": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: unauthorized_client: if you're using your own client id/secret, make sure they're properly set up following the docs
+FAIL history -> gdrive
+done 20:47
+post-upload free: 41 GB
+done 20:47 — free: 41 GB
+===== disk_guard 2026-08-13 20:30 — free: 32 GB =====
+2026/08/13 22:28:27 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/tracker-trade-data": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: unauthorized_client: if you're using your own client id/secret, make sure they're properly set up following the docs
+FAIL tracker-trade-data -> googledrive:market-data-backup
+2026/08/13 22:28:28 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/tracker-agri-data": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: unauthorized_client: if you're using your own client id/secret, make sure they're properly set up following the docs
+FAIL tracker-agri-data -> googledrive:market-data-backup
+2026/08/13 22:28:28 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/iudx-flood-collector": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: unauthorized_client: if you're using your own client id/secret, make sure they're properly set up following the docs
+FAIL iudx-flood-collector -> googledrive:market-data-backup
+SKIP missing /Users/umashankar/.mempalace
+2026/08/13 22:28:28 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/static-archives": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: unauthorized_client: if you're using your own client id/secret, make sure they're properly set up following the docs
+FAIL static-archives -> googledrive:market-data-backup
+2026/08/13 22:28:29 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/twin-state-registers": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: unauthorized_client: if you're using your own client id/secret, make sure they're properly set up following the docs
+FAIL twin-state-registers -> googledrive:market-data-backup
+2026/08/13 22:28:30 CRITICAL: Failed to create file system for "googledrive:market-data-backup/history": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: unauthorized_client: if you're using your own client id/secret, make sure they're properly set up following the docs
+FAIL history -> gdrive
+done 22:28
+post-upload free: 33 GB
+done 22:28 — free: 33 GB
+===== disk_guard 2026-08-14 20:30 — free: 70 GB =====
+post-upload free: 80 GB
+done 16:03 — free: 80 GB
+===== disk_guard 2026-08-16 20:30 — free: 70 GB =====
+2026/08/17 05:18:13 NOTICE: Google drive root 'market-data-backup/current/tracker-agri-data': 4 matching files
+OK   tracker-agri-data -> googledrive:market-data-backup
+2026/08/17 05:24:06 NOTICE: Google drive root 'market-data-backup/current/iudx-flood-collector': 0 differences found
+2026/08/17 05:24:06 NOTICE: Google drive root 'market-data-backup/current/iudx-flood-collector': 349 matching files
+OK   iudx-flood-collector -> googledrive:market-data-backup
+SKIP missing /Users/umashankar/.mempalace
+2026/08/17 05:25:10 NOTICE: Google drive root 'market-data-backup/current/static-archives': 0 differences found
+2026/08/17 05:25:10 NOTICE: Google drive root 'market-data-backup/current/static-archives': 8 matching files
+OK   static-archives -> googledrive:market-data-backup
+2026/08/17 05:25:58 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 0 differences found
+2026/08/17 05:25:58 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 6 matching files
+OK   twin-state-registers -> googledrive:market-data-backup
+OK   history -> gdrive (server-side relay)
+done 05:31
+post-upload free: 77 GB
+done 05:31 — free: 77 GB
+===== disk_guard 2026-08-17 20:30 — free: 71 GB =====
+2026/08/17 21:00:07 NOTICE: Google drive root 'market-data-backup/current/iudx-flood-collector': 349 matching files
+OK   iudx-flood-collector -> googledrive:market-data-backup
+SKIP missing /Users/umashankar/.mempalace
+2026/08/17 21:01:08 NOTICE: Google drive root 'market-data-backup/current/static-archives': 0 differences found
+2026/08/17 21:01:08 NOTICE: Google drive root 'market-data-backup/current/static-archives': 8 matching files
+OK   static-archives -> googledrive:market-data-backup
+2026/08/17 21:01:28 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 0 differences found
+2026/08/17 21:01:28 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 3 matching files
+OK   market-data-config -> googledrive:market-data-backup
+2026/08/17 21:02:16 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 0 differences found
+2026/08/17 21:02:16 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 6 matching files
+OK   twin-state-registers -> googledrive:market-data-backup
+OK   history -> gdrive (server-side relay)
+done 21:02
+post-upload free: 70 GB
+done 21:02 — free: 70 GB
+===== disk_guard 2026-08-20 20:30 — free: 55 GB =====
+2026/08/20 20:54:37 NOTICE: Google drive root 'market-data-backup/current/iudx-flood-collector': 349 matching files
+OK   iudx-flood-collector -> googledrive:market-data-backup
+SKIP missing /Users/umashankar/.mempalace
+2026/08/20 20:55:39 NOTICE: Google drive root 'market-data-backup/current/static-archives': 0 differences found
+2026/08/20 20:55:39 NOTICE: Google drive root 'market-data-backup/current/static-archives': 8 matching files
+OK   static-archives -> googledrive:market-data-backup
+2026/08/20 20:55:50 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 0 differences found
+2026/08/20 20:55:50 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 3 matching files
+OK   market-data-config -> googledrive:market-data-backup
+2026/08/20 20:56:36 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 0 differences found
+2026/08/20 20:56:36 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 6 matching files
+OK   twin-state-registers -> googledrive:market-data-backup
+OK   history -> gdrive (server-side relay)
+done 20:56
+post-upload free: 58 GB
+done 20:56 — free: 58 GB
+===== disk_guard 2026-08-22 20:30 — free: 55 GB =====
+2026/08/22 20:41:50 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/tracker-agri-data": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL tracker-agri-data -> googledrive:market-data-backup
+2026/08/22 20:41:51 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/iudx-flood-collector": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL iudx-flood-collector -> googledrive:market-data-backup
+SKIP missing /Users/umashankar/.mempalace
+2026/08/22 20:41:51 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/static-archives": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL static-archives -> googledrive:market-data-backup
+2026/08/22 20:41:52 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/market-data-config": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL market-data-config -> googledrive:market-data-backup
+2026/08/22 20:41:52 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/twin-state-registers": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL twin-state-registers -> googledrive:market-data-backup
+2026/08/22 20:41:53 CRITICAL: Failed to create file system for "googledrive:market-data-backup/history": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL history -> gdrive
+done 20:41
+post-upload free: 55 GB
+done 20:41 — free: 55 GB
+===== disk_guard 2026-08-23 20:30 — free: 37 GB =====
+2026/08/23 20:35:52 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/tracker-agri-data": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL tracker-agri-data -> googledrive:market-data-backup
+2026/08/23 20:35:53 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/iudx-flood-collector": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL iudx-flood-collector -> googledrive:market-data-backup
+SKIP missing /Users/umashankar/.mempalace
+2026/08/23 20:35:53 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/static-archives": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL static-archives -> googledrive:market-data-backup
+2026/08/23 20:35:54 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/market-data-config": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL market-data-config -> googledrive:market-data-backup
+2026/08/23 20:35:54 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/twin-state-registers": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL twin-state-registers -> googledrive:market-data-backup
+2026/08/23 20:35:55 CRITICAL: Failed to create file system for "googledrive:market-data-backup/history": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL history -> gdrive
+done 20:35
+post-upload free: 37 GB
+done 20:35 — free: 37 GB
+===== disk_guard 2026-08-24 20:30 — free: 21 GB =====
+2026/08/24 20:44:31 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/tracker-agri-data": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL tracker-agri-data -> googledrive:market-data-backup
+2026/08/24 20:44:31 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/iudx-flood-collector": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL iudx-flood-collector -> googledrive:market-data-backup
+SKIP missing /Users/umashankar/.mempalace
+2026/08/24 20:44:32 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/static-archives": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL static-archives -> googledrive:market-data-backup
+2026/08/24 20:44:32 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/market-data-config": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL market-data-config -> googledrive:market-data-backup
+2026/08/24 20:44:33 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/twin-state-registers": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL twin-state-registers -> googledrive:market-data-backup
+2026/08/24 20:44:34 CRITICAL: Failed to create file system for "googledrive:market-data-backup/history": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL history -> gdrive
+done 20:44
+post-upload free: 21 GB
+WARN tier: clearing caches
+Warning: Skipping aws-c-auth: most recent version 0.10.5 not installed
+Warning: Skipping aws-c-cal: most recent version 0.9.15_1 not installed
+Warning: Skipping aws-c-compression: most recent version 0.3.3 not installed
+Warning: Skipping aws-c-event-stream: most recent version 0.7.2 not installed
+Warning: Skipping aws-c-http: most recent version 0.11.1 not installed
+Warning: Skipping aws-c-io: most recent version 0.27.7 not installed
+Warning: Skipping aws-c-mqtt: most recent version 0.16.2 not installed
+Warning: Skipping aws-c-s3: most recent version 0.13.7 not installed
+Warning: Skipping aws-c-sdkutils: most recent version 0.2.10 not installed
+Warning: Skipping aws-checksums: most recent version 0.2.11 not installed
+Warning: Skipping awscli: most recent version 2.36.29 not installed
+Warning: Skipping cloudflared: most recent version 2026.8.2 not installed
+Warning: Skipping fail2ban: most recent version 1.1.1 not installed
+Warning: Skipping go: most recent version 1.27.0 not installed
+Warning: Skipping libpsl: most recent version 0.23.3 not installed
+Warning: Skipping merve: most recent version 1.2.2_2 not installed
+Warning: Skipping nss: most recent version 3.127 not installed
+Warning: Skipping openjdk@17: most recent version 17.0.20.1 not installed
+Warning: Skipping ruby: most recent version 4.0.6_1 not installed
+Warning: Skipping s2n: most recent version 1.7.8 not installed
+Warning: Skipping simdjson: most recent version 4.6.7 not installed
+Warning: Skipping simdutf: most recent version 9.1.0 not installed
+Warning: Skipping tailscale: most recent version 1.102.3 not installed
+Warning: Skipping uv: most recent version 0.12.5 not installed
+Removing: /Users/umashankar/Library/Caches/Homebrew/libevent--2.1.13... (723.6KB)
+Removing: /Users/umashankar/Library/Caches/Homebrew/libevent_bottle_manifest--2.1.13... (10.7KB)
+Removing: /Users/umashankar/Library/Caches/Homebrew/libpsl--0.23.2... (139.3KB)
+Removing: /Users/umashankar/Library/Caches/Homebrew/libpsl_bottle_manifest--0.23.2... (19.4KB)
+Removing: /Users/umashankar/Library/Caches/Homebrew/miniupnpc--2.3.3... (84KB)
+Removing: /Users/umashankar/Library/Caches/Homebrew/miniupnpc_bottle_manifest--2.3.3... (10.1KB)
+Removing: /Users/umashankar/Library/Caches/Homebrew/transmission-cli--4.1.3... (5.5MB)
+Removing: /Users/umashankar/Library/Caches/Homebrew/transmission-cli_bottle_manifest--4.1.3... (20.9KB)
+Removing: /Users/umashankar/Library/Caches/Homebrew/bootsnap/4800eade15bb7c140ff5411ba7207574b18c7c41134639549701bf15e485e1ff... (1,064 files, 9.7MB)
+Removing: /Users/umashankar/Library/Caches/Homebrew/bootsnap/8d78006a3755c8c555a1ff4b19491c91150f5638350af98f9a4241465a07c266... (1,060 files, 9.7MB)
+Removing: /Users/umashankar/Library/Caches/Homebrew/bootsnap/34de6cb0fb04e1502e337b70e77119dd5ca691bf4ebe0c8a8a0aecd4430c66e7... (1,062 files, 9.7MB)
+Removing: /Users/umashankar/Library/Logs/Homebrew/python@3.14... (64B)
+Removing: /Users/umashankar/Library/Logs/Homebrew/fontconfig... (64B)
+Removing: /Users/umashankar/Library/Logs/Homebrew/ca-certificates... (64B)
+Removing: /Users/umashankar/Library/Logs/Homebrew/postgresql@16... (64B)
+Removing: /Users/umashankar/Library/Logs/Homebrew/node... (64B)
+Removing: /Users/umashankar/Library/Logs/Homebrew/python@3.11... (64B)
+Removing: /opt/homebrew/lib/python3.14/site-packages/__pycache__/brotli.cpython-314.pyc... (1.9KB)
+Removing: /opt/homebrew/lib/python3.14/site-packages/__pycache__/six.cpython-314.pyc... (42.9KB)
+Removing: /opt/homebrew/lib/python3.14/site-packages/__pycache__/typing_extensions.cpython-314.pyc... (179.4KB)
+Pruned 9 symbolic links and 5 directories from /opt/homebrew
+==> This operation has freed approximately 35.8MB of disk space.
+after cache clear: 22 GB
+done 20:45 — free: 22 GB
+===== disk_guard 2026-08-25 20:30 — free: 42 GB =====
+2026/08/25 21:09:04 NOTICE: Google drive root 'market-data-backup/current/iudx-flood-collector': 349 matching files
+OK   iudx-flood-collector -> googledrive:market-data-backup
+SKIP missing /Users/umashankar/.mempalace
+2026/08/25 21:10:12 NOTICE: Google drive root 'market-data-backup/current/static-archives': 0 differences found
+2026/08/25 21:10:12 NOTICE: Google drive root 'market-data-backup/current/static-archives': 8 matching files
+OK   static-archives -> googledrive:market-data-backup
+2026/08/25 21:10:23 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 0 differences found
+2026/08/25 21:10:23 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 3 matching files
+OK   market-data-config -> googledrive:market-data-backup
+2026/08/25 21:11:08 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 0 differences found
+2026/08/25 21:11:08 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 8 matching files
+OK   twin-state-registers -> googledrive:market-data-backup
+OK   history -> gdrive (server-side relay)
+done 21:11
+post-upload free: 43 GB
+done 21:11 — free: 43 GB
+===== disk_guard 2026-08-26 20:30 — free: 22 GB =====
+2026/08/26 20:54:25 NOTICE: Google drive root 'market-data-backup/current/iudx-flood-collector': 349 matching files
+OK   iudx-flood-collector -> googledrive:market-data-backup
+SKIP missing /Users/umashankar/.mempalace
+2026/08/26 20:55:35 NOTICE: Google drive root 'market-data-backup/current/static-archives': 0 differences found
+2026/08/26 20:55:35 NOTICE: Google drive root 'market-data-backup/current/static-archives': 8 matching files
+OK   static-archives -> googledrive:market-data-backup
+2026/08/26 20:55:47 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 0 differences found
+2026/08/26 20:55:47 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 3 matching files
+OK   market-data-config -> googledrive:market-data-backup
+2026/08/26 20:56:30 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 0 differences found
+2026/08/26 20:56:30 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 8 matching files
+OK   twin-state-registers -> googledrive:market-data-backup
+OK   history -> gdrive (server-side relay)
+done 20:56
+post-upload free: 22 GB
+WARN tier: clearing caches
+Warning: Skipping aws-c-auth: most recent version 0.10.5 not installed
+Warning: Skipping aws-c-cal: most recent version 0.9.15_1 not installed
+Warning: Skipping aws-c-compression: most recent version 0.3.3 not installed
+Warning: Skipping aws-c-event-stream: most recent version 0.7.2 not installed
+Warning: Skipping aws-c-http: most recent version 0.11.1 not installed
+Warning: Skipping aws-c-io: most recent version 0.27.7 not installed
+Warning: Skipping aws-c-mqtt: most recent version 0.16.2 not installed
+Warning: Skipping aws-c-s3: most recent version 0.13.7 not installed
+Warning: Skipping aws-c-sdkutils: most recent version 0.2.10 not installed
+Warning: Skipping aws-checksums: most recent version 0.2.11 not installed
+Warning: Skipping awscli: most recent version 2.36.31 not installed
+Warning: Skipping cloudflared: most recent version 2026.8.2 not installed
+Warning: Skipping fail2ban: most recent version 1.1.1 not installed
+Warning: Skipping ffmpeg: most recent version 9.0.1_1 not installed
+Warning: Skipping go: most recent version 1.27.0 not installed
+Warning: Skipping libksba: most recent version 1.8.1 not installed
+Warning: Skipping libpsl: most recent version 0.23.3 not installed
+Warning: Skipping libvpx: most recent version 1.17.0 not installed
+Warning: Skipping little-cms2: most recent version 2.19.1 not installed
+Warning: Skipping merve: most recent version 1.2.2_2 not installed
+Warning: Skipping nss: most recent version 3.127 not installed
+Warning: Skipping ollama: most recent version 0.33.0 not installed
+Warning: Skipping openjdk@17: most recent version 17.0.20.1 not installed
+Warning: Skipping pkgconf: most recent version 3.0.6 not installed
+Warning: Skipping ruby: most recent version 4.0.6_1 not installed
+Warning: Skipping s2n: most recent version 1.7.8 not installed
+Warning: Skipping simdjson: most recent version 4.6.8 not installed
+Warning: Skipping simdutf: most recent version 9.1.0 not installed
+Warning: Skipping tailscale: most recent version 1.102.3 not installed
+Warning: Skipping uv: most recent version 0.12.6 not installed
+Warning: Skipping x265: most recent version 4.3 not installed
+Removing: /Users/umashankar/Library/Caches/Homebrew/pipx--1.16.7... (500.8KB)
+Removing: /Users/umashankar/Library/Caches/Homebrew/pipx_bottle_manifest--1.16.7... (69.9KB)
+==> This operation has freed approximately 570.6KB of disk space.
+after cache clear: 23 GB
+done 20:57 — free: 23 GB
+===== disk_guard 2026-08-27 20:30 — free: 12 GB =====
+2026/08/27 21:01:13 NOTICE: Google drive root 'market-data-backup/current/iudx-flood-collector': 349 matching files
+OK   iudx-flood-collector -> googledrive:market-data-backup
+SKIP missing /Users/umashankar/.mempalace
+2026/08/27 21:02:22 NOTICE: Google drive root 'market-data-backup/current/static-archives': 0 differences found
+2026/08/27 21:02:22 NOTICE: Google drive root 'market-data-backup/current/static-archives': 8 matching files
+OK   static-archives -> googledrive:market-data-backup
+2026/08/27 21:02:39 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 0 differences found
+2026/08/27 21:02:39 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 3 matching files
+OK   market-data-config -> googledrive:market-data-backup
+2026/08/27 21:03:24 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 0 differences found
+2026/08/27 21:03:24 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 8 matching files
+OK   twin-state-registers -> googledrive:market-data-backup
+OK   history -> gdrive (server-side relay)
+done 21:03
+post-upload free: 15 GB
+WARN tier: clearing caches
+Warning: Skipping aws-c-auth: most recent version 0.10.5 not installed
+Warning: Skipping aws-c-cal: most recent version 0.9.15_1 not installed
+Warning: Skipping aws-c-compression: most recent version 0.3.3 not installed
+Warning: Skipping aws-c-event-stream: most recent version 0.7.2 not installed
+Warning: Skipping aws-c-http: most recent version 0.11.1 not installed
+Warning: Skipping aws-c-io: most recent version 0.27.7 not installed
+Warning: Skipping aws-c-mqtt: most recent version 0.16.2 not installed
+Warning: Skipping aws-c-s3: most recent version 0.13.7 not installed
+Warning: Skipping aws-c-sdkutils: most recent version 0.2.10 not installed
+Warning: Skipping aws-checksums: most recent version 0.2.11 not installed
+Warning: Skipping awscli: most recent version 2.36.31 not installed
+Warning: Skipping cloudflared: most recent version 2026.8.2 not installed
+Warning: Skipping fail2ban: most recent version 1.1.1 not installed
+Warning: Skipping ffmpeg: most recent version 9.0.1_1 not installed
+Warning: Skipping go: most recent version 1.27.0 not installed
+Warning: Skipping libksba: most recent version 1.8.1 not installed
+Warning: Skipping libpsl: most recent version 0.23.3 not installed
+Warning: Skipping libvpx: most recent version 1.17.0 not installed
+Warning: Skipping little-cms2: most recent version 2.19.1 not installed
+Warning: Skipping merve: most recent version 1.2.2_2 not installed
+Warning: Skipping nss: most recent version 3.127 not installed
+Warning: Skipping ollama: most recent version 0.33.0 not installed
+Warning: Skipping openjdk@17: most recent version 17.0.20.1 not installed
+Warning: Skipping pkgconf: most recent version 3.0.6 not installed
+Warning: Skipping ruby: most recent version 4.0.6_1 not installed
+Warning: Skipping s2n: most recent version 1.7.8 not installed
+Warning: Skipping simdjson: most recent version 4.6.8 not installed
+Warning: Skipping simdutf: most recent version 9.1.0 not installed
+Warning: Skipping tailscale: most recent version 1.102.3 not installed
+Warning: Skipping uv: most recent version 0.12.6 not installed
+Warning: Skipping x265: most recent version 4.3 not installed
+Removing: /Users/umashankar/Library/Caches/Homebrew/libscrypt--1.22... (23.3KB)
+Removing: /Users/umashankar/Library/Caches/Homebrew/libscrypt_bottle_manifest--1.22... (12.9KB)
+Removing: /Users/umashankar/Library/Caches/Homebrew/openjdk--26.0.2.1... (223.3MB)
+Removing: /Users/umashankar/Library/Caches/Homebrew/openjdk_bottle_manifest--26.0.2.1... (232.2KB)
+Removing: /Users/umashankar/Library/Caches/Homebrew/tor--0.4.9.11... (6.7MB)
+Removing: /Users/umashankar/Library/Caches/Homebrew/tor_bottle_manifest--0.4.9.11-1... (43.2KB)
+Removing: /Users/umashankar/Library/Caches/Homebrew/Cask/zotero--10.0.dmg... (192.2MB)
+==> This operation has freed approximately 422.5MB of disk space.
+after cache clear: 16 GB
+done 21:04 — free: 16 GB
+===== disk_guard 2026-08-29 20:30 — free: 26 GB =====
+2026/08/29 20:59:12 NOTICE: Google drive root 'market-data-backup/current/iudx-flood-collector': 349 matching files
+OK   iudx-flood-collector -> googledrive:market-data-backup
+SKIP missing /Users/umashankar/.mempalace
+2026/08/29 21:00:15 NOTICE: Google drive root 'market-data-backup/current/static-archives': 0 differences found
+2026/08/29 21:00:15 NOTICE: Google drive root 'market-data-backup/current/static-archives': 8 matching files
+OK   static-archives -> googledrive:market-data-backup
+2026/08/29 21:00:26 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 0 differences found
+2026/08/29 21:00:26 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 3 matching files
+OK   market-data-config -> googledrive:market-data-backup
+2026/08/29 21:01:15 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 0 differences found
+2026/08/29 21:01:15 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 8 matching files
+OK   twin-state-registers -> googledrive:market-data-backup
+OK   history -> gdrive (server-side relay)
+done 21:01
+post-upload free: 23 GB
+WARN tier: clearing caches
+Warning: Skipping aws-c-auth: most recent version 0.10.5 not installed
+Warning: Skipping aws-c-cal: most recent version 0.9.15_1 not installed
+Warning: Skipping aws-c-compression: most recent version 0.3.3 not installed
+Warning: Skipping aws-c-event-stream: most recent version 0.7.2 not installed
+Warning: Skipping aws-c-http: most recent version 0.11.1 not installed
+Warning: Skipping aws-c-io: most recent version 0.27.7 not installed
+Warning: Skipping aws-c-mqtt: most recent version 0.16.2 not installed
+Warning: Skipping aws-c-s3: most recent version 0.13.7 not installed
+Warning: Skipping aws-c-sdkutils: most recent version 0.2.10 not installed
+Warning: Skipping aws-checksums: most recent version 0.2.11 not installed
+Warning: Skipping awscli: most recent version 2.36.33 not installed
+Warning: Skipping clang-format: most recent version 23.1.0 not installed
+Warning: Skipping cloudflared: most recent version 2026.8.2 not installed
+Warning: Skipping cmake: most recent version 4.4.3 not installed
+Warning: Skipping fail2ban: most recent version 1.1.1 not installed
+Warning: Skipping ffmpeg: most recent version 9.0.1_1 not installed
+Warning: Skipping flyctl: most recent version 0.4.95 not installed
+Warning: Skipping go: most recent version 1.27.0 not installed
+Warning: Skipping harfbuzz: most recent version 14.4.0 not installed
+Warning: Skipping libgcrypt: most recent version 1.12.3 not installed
+Warning: Skipping libksba: most recent version 1.8.1 not installed
+Warning: Skipping libpsl: most recent version 0.23.3 not installed
+Warning: Skipping libvpx: most recent version 1.17.0 not installed
+Warning: Skipping little-cms2: most recent version 2.19.1 not installed
+Warning: Skipping merve: most recent version 1.2.2_2 not installed
+Warning: Skipping nss: most recent version 3.127 not installed
+Warning: Skipping ollama: most recent version 0.33.0 not installed
+Warning: Skipping openjdk@17: most recent version 17.0.20.1 not installed
+Warning: Skipping pkgconf: most recent version 3.0.6 not installed
+Warning: Skipping ruby: most recent version 4.0.6_1 not installed
+Warning: Skipping s2n: most recent version 1.7.8 not installed
+Warning: Skipping simdjson: most recent version 4.6.8 not installed
+Warning: Skipping simdutf: most recent version 9.1.0 not installed
+Warning: Skipping tailscale: most recent version 1.102.3 not installed
+Warning: Skipping uv: most recent version 0.12.7 not installed
+Warning: Skipping x265: most recent version 4.3 not installed
+after cache clear: 25 GB
+done 21:02 — free: 25 GB
+===== disk_guard 2026-08-30 20:30 — free: 21 GB =====
+2026/08/30 21:00:47 NOTICE: Google drive root 'market-data-backup/current/mempalace': 0 differences found
+2026/08/30 21:00:47 NOTICE: Google drive root 'market-data-backup/current/mempalace': 3 matching files
+OK   mempalace -> googledrive:market-data-backup
+2026/08/30 21:01:47 NOTICE: Google drive root 'market-data-backup/current/static-archives': 0 differences found
+2026/08/30 21:01:47 NOTICE: Google drive root 'market-data-backup/current/static-archives': 8 matching files
+OK   static-archives -> googledrive:market-data-backup
+2026/08/30 21:01:58 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 0 differences found
+2026/08/30 21:01:58 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 3 matching files
+OK   market-data-config -> googledrive:market-data-backup
+2026/08/30 21:02:40 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 0 differences found
+2026/08/30 21:02:40 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 8 matching files
+OK   twin-state-registers -> googledrive:market-data-backup
+OK   history -> gdrive (server-side relay)
+done 21:02
+post-upload free: 22 GB
+WARN tier: clearing caches
+Removing: /Users/umashankar/Library/Caches/Homebrew/bootsnap/cbcc7a28608961f53179008c4df6fbdd0012109a271c795809dd4641a0f4d195... (717 files, 6.2MB)
+Pruned 0 symbolic links and 1 directories from /opt/homebrew
+==> This operation has freed approximately 6.2MB of disk space.
+after cache clear: 22 GB
+done 21:04 — free: 22 GB
+===== disk_guard 2026-09-01 20:30 — free: 25 GB =====
+FAIL tracker-agri-data -> googledrive:market-data-backup
+2026/09/01 20:51:11 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/iudx-flood-collector": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL iudx-flood-collector -> googledrive:market-data-backup
+2026/09/01 20:51:12 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/mempalace": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL mempalace -> googledrive:market-data-backup
+2026/09/01 20:51:13 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/static-archives": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL static-archives -> googledrive:market-data-backup
+2026/09/01 20:51:14 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/market-data-config": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL market-data-config -> googledrive:market-data-backup
+2026/09/01 20:51:15 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/twin-state-registers": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL twin-state-registers -> googledrive:market-data-backup
+2026/09/01 20:51:16 CRITICAL: Failed to create file system for "googledrive:market-data-backup/history": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL history -> gdrive
+done 20:51
+post-upload free: 25 GB
+done 20:51 — free: 25 GB
+===== disk_guard 2026-09-05 20:30 — free: 24 GB =====
+2026/09/05 20:58:21 NOTICE: Google drive root 'market-data-backup/current/mempalace': 0 differences found
+2026/09/05 20:58:21 NOTICE: Google drive root 'market-data-backup/current/mempalace': 3 matching files
+OK   mempalace -> googledrive:market-data-backup
+2026/09/05 20:59:35 NOTICE: Google drive root 'market-data-backup/current/static-archives': 0 differences found
+2026/09/05 20:59:35 NOTICE: Google drive root 'market-data-backup/current/static-archives': 8 matching files
+OK   static-archives -> googledrive:market-data-backup
+2026/09/05 20:59:45 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 0 differences found
+2026/09/05 20:59:45 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 3 matching files
+OK   market-data-config -> googledrive:market-data-backup
+2026/09/05 21:00:29 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 0 differences found
+2026/09/05 21:00:29 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 8 matching files
+OK   twin-state-registers -> googledrive:market-data-backup
+OK   history -> gdrive (server-side relay)
+done 21:00
+post-upload free: 23 GB
+WARN tier: clearing caches
+Warning: Skipping awscli: most recent version 2.36.36 not installed
+Warning: Skipping cloudflared: most recent version 2026.8.3 not installed
+Warning: Skipping dbxcli: most recent version 3.7.3 not installed
+Warning: Skipping gpgme: most recent version 2.2.0 not installed
+Warning: Skipping openssl@3: most recent version 3.6.4 not installed
+Warning: Skipping pcre2: most recent version 10.48 not installed
+Warning: Skipping pipx: most recent version 1.17.1 not installed
+Warning: Skipping uv: most recent version 0.12.8 not installed
+Removing: /Users/umashankar/Library/Logs/Homebrew/postgresql@17... (64B)
+Removing: /opt/homebrew/lib/python3.14/site-packages/__pycache__/brotli.cpython-314.pyc... (1.9KB)
+Removing: /opt/homebrew/lib/python3.14/site-packages/__pycache__/six.cpython-314.pyc... (42.9KB)
+Removing: /opt/homebrew/lib/python3.14/site-packages/__pycache__/typing_extensions.cpython-314.pyc... (179.4KB)
+Pruned 0 symbolic links and 1 directories from /opt/homebrew
+==> This operation has freed approximately 224.3KB of disk space.
+after cache clear: 22 GB
+done 21:01 — free: 22 GB
+===== disk_guard 2026-09-06 20:30 — free: 31 GB =====
+2026/09/06 20:41:46 NOTICE: Google drive root 'market-data-backup/current/mempalace': 0 differences found
+2026/09/06 20:41:46 NOTICE: Google drive root 'market-data-backup/current/mempalace': 3 matching files
+OK   mempalace -> googledrive:market-data-backup
+2026/09/06 20:42:02 NOTICE: Google drive root 'market-data-backup/current/static-archives': 0 differences found
+2026/09/06 20:42:02 NOTICE: Google drive root 'market-data-backup/current/static-archives': 8 matching files
+OK   static-archives -> googledrive:market-data-backup
+2026/09/06 20:42:12 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 0 differences found
+2026/09/06 20:42:12 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 3 matching files
+OK   market-data-config -> googledrive:market-data-backup
+2026/09/06 20:42:56 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 0 differences found
+2026/09/06 20:42:56 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 8 matching files
+OK   twin-state-registers -> googledrive:market-data-backup
+OK   history -> gdrive (server-side relay)
+done 20:43
+post-upload free: 32 GB
+done 20:43 — free: 32 GB
+===== disk_guard 2026-09-07 20:30 — free: 17 GB =====
+2026/09/07 20:56:39 NOTICE: Google drive root 'market-data-backup/current/mempalace': 0 differences found
+2026/09/07 20:56:39 NOTICE: Google drive root 'market-data-backup/current/mempalace': 3 matching files
+OK   mempalace -> googledrive:market-data-backup
+2026/09/07 20:57:34 NOTICE: Google drive root 'market-data-backup/current/static-archives': 0 differences found
+2026/09/07 20:57:34 NOTICE: Google drive root 'market-data-backup/current/static-archives': 8 matching files
+OK   static-archives -> googledrive:market-data-backup
+2026/09/07 20:57:44 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 0 differences found
+2026/09/07 20:57:44 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 3 matching files
+OK   market-data-config -> googledrive:market-data-backup
+2026/09/07 20:57:54 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 0 differences found
+2026/09/07 20:57:54 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 8 matching files
+OK   twin-state-registers -> googledrive:market-data-backup
+OK   history -> gdrive (server-side relay)
+done 20:57
+post-upload free: 18 GB
+WARN tier: clearing caches
+Warning: Skipping awscli: most recent version 2.36.40 not installed
+Warning: Skipping cloudflared: most recent version 2026.8.3 not installed
+Warning: Skipping dbxcli: most recent version 3.7.3 not installed
+Warning: Skipping flyctl: most recent version 0.4.99 not installed
+Warning: Skipping gh: most recent version 2.100.0 not installed
+Warning: Skipping gnupg: most recent version 2.5.22 not installed
+Warning: Skipping go: most recent version 1.27.1 not installed
+Warning: Skipping gpgme: most recent version 2.2.0 not installed
+Warning: Skipping gpgmepp: most recent version 2.2.0 not installed
+Warning: Skipping ollama: most recent version 0.33.3 not installed
+Warning: Skipping openssl@3: most recent version 3.6.4 not installed
+Warning: Skipping pcre2: most recent version 10.48 not installed
+Warning: Skipping pipx: most recent version 1.17.2 not installed
+Warning: Skipping pkgconf: most recent version 3.0.7 not installed
+Warning: Skipping podman: most recent version 6.1.1 not installed
+Warning: Skipping poppler: most recent version 26.09.0 not installed
+Warning: Skipping rclone: most recent version 1.75.1 not installed
+Warning: Skipping s2n: most recent version 1.7.9 not installed
+Warning: Skipping sdl2-compat: most recent version 2.32.72 not installed
+Warning: Skipping sdl3: most recent version 3.4.16 not installed
+Warning: Skipping simdjson: most recent version 4.6.11 not installed
+Warning: Skipping uv: most recent version 0.12.10 not installed
+Removing: /Users/umashankar/Library/Logs/Homebrew/node... (64B)
+Removing: /Users/umashankar/Library/Logs/Homebrew/ruby... (64B)
+==> This operation has freed approximately 128B of disk space.
+after cache clear: 18 GB
+done 20:58 — free: 18 GB
+===== disk_guard 2026-09-08 20:30 — free: 16 GB =====
+2026/09/08 20:54:03 NOTICE: Google drive root 'market-data-backup/current/mempalace': 0 differences found
+2026/09/08 20:54:03 NOTICE: Google drive root 'market-data-backup/current/mempalace': 3 matching files
+OK   mempalace -> googledrive:market-data-backup
+2026/09/08 20:55:09 NOTICE: Google drive root 'market-data-backup/current/static-archives': 0 differences found
+2026/09/08 20:55:09 NOTICE: Google drive root 'market-data-backup/current/static-archives': 8 matching files
+OK   static-archives -> googledrive:market-data-backup
+2026/09/08 20:55:21 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 0 differences found
+2026/09/08 20:55:21 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 3 matching files
+OK   market-data-config -> googledrive:market-data-backup
+2026/09/08 20:55:34 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 0 differences found
+2026/09/08 20:55:34 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 8 matching files
+OK   twin-state-registers -> googledrive:market-data-backup
+OK   history -> gdrive (server-side relay)
+done 20:55
+post-upload free: 17 GB
+WARN tier: clearing caches
+Warning: Skipping awscli: most recent version 2.36.40 not installed
+Warning: Skipping cloudflared: most recent version 2026.8.3 not installed
+Warning: Skipping dbxcli: most recent version 3.7.3 not installed
+Warning: Skipping flyctl: most recent version 0.4.99 not installed
+Warning: Skipping gh: most recent version 2.100.0 not installed
+Warning: Skipping gnupg: most recent version 2.5.22 not installed
+Warning: Skipping go: most recent version 1.27.1 not installed
+Warning: Skipping gpgme: most recent version 2.2.0 not installed
+Warning: Skipping gpgmepp: most recent version 2.2.0 not installed
+Warning: Skipping ollama: most recent version 0.33.3 not installed
+Warning: Skipping openssl@3: most recent version 3.6.4 not installed
+Warning: Skipping pcre2: most recent version 10.48 not installed
+Warning: Skipping pipx: most recent version 1.17.2 not installed
+Warning: Skipping pkgconf: most recent version 3.0.7 not installed
+Warning: Skipping podman: most recent version 6.1.1 not installed
+Warning: Skipping poppler: most recent version 26.09.0 not installed
+Warning: Skipping rclone: most recent version 1.75.1 not installed
+Warning: Skipping s2n: most recent version 1.7.9 not installed
+Warning: Skipping sdl2-compat: most recent version 2.32.72 not installed
+Warning: Skipping sdl3: most recent version 3.4.16 not installed
+Warning: Skipping simdjson: most recent version 4.6.11 not installed
+Warning: Skipping uv: most recent version 0.12.10 not installed
+after cache clear: 17 GB
+done 20:56 — free: 17 GB
+===== disk_guard 2026-09-10 20:30 — free: 27 GB =====
+2026/09/10 21:03:58 NOTICE: Google drive root 'market-data-backup/current/mempalace': 0 differences found
+2026/09/10 21:03:58 NOTICE: Google drive root 'market-data-backup/current/mempalace': 3 matching files
+OK   mempalace -> googledrive:market-data-backup
+2026/09/10 21:05:08 NOTICE: Google drive root 'market-data-backup/current/static-archives': 0 differences found
+2026/09/10 21:05:08 NOTICE: Google drive root 'market-data-backup/current/static-archives': 8 matching files
+OK   static-archives -> googledrive:market-data-backup
+2026/09/10 21:05:20 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 0 differences found
+2026/09/10 21:05:20 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 3 matching files
+OK   market-data-config -> googledrive:market-data-backup
+2026/09/10 21:06:04 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 0 differences found
+2026/09/10 21:06:04 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 8 matching files
+OK   twin-state-registers -> googledrive:market-data-backup
+OK   history -> gdrive (server-side relay)
+done 21:06
+post-upload free: 27 GB
+done 21:06 — free: 27 GB
+===== disk_guard 2026-09-11 20:30 — free: 12 GB =====
+2026/09/11 21:06:06 NOTICE: Google drive root 'market-data-backup/current/mempalace': 0 differences found
+2026/09/11 21:06:06 NOTICE: Google drive root 'market-data-backup/current/mempalace': 3 matching files
+OK   mempalace -> googledrive:market-data-backup
+2026/09/11 21:07:23 NOTICE: Google drive root 'market-data-backup/current/static-archives': 0 differences found
+2026/09/11 21:07:23 NOTICE: Google drive root 'market-data-backup/current/static-archives': 8 matching files
+OK   static-archives -> googledrive:market-data-backup
+2026/09/11 21:07:36 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 0 differences found
+2026/09/11 21:07:36 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 3 matching files
+OK   market-data-config -> googledrive:market-data-backup
+2026/09/11 21:08:22 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 0 differences found
+2026/09/11 21:08:22 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 8 matching files
+OK   twin-state-registers -> googledrive:market-data-backup
+OK   history -> gdrive (server-side relay)
+done 21:08
+post-upload free: 15 GB
+WARN tier: clearing caches
+Warning: Skipping awscli: most recent version 2.36.40 not installed
+Warning: Skipping cloudflared: most recent version 2026.8.3 not installed
+Warning: Skipping dbxcli: most recent version 3.7.3 not installed
+Warning: Skipping flyctl: most recent version 0.4.99 not installed
+Warning: Skipping gh: most recent version 2.100.0 not installed
+Warning: Skipping gnupg: most recent version 2.5.22 not installed
+Warning: Skipping go: most recent version 1.27.1 not installed
+Warning: Skipping gpgme: most recent version 2.2.0 not installed
+Warning: Skipping gpgmepp: most recent version 2.2.0 not installed
+Warning: Skipping ollama: most recent version 0.33.3 not installed
+Warning: Skipping openssl@3: most recent version 3.6.4 not installed
+Warning: Skipping pcre2: most recent version 10.48 not installed
+Warning: Skipping pipx: most recent version 1.17.2 not installed
+Warning: Skipping pkgconf: most recent version 3.0.7 not installed
+Warning: Skipping podman: most recent version 6.1.1 not installed
+Warning: Skipping poppler: most recent version 26.09.0 not installed
+Warning: Skipping rclone: most recent version 1.75.1 not installed
+Warning: Skipping s2n: most recent version 1.7.9 not installed
+Warning: Skipping sdl2-compat: most recent version 2.32.72 not installed
+Warning: Skipping sdl3: most recent version 3.4.16 not installed
+Warning: Skipping simdjson: most recent version 4.6.11 not installed
+Warning: Skipping uv: most recent version 0.12.10 not installed
+after cache clear: 15 GB
+done 21:09 — free: 15 GB
+===== disk_guard 2026-09-12 20:30 — free: 24 GB =====
+FAIL mempalace -> googledrive:market-data-backup
+2026/09/12 21:45:52 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/static-archives": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL static-archives -> googledrive:market-data-backup
+2026/09/12 21:45:53 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/market-data-config": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL market-data-config -> googledrive:market-data-backup
+2026/09/12 21:45:54 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/twin-state-registers": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL twin-state-registers -> googledrive:market-data-backup
+2026/09/12 21:45:54 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/home-desktop": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL home-desktop -> googledrive:market-data-backup
+2026/09/12 21:45:55 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/home-documents": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL home-documents -> googledrive:market-data-backup
+2026/09/12 21:45:56 CRITICAL: Failed to create file system for "googledrive:market-data-backup/history": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL history -> gdrive
+done 21:45
+post-upload free: 24 GB
+WARN tier: clearing caches
+Warning: Skipping aws-c-s3: most recent version 1.1.0 not installed
+Warning: Skipping awscli: most recent version 2.36.44 not installed
+Warning: Skipping clang-format: most recent version 23.1.1 not installed
+Warning: Skipping cloudflared: most recent version 2026.9.1 not installed
+Warning: Skipping dbxcli: most recent version 3.7.3 not installed
+Warning: Skipping flyctl: most recent version 0.4.102 not installed
+Warning: Skipping gh: most recent version 2.100.0 not installed
+Warning: Skipping ghostscript: most recent version 10.08.0 not installed
+Warning: Skipping gnupg: most recent version 2.5.22 not installed
+Warning: Skipping go: most recent version 1.27.1 not installed
+Warning: Skipping gpgme: most recent version 2.2.0 not installed
+Warning: Skipping gpgmepp: most recent version 2.2.0 not installed
+Warning: Skipping libgcrypt: most recent version 1.12.4 not installed
+Warning: Skipping node: most recent version 26.8.2 not installed
+Warning: Skipping nss: most recent version 3.129 not installed
+Warning: Skipping ollama: most recent version 0.33.3 not installed
+Warning: Skipping openssl@3: most recent version 3.6.4 not installed
+Warning: Skipping pcre2: most recent version 10.48 not installed
+Warning: Skipping pipx: most recent version 1.17.2 not installed
+Warning: Skipping pkgconf: most recent version 3.0.7 not installed
+Warning: Skipping podman: most recent version 6.1.1 not installed
+Warning: Skipping poppler: most recent version 26.09.0 not installed
+Warning: Skipping rclone: most recent version 1.75.1 not installed
+Warning: Skipping s2n: most recent version 1.7.9 not installed
+Warning: Skipping sdl2-compat: most recent version 2.32.72 not installed
+Warning: Skipping sdl3: most recent version 3.4.16 not installed
+Warning: Skipping simdjson: most recent version 4.6.11 not installed
+Warning: Skipping simdutf: most recent version 9.1.2 not installed
+Warning: Skipping tailscale: most recent version 1.102.4 not installed
+Warning: Skipping tor: most recent version 0.4.9.12 not installed
+Warning: Skipping uv: most recent version 0.12.13 not installed
+Pruned 0 symbolic links and 1 directories from /opt/homebrew
+after cache clear: 24 GB
+done 21:46 — free: 24 GB
+===== disk_guard 2026-09-13 20:30 — free: 12 GB =====
+FAIL mempalace -> googledrive:market-data-backup
+2026/09/13 20:37:44 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/static-archives": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL static-archives -> googledrive:market-data-backup
+2026/09/13 20:37:44 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/market-data-config": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL market-data-config -> googledrive:market-data-backup
+2026/09/13 20:37:45 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/twin-state-registers": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL twin-state-registers -> googledrive:market-data-backup
+2026/09/13 20:37:45 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/home-desktop": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL home-desktop -> googledrive:market-data-backup
+2026/09/13 20:37:46 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/home-documents": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL home-documents -> googledrive:market-data-backup
+2026/09/13 20:37:47 CRITICAL: Failed to create file system for "googledrive:market-data-backup/history": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL history -> gdrive
+done 20:37
+post-upload free: 11 GB
+WARN tier: clearing caches
+Warning: Skipping aws-c-s3: most recent version 1.1.0 not installed
+Warning: Skipping awscli: most recent version 2.36.44 not installed
+Warning: Skipping clang-format: most recent version 23.1.1 not installed
+Warning: Skipping cloudflared: most recent version 2026.9.1 not installed
+Warning: Skipping dbxcli: most recent version 3.7.3 not installed
+Warning: Skipping flyctl: most recent version 0.4.102 not installed
+Warning: Skipping gh: most recent version 2.100.0 not installed
+Warning: Skipping ghostscript: most recent version 10.08.0 not installed
+Warning: Skipping gnupg: most recent version 2.5.22 not installed
+Warning: Skipping go: most recent version 1.27.1 not installed
+Warning: Skipping gpgme: most recent version 2.2.0 not installed
+Warning: Skipping gpgmepp: most recent version 2.2.0 not installed
+Warning: Skipping libgcrypt: most recent version 1.12.4 not installed
+Warning: Skipping node: most recent version 26.8.2 not installed
+Warning: Skipping nss: most recent version 3.129 not installed
+Warning: Skipping ollama: most recent version 0.33.3 not installed
+Warning: Skipping openssl@3: most recent version 3.6.4 not installed
+Warning: Skipping pcre2: most recent version 10.48 not installed
+Warning: Skipping pipx: most recent version 1.17.2 not installed
+Warning: Skipping pkgconf: most recent version 3.0.7 not installed
+Warning: Skipping podman: most recent version 6.1.1 not installed
+Warning: Skipping poppler: most recent version 26.09.0 not installed
+Warning: Skipping rclone: most recent version 1.75.1 not installed
+Warning: Skipping s2n: most recent version 1.7.9 not installed
+Warning: Skipping sdl2-compat: most recent version 2.32.72 not installed
+Warning: Skipping sdl3: most recent version 3.4.16 not installed
+Warning: Skipping simdjson: most recent version 4.6.11 not installed
+Warning: Skipping simdutf: most recent version 9.1.2 not installed
+Warning: Skipping tailscale: most recent version 1.102.4 not installed
+Warning: Skipping tor: most recent version 0.4.9.12 not installed
+Warning: Skipping uv: most recent version 0.12.13 not installed
+Removing: /opt/homebrew/lib/python3.14/site-packages/__pycache__/brotli.cpython-314.pyc... (1.9KB)
+Removing: /opt/homebrew/lib/python3.14/site-packages/__pycache__/six.cpython-314.pyc... (42.9KB)
+==> This operation has freed approximately 44.9KB of disk space.
+after cache clear: 11 GB
+CRITICAL tier: verify-then-evict bundles
+2026/09/13 20:38:45 NOTICE: Dropbox root 'market-data-backup/current/branch-archives': 0 differences found
+2026/09/13 20:38:45 NOTICE: Dropbox root 'market-data-backup/current/branch-archives': 1 matching files
+EVICTED (cloud-verified): ship2shore_rag-full-pre-rewrite_2026-08-26.bundle
+2026/09/13 20:38:47 NOTICE: Dropbox root 'market-data-backup/current/branch-archives': 0 differences found
+2026/09/13 20:38:47 NOTICE: Dropbox root 'market-data-backup/current/branch-archives': 1 matching files
+EVICTED (cloud-verified): unbacked-branches-2026-08-28.bundle
+  [alert] sent '⚠️ daily_mailer — 1 step(s) failed (13 Sep 2026)' -> umashankartd1991@gmail.com
+done 20:38 — free: 11 GB
+===== disk_guard 2026-09-14 20:30 — free: 58 GB =====
+2026/09/14 20:48:48 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 0 differences found
+2026/09/14 20:48:48 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 2 matching files
+OK   market-data-config -> googledrive:market-data-backup
+2026/09/14 20:48:58 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 0 differences found
+2026/09/14 20:48:58 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 8 matching files
+OK   twin-state-registers -> googledrive:market-data-backup
+2026/09/14 20:49:26 NOTICE: Google drive root 'market-data-backup/current/home-desktop': 0 differences found
+2026/09/14 20:49:26 NOTICE: Google drive root 'market-data-backup/current/home-desktop': 11 matching files
+OK   home-desktop -> googledrive:market-data-backup
+2026/09/14 20:49:55 NOTICE: Google drive root 'market-data-backup/current/home-documents': 0 differences found
+2026/09/14 20:49:55 NOTICE: Google drive root 'market-data-backup/current/home-documents': 38 matching files
+OK   home-documents -> googledrive:market-data-backup
+OK   history -> gdrive (server-side relay)
+done 20:56
+post-upload free: 58 GB
+done 20:56 — free: 58 GB
+===== disk_guard 2026-09-15 20:30 — free: 11 GB =====
+2026/09/15 20:51:23 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 0 differences found
+2026/09/15 20:51:23 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 2 matching files
+OK   market-data-config -> googledrive:market-data-backup
+2026/09/15 20:51:34 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 0 differences found
+2026/09/15 20:51:34 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 8 matching files
+OK   twin-state-registers -> googledrive:market-data-backup
+2026/09/15 20:51:54 NOTICE: Google drive root 'market-data-backup/current/home-desktop': 0 differences found
+2026/09/15 20:51:54 NOTICE: Google drive root 'market-data-backup/current/home-desktop': 10 matching files
+OK   home-desktop -> googledrive:market-data-backup
+2026/09/15 20:52:07 NOTICE: Google drive root 'market-data-backup/current/home-documents': 0 differences found
+2026/09/15 20:52:07 NOTICE: Google drive root 'market-data-backup/current/home-documents': 38 matching files
+OK   home-documents -> googledrive:market-data-backup
+OK   history -> gdrive (server-side relay)
+done 20:52
+post-upload free: 14 GB
+WARN tier: clearing caches
+==> Downloading Homebrew API data
+✔︎ JSON API packages.arm64_golden_gate.jws.json
+Warning: Skipping aws-c-s3: most recent version 1.1.2 not installed
+Warning: Skipping awscli: most recent version 2.36.45 not installed
+Warning: Skipping clang-format: most recent version 23.1.1 not installed
+Warning: Skipping cloudflared: most recent version 2026.9.1 not installed
+Warning: Skipping dbxcli: most recent version 3.7.3 not installed
+Warning: Skipping flyctl: most recent version 0.4.103 not installed
+Warning: Skipping gh: most recent version 2.100.0 not installed
+Warning: Skipping ghostscript: most recent version 10.08.0 not installed
+Warning: Skipping gnupg: most recent version 2.5.22 not installed
+Warning: Skipping go: most recent version 1.27.1 not installed
+Warning: Skipping gpgme: most recent version 2.2.0 not installed
+Warning: Skipping gpgmepp: most recent version 2.2.0 not installed
+Warning: Skipping libgcrypt: most recent version 1.12.4 not installed
+Warning: Skipping libssh2: most recent version 1.11.1_5 not installed
+Warning: Skipping libvmaf: most recent version 3.2.1 not installed
+Warning: Skipping node: most recent version 26.8.2 not installed
+Warning: Skipping nss: most recent version 3.129 not installed
+Warning: Skipping ollama: most recent version 0.34.0 not installed
+Warning: Skipping openssl@3: most recent version 3.6.4 not installed
+Warning: Skipping pcre2: most recent version 10.48 not installed
+Warning: Skipping pipx: most recent version 1.17.2 not installed
+Warning: Skipping podman: most recent version 6.1.1 not installed
+Warning: Skipping poppler: most recent version 26.09.0 not installed
+Warning: Skipping rclone: most recent version 1.75.1 not installed
+Warning: Skipping ruby: most recent version 4.0.7 not installed
+Warning: Skipping s2n: most recent version 1.7.10 not installed
+Warning: Skipping sdl2-compat: most recent version 2.32.72 not installed
+Warning: Skipping sdl3: most recent version 3.4.16 not installed
+Warning: Skipping simdjson: most recent version 4.6.11 not installed
+Warning: Skipping simdutf: most recent version 9.1.2 not installed
+Warning: Skipping tailscale: most recent version 1.102.4 not installed
+Warning: Skipping tor: most recent version 0.4.9.12 not installed
+Warning: Skipping uv: most recent version 0.12.14 not installed
+Warning: Skipping xz: most recent version 5.8.4 not installed
+Removing: /opt/homebrew/lib/python3.14/site-packages/__pycache__/typing_extensions.cpython-314.pyc... (179.4KB)
+Removing: /opt/homebrew/Library/Homebrew/vendor/portable-ruby/4.0.6... (1,707 files, 34.6MB)
+==> This operation has freed approximately 34.7MB of disk space.
+after cache clear: 13 GB
+CRITICAL tier: verify-then-evict bundles
+2026/09/15 20:53:48 NOTICE: Dropbox root 'market-data-backup/current/branch-archives': 0 differences found
+2026/09/15 20:53:48 NOTICE: Dropbox root 'market-data-backup/current/branch-archives': 1 matching files
+EVICTED (cloud-verified): agri-commodity-tracker-orphan-2026-09-14.bundle
+2026/09/15 20:53:54 NOTICE: Dropbox root 'market-data-backup/current/branch-archives': 0 differences found
+2026/09/15 20:53:54 NOTICE: Dropbox root 'market-data-backup/current/branch-archives': 1 matching files
+EVICTED (cloud-verified): global-market-data-orphans-2026-09-14.bundle
+2026/09/15 20:53:56 NOTICE: Dropbox root 'market-data-backup/current/branch-archives': 0 differences found
+2026/09/15 20:53:56 NOTICE: Dropbox root 'market-data-backup/current/branch-archives': 1 matching files
+EVICTED (cloud-verified): global-stock-screener-wip-safety-2026-09-14.bundle
+2026/09/15 20:53:59 NOTICE: Dropbox root 'market-data-backup/current/branch-archives': 0 differences found
+2026/09/15 20:53:59 NOTICE: Dropbox root 'market-data-backup/current/branch-archives': 1 matching files
+EVICTED (cloud-verified): ship2shore_rag-full-pre-rewrite_2026-08-26.bundle
+2026/09/15 20:54:07 NOTICE: Dropbox root 'market-data-backup/current/branch-archives': 0 differences found
+2026/09/15 20:54:07 NOTICE: Dropbox root 'market-data-backup/current/branch-archives': 1 matching files
+EVICTED (cloud-verified): unbacked-branches-2026-08-28.bundle
+2026/09/15 20:54:10 NOTICE: Dropbox root 'market-data-backup/current/branch-archives': 0 differences found
+2026/09/15 20:54:10 NOTICE: Dropbox root 'market-data-backup/current/branch-archives': 1 matching files
+EVICTED (cloud-verified): vehicle_fuel_mileage-full-2026-09-14.bundle
+  [alert] sent '⚠️ daily_mailer — 1 step(s) failed (15 Sep 2026)' -> umashankartd1991@gmail.com
+done 20:54 — free: 14 GB
+===== disk_guard 2026-09-16 20:30 — free: 11 GB =====
+2026/09/16 21:05:51 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 0 differences found
+2026/09/16 21:05:51 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 2 matching files
+OK   market-data-config -> googledrive:market-data-backup
+2026/09/16 21:06:01 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 0 differences found
+2026/09/16 21:06:01 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 8 matching files
+OK   twin-state-registers -> googledrive:market-data-backup
+2026/09/16 21:06:14 NOTICE: Google drive root 'market-data-backup/current/home-desktop': 0 differences found
+2026/09/16 21:06:14 NOTICE: Google drive root 'market-data-backup/current/home-desktop': 10 matching files
+OK   home-desktop -> googledrive:market-data-backup
+2026/09/16 21:06:25 NOTICE: Google drive root 'market-data-backup/current/home-documents': 0 differences found
+2026/09/16 21:06:25 NOTICE: Google drive root 'market-data-backup/current/home-documents': 38 matching files
+OK   home-documents -> googledrive:market-data-backup
+OK   history -> gdrive (server-side relay)
+done 21:06
+post-upload free: 15 GB
+WARN tier: clearing caches
+Warning: Skipping aws-c-s3: most recent version 1.1.2 not installed
+Warning: Skipping awscli: most recent version 2.36.45 not installed
+Warning: Skipping clang-format: most recent version 23.1.1 not installed
+Warning: Skipping cloudflared: most recent version 2026.9.1 not installed
+Warning: Skipping dbxcli: most recent version 3.7.3 not installed
+Warning: Skipping flyctl: most recent version 0.4.103 not installed
+Warning: Skipping gh: most recent version 2.100.0 not installed
+Warning: Skipping ghostscript: most recent version 10.08.0 not installed
+Warning: Skipping gnupg: most recent version 2.5.22 not installed
+Warning: Skipping go: most recent version 1.27.1 not installed
+Warning: Skipping gpgme: most recent version 2.2.0 not installed
+Warning: Skipping gpgmepp: most recent version 2.2.0 not installed
+Warning: Skipping libgcrypt: most recent version 1.12.4 not installed
+Warning: Skipping libssh2: most recent version 1.11.1_5 not installed
+Warning: Skipping libvmaf: most recent version 3.2.1 not installed
+Warning: Skipping node: most recent version 26.8.2 not installed
+Warning: Skipping nss: most recent version 3.129 not installed
+Warning: Skipping ollama: most recent version 0.34.0 not installed
+Warning: Skipping openssl@3: most recent version 3.6.4 not installed
+Warning: Skipping pcre2: most recent version 10.48 not installed
+Warning: Skipping pipx: most recent version 1.17.2 not installed
+Warning: Skipping podman: most recent version 6.1.1 not installed
+Warning: Skipping poppler: most recent version 26.09.0 not installed
+Warning: Skipping rclone: most recent version 1.75.1 not installed
+Warning: Skipping ruby: most recent version 4.0.7 not installed
+Warning: Skipping s2n: most recent version 1.7.10 not installed
+Warning: Skipping sdl2-compat: most recent version 2.32.72 not installed
+Warning: Skipping sdl3: most recent version 3.4.16 not installed
+Warning: Skipping simdjson: most recent version 4.6.11 not installed
+Warning: Skipping simdutf: most recent version 9.1.2 not installed
+Warning: Skipping tailscale: most recent version 1.102.4 not installed
+Warning: Skipping tor: most recent version 0.4.9.12 not installed
+Warning: Skipping uv: most recent version 0.12.14 not installed
+Warning: Skipping xz: most recent version 5.8.4 not installed
+after cache clear: 15 GB
+done 21:07 — free: 15 GB
+===== disk_guard 2026-09-17 20:30 — free: 24 GB =====
+2026/09/17 20:55:24 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 0 differences found
+2026/09/17 20:55:24 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 2 matching files
+OK   market-data-config -> googledrive:market-data-backup
+2026/09/17 20:55:34 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 0 differences found
+2026/09/17 20:55:34 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 8 matching files
+OK   twin-state-registers -> googledrive:market-data-backup
+2026/09/17 20:55:45 NOTICE: Google drive root 'market-data-backup/current/home-desktop': 0 differences found
+2026/09/17 20:55:45 NOTICE: Google drive root 'market-data-backup/current/home-desktop': 10 matching files
+OK   home-desktop -> googledrive:market-data-backup
+2026/09/17 20:55:56 NOTICE: Google drive root 'market-data-backup/current/home-documents': 0 differences found
+2026/09/17 20:55:56 NOTICE: Google drive root 'market-data-backup/current/home-documents': 38 matching files
+OK   home-documents -> googledrive:market-data-backup
+OK   history -> gdrive (server-side relay)
+done 20:56
+post-upload free: 23 GB
+WARN tier: clearing caches
+Warning: Skipping aws-c-s3: most recent version 1.1.2 not installed
+Warning: Skipping awscli: most recent version 2.36.45 not installed
+Warning: Skipping clang-format: most recent version 23.1.1 not installed
+Warning: Skipping cloudflared: most recent version 2026.9.1 not installed
+Warning: Skipping dbxcli: most recent version 3.7.3 not installed
+Warning: Skipping flyctl: most recent version 0.4.103 not installed
+Warning: Skipping gh: most recent version 2.100.0 not installed
+Warning: Skipping ghostscript: most recent version 10.08.0 not installed
+Warning: Skipping gnupg: most recent version 2.5.22 not installed
+Warning: Skipping go: most recent version 1.27.1 not installed
+Warning: Skipping gpgme: most recent version 2.2.0 not installed
+Warning: Skipping gpgmepp: most recent version 2.2.0 not installed
+Warning: Skipping libgcrypt: most recent version 1.12.4 not installed
+Warning: Skipping libssh2: most recent version 1.11.1_5 not installed
+Warning: Skipping libvmaf: most recent version 3.2.1 not installed
+Warning: Skipping node: most recent version 26.8.2 not installed
+Warning: Skipping nss: most recent version 3.129 not installed
+Warning: Skipping ollama: most recent version 0.34.0 not installed
+Warning: Skipping openssl@3: most recent version 3.6.4 not installed
+Warning: Skipping pcre2: most recent version 10.48 not installed
+Warning: Skipping pipx: most recent version 1.17.2 not installed
+Warning: Skipping podman: most recent version 6.1.1 not installed
+Warning: Skipping poppler: most recent version 26.09.0 not installed
+Warning: Skipping rclone: most recent version 1.75.1 not installed
+Warning: Skipping ruby: most recent version 4.0.7 not installed
+Warning: Skipping s2n: most recent version 1.7.10 not installed
+Warning: Skipping sdl2-compat: most recent version 2.32.72 not installed
+Warning: Skipping sdl3: most recent version 3.4.16 not installed
+Warning: Skipping simdjson: most recent version 4.6.11 not installed
+Warning: Skipping simdutf: most recent version 9.1.2 not installed
+Warning: Skipping tailscale: most recent version 1.102.4 not installed
+Warning: Skipping tor: most recent version 0.4.9.12 not installed
+Warning: Skipping uv: most recent version 0.12.14 not installed
+Warning: Skipping xz: most recent version 5.8.4 not installed
+after cache clear: 24 GB
+done 20:56 — free: 24 GB
+===== disk_guard 2026-09-18 20:30 — free: 11 GB =====
+2026/09/18 20:53:38 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 0 differences found
+2026/09/18 20:53:38 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 2 matching files
+OK   market-data-config -> googledrive:market-data-backup
+2026/09/18 20:53:48 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 0 differences found
+2026/09/18 20:53:48 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 8 matching files
+OK   twin-state-registers -> googledrive:market-data-backup
+2026/09/18 20:53:59 NOTICE: Google drive root 'market-data-backup/current/home-desktop': 0 differences found
+2026/09/18 20:53:59 NOTICE: Google drive root 'market-data-backup/current/home-desktop': 10 matching files
+OK   home-desktop -> googledrive:market-data-backup
+2026/09/18 20:54:10 NOTICE: Google drive root 'market-data-backup/current/home-documents': 0 differences found
+2026/09/18 20:54:10 NOTICE: Google drive root 'market-data-backup/current/home-documents': 38 matching files
+OK   home-documents -> googledrive:market-data-backup
+OK   history -> gdrive (server-side relay)
+done 20:54
+post-upload free: 14 GB
+WARN tier: clearing caches
+Warning: Skipping aws-c-s3: most recent version 1.1.2 not installed
+Warning: Skipping awscli: most recent version 2.36.48 not installed
+Warning: Skipping clang-format: most recent version 23.1.1 not installed
+Warning: Skipping cloudflared: most recent version 2026.9.1 not installed
+Warning: Skipping dbxcli: most recent version 3.7.3 not installed
+Warning: Skipping flyctl: most recent version 0.4.104 not installed
+Warning: Skipping gh: most recent version 2.101.0 not installed
+Warning: Skipping ghostscript: most recent version 10.08.0 not installed
+Warning: Skipping glib: most recent version 2.90.0 not installed
+Warning: Skipping gnupg: most recent version 2.5.22 not installed
+Warning: Skipping go: most recent version 1.27.1 not installed
+Warning: Skipping gpgme: most recent version 2.2.0 not installed
+Warning: Skipping gpgmepp: most recent version 2.2.0 not installed
+Warning: Skipping libgcrypt: most recent version 1.12.4 not installed
+Warning: Skipping libssh2: most recent version 1.11.1_5 not installed
+Warning: Skipping libvmaf: most recent version 3.2.1 not installed
+Warning: Skipping merve: most recent version 1.2.2_3 not installed
+Warning: Skipping node: most recent version 26.8.2 not installed
+Warning: Skipping nss: most recent version 3.129 not installed
+Warning: Skipping ollama: most recent version 0.34.1 not installed
+Warning: Skipping openssl@3: most recent version 3.6.4 not installed
+Warning: Skipping pcre2: most recent version 10.48 not installed
+Warning: Skipping pipx: most recent version 1.17.3 not installed
+Warning: Skipping podman: most recent version 6.1.2 not installed
+Warning: Skipping poppler: most recent version 26.09.0 not installed
+Warning: Skipping rclone: most recent version 1.75.1 not installed
+Warning: Skipping readline: most recent version 8.3.6 not installed
+Warning: Skipping ruby: most recent version 4.0.7 not installed
+Warning: Skipping s2n: most recent version 1.7.10 not installed
+Warning: Skipping sdl2-compat: most recent version 2.32.72 not installed
+Warning: Skipping sdl3: most recent version 3.4.16 not installed
+Warning: Skipping simdjson: most recent version 4.6.11 not installed
+Warning: Skipping simdutf: most recent version 9.2.0 not installed
+Warning: Skipping tailscale: most recent version 1.102.4 not installed
+Warning: Skipping tor: most recent version 0.4.9.12 not installed
+Warning: Skipping uv: most recent version 0.12.16 not installed
+Warning: Skipping xz: most recent version 5.8.4 not installed
+Removing: /Users/umashankar/Library/Caches/Homebrew/bootsnap/a11732bc71392abd1a8ca147db9031712a66cd4ed77323603592dadf7dcec87e... (730 files, 6.3MB)
+Removing: /opt/homebrew/Library/Homebrew/vendor/portable-ruby/4.0.6_2... (1,707 files, 34.6MB)
+==> This operation has freed approximately 40.9MB of disk space.
+after cache clear: 14 GB
+CRITICAL tier: verify-then-evict bundles
+  [alert] sent '⚠️ daily_mailer — 1 step(s) failed (18 Sep 2026)' -> umashankartd1991@gmail.com
+done 20:55 — free: 14 GB
+===== disk_guard 2026-09-20 20:30 — free: 14 GB =====
+2026/09/20 20:55:47 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 0 differences found
+2026/09/20 20:55:47 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 2 matching files
+OK   market-data-config -> googledrive:market-data-backup
+2026/09/20 20:55:57 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 0 differences found
+2026/09/20 20:55:57 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 8 matching files
+OK   twin-state-registers -> googledrive:market-data-backup
+2026/09/20 20:56:09 NOTICE: Google drive root 'market-data-backup/current/home-desktop': 0 differences found
+2026/09/20 20:56:09 NOTICE: Google drive root 'market-data-backup/current/home-desktop': 10 matching files
+OK   home-desktop -> googledrive:market-data-backup
+2026/09/20 20:56:19 NOTICE: Google drive root 'market-data-backup/current/home-documents': 0 differences found
+2026/09/20 20:56:19 NOTICE: Google drive root 'market-data-backup/current/home-documents': 38 matching files
+OK   home-documents -> googledrive:market-data-backup
+OK   history -> gdrive (server-side relay)
+done 20:56
+post-upload free: 15 GB
+WARN tier: clearing caches
+Warning: Skipping aws-c-s3: most recent version 1.1.2 not installed
+Warning: Skipping awscli: most recent version 2.36.49 not installed
+Warning: Skipping clang-format: most recent version 23.1.1 not installed
+Warning: Skipping cloudflared: most recent version 2026.9.1 not installed
+Warning: Skipping dbxcli: most recent version 3.7.3 not installed
+Warning: Skipping flyctl: most recent version 0.4.104 not installed
+Warning: Skipping gh: most recent version 2.101.0 not installed
+Warning: Skipping ghostscript: most recent version 10.08.0 not installed
+Warning: Skipping glib: most recent version 2.90.0 not installed
+Warning: Skipping gnupg: most recent version 2.5.22 not installed
+Warning: Skipping go: most recent version 1.27.1 not installed
+Warning: Skipping gpgme: most recent version 2.2.0 not installed
+Warning: Skipping gpgmepp: most recent version 2.2.0 not installed
+Warning: Skipping libgcrypt: most recent version 1.12.4 not installed
+Warning: Skipping libssh2: most recent version 1.11.1_5 not installed
+Warning: Skipping libvmaf: most recent version 3.2.1 not installed
+Warning: Skipping merve: most recent version 1.2.2_3 not installed
+Warning: Skipping node: most recent version 26.9.0 not installed
+Warning: Skipping nss: most recent version 3.129 not installed
+Warning: Skipping ollama: most recent version 0.34.2 not installed
+Warning: Skipping openjdk: most recent version 27 not installed
+Warning: Skipping openssl@3: most recent version 3.6.4 not installed
+Warning: Skipping pcre2: most recent version 10.48 not installed
+Warning: Skipping pipx: most recent version 1.17.3 not installed
+Warning: Skipping podman: most recent version 6.1.2 not installed
+Warning: Skipping poppler: most recent version 26.09.0 not installed
+Warning: Skipping rclone: most recent version 1.75.1 not installed
+Warning: Skipping readline: most recent version 8.3.6 not installed
+Warning: Skipping ruby: most recent version 4.0.7 not installed
+Warning: Skipping s2n: most recent version 1.7.10 not installed
+Warning: Skipping sdl2-compat: most recent version 2.32.72 not installed
+Warning: Skipping sdl3: most recent version 3.4.16 not installed
+Warning: Skipping simdjson: most recent version 4.6.11 not installed
+Warning: Skipping simdutf: most recent version 9.2.0 not installed
+Warning: Skipping tailscale: most recent version 1.102.4 not installed
+Warning: Skipping tor: most recent version 0.4.9.12 not installed
+Warning: Skipping uv: most recent version 0.12.17 not installed
+Warning: Skipping xz: most recent version 5.8.4 not installed
+after cache clear: 15 GB
+done 20:57 — free: 15 GB
+===== disk_guard 2026-09-21 20:30 — free: 17 GB =====
+FAIL twin-state-registers -> googledrive:market-data-backup
+2026/09/21 20:39:15 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/home-desktop": couldn't find root directory ID: googleapi: Error 401: Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+More details:
+Reason: authError, Message: Invalid Credentials
+FAIL home-desktop -> googledrive:market-data-backup
+2026/09/21 20:39:15 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/home-documents": couldn't find root directory ID: googleapi: Error 401: Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+More details:
+Reason: authError, Message: Invalid Credentials
+FAIL home-documents -> googledrive:market-data-backup
+2026/09/21 20:39:16 CRITICAL: Failed to create file system for "googledrive:market-data-backup/history": couldn't find root directory ID: googleapi: Error 401: Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+More details:
+Reason: authError, Message: Invalid Credentials
+FAIL history -> gdrive
+done 20:39
+post-upload free: 17 GB
+WARN tier: clearing caches
+Warning: Skipping aws-c-s3: most recent version 1.1.2 not installed
+Warning: Skipping awscli: most recent version 2.36.49 not installed
+Warning: Skipping clang-format: most recent version 23.1.1 not installed
+Warning: Skipping cloudflared: most recent version 2026.9.1 not installed
+Warning: Skipping dbxcli: most recent version 3.7.3 not installed
+Warning: Skipping flyctl: most recent version 0.4.104 not installed
+Warning: Skipping gh: most recent version 2.101.0 not installed
+Warning: Skipping ghostscript: most recent version 10.08.0 not installed
+Warning: Skipping glib: most recent version 2.90.0 not installed
+Warning: Skipping gnupg: most recent version 2.5.22 not installed
+Warning: Skipping go: most recent version 1.27.1 not installed
+Warning: Skipping gpgme: most recent version 2.2.0 not installed
+Warning: Skipping gpgmepp: most recent version 2.2.0 not installed
+Warning: Skipping libgcrypt: most recent version 1.12.4 not installed
+Warning: Skipping libssh2: most recent version 1.11.1_5 not installed
+Warning: Skipping libvmaf: most recent version 3.2.1 not installed
+Warning: Skipping merve: most recent version 1.2.2_3 not installed
+Warning: Skipping node: most recent version 26.9.0 not installed
+Warning: Skipping nss: most recent version 3.129 not installed
+Warning: Skipping ollama: most recent version 0.34.2 not installed
+Warning: Skipping openjdk: most recent version 27 not installed
+Warning: Skipping openssl@3: most recent version 3.6.4 not installed
+Warning: Skipping pcre2: most recent version 10.48 not installed
+Warning: Skipping pipx: most recent version 1.17.3 not installed
+Warning: Skipping podman: most recent version 6.1.2 not installed
+Warning: Skipping poppler: most recent version 26.09.0 not installed
+Warning: Skipping rclone: most recent version 1.75.1 not installed
+Warning: Skipping readline: most recent version 8.3.6 not installed
+Warning: Skipping ruby: most recent version 4.0.7 not installed
+Warning: Skipping s2n: most recent version 1.7.10 not installed
+Warning: Skipping sdl2-compat: most recent version 2.32.72 not installed
+Warning: Skipping sdl3: most recent version 3.4.16 not installed
+Warning: Skipping simdjson: most recent version 4.6.11 not installed
+Warning: Skipping simdutf: most recent version 9.2.0 not installed
+Warning: Skipping tailscale: most recent version 1.102.4 not installed
+Warning: Skipping tor: most recent version 0.4.9.12 not installed
+Warning: Skipping uv: most recent version 0.12.17 not installed
+Warning: Skipping xz: most recent version 5.8.4 not installed
+Removing: /opt/homebrew/lib/python3.14/site-packages/__pycache__/six.cpython-314.pyc... (42.9KB)
+==> This operation has freed approximately 42.9KB of disk space.
+after cache clear: 17 GB
+done 20:40 — free: 17 GB
+===== disk_guard 2026-09-22 20:30 — free: 35 GB =====
+FAIL twin-state-registers -> googledrive:market-data-backup
+2026/09/22 20:37:37 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/home-desktop": couldn't find root directory ID: googleapi: Error 401: Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+More details:
+Reason: authError, Message: Invalid Credentials
+FAIL home-desktop -> googledrive:market-data-backup
+2026/09/22 20:37:38 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/home-documents": couldn't find root directory ID: googleapi: Error 401: Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+More details:
+Reason: authError, Message: Invalid Credentials
+FAIL home-documents -> googledrive:market-data-backup
+2026/09/22 20:37:39 CRITICAL: Failed to create file system for "googledrive:market-data-backup/history": couldn't find root directory ID: googleapi: Error 401: Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+More details:
+Reason: authError, Message: Invalid Credentials
+FAIL history -> gdrive
+done 20:37
+post-upload free: 35 GB
+done 20:37 — free: 35 GB
+===== disk_guard 2026-09-23 20:30 — free: 34 GB =====
+2026/09/23 21:12:21 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 0 differences found
+2026/09/23 21:12:21 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 2 matching files
+OK   market-data-config -> googledrive:market-data-backup
+2026/09/23 21:12:31 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 0 differences found
+2026/09/23 21:12:31 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 8 matching files
+OK   twin-state-registers -> googledrive:market-data-backup
+2026/09/23 21:12:42 NOTICE: Google drive root 'market-data-backup/current/home-desktop': 0 differences found
+2026/09/23 21:12:42 NOTICE: Google drive root 'market-data-backup/current/home-desktop': 10 matching files
+OK   home-desktop -> googledrive:market-data-backup
+2026/09/23 21:12:53 NOTICE: Google drive root 'market-data-backup/current/home-documents': 0 differences found
+2026/09/23 21:12:53 NOTICE: Google drive root 'market-data-backup/current/home-documents': 38 matching files
+OK   home-documents -> googledrive:market-data-backup
+OK   history -> gdrive (server-side relay)
+done 21:12
+post-upload free: 33 GB
+done 21:12 — free: 33 GB
+===== disk_guard 2026-09-24 20:30 — free: 11 GB =====
+2026/09/24 21:21:39 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 0 differences found
+2026/09/24 21:21:39 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 2 matching files
+OK   market-data-config -> googledrive:market-data-backup
+2026/09/24 21:21:49 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 0 differences found
+2026/09/24 21:21:49 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 8 matching files
+OK   twin-state-registers -> googledrive:market-data-backup
+2026/09/24 21:22:02 NOTICE: Google drive root 'market-data-backup/current/home-desktop': 0 differences found
+2026/09/24 21:22:02 NOTICE: Google drive root 'market-data-backup/current/home-desktop': 10 matching files
+OK   home-desktop -> googledrive:market-data-backup
+2026/09/24 21:22:12 NOTICE: Google drive root 'market-data-backup/current/home-documents': 0 differences found
+2026/09/24 21:22:12 NOTICE: Google drive root 'market-data-backup/current/home-documents': 38 matching files
+OK   home-documents -> googledrive:market-data-backup
+OK   history -> gdrive (server-side relay)
+done 21:22
+post-upload free: 11 GB
+WARN tier: clearing caches
+Warning: Skipping aws-c-common: most recent version 1.0.1 not installed
+Warning: Skipping aws-c-s3: most recent version 1.1.3 not installed
+Warning: Skipping awscli: most recent version 2.37.1 not installed
+Warning: Skipping cairo: most recent version 1.18.6 not installed
+Warning: Skipping clang-format: most recent version 23.1.2 not installed
+Warning: Skipping cloudflared: most recent version 2026.9.1 not installed
+Warning: Skipping dbxcli: most recent version 3.7.3 not installed
+Warning: Skipping ffmpeg: most recent version 9.0.2 not installed
+Warning: Skipping flyctl: most recent version 0.4.107 not installed
+Warning: Skipping fribidi: most recent version 1.0.17 not installed
+Warning: Skipping gh: most recent version 2.101.0 not installed
+Warning: Skipping ghostscript: most recent version 10.08.0 not installed
+Warning: Skipping glib: most recent version 2.90.0 not installed
+Warning: Skipping gnupg: most recent version 2.5.24 not installed
+Warning: Skipping go: most recent version 1.27.1 not installed
+Warning: Skipping gpgme: most recent version 2.2.0 not installed
+Warning: Skipping gpgmepp: most recent version 2.2.0 not installed
+Warning: Skipping harfbuzz: most recent version 14.5.0 not installed
+Warning: Skipping libgcrypt: most recent version 1.12.4 not installed
+Warning: Skipping libssh2: most recent version 1.11.1_5 not installed
+Warning: Skipping libvmaf: most recent version 3.2.1 not installed
+Warning: Skipping merve: most recent version 1.2.2_3 not installed
+Warning: Skipping node: most recent version 26.9.0 not installed
+Warning: Skipping nss: most recent version 3.130 not installed
+Warning: Skipping ollama: most recent version 0.34.3 not installed
+Warning: Skipping openjdk: most recent version 27 not installed
+Warning: Skipping openssl@3: most recent version 3.6.4 not installed
+Warning: Skipping pcre2: most recent version 10.48 not installed
+Warning: Skipping pipx: most recent version 1.17.6 not installed
+Warning: Skipping podman: most recent version 6.1.2 not installed
+Warning: Skipping poppler: most recent version 26.09.0 not installed
+Warning: Skipping rclone: most recent version 1.75.1 not installed
+Warning: Skipping readline: most recent version 8.3.6 not installed
+Warning: Skipping ruby: most recent version 4.0.7 not installed
+Warning: Skipping s2n: most recent version 1.7.10 not installed
+Warning: Skipping sdl2-compat: most recent version 2.32.72 not installed
+Warning: Skipping sdl3: most recent version 3.4.16 not installed
+Warning: Skipping simdjson: most recent version 4.6.11 not installed
+Warning: Skipping simdutf: most recent version 9.2.1 not installed
+Warning: Skipping tailscale: most recent version 1.102.4 not installed
+Warning: Skipping tor: most recent version 0.4.9.13 not installed
+Warning: Skipping uv: most recent version 0.12.18 not installed
+Warning: Skipping xz: most recent version 5.8.4 not installed
+Removing: /Users/umashankar/Library/Caches/Homebrew/bootsnap/d2fe20dcaac1dfd932074d89a3fa98c61e62ad39b80bee7a6f7886937aaa92c0... (634 files, 5.7MB)
+Removing: /opt/homebrew/var/homebrew/tmp/.cellar/harfbuzz... (95 files, 14.1MB)
+Removing: /opt/homebrew/var/homebrew/tmp/.cellar/glib... (500 files, 39.7MB)
+Removing: /opt/homebrew/var/homebrew/tmp/.cellar/cairo... (57 files, 4.6MB)
+Removing: /opt/homebrew/var/homebrew/tmp/.cellar/fribidi... (68 files, 751.1KB)
+Removing: /opt/homebrew/var/homebrew/tmp/.cellar/xz... (95 files, 2.7MB)
+Removing: /opt/homebrew/var/homebrew/tmp/.cellar/pcre2... (244 files, 7.3MB)
+Removing: /opt/homebrew/lib/python3.14/site-packages/__pycache__/brotli.cpython-314.pyc... (1.9KB)
+Removing: /opt/homebrew/lib/python3.14/site-packages/__pycache__/typing_extensions.cpython-314.pyc... (179.4KB)
+==> This operation has freed approximately 74.9MB of disk space.
+after cache clear: 12 GB
+CRITICAL tier: verify-then-evict bundles
+  [alert] sent '⚠️ daily_mailer — 1 step(s) failed (24 Sep 2026)' -> umashankartd1991@gmail.com
+done 21:23 — free: 12 GB
+===== disk_guard 2026-09-26 20:30 — free: 35 GB =====
+FAIL mempalace -> googledrive:market-data-backup
+2026/09/26 20:33:20 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/static-archives": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: Post "https://oauth2.googleapis.com/token": dial tcp: lookup oauth2.googleapis.com: no such host
+FAIL static-archives -> googledrive:market-data-backup
+2026/09/26 20:33:25 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/market-data-config": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: Post "https://oauth2.googleapis.com/token": dial tcp: lookup oauth2.googleapis.com: no such host
+FAIL market-data-config -> googledrive:market-data-backup
+2026/09/26 20:33:31 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/twin-state-registers": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: Post "https://oauth2.googleapis.com/token": dial tcp: lookup oauth2.googleapis.com: no such host
+FAIL twin-state-registers -> googledrive:market-data-backup
+2026/09/26 20:33:36 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/home-desktop": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: Post "https://oauth2.googleapis.com/token": dial tcp: lookup oauth2.googleapis.com: no such host
+FAIL home-desktop -> googledrive:market-data-backup
+2026/09/26 20:33:41 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/home-documents": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: Post "https://oauth2.googleapis.com/token": dial tcp: lookup oauth2.googleapis.com: no such host
+FAIL home-documents -> googledrive:market-data-backup
+2026/09/26 20:33:46 CRITICAL: Failed to create file system for "googledrive:market-data-backup/history": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: Post "https://oauth2.googleapis.com/token": dial tcp: lookup oauth2.googleapis.com: no such host
+FAIL history -> gdrive
+done 20:33
+post-upload free: 35 GB
+done 20:33 — free: 35 GB
+===== disk_guard 2026-09-27 20:30 — free: 42 GB =====
+2026/09/27 21:00:48 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 0 differences found
+2026/09/27 21:00:48 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 2 matching files
+OK   market-data-config -> googledrive:market-data-backup
+2026/09/27 21:01:03 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 0 differences found
+2026/09/27 21:01:03 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 8 matching files
+OK   twin-state-registers -> googledrive:market-data-backup
+2026/09/27 21:01:21 NOTICE: Google drive root 'market-data-backup/current/home-desktop': 0 differences found
+2026/09/27 21:01:21 NOTICE: Google drive root 'market-data-backup/current/home-desktop': 10 matching files
+OK   home-desktop -> googledrive:market-data-backup
+2026/09/27 21:01:36 NOTICE: Google drive root 'market-data-backup/current/home-documents': 0 differences found
+2026/09/27 21:01:36 NOTICE: Google drive root 'market-data-backup/current/home-documents': 38 matching files
+OK   home-documents -> googledrive:market-data-backup
+OK   history -> gdrive (server-side relay)
+done 21:01
+post-upload free: 44 GB
+done 21:01 — free: 44 GB
+===== disk_guard 2026-09-28 20:30 — free: 40 GB =====
+2026/09/28 20:54:44 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 0 differences found
+2026/09/28 20:54:44 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 2 matching files
+OK   market-data-config -> googledrive:market-data-backup
+2026/09/28 20:54:57 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 0 differences found
+2026/09/28 20:54:57 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 8 matching files
+OK   twin-state-registers -> googledrive:market-data-backup
+2026/09/28 20:55:09 NOTICE: Google drive root 'market-data-backup/current/home-desktop': 0 differences found
+2026/09/28 20:55:09 NOTICE: Google drive root 'market-data-backup/current/home-desktop': 10 matching files
+OK   home-desktop -> googledrive:market-data-backup
+2026/09/28 20:55:20 NOTICE: Google drive root 'market-data-backup/current/home-documents': 0 differences found
+2026/09/28 20:55:20 NOTICE: Google drive root 'market-data-backup/current/home-documents': 38 matching files
+OK   home-documents -> googledrive:market-data-backup
+OK   history -> gdrive (server-side relay)
+done 20:55
+post-upload free: 38 GB
+done 20:55 — free: 38 GB
+===== disk_guard 2026-09-29 20:30 — free: 34 GB =====
+2026/09/30 03:05:57 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 0 differences found
+2026/09/30 03:05:57 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 2 matching files
+OK   market-data-config -> googledrive:market-data-backup
+2026/09/30 03:06:06 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 0 differences found
+2026/09/30 03:06:06 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 8 matching files
+OK   twin-state-registers -> googledrive:market-data-backup
+2026/09/30 03:06:17 NOTICE: Google drive root 'market-data-backup/current/home-desktop': 0 differences found
+2026/09/30 03:06:17 NOTICE: Google drive root 'market-data-backup/current/home-desktop': 10 matching files
+OK   home-desktop -> googledrive:market-data-backup
+2026/09/30 03:06:28 NOTICE: Google drive root 'market-data-backup/current/home-documents': 0 differences found
+2026/09/30 03:06:28 NOTICE: Google drive root 'market-data-backup/current/home-documents': 38 matching files
+OK   home-documents -> googledrive:market-data-backup
+OK   history -> gdrive (server-side relay)
+done 03:06
+post-upload free: 37 GB
+done 03:06 — free: 37 GB
+===== disk_guard 2026-09-30 20:30 — free: 32 GB =====
+FAIL mempalace -> googledrive:market-data-backup
+2026/09/30 20:38:54 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/static-archives": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL static-archives -> googledrive:market-data-backup
+2026/09/30 20:38:55 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/market-data-config": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL market-data-config -> googledrive:market-data-backup
+2026/09/30 20:38:55 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/twin-state-registers": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL twin-state-registers -> googledrive:market-data-backup
+2026/09/30 20:38:56 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/home-desktop": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL home-desktop -> googledrive:market-data-backup
+2026/09/30 20:38:57 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/home-documents": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL home-documents -> googledrive:market-data-backup
+2026/09/30 20:38:57 CRITICAL: Failed to create file system for "googledrive:market-data-backup/history": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL history -> gdrive
+done 20:38
+post-upload free: 31 GB
+done 20:38 — free: 31 GB

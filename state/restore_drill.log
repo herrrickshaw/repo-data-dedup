@@ -1,0 +1,17 @@
+[2026-07-23 04:54:18] drill start (sample=2)
+[2026-07-23 04:54:18] PASS: market_cache/ohlc/FOUR-PA.parquet
+[2026-07-23 04:54:18] PASS: market_cache/ohlc/ELF.parquet
+[2026-07-23 04:54:18] NOTE: no pg dump found under current/
+[2026-07-23 04:54:18] drill end rc=0
+[2026-08-02 09:15:01] drill start (sample=3)
+[2026-08-02 09:15:01] PASS: pipeline-market_cache/dart/fin/01976418_2026_OFS.json
+[2026-08-02 09:15:01] PASS: pipeline-market_cache/dart/fin/00628860_2025_CFS.json
+[2026-08-02 09:15:01] PASS: pipeline-market_cache/dart/fin/01261644_2018_CFS.json
+[2026-08-02 09:15:01] NOTE: no pg dump found under current/
+[2026-08-02 09:15:01] drill end rc=0
+[2026-10-02 09:15:01] drill start (sample=3)
+[2026-10-02 09:15:01] WARN drive-mirror divergence: market_cache/ohlc/CVI.parquet
+[2026-10-02 09:15:01] WARN drive-mirror divergence: market_cache/ohlc/SORNU.parquet
+[2026-10-02 09:15:01] WARN drive-mirror divergence: market_cache/ohlc/UBS.parquet
+[2026-10-02 09:15:01] NOTE: no pg dump found under current/
+[2026-10-02 09:15:01] drill end rc=1
