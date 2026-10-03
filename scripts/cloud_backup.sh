@@ -14,7 +14,23 @@
 # Cron: daily 20:30 via disk_guard_daily.sh. Log: state/cloud_backup.log
 set -uo pipefail
 
-DBX="dropbox:market-data-backup"
+# Dataset list, paths and excludes come from the SSOT manifest — see
+# ~/.config/market-data/datasets.conf. Patch there, not here: this list and
+# etl_registry.py's copy of the same facts drifted for three weeks and the
+# weekly audit could not tell a real loss from a stale path.
+SSOT_DIR="$HOME/.config/market-data"
+SSOT_ROWS=()
+while IFS= read -r _row; do
+  [ -n "$_row" ] && SSOT_ROWS+=("$_row")
+done < <(/usr/bin/python3 "$SSOT_DIR/datasets.py" backup)
+if [ ${#SSOT_ROWS[@]} -eq 0 ]; then
+  # Refuse to run rather than back up nothing and report success: an empty list
+  # would make every `rclone sync` a no-op and still exit 0.
+  echo "cloud_backup: dataset SSOT empty or unreadable ($SSOT_DIR) — aborting" >&2
+  exit 1
+fi
+
+DBX="$(/usr/bin/python3 "$SSOT_DIR/datasets.py" remote)"
 GDR="googledrive:market-data-backup"
 STAMP=$(date +%Y-%m-%d)
 LOG="$HOME/repos/repo-data-dedup/state/cloud_backup.log"
@@ -88,6 +104,8 @@ ARCH_ROOT="$HOME/.backup-archives"
 STATIC_SUBDIRS=(
   "$HOME/market-pipeline/market_cache/nse_xbrl/xml|nse_xbrl-xml"
   "$HOME/market-pipeline/market_cache/ohlc|market_cache-ohlc"
+  "$HOME/market-pipeline/market_cache/dart|market_cache-dart"
+  "$HOME/market-pipeline/market_cache/intl_pit|market_cache-intl_pit"
 )
 
 archive_static () {
@@ -111,9 +129,10 @@ archive_static () {
 }
 
 exclude_patterns_for () {  # dataset name -> raw subdir patterns replaced by archives
-  case "$1" in
-    pipeline-market_cache) printf '%s\n' "/nse_xbrl/xml/**" "/ohlc/**" ;;
-  esac
+  # Looked up from the SSOT rows by awk, not an associative array: macOS ships
+  # bash 3.2, where `declare -A` does not exist and would fail silently-ish.
+  printf '%s\n' ${SSOT_ROWS[@]+"${SSOT_ROWS[@]}"} \
+    | awk -F'|' -v n="$1" '$2==n{print $3}' | tr ',' '\n' | grep -v '^$' || true
 }
 
 backup () {  # backup <local_dir> <name> <remote>
@@ -125,6 +144,14 @@ backup () {  # backup <local_dir> <name> <remote>
   done
   # --delete-excluded prunes raw copies of now-archived subdirs from the remote
   [ ${#sync_x[@]} -gt 0 ] && sync_x+=(--delete-excluded)
+  # macOS metadata. Dropbox rejects these filenames outright; the upload error
+  # then makes rclone skip its delete pass and mark the whole dataset FAIL —
+  # gmd-cache_seed, gss-cache_seed and pipeline-data failed nightly on this alone.
+  # The check needs the same exclude or it reports them missing from the remote.
+  # Added after the --delete-excluded decision so that behaviour is unchanged.
+  for p in ".DS_Store" "._*"; do
+    sync_x+=(--exclude "$p"); check_x+=(--exclude "$p")
+  done
   $RC sync "$src" "$rem/current/$name" \
       --backup-dir "$rem/versions/$STAMP/$name" \
       ${sync_x[@]+"${sync_x[@]}"} \
@@ -138,48 +165,19 @@ backup () {  # backup <local_dir> <name> <remote>
 
 archive_static
 
-DATASETS=(
-  "$HOME/repos/global-market-data/warehouse|gmd-warehouse"
-  "$HOME/repos/global-market-data/cache_seed|gmd-cache_seed"
-  "$HOME/market-pipeline/code/python_files/cache_seed|pipeline-cache_seed"
-  "$HOME/market-pipeline/code/python_files/reports|pipeline-reports"
-  "$HOME/repos/branch-archives|branch-archives"
-  # RETIRED 2026-07-23: ~/Downloads/market_cache (stale pre-move tree) evicted
-  # locally after cloud verification (7,661 files matched). Its remote copy at
-  # current/market_cache stays as an archival snapshot — do not re-add or prune.
-  # "$HOME/Downloads/market_cache|market_cache"
-  "$HOME/repos/global-stock-screener/cache_seed|gss-cache_seed"
-  "$HOME/repos/india-trade-tracker/data|tracker-trade-data"
-  "$HOME/repos/agri-commodity-tracker/data|tracker-agri-data"
-  # added 2026-07-23 coverage audit — the LIVE market_cache (the Downloads one
-  # above is the stale pre-move tree): nse_xbrl filing index+XMLs (the map that
-  # cannot be reconstructed), Korea dart cache, CA history + board-meeting
-  # intimations (the validated-claim source data), ohlc caches
-  "$HOME/market-pipeline/market_cache|pipeline-market_cache"
-  # bhavcopy_cache + dated scan outputs
-  "$HOME/market-pipeline/data|pipeline-data"
-  # recomputed 2026-07-23 correlation matrices — only copies (the 346MB
-  # predecessor duckdb is LFS-locked in deleted working-files history)
-  "$HOME/market-pipeline/code/python_files/correlation_scan|correlation-scan"
-  # IUDX flood sensor archive (tiny, irreplaceable time series)
-  "$HOME/iudx-flood-collector|iudx-flood-collector"
-  # FULL MemPalace (user request 2026-07-23): live palace (5.9G) + damaged/
-  # pre-rebuild snapshots (7.5G — the only fallback if the 07-17 rebuild ever
-  # proves lossy). ~13G first upload per provider; embeddings (chroma) are
-  # technically regenerable by re-mining but the mined content is not.
-  "$HOME/.mempalace|mempalace"
-  # single-file tar.zst archives of static many-small-file subdirs (see above)
-  "$HOME/.backup-archives|static-archives"
-  # state-government press-release register (2026-08-02): 162k+ releases /
-  # 16 states, gitignored in digital-twin-for-ipa after the sqlite crossed
-  # GitHub's ~100MiB blob ceiling; archives (MH/MP/RJ) are re-collectable but
-  # slowly, and machine translations are not — this is the durable copy
-  "$HOME/digital-twin-for-ipa/data/registers|twin-state-registers"
-)
+# DATASETS now comes from the SSOT manifest, loaded into SSOT_ROWS at the top
+# of this script as "<local_path>|<name>|<excludes>" rows. The literal list that
+# used to live here is gone on purpose — it was one of the three places the same
+# facts were declared, and they drifted. Add or move a dataset in
+# ~/.config/market-data/datasets.conf and BOTH this backup and the weekly ETL
+# audit pick it up; edit it here and only one of them will.
 
 for rem in "$DBX" "$GDR"; do
-  for pair in "${DATASETS[@]}"; do
-    backup "${pair%%|*}" "${pair##*|}" "$rem"
+  for pair in "${SSOT_ROWS[@]}"; do
+    # rows are local|name|excludes — take fields 1 and 2, not %%/## on the whole
+    # string (a 3-field row would otherwise hand `backup` the excludes as a name)
+    backup "$(printf '%s' "$pair" | cut -d'|' -f1)" \
+           "$(printf '%s' "$pair" | cut -d'|' -f2)" "$rem"
   done
 done
 
