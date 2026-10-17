@@ -16834,3 +16834,1239 @@ FAIL home-documents -> googledrive:market-data-backup
 2026/09/30 20:38:57 CRITICAL: Failed to create file system for "googledrive:market-data-backup/history": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
 FAIL history -> gdrive
 done 20:38
+===== cloud_backup 2026-10-03 20:30 -> dropbox + gdrive =====
+ARCH market_cache-ohlc rebuilt (7702:341484:1790985357)
+ARCH market_cache-dart rebuilt (2933:42940:1790992456)
+ARCH market_cache-intl_pit rebuilt (11632:49908:1791019311)
+2026/10/03 20:31:15 NOTICE: Dropbox root 'market-data-backup/current/gmd-warehouse': 0 differences found
+2026/10/03 20:31:15 NOTICE: Dropbox root 'market-data-backup/current/gmd-warehouse': 21 matching files
+OK   gmd-warehouse -> dropbox:market-data-backup
+2026/10/03 20:33:24 ERROR : Dropbox root 'market-data-backup/current/gmd-panels': sync batch commit: failed to commit batch length 1: batch had 1 errors: last error: upload failed: too_many_write_operations
+2026/10/03 20:33:24 ERROR : ohlcv/JP/year=2018.parquet: Failed to copy: upload failed: batch upload failed: upload failed: too_many_write_operations
+2026/10/03 20:36:14 ERROR : Dropbox root 'market-data-backup/current/gmd-panels': not deleting files as there were IO errors
+2026/10/03 20:36:14 ERROR : Dropbox root 'market-data-backup/current/gmd-panels': not deleting directories as there were IO errors
+2026/10/03 20:36:14 ERROR : Attempt 1/3 failed with 1 errors and: upload failed: batch upload failed: upload failed: too_many_write_operations
+2026/10/03 20:36:22 ERROR : Attempt 2/3 succeeded
+2026/10/03 20:36:25 NOTICE: Dropbox root 'market-data-backup/current/gmd-panels': 0 differences found
+2026/10/03 20:36:25 NOTICE: Dropbox root 'market-data-backup/current/gmd-panels': 143 matching files
+OK   gmd-panels -> dropbox:market-data-backup
+2026/10/03 20:36:28 NOTICE: Dropbox root 'market-data-backup/current/gmd-cache_seed': 0 differences found
+2026/10/03 20:36:28 NOTICE: Dropbox root 'market-data-backup/current/gmd-cache_seed': 61 matching files
+OK   gmd-cache_seed -> dropbox:market-data-backup
+2026/10/03 20:36:51 NOTICE: Dropbox root 'market-data-backup/current/pipeline-cache_seed': 0 differences found
+2026/10/03 20:36:51 NOTICE: Dropbox root 'market-data-backup/current/pipeline-cache_seed': 114 matching files
+OK   pipeline-cache_seed -> dropbox:market-data-backup
+2026/10/03 20:37:12 ERROR : Dropbox root 'market-data-backup/current/pipeline-market_cache': sync batch commit: failed to commit batch length 1: batch had 1 errors: last error: upload failed: too_many_write_operations
+2026/10/03 20:37:12 ERROR : exchange_extras/bse_results_cal.parquet: Failed to copy: upload failed: batch upload failed: upload failed: too_many_write_operations
+2026/10/03 20:37:28 ERROR : Dropbox root 'market-data-backup/current/pipeline-market_cache': sync batch commit: failed to commit batch length 2: batch had 2 errors: last error: upload failed: too_many_write_operations
+2026/10/03 20:37:28 ERROR : fundamentals/US_current.parquet.bak: Failed to copy: upload failed: batch upload failed: upload failed: too_many_write_operations
+2026/10/03 20:37:28 ERROR : exchange_extras/index_closes.parquet: Failed to copy: upload failed: batch upload failed: upload failed: too_many_write_operations
+2026/10/03 20:37:36 ERROR : Dropbox root 'market-data-backup/current/pipeline-market_cache': not deleting files as there were IO errors
+2026/10/03 20:37:36 ERROR : Dropbox root 'market-data-backup/current/pipeline-market_cache': not deleting directories as there were IO errors
+2026/10/03 20:37:36 ERROR : Attempt 1/3 failed with 3 errors and: upload failed: batch upload failed: upload failed: too_many_write_operations
+2026/10/03 20:37:41 ERROR : Attempt 2/3 succeeded
+2026/10/03 20:37:43 NOTICE: Dropbox root 'market-data-backup/current/pipeline-market_cache': 0 differences found
+2026/10/03 20:37:43 NOTICE: Dropbox root 'market-data-backup/current/pipeline-market_cache': 303 matching files
+OK   pipeline-market_cache -> dropbox:market-data-backup
+2026/10/03 20:37:46 NOTICE: Dropbox root 'market-data-backup/current/gss-cache_seed': 0 differences found
+2026/10/03 20:37:46 NOTICE: Dropbox root 'market-data-backup/current/gss-cache_seed': 75 matching files
+OK   gss-cache_seed -> dropbox:market-data-backup
+2026/10/03 20:38:49 NOTICE: Dropbox root 'market-data-backup/current/pipeline-reports': 0 differences found
+2026/10/03 20:38:49 NOTICE: Dropbox root 'market-data-backup/current/pipeline-reports': 473 matching files
+OK   pipeline-reports -> dropbox:market-data-backup
+2026/10/03 20:40:23 NOTICE: Dropbox root 'market-data-backup/current/pipeline-data': 0 differences found
+2026/10/03 20:40:23 NOTICE: Dropbox root 'market-data-backup/current/pipeline-data': 3646 matching files
+OK   pipeline-data -> dropbox:market-data-backup
+2026/10/03 20:41:08 ERROR : Dropbox root 'market-data-backup/current/correlation-scan': sync batch commit: failed to commit batch length 1: batch had 1 errors: last error: upload failed: too_many_write_operations
+2026/10/03 20:41:08 ERROR : korea_cluster_3.png: Failed to copy: upload failed: batch upload failed: upload failed: too_many_write_operations
+2026/10/03 20:41:51 ERROR : Dropbox root 'market-data-backup/current/correlation-scan': not deleting files as there were IO errors
+2026/10/03 20:41:51 ERROR : Dropbox root 'market-data-backup/current/correlation-scan': not deleting directories as there were IO errors
+2026/10/03 20:41:51 ERROR : Attempt 1/3 failed with 1 errors and: upload failed: batch upload failed: upload failed: too_many_write_operations
+2026/10/03 20:41:54 ERROR : Attempt 2/3 succeeded
+2026/10/03 20:41:55 NOTICE: Dropbox root 'market-data-backup/current/correlation-scan': 0 differences found
+2026/10/03 20:41:55 NOTICE: Dropbox root 'market-data-backup/current/correlation-scan': 39 matching files
+OK   correlation-scan -> dropbox:market-data-backup
+2026/10/03 20:43:33 NOTICE: Dropbox root 'market-data-backup/current/warehouse-duckdb': 0 differences found
+2026/10/03 20:43:33 NOTICE: Dropbox root 'market-data-backup/current/warehouse-duckdb': 17 matching files
+OK   warehouse-duckdb -> dropbox:market-data-backup
+2026/10/03 20:43:37 NOTICE: Dropbox root 'market-data-backup/current/branch-archives': 0 differences found
+OK   branch-archives -> dropbox:market-data-backup
+2026/10/03 20:43:39 NOTICE: Dropbox root 'market-data-backup/current/tracker-trade-data': 0 differences found
+2026/10/03 20:43:39 NOTICE: Dropbox root 'market-data-backup/current/tracker-trade-data': 4 matching files
+OK   tracker-trade-data -> dropbox:market-data-backup
+2026/10/03 20:43:41 NOTICE: Dropbox root 'market-data-backup/current/tracker-agri-data': 0 differences found
+2026/10/03 20:43:41 NOTICE: Dropbox root 'market-data-backup/current/tracker-agri-data': 4 matching files
+OK   tracker-agri-data -> dropbox:market-data-backup
+2026/10/03 20:44:46 NOTICE: Dropbox root 'market-data-backup/current/iudx-flood-collector': 0 differences found
+2026/10/03 20:44:46 NOTICE: Dropbox root 'market-data-backup/current/iudx-flood-collector': 386 matching files
+OK   iudx-flood-collector -> dropbox:market-data-backup
+2026/10/03 20:44:49 NOTICE: Dropbox root 'market-data-backup/current/mempalace': 0 differences found
+2026/10/03 20:44:49 NOTICE: Dropbox root 'market-data-backup/current/mempalace': 3 matching files
+OK   mempalace -> dropbox:market-data-backup
+2026/10/03 20:45:47 NOTICE: Dropbox root 'market-data-backup/current/static-archives': 0 differences found
+2026/10/03 20:45:47 NOTICE: Dropbox root 'market-data-backup/current/static-archives': 8 matching files
+OK   static-archives -> dropbox:market-data-backup
+2026/10/03 20:45:49 NOTICE: Dropbox root 'market-data-backup/current/market-data-config': 0 differences found
+2026/10/03 20:45:49 NOTICE: Dropbox root 'market-data-backup/current/market-data-config': 2 matching files
+OK   market-data-config -> dropbox:market-data-backup
+2026/10/03 20:45:52 NOTICE: Dropbox root 'market-data-backup/current/twin-state-registers': 0 differences found
+2026/10/03 20:45:52 NOTICE: Dropbox root 'market-data-backup/current/twin-state-registers': 8 matching files
+OK   twin-state-registers -> dropbox:market-data-backup
+2026/10/03 20:46:03 NOTICE: Dropbox root 'market-data-backup/current/home-desktop': 0 differences found
+2026/10/03 20:46:03 NOTICE: Dropbox root 'market-data-backup/current/home-desktop': 10 matching files
+OK   home-desktop -> dropbox:market-data-backup
+2026/10/03 20:46:06 NOTICE: Dropbox root 'market-data-backup/current/home-documents': 0 differences found
+2026/10/03 20:46:06 NOTICE: Dropbox root 'market-data-backup/current/home-documents': 38 matching files
+OK   home-documents -> dropbox:market-data-backup
+2026/10/03 20:46:06 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/gmd-warehouse": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL gmd-warehouse -> googledrive:market-data-backup
+2026/10/03 20:46:07 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/gmd-panels": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL gmd-panels -> googledrive:market-data-backup
+2026/10/03 20:46:07 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/gmd-cache_seed": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL gmd-cache_seed -> googledrive:market-data-backup
+2026/10/03 20:46:08 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/pipeline-cache_seed": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL pipeline-cache_seed -> googledrive:market-data-backup
+2026/10/03 20:46:08 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/pipeline-market_cache": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL pipeline-market_cache -> googledrive:market-data-backup
+2026/10/03 20:46:09 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/gss-cache_seed": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL gss-cache_seed -> googledrive:market-data-backup
+2026/10/03 20:46:09 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/pipeline-reports": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL pipeline-reports -> googledrive:market-data-backup
+2026/10/03 20:46:10 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/pipeline-data": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL pipeline-data -> googledrive:market-data-backup
+2026/10/03 20:46:10 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/correlation-scan": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL correlation-scan -> googledrive:market-data-backup
+2026/10/03 20:46:11 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/warehouse-duckdb": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL warehouse-duckdb -> googledrive:market-data-backup
+2026/10/03 20:46:11 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/branch-archives": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL branch-archives -> googledrive:market-data-backup
+2026/10/03 20:46:11 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/tracker-trade-data": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL tracker-trade-data -> googledrive:market-data-backup
+2026/10/03 20:46:12 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/tracker-agri-data": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL tracker-agri-data -> googledrive:market-data-backup
+2026/10/03 20:46:12 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/iudx-flood-collector": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL iudx-flood-collector -> googledrive:market-data-backup
+2026/10/03 20:46:13 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/mempalace": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL mempalace -> googledrive:market-data-backup
+2026/10/03 20:46:13 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/static-archives": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL static-archives -> googledrive:market-data-backup
+2026/10/03 20:46:14 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/market-data-config": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL market-data-config -> googledrive:market-data-backup
+2026/10/03 20:46:14 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/twin-state-registers": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL twin-state-registers -> googledrive:market-data-backup
+2026/10/03 20:46:14 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/home-desktop": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL home-desktop -> googledrive:market-data-backup
+2026/10/03 20:46:15 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/home-documents": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL home-documents -> googledrive:market-data-backup
+2026/10/03 20:46:16 CRITICAL: Failed to create file system for "googledrive:market-data-backup/history": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL history -> gdrive
+done 20:46
+===== cloud_backup 2026-10-06 20:30 -> dropbox + gdrive =====
+ARCH nse_xbrl-xml rebuilt (23831:529596:1791253396)
+ARCH market_cache-ohlc rebuilt (7718:342092:1791252816)
+ARCH market_cache-dart rebuilt (3191:52572:1791254679)
+ARCH market_cache-intl_pit rebuilt (11964:51700:1791254869)
+2026/10/06 20:32:42 NOTICE: Dropbox root 'market-data-backup/current/gmd-warehouse': 0 differences found
+2026/10/06 20:32:42 NOTICE: Dropbox root 'market-data-backup/current/gmd-warehouse': 21 matching files
+OK   gmd-warehouse -> dropbox:market-data-backup
+2026/10/06 20:34:19 NOTICE: Dropbox root 'market-data-backup/current/gmd-panels': 0 differences found
+2026/10/06 20:34:19 NOTICE: Dropbox root 'market-data-backup/current/gmd-panels': 143 matching files
+OK   gmd-panels -> dropbox:market-data-backup
+2026/10/06 20:34:22 NOTICE: Dropbox root 'market-data-backup/current/gmd-cache_seed': 0 differences found
+2026/10/06 20:34:22 NOTICE: Dropbox root 'market-data-backup/current/gmd-cache_seed': 61 matching files
+OK   gmd-cache_seed -> dropbox:market-data-backup
+2026/10/06 20:34:41 NOTICE: Dropbox root 'market-data-backup/current/pipeline-cache_seed': 0 differences found
+2026/10/06 20:34:41 NOTICE: Dropbox root 'market-data-backup/current/pipeline-cache_seed': 114 matching files
+OK   pipeline-cache_seed -> dropbox:market-data-backup
+2026/10/06 20:35:05 ERROR : Dropbox root 'market-data-backup/current/pipeline-market_cache': sync batch commit: failed to commit batch length 1: batch had 1 errors: last error: upload failed: too_many_write_operations
+2026/10/06 20:35:05 ERROR : fundamentals/EU_current.parquet: Failed to copy: upload failed: batch upload failed: upload failed: too_many_write_operations
+2026/10/06 20:35:37 ERROR : Dropbox root 'market-data-backup/current/pipeline-market_cache': not deleting files as there were IO errors
+2026/10/06 20:35:37 ERROR : Dropbox root 'market-data-backup/current/pipeline-market_cache': not deleting directories as there were IO errors
+2026/10/06 20:35:37 ERROR : Attempt 1/3 failed with 1 errors and: upload failed: batch upload failed: upload failed: too_many_write_operations
+2026/10/06 20:35:41 ERROR : Attempt 2/3 succeeded
+2026/10/06 20:35:43 NOTICE: Dropbox root 'market-data-backup/current/pipeline-market_cache': 0 differences found
+2026/10/06 20:35:43 NOTICE: Dropbox root 'market-data-backup/current/pipeline-market_cache': 309 matching files
+OK   pipeline-market_cache -> dropbox:market-data-backup
+2026/10/06 20:35:47 NOTICE: Dropbox root 'market-data-backup/current/gss-cache_seed': 0 differences found
+2026/10/06 20:35:47 NOTICE: Dropbox root 'market-data-backup/current/gss-cache_seed': 75 matching files
+OK   gss-cache_seed -> dropbox:market-data-backup
+2026/10/06 20:36:17 NOTICE: Dropbox root 'market-data-backup/current/pipeline-reports': 0 differences found
+2026/10/06 20:36:17 NOTICE: Dropbox root 'market-data-backup/current/pipeline-reports': 482 matching files
+OK   pipeline-reports -> dropbox:market-data-backup
+2026/10/06 20:37:48 NOTICE: Dropbox root 'market-data-backup/current/pipeline-data': 0 differences found
+2026/10/06 20:37:48 NOTICE: Dropbox root 'market-data-backup/current/pipeline-data': 3648 matching files
+OK   pipeline-data -> dropbox:market-data-backup
+2026/10/06 20:39:09 NOTICE: Dropbox root 'market-data-backup/current/correlation-scan': 0 differences found
+2026/10/06 20:39:09 NOTICE: Dropbox root 'market-data-backup/current/correlation-scan': 39 matching files
+OK   correlation-scan -> dropbox:market-data-backup
+2026/10/06 20:40:47 NOTICE: Dropbox root 'market-data-backup/current/warehouse-duckdb': 0 differences found
+2026/10/06 20:40:47 NOTICE: Dropbox root 'market-data-backup/current/warehouse-duckdb': 17 matching files
+OK   warehouse-duckdb -> dropbox:market-data-backup
+2026/10/06 20:40:52 NOTICE: Dropbox root 'market-data-backup/current/branch-archives': 0 differences found
+OK   branch-archives -> dropbox:market-data-backup
+2026/10/06 20:40:56 NOTICE: Dropbox root 'market-data-backup/current/tracker-trade-data': 0 differences found
+2026/10/06 20:40:56 NOTICE: Dropbox root 'market-data-backup/current/tracker-trade-data': 4 matching files
+OK   tracker-trade-data -> dropbox:market-data-backup
+2026/10/06 20:40:59 NOTICE: Dropbox root 'market-data-backup/current/tracker-agri-data': 0 differences found
+2026/10/06 20:40:59 NOTICE: Dropbox root 'market-data-backup/current/tracker-agri-data': 4 matching files
+OK   tracker-agri-data -> dropbox:market-data-backup
+2026/10/06 20:41:15 NOTICE: Dropbox root 'market-data-backup/current/iudx-flood-collector': 0 differences found
+2026/10/06 20:41:15 NOTICE: Dropbox root 'market-data-backup/current/iudx-flood-collector': 386 matching files
+OK   iudx-flood-collector -> dropbox:market-data-backup
+2026/10/06 20:41:19 NOTICE: Dropbox root 'market-data-backup/current/mempalace': 0 differences found
+2026/10/06 20:41:19 NOTICE: Dropbox root 'market-data-backup/current/mempalace': 3 matching files
+OK   mempalace -> dropbox:market-data-backup
+2026/10/06 20:42:30 NOTICE: Dropbox root 'market-data-backup/current/static-archives': 0 differences found
+2026/10/06 20:42:30 NOTICE: Dropbox root 'market-data-backup/current/static-archives': 8 matching files
+OK   static-archives -> dropbox:market-data-backup
+2026/10/06 20:42:33 NOTICE: Dropbox root 'market-data-backup/current/market-data-config': 0 differences found
+2026/10/06 20:42:33 NOTICE: Dropbox root 'market-data-backup/current/market-data-config': 2 matching files
+OK   market-data-config -> dropbox:market-data-backup
+2026/10/06 20:42:38 NOTICE: Dropbox root 'market-data-backup/current/twin-state-registers': 0 differences found
+2026/10/06 20:42:38 NOTICE: Dropbox root 'market-data-backup/current/twin-state-registers': 8 matching files
+OK   twin-state-registers -> dropbox:market-data-backup
+2026/10/06 20:42:42 NOTICE: Dropbox root 'market-data-backup/current/home-desktop': 0 differences found
+2026/10/06 20:42:42 NOTICE: Dropbox root 'market-data-backup/current/home-desktop': 10 matching files
+OK   home-desktop -> dropbox:market-data-backup
+2026/10/06 20:42:45 NOTICE: Dropbox root 'market-data-backup/current/home-documents': 0 differences found
+2026/10/06 20:42:45 NOTICE: Dropbox root 'market-data-backup/current/home-documents': 38 matching files
+OK   home-documents -> dropbox:market-data-backup
+2026/10/06 20:42:46 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/gmd-warehouse": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL gmd-warehouse -> googledrive:market-data-backup
+2026/10/06 20:42:46 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/gmd-panels": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL gmd-panels -> googledrive:market-data-backup
+2026/10/06 20:42:47 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/gmd-cache_seed": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL gmd-cache_seed -> googledrive:market-data-backup
+2026/10/06 20:42:47 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/pipeline-cache_seed": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL pipeline-cache_seed -> googledrive:market-data-backup
+2026/10/06 20:42:48 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/pipeline-market_cache": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL pipeline-market_cache -> googledrive:market-data-backup
+2026/10/06 20:42:48 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/gss-cache_seed": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL gss-cache_seed -> googledrive:market-data-backup
+2026/10/06 20:42:49 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/pipeline-reports": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL pipeline-reports -> googledrive:market-data-backup
+2026/10/06 20:42:49 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/pipeline-data": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL pipeline-data -> googledrive:market-data-backup
+2026/10/06 20:42:50 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/correlation-scan": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL correlation-scan -> googledrive:market-data-backup
+2026/10/06 20:42:50 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/warehouse-duckdb": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL warehouse-duckdb -> googledrive:market-data-backup
+2026/10/06 20:42:51 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/branch-archives": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL branch-archives -> googledrive:market-data-backup
+2026/10/06 20:42:51 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/tracker-trade-data": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL tracker-trade-data -> googledrive:market-data-backup
+2026/10/06 20:42:52 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/tracker-agri-data": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL tracker-agri-data -> googledrive:market-data-backup
+2026/10/06 20:42:52 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/iudx-flood-collector": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL iudx-flood-collector -> googledrive:market-data-backup
+2026/10/06 20:42:53 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/mempalace": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL mempalace -> googledrive:market-data-backup
+2026/10/06 20:42:53 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/static-archives": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL static-archives -> googledrive:market-data-backup
+2026/10/06 20:42:54 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/market-data-config": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL market-data-config -> googledrive:market-data-backup
+2026/10/06 20:42:54 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/twin-state-registers": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL twin-state-registers -> googledrive:market-data-backup
+2026/10/06 20:42:55 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/home-desktop": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL home-desktop -> googledrive:market-data-backup
+2026/10/06 20:42:55 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/home-documents": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL home-documents -> googledrive:market-data-backup
+2026/10/06 20:42:56 CRITICAL: Failed to create file system for "googledrive:market-data-backup/history": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL history -> gdrive
+done 20:42
+===== cloud_backup 2026-10-09 20:30 -> dropbox + gdrive =====
+ARCH nse_xbrl-xml rebuilt (23834:177248:1791302560)
+ARCH market_cache-ohlc rebuilt (7723:342128:1791520908)
+ARCH market_cache-dart rebuilt (3490:21872:1791522642)
+ARCH market_cache-intl_pit rebuilt (12113:48460:1791304018)
+2026/10/09 20:33:57 NOTICE: Dropbox root 'market-data-backup/current/gmd-warehouse': 0 differences found
+2026/10/09 20:33:57 NOTICE: Dropbox root 'market-data-backup/current/gmd-warehouse': 21 matching files
+OK   gmd-warehouse -> dropbox:market-data-backup
+2026/10/09 20:37:58 NOTICE: Dropbox root 'market-data-backup/current/gmd-panels': 0 differences found
+2026/10/09 20:37:59 NOTICE: Dropbox root 'market-data-backup/current/gmd-panels': 143 matching files
+OK   gmd-panels -> dropbox:market-data-backup
+2026/10/09 20:38:02 NOTICE: Dropbox root 'market-data-backup/current/gmd-cache_seed': 0 differences found
+2026/10/09 20:38:02 NOTICE: Dropbox root 'market-data-backup/current/gmd-cache_seed': 61 matching files
+OK   gmd-cache_seed -> dropbox:market-data-backup
+2026/10/09 20:38:12 ERROR : zone_regime.json: Failed to copy: upload failed: batch upload failed: upload failed: too_many_write_operations
+2026/10/09 20:38:12 ERROR : Dropbox root 'market-data-backup/current/pipeline-cache_seed': sync batch commit: failed to commit batch length 1: batch had 1 errors: last error: upload failed: too_many_write_operations
+2026/10/09 20:38:20 ERROR : Dropbox root 'market-data-backup/current/pipeline-cache_seed': not deleting files as there were IO errors
+2026/10/09 20:38:20 ERROR : Dropbox root 'market-data-backup/current/pipeline-cache_seed': not deleting directories as there were IO errors
+2026/10/09 20:38:20 ERROR : Attempt 1/3 failed with 1 errors and: upload failed: batch upload failed: upload failed: too_many_write_operations
+2026/10/09 20:38:22 ERROR : Attempt 2/3 succeeded
+2026/10/09 20:38:24 NOTICE: Dropbox root 'market-data-backup/current/pipeline-cache_seed': 0 differences found
+2026/10/09 20:38:24 NOTICE: Dropbox root 'market-data-backup/current/pipeline-cache_seed': 114 matching files
+OK   pipeline-cache_seed -> dropbox:market-data-backup
+2026/10/09 20:39:14 NOTICE: Dropbox root 'market-data-backup/current/pipeline-market_cache': 0 differences found
+2026/10/09 20:39:14 NOTICE: Dropbox root 'market-data-backup/current/pipeline-market_cache': 315 matching files
+OK   pipeline-market_cache -> dropbox:market-data-backup
+2026/10/09 20:39:21 NOTICE: Dropbox root 'market-data-backup/current/gss-cache_seed': 0 differences found
+2026/10/09 20:39:21 NOTICE: Dropbox root 'market-data-backup/current/gss-cache_seed': 75 matching files
+OK   gss-cache_seed -> dropbox:market-data-backup
+2026/10/09 20:40:14 NOTICE: Dropbox root 'market-data-backup/current/pipeline-reports': 0 differences found
+2026/10/09 20:40:14 NOTICE: Dropbox root 'market-data-backup/current/pipeline-reports': 490 matching files
+OK   pipeline-reports -> dropbox:market-data-backup
+2026/10/09 20:40:25 ERROR : bhavcopy_cache/nse/20261008.csv: Failed to copy: upload failed: batch upload failed: upload failed: too_many_write_operations
+2026/10/09 20:40:25 ERROR : Dropbox root 'market-data-backup/current/pipeline-data': sync batch commit: failed to commit batch length 2: batch had 2 errors: last error: upload failed: too_many_write_operations
+2026/10/09 20:40:25 ERROR : bhavcopy_cache/nse/20261007.csv: Failed to copy: upload failed: batch upload failed: upload failed: too_many_write_operations
+2026/10/09 20:41:50 ERROR : Dropbox root 'market-data-backup/current/pipeline-data': not deleting files as there were IO errors
+2026/10/09 20:41:50 ERROR : Dropbox root 'market-data-backup/current/pipeline-data': not deleting directories as there were IO errors
+2026/10/09 20:41:50 ERROR : Attempt 1/3 failed with 2 errors and: upload failed: batch upload failed: upload failed: too_many_write_operations
+2026/10/09 20:41:54 ERROR : Attempt 2/3 succeeded
+2026/10/09 20:41:59 NOTICE: Dropbox root 'market-data-backup/current/pipeline-data': 0 differences found
+2026/10/09 20:41:59 NOTICE: Dropbox root 'market-data-backup/current/pipeline-data': 3654 matching files
+OK   pipeline-data -> dropbox:market-data-backup
+2026/10/09 20:42:22 ERROR : europe_cluster_4.png: Failed to copy: upload failed: batch upload failed: upload failed: too_many_write_operations
+2026/10/09 20:42:22 ERROR : Dropbox root 'market-data-backup/current/correlation-scan': sync batch commit: failed to commit batch length 1: batch had 1 errors: last error: upload failed: too_many_write_operations
+2026/10/09 20:43:21 ERROR : Dropbox root 'market-data-backup/current/correlation-scan': not deleting files as there were IO errors
+2026/10/09 20:43:21 ERROR : Dropbox root 'market-data-backup/current/correlation-scan': not deleting directories as there were IO errors
+2026/10/09 20:43:21 ERROR : Attempt 1/3 failed with 1 errors and: upload failed: batch upload failed: upload failed: too_many_write_operations
+2026/10/09 20:43:23 ERROR : Attempt 2/3 succeeded
+2026/10/09 20:43:25 NOTICE: Dropbox root 'market-data-backup/current/correlation-scan': 0 differences found
+2026/10/09 20:43:25 NOTICE: Dropbox root 'market-data-backup/current/correlation-scan': 39 matching files
+OK   correlation-scan -> dropbox:market-data-backup
+2026/10/09 20:45:05 NOTICE: Dropbox root 'market-data-backup/current/warehouse-duckdb': 0 differences found
+2026/10/09 20:45:05 NOTICE: Dropbox root 'market-data-backup/current/warehouse-duckdb': 17 matching files
+OK   warehouse-duckdb -> dropbox:market-data-backup
+2026/10/09 20:45:08 NOTICE: Dropbox root 'market-data-backup/current/branch-archives': 0 differences found
+OK   branch-archives -> dropbox:market-data-backup
+2026/10/09 20:45:11 NOTICE: Dropbox root 'market-data-backup/current/tracker-trade-data': 0 differences found
+2026/10/09 20:45:11 NOTICE: Dropbox root 'market-data-backup/current/tracker-trade-data': 4 matching files
+OK   tracker-trade-data -> dropbox:market-data-backup
+2026/10/09 20:45:13 NOTICE: Dropbox root 'market-data-backup/current/tracker-agri-data': 0 differences found
+2026/10/09 20:45:13 NOTICE: Dropbox root 'market-data-backup/current/tracker-agri-data': 4 matching files
+OK   tracker-agri-data -> dropbox:market-data-backup
+2026/10/09 20:45:27 NOTICE: Dropbox root 'market-data-backup/current/iudx-flood-collector': 0 differences found
+2026/10/09 20:45:27 NOTICE: Dropbox root 'market-data-backup/current/iudx-flood-collector': 386 matching files
+OK   iudx-flood-collector -> dropbox:market-data-backup
+2026/10/09 20:45:31 NOTICE: Dropbox root 'market-data-backup/current/mempalace': 0 differences found
+2026/10/09 20:45:31 NOTICE: Dropbox root 'market-data-backup/current/mempalace': 3 matching files
+OK   mempalace -> dropbox:market-data-backup
+2026/10/09 20:46:37 NOTICE: Dropbox root 'market-data-backup/current/static-archives': 0 differences found
+2026/10/09 20:46:37 NOTICE: Dropbox root 'market-data-backup/current/static-archives': 8 matching files
+OK   static-archives -> dropbox:market-data-backup
+2026/10/09 20:46:39 NOTICE: Dropbox root 'market-data-backup/current/market-data-config': 0 differences found
+2026/10/09 20:46:39 NOTICE: Dropbox root 'market-data-backup/current/market-data-config': 2 matching files
+OK   market-data-config -> dropbox:market-data-backup
+2026/10/09 20:46:42 NOTICE: Dropbox root 'market-data-backup/current/twin-state-registers': 0 differences found
+2026/10/09 20:46:42 NOTICE: Dropbox root 'market-data-backup/current/twin-state-registers': 8 matching files
+OK   twin-state-registers -> dropbox:market-data-backup
+2026/10/09 20:46:45 NOTICE: Dropbox root 'market-data-backup/current/home-desktop': 0 differences found
+2026/10/09 20:46:45 NOTICE: Dropbox root 'market-data-backup/current/home-desktop': 10 matching files
+OK   home-desktop -> dropbox:market-data-backup
+2026/10/09 20:46:48 NOTICE: Dropbox root 'market-data-backup/current/home-documents': 0 differences found
+2026/10/09 20:46:48 NOTICE: Dropbox root 'market-data-backup/current/home-documents': 38 matching files
+OK   home-documents -> dropbox:market-data-backup
+2026/10/09 20:46:48 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/gmd-warehouse": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL gmd-warehouse -> googledrive:market-data-backup
+2026/10/09 20:46:49 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/gmd-panels": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL gmd-panels -> googledrive:market-data-backup
+2026/10/09 20:46:49 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/gmd-cache_seed": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL gmd-cache_seed -> googledrive:market-data-backup
+2026/10/09 20:46:50 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/pipeline-cache_seed": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL pipeline-cache_seed -> googledrive:market-data-backup
+2026/10/09 20:46:50 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/pipeline-market_cache": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL pipeline-market_cache -> googledrive:market-data-backup
+2026/10/09 20:46:51 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/gss-cache_seed": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL gss-cache_seed -> googledrive:market-data-backup
+2026/10/09 20:46:51 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/pipeline-reports": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL pipeline-reports -> googledrive:market-data-backup
+2026/10/09 20:46:51 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/pipeline-data": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL pipeline-data -> googledrive:market-data-backup
+2026/10/09 20:46:52 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/correlation-scan": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL correlation-scan -> googledrive:market-data-backup
+2026/10/09 20:46:52 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/warehouse-duckdb": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL warehouse-duckdb -> googledrive:market-data-backup
+2026/10/09 20:46:53 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/branch-archives": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL branch-archives -> googledrive:market-data-backup
+2026/10/09 20:46:53 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/tracker-trade-data": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL tracker-trade-data -> googledrive:market-data-backup
+2026/10/09 20:46:54 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/tracker-agri-data": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL tracker-agri-data -> googledrive:market-data-backup
+2026/10/09 20:46:54 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/iudx-flood-collector": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL iudx-flood-collector -> googledrive:market-data-backup
+2026/10/09 20:46:54 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/mempalace": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL mempalace -> googledrive:market-data-backup
+2026/10/09 20:46:55 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/static-archives": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL static-archives -> googledrive:market-data-backup
+2026/10/09 20:46:55 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/market-data-config": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL market-data-config -> googledrive:market-data-backup
+2026/10/09 20:46:56 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/twin-state-registers": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL twin-state-registers -> googledrive:market-data-backup
+2026/10/09 20:46:56 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/home-desktop": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL home-desktop -> googledrive:market-data-backup
+2026/10/09 20:46:57 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/home-documents": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL home-documents -> googledrive:market-data-backup
+2026/10/09 20:46:57 CRITICAL: Failed to create file system for "googledrive:market-data-backup/history": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL history -> gdrive
+done 20:46
+===== cloud_backup 2026-10-10 20:30 -> dropbox + gdrive =====
+ARCH nse_xbrl-xml rebuilt (25758:319808:1791599527)
+ARCH market_cache-ohlc rebuilt (7723:342420:1791582246)
+ARCH market_cache-intl_pit rebuilt (12560:50872:1791622150)
+2026/10/10 20:32:50 NOTICE: Dropbox root 'market-data-backup/current/gmd-warehouse': 0 differences found
+2026/10/10 20:32:50 NOTICE: Dropbox root 'market-data-backup/current/gmd-warehouse': 21 matching files
+OK   gmd-warehouse -> dropbox:market-data-backup
+2026/10/10 20:33:12 NOTICE: Dropbox root 'market-data-backup/current/gmd-panels': 0 differences found
+2026/10/10 20:33:12 NOTICE: Dropbox root 'market-data-backup/current/gmd-panels': 143 matching files
+OK   gmd-panels -> dropbox:market-data-backup
+2026/10/10 20:33:15 NOTICE: Dropbox root 'market-data-backup/current/gmd-cache_seed': 0 differences found
+2026/10/10 20:33:15 NOTICE: Dropbox root 'market-data-backup/current/gmd-cache_seed': 61 matching files
+OK   gmd-cache_seed -> dropbox:market-data-backup
+2026/10/10 20:33:37 NOTICE: Dropbox root 'market-data-backup/current/pipeline-cache_seed': 0 differences found
+2026/10/10 20:33:37 NOTICE: Dropbox root 'market-data-backup/current/pipeline-cache_seed': 114 matching files
+OK   pipeline-cache_seed -> dropbox:market-data-backup
+2026/10/10 20:34:05 NOTICE: Dropbox root 'market-data-backup/current/pipeline-market_cache': 0 differences found
+2026/10/10 20:34:05 NOTICE: Dropbox root 'market-data-backup/current/pipeline-market_cache': 315 matching files
+OK   pipeline-market_cache -> dropbox:market-data-backup
+2026/10/10 20:34:09 NOTICE: Dropbox root 'market-data-backup/current/gss-cache_seed': 0 differences found
+2026/10/10 20:34:09 NOTICE: Dropbox root 'market-data-backup/current/gss-cache_seed': 75 matching files
+OK   gss-cache_seed -> dropbox:market-data-backup
+2026/10/10 20:34:19 ERROR : Dropbox root 'market-data-backup/current/pipeline-reports': sync batch commit: failed to commit batch length 1: batch had 1 errors: last error: upload failed: too_many_write_operations
+2026/10/10 20:34:19 ERROR : financial_ratios.csv: Failed to copy: upload failed: batch upload failed: upload failed: too_many_write_operations
+2026/10/10 20:34:39 ERROR : Dropbox root 'market-data-backup/current/pipeline-reports': not deleting files as there were IO errors
+2026/10/10 20:34:39 ERROR : Dropbox root 'market-data-backup/current/pipeline-reports': not deleting directories as there were IO errors
+2026/10/10 20:34:39 ERROR : Attempt 1/3 failed with 1 errors and: upload failed: batch upload failed: upload failed: too_many_write_operations
+2026/10/10 20:34:44 ERROR : Attempt 2/3 succeeded
+2026/10/10 20:34:46 NOTICE: Dropbox root 'market-data-backup/current/pipeline-reports': 0 differences found
+2026/10/10 20:34:46 NOTICE: Dropbox root 'market-data-backup/current/pipeline-reports': 494 matching files
+OK   pipeline-reports -> dropbox:market-data-backup
+2026/10/10 20:36:14 NOTICE: Dropbox root 'market-data-backup/current/pipeline-data': 0 differences found
+2026/10/10 20:36:14 NOTICE: Dropbox root 'market-data-backup/current/pipeline-data': 3656 matching files
+OK   pipeline-data -> dropbox:market-data-backup
+2026/10/10 20:36:44 ERROR : Dropbox root 'market-data-backup/current/correlation-scan': sync batch commit: failed to commit batch length 1: batch had 1 errors: last error: upload failed: too_many_write_operations
+2026/10/10 20:36:44 ERROR : korea_cluster_1.png: Failed to copy: upload failed: batch upload failed: upload failed: too_many_write_operations
+2026/10/10 20:37:32 ERROR : Dropbox root 'market-data-backup/current/correlation-scan': not deleting files as there were IO errors
+2026/10/10 20:37:32 ERROR : Dropbox root 'market-data-backup/current/correlation-scan': not deleting directories as there were IO errors
+2026/10/10 20:37:32 ERROR : Attempt 1/3 failed with 1 errors and: upload failed: batch upload failed: upload failed: too_many_write_operations
+2026/10/10 20:37:34 ERROR : Attempt 2/3 succeeded
+2026/10/10 20:37:36 NOTICE: Dropbox root 'market-data-backup/current/correlation-scan': 0 differences found
+2026/10/10 20:37:36 NOTICE: Dropbox root 'market-data-backup/current/correlation-scan': 39 matching files
+OK   correlation-scan -> dropbox:market-data-backup
+2026/10/10 20:39:01 NOTICE: Dropbox root 'market-data-backup/current/warehouse-duckdb': 0 differences found
+2026/10/10 20:39:01 NOTICE: Dropbox root 'market-data-backup/current/warehouse-duckdb': 17 matching files
+OK   warehouse-duckdb -> dropbox:market-data-backup
+2026/10/10 20:39:05 NOTICE: Dropbox root 'market-data-backup/current/branch-archives': 0 differences found
+OK   branch-archives -> dropbox:market-data-backup
+2026/10/10 20:39:07 NOTICE: Dropbox root 'market-data-backup/current/tracker-trade-data': 0 differences found
+2026/10/10 20:39:07 NOTICE: Dropbox root 'market-data-backup/current/tracker-trade-data': 4 matching files
+OK   tracker-trade-data -> dropbox:market-data-backup
+2026/10/10 20:39:10 NOTICE: Dropbox root 'market-data-backup/current/tracker-agri-data': 0 differences found
+2026/10/10 20:39:10 NOTICE: Dropbox root 'market-data-backup/current/tracker-agri-data': 4 matching files
+OK   tracker-agri-data -> dropbox:market-data-backup
+2026/10/10 20:39:23 NOTICE: Dropbox root 'market-data-backup/current/iudx-flood-collector': 0 differences found
+2026/10/10 20:39:23 NOTICE: Dropbox root 'market-data-backup/current/iudx-flood-collector': 386 matching files
+OK   iudx-flood-collector -> dropbox:market-data-backup
+2026/10/10 20:39:27 NOTICE: Dropbox root 'market-data-backup/current/mempalace': 0 differences found
+2026/10/10 20:39:27 NOTICE: Dropbox root 'market-data-backup/current/mempalace': 3 matching files
+OK   mempalace -> dropbox:market-data-backup
+2026/10/10 20:40:35 NOTICE: Dropbox root 'market-data-backup/current/static-archives': 0 differences found
+2026/10/10 20:40:35 NOTICE: Dropbox root 'market-data-backup/current/static-archives': 8 matching files
+OK   static-archives -> dropbox:market-data-backup
+2026/10/10 20:40:37 NOTICE: Dropbox root 'market-data-backup/current/market-data-config': 0 differences found
+2026/10/10 20:40:37 NOTICE: Dropbox root 'market-data-backup/current/market-data-config': 2 matching files
+OK   market-data-config -> dropbox:market-data-backup
+2026/10/10 20:40:40 NOTICE: Dropbox root 'market-data-backup/current/twin-state-registers': 0 differences found
+2026/10/10 20:40:40 NOTICE: Dropbox root 'market-data-backup/current/twin-state-registers': 8 matching files
+OK   twin-state-registers -> dropbox:market-data-backup
+2026/10/10 20:40:43 NOTICE: Dropbox root 'market-data-backup/current/home-desktop': 0 differences found
+2026/10/10 20:40:43 NOTICE: Dropbox root 'market-data-backup/current/home-desktop': 10 matching files
+OK   home-desktop -> dropbox:market-data-backup
+2026/10/10 20:40:45 NOTICE: Dropbox root 'market-data-backup/current/home-documents': 0 differences found
+2026/10/10 20:40:45 NOTICE: Dropbox root 'market-data-backup/current/home-documents': 38 matching files
+OK   home-documents -> dropbox:market-data-backup
+2026/10/10 20:40:46 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/gmd-warehouse": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL gmd-warehouse -> googledrive:market-data-backup
+2026/10/10 20:40:47 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/gmd-panels": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL gmd-panels -> googledrive:market-data-backup
+2026/10/10 20:40:47 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/gmd-cache_seed": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL gmd-cache_seed -> googledrive:market-data-backup
+2026/10/10 20:40:48 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/pipeline-cache_seed": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL pipeline-cache_seed -> googledrive:market-data-backup
+2026/10/10 20:40:48 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/pipeline-market_cache": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL pipeline-market_cache -> googledrive:market-data-backup
+2026/10/10 20:40:49 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/gss-cache_seed": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL gss-cache_seed -> googledrive:market-data-backup
+2026/10/10 20:40:49 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/pipeline-reports": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL pipeline-reports -> googledrive:market-data-backup
+2026/10/10 20:40:50 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/pipeline-data": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL pipeline-data -> googledrive:market-data-backup
+2026/10/10 20:40:50 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/correlation-scan": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL correlation-scan -> googledrive:market-data-backup
+2026/10/10 20:40:51 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/warehouse-duckdb": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL warehouse-duckdb -> googledrive:market-data-backup
+2026/10/10 20:40:51 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/branch-archives": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL branch-archives -> googledrive:market-data-backup
+2026/10/10 20:40:52 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/tracker-trade-data": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL tracker-trade-data -> googledrive:market-data-backup
+2026/10/10 20:40:52 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/tracker-agri-data": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL tracker-agri-data -> googledrive:market-data-backup
+2026/10/10 20:40:53 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/iudx-flood-collector": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL iudx-flood-collector -> googledrive:market-data-backup
+2026/10/10 20:40:53 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/mempalace": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL mempalace -> googledrive:market-data-backup
+2026/10/10 20:40:54 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/static-archives": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL static-archives -> googledrive:market-data-backup
+2026/10/10 20:40:54 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/market-data-config": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL market-data-config -> googledrive:market-data-backup
+2026/10/10 20:40:55 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/twin-state-registers": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL twin-state-registers -> googledrive:market-data-backup
+2026/10/10 20:40:55 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/home-desktop": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL home-desktop -> googledrive:market-data-backup
+2026/10/10 20:40:56 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/home-documents": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL home-documents -> googledrive:market-data-backup
+2026/10/10 20:40:57 CRITICAL: Failed to create file system for "googledrive:market-data-backup/history": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL history -> gdrive
+done 20:40
+===== cloud_backup 2026-10-11 20:30 -> dropbox + gdrive =====
+ARCH nse_xbrl-xml rebuilt (27677:435296:1791710434)
+ARCH market_cache-intl_pit rebuilt (12665:51436:1791711407)
+2026/10/11 20:32:35 NOTICE: Dropbox root 'market-data-backup/current/gmd-warehouse': 0 differences found
+2026/10/11 20:32:35 NOTICE: Dropbox root 'market-data-backup/current/gmd-warehouse': 21 matching files
+OK   gmd-warehouse -> dropbox:market-data-backup
+2026/10/11 20:32:40 NOTICE: Dropbox root 'market-data-backup/current/gmd-panels': 0 differences found
+2026/10/11 20:32:40 NOTICE: Dropbox root 'market-data-backup/current/gmd-panels': 143 matching files
+OK   gmd-panels -> dropbox:market-data-backup
+2026/10/11 20:32:43 NOTICE: Dropbox root 'market-data-backup/current/gmd-cache_seed': 0 differences found
+2026/10/11 20:32:43 NOTICE: Dropbox root 'market-data-backup/current/gmd-cache_seed': 61 matching files
+OK   gmd-cache_seed -> dropbox:market-data-backup
+2026/10/11 20:32:51 NOTICE: Dropbox root 'market-data-backup/current/pipeline-cache_seed': 0 differences found
+2026/10/11 20:32:51 NOTICE: Dropbox root 'market-data-backup/current/pipeline-cache_seed': 114 matching files
+OK   pipeline-cache_seed -> dropbox:market-data-backup
+2026/10/11 20:33:11 NOTICE: Dropbox root 'market-data-backup/current/pipeline-market_cache': 0 differences found
+2026/10/11 20:33:11 NOTICE: Dropbox root 'market-data-backup/current/pipeline-market_cache': 315 matching files
+OK   pipeline-market_cache -> dropbox:market-data-backup
+2026/10/11 20:33:14 NOTICE: Dropbox root 'market-data-backup/current/gss-cache_seed': 0 differences found
+2026/10/11 20:33:14 NOTICE: Dropbox root 'market-data-backup/current/gss-cache_seed': 75 matching files
+OK   gss-cache_seed -> dropbox:market-data-backup
+2026/10/11 20:33:23 NOTICE: Dropbox root 'market-data-backup/current/pipeline-reports': 0 differences found
+2026/10/11 20:33:23 NOTICE: Dropbox root 'market-data-backup/current/pipeline-reports': 496 matching files
+OK   pipeline-reports -> dropbox:market-data-backup
+2026/10/11 20:36:09 NOTICE: Dropbox root 'market-data-backup/current/pipeline-data': 0 differences found
+2026/10/11 20:36:09 NOTICE: Dropbox root 'market-data-backup/current/pipeline-data': 3656 matching files
+OK   pipeline-data -> dropbox:market-data-backup
+2026/10/11 20:36:11 NOTICE: Dropbox root 'market-data-backup/current/correlation-scan': 0 differences found
+2026/10/11 20:36:11 NOTICE: Dropbox root 'market-data-backup/current/correlation-scan': 39 matching files
+OK   correlation-scan -> dropbox:market-data-backup
+2026/10/11 20:36:14 NOTICE: Dropbox root 'market-data-backup/current/warehouse-duckdb': 0 differences found
+2026/10/11 20:36:14 NOTICE: Dropbox root 'market-data-backup/current/warehouse-duckdb': 17 matching files
+OK   warehouse-duckdb -> dropbox:market-data-backup
+2026/10/11 20:36:18 NOTICE: Dropbox root 'market-data-backup/current/branch-archives': 0 differences found
+OK   branch-archives -> dropbox:market-data-backup
+2026/10/11 20:36:20 NOTICE: Dropbox root 'market-data-backup/current/tracker-trade-data': 0 differences found
+2026/10/11 20:36:20 NOTICE: Dropbox root 'market-data-backup/current/tracker-trade-data': 4 matching files
+OK   tracker-trade-data -> dropbox:market-data-backup
+2026/10/11 20:36:23 NOTICE: Dropbox root 'market-data-backup/current/tracker-agri-data': 0 differences found
+2026/10/11 20:36:23 NOTICE: Dropbox root 'market-data-backup/current/tracker-agri-data': 4 matching files
+OK   tracker-agri-data -> dropbox:market-data-backup
+2026/10/11 20:36:40 NOTICE: Dropbox root 'market-data-backup/current/iudx-flood-collector': 0 differences found
+2026/10/11 20:36:40 NOTICE: Dropbox root 'market-data-backup/current/iudx-flood-collector': 386 matching files
+OK   iudx-flood-collector -> dropbox:market-data-backup
+2026/10/11 20:36:43 NOTICE: Dropbox root 'market-data-backup/current/mempalace': 0 differences found
+2026/10/11 20:36:43 NOTICE: Dropbox root 'market-data-backup/current/mempalace': 3 matching files
+OK   mempalace -> dropbox:market-data-backup
+2026/10/11 20:37:14 NOTICE: Dropbox root 'market-data-backup/current/static-archives': 0 differences found
+2026/10/11 20:37:14 NOTICE: Dropbox root 'market-data-backup/current/static-archives': 8 matching files
+OK   static-archives -> dropbox:market-data-backup
+2026/10/11 20:37:16 NOTICE: Dropbox root 'market-data-backup/current/market-data-config': 0 differences found
+2026/10/11 20:37:16 NOTICE: Dropbox root 'market-data-backup/current/market-data-config': 2 matching files
+OK   market-data-config -> dropbox:market-data-backup
+2026/10/11 20:37:18 NOTICE: Dropbox root 'market-data-backup/current/twin-state-registers': 0 differences found
+2026/10/11 20:37:18 NOTICE: Dropbox root 'market-data-backup/current/twin-state-registers': 8 matching files
+OK   twin-state-registers -> dropbox:market-data-backup
+2026/10/11 20:37:27 NOTICE: Dropbox root 'market-data-backup/current/home-desktop': 0 differences found
+2026/10/11 20:37:27 NOTICE: Dropbox root 'market-data-backup/current/home-desktop': 15 matching files
+OK   home-desktop -> dropbox:market-data-backup
+2026/10/11 20:37:30 NOTICE: Dropbox root 'market-data-backup/current/home-documents': 0 differences found
+2026/10/11 20:37:30 NOTICE: Dropbox root 'market-data-backup/current/home-documents': 38 matching files
+OK   home-documents -> dropbox:market-data-backup
+2026/10/11 20:37:31 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/gmd-warehouse": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL gmd-warehouse -> googledrive:market-data-backup
+2026/10/11 20:37:32 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/gmd-panels": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL gmd-panels -> googledrive:market-data-backup
+2026/10/11 20:37:32 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/gmd-cache_seed": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL gmd-cache_seed -> googledrive:market-data-backup
+2026/10/11 20:37:32 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/pipeline-cache_seed": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL pipeline-cache_seed -> googledrive:market-data-backup
+2026/10/11 20:37:33 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/pipeline-market_cache": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL pipeline-market_cache -> googledrive:market-data-backup
+2026/10/11 20:37:34 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/gss-cache_seed": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL gss-cache_seed -> googledrive:market-data-backup
+2026/10/11 20:37:34 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/pipeline-reports": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL pipeline-reports -> googledrive:market-data-backup
+2026/10/11 20:37:35 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/pipeline-data": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL pipeline-data -> googledrive:market-data-backup
+2026/10/11 20:37:35 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/correlation-scan": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL correlation-scan -> googledrive:market-data-backup
+2026/10/11 20:37:36 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/warehouse-duckdb": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL warehouse-duckdb -> googledrive:market-data-backup
+2026/10/11 20:37:36 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/branch-archives": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL branch-archives -> googledrive:market-data-backup
+2026/10/11 20:37:37 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/tracker-trade-data": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL tracker-trade-data -> googledrive:market-data-backup
+2026/10/11 20:37:37 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/tracker-agri-data": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL tracker-agri-data -> googledrive:market-data-backup
+2026/10/11 20:37:38 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/iudx-flood-collector": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL iudx-flood-collector -> googledrive:market-data-backup
+2026/10/11 20:37:38 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/mempalace": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL mempalace -> googledrive:market-data-backup
+2026/10/11 20:37:39 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/static-archives": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL static-archives -> googledrive:market-data-backup
+2026/10/11 20:37:39 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/market-data-config": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL market-data-config -> googledrive:market-data-backup
+2026/10/11 20:37:40 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/twin-state-registers": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL twin-state-registers -> googledrive:market-data-backup
+2026/10/11 20:37:40 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/home-desktop": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL home-desktop -> googledrive:market-data-backup
+2026/10/11 20:37:41 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/home-documents": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL home-documents -> googledrive:market-data-backup
+2026/10/11 20:37:42 CRITICAL: Failed to create file system for "googledrive:market-data-backup/history": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL history -> gdrive
+done 20:37
+===== cloud_backup 2026-10-12 20:30 -> dropbox + gdrive =====
+ARCH nse_xbrl-xml rebuilt (27677:206060:1791710434)
+ARCH market_cache-ohlc rebuilt (7732:342308:1791777137)
+ARCH market_cache-dart rebuilt (3691:19472:1791775869)
+ARCH market_cache-intl_pit rebuilt (12665:50668:1791711407)
+2026/10/12 20:32:30 NOTICE: Dropbox root 'market-data-backup/current/gmd-warehouse': 0 differences found
+2026/10/12 20:32:30 NOTICE: Dropbox root 'market-data-backup/current/gmd-warehouse': 21 matching files
+OK   gmd-warehouse -> dropbox:market-data-backup
+2026/10/12 20:32:47 ERROR : Dropbox root 'market-data-backup/current/gmd-panels': sync batch commit: failed to commit batch length 2: batch had 2 errors: last error: upload failed: too_many_write_operations
+2026/10/12 20:32:47 ERROR : ohlcv_adj/IN/year=2020.parquet: Failed to copy: upload failed: batch upload failed: upload failed: too_many_write_operations
+2026/10/12 20:32:47 ERROR : ohlcv_adj/IN/year=2019.parquet: Failed to copy: upload failed: batch upload failed: upload failed: too_many_write_operations
+2026/10/12 20:32:55 ERROR : Dropbox root 'market-data-backup/current/gmd-panels': not deleting files as there were IO errors
+2026/10/12 20:32:55 ERROR : Dropbox root 'market-data-backup/current/gmd-panels': not deleting directories as there were IO errors
+2026/10/12 20:32:55 ERROR : Attempt 1/3 failed with 2 errors and: upload failed: batch upload failed: upload failed: too_many_write_operations
+2026/10/12 20:33:01 ERROR : Attempt 2/3 succeeded
+2026/10/12 20:33:04 NOTICE: Dropbox root 'market-data-backup/current/gmd-panels': 0 differences found
+2026/10/12 20:33:04 NOTICE: Dropbox root 'market-data-backup/current/gmd-panels': 143 matching files
+OK   gmd-panels -> dropbox:market-data-backup
+2026/10/12 20:33:07 NOTICE: Dropbox root 'market-data-backup/current/gmd-cache_seed': 0 differences found
+2026/10/12 20:33:07 NOTICE: Dropbox root 'market-data-backup/current/gmd-cache_seed': 61 matching files
+OK   gmd-cache_seed -> dropbox:market-data-backup
+2026/10/12 20:33:22 NOTICE: Dropbox root 'market-data-backup/current/pipeline-cache_seed': 0 differences found
+2026/10/12 20:33:22 NOTICE: Dropbox root 'market-data-backup/current/pipeline-cache_seed': 114 matching files
+OK   pipeline-cache_seed -> dropbox:market-data-backup
+2026/10/12 20:33:57 NOTICE: Dropbox root 'market-data-backup/current/pipeline-market_cache': 0 differences found
+2026/10/12 20:33:57 NOTICE: Dropbox root 'market-data-backup/current/pipeline-market_cache': 320 matching files
+OK   pipeline-market_cache -> dropbox:market-data-backup
+2026/10/12 20:34:00 NOTICE: Dropbox root 'market-data-backup/current/gss-cache_seed': 0 differences found
+2026/10/12 20:34:00 NOTICE: Dropbox root 'market-data-backup/current/gss-cache_seed': 75 matching files
+OK   gss-cache_seed -> dropbox:market-data-backup
+2026/10/12 20:34:38 NOTICE: Dropbox root 'market-data-backup/current/pipeline-reports': 0 differences found
+2026/10/12 20:34:38 NOTICE: Dropbox root 'market-data-backup/current/pipeline-reports': 499 matching files
+OK   pipeline-reports -> dropbox:market-data-backup
+2026/10/12 20:35:33 NOTICE: Dropbox root 'market-data-backup/current/pipeline-data': 0 differences found
+2026/10/12 20:35:33 NOTICE: Dropbox root 'market-data-backup/current/pipeline-data': 3656 matching files
+OK   pipeline-data -> dropbox:market-data-backup
+2026/10/12 20:37:18 NOTICE: Dropbox root 'market-data-backup/current/correlation-scan': 0 differences found
+2026/10/12 20:37:18 NOTICE: Dropbox root 'market-data-backup/current/correlation-scan': 35 matching files
+OK   correlation-scan -> dropbox:market-data-backup
+2026/10/12 20:38:40 NOTICE: Dropbox root 'market-data-backup/current/warehouse-duckdb': 0 differences found
+2026/10/12 20:38:40 NOTICE: Dropbox root 'market-data-backup/current/warehouse-duckdb': 17 matching files
+OK   warehouse-duckdb -> dropbox:market-data-backup
+2026/10/12 20:38:44 NOTICE: Dropbox root 'market-data-backup/current/branch-archives': 0 differences found
+OK   branch-archives -> dropbox:market-data-backup
+2026/10/12 20:38:47 NOTICE: Dropbox root 'market-data-backup/current/tracker-trade-data': 0 differences found
+2026/10/12 20:38:47 NOTICE: Dropbox root 'market-data-backup/current/tracker-trade-data': 4 matching files
+OK   tracker-trade-data -> dropbox:market-data-backup
+2026/10/12 20:38:49 NOTICE: Dropbox root 'market-data-backup/current/tracker-agri-data': 0 differences found
+2026/10/12 20:38:49 NOTICE: Dropbox root 'market-data-backup/current/tracker-agri-data': 4 matching files
+OK   tracker-agri-data -> dropbox:market-data-backup
+2026/10/12 20:39:03 NOTICE: Dropbox root 'market-data-backup/current/iudx-flood-collector': 0 differences found
+2026/10/12 20:39:03 NOTICE: Dropbox root 'market-data-backup/current/iudx-flood-collector': 386 matching files
+OK   iudx-flood-collector -> dropbox:market-data-backup
+2026/10/12 20:39:07 NOTICE: Dropbox root 'market-data-backup/current/mempalace': 0 differences found
+2026/10/12 20:39:07 NOTICE: Dropbox root 'market-data-backup/current/mempalace': 3 matching files
+OK   mempalace -> dropbox:market-data-backup
+2026/10/12 20:40:15 NOTICE: Dropbox root 'market-data-backup/current/static-archives': 0 differences found
+2026/10/12 20:40:15 NOTICE: Dropbox root 'market-data-backup/current/static-archives': 8 matching files
+OK   static-archives -> dropbox:market-data-backup
+2026/10/12 20:40:17 NOTICE: Dropbox root 'market-data-backup/current/market-data-config': 0 differences found
+2026/10/12 20:40:17 NOTICE: Dropbox root 'market-data-backup/current/market-data-config': 2 matching files
+OK   market-data-config -> dropbox:market-data-backup
+2026/10/12 20:40:20 NOTICE: Dropbox root 'market-data-backup/current/twin-state-registers': 0 differences found
+2026/10/12 20:40:20 NOTICE: Dropbox root 'market-data-backup/current/twin-state-registers': 8 matching files
+OK   twin-state-registers -> dropbox:market-data-backup
+2026/10/12 20:40:33 NOTICE: Dropbox root 'market-data-backup/current/home-desktop': 0 differences found
+2026/10/12 20:40:33 NOTICE: Dropbox root 'market-data-backup/current/home-desktop': 10 matching files
+OK   home-desktop -> dropbox:market-data-backup
+2026/10/12 20:40:36 NOTICE: Dropbox root 'market-data-backup/current/home-documents': 0 differences found
+2026/10/12 20:40:36 NOTICE: Dropbox root 'market-data-backup/current/home-documents': 38 matching files
+OK   home-documents -> dropbox:market-data-backup
+2026/10/12 20:41:19 NOTICE: Google drive root 'market-data-backup/current/gmd-warehouse': 0 differences found
+2026/10/12 20:41:19 NOTICE: Google drive root 'market-data-backup/current/gmd-warehouse': 21 matching files
+OK   gmd-warehouse -> googledrive:market-data-backup
+2026/10/12 20:46:04 NOTICE: Google drive root 'market-data-backup/current/gmd-panels': 0 differences found
+2026/10/12 20:46:04 NOTICE: Google drive root 'market-data-backup/current/gmd-panels': 143 matching files
+OK   gmd-panels -> googledrive:market-data-backup
+2026/10/12 20:46:19 NOTICE: Google drive root 'market-data-backup/current/gmd-cache_seed': 0 differences found
+2026/10/12 20:46:19 NOTICE: Google drive root 'market-data-backup/current/gmd-cache_seed': 61 matching files
+OK   gmd-cache_seed -> googledrive:market-data-backup
+2026/10/12 20:46:50 NOTICE: Google drive root 'market-data-backup/current/pipeline-cache_seed': 0 differences found
+2026/10/12 20:46:50 NOTICE: Google drive root 'market-data-backup/current/pipeline-cache_seed': 114 matching files
+OK   pipeline-cache_seed -> googledrive:market-data-backup
+2026/10/12 20:47:56 NOTICE: Google drive root 'market-data-backup/current/pipeline-market_cache': 0 differences found
+2026/10/12 20:47:56 NOTICE: Google drive root 'market-data-backup/current/pipeline-market_cache': 320 matching files
+OK   pipeline-market_cache -> googledrive:market-data-backup
+2026/10/12 20:48:08 NOTICE: Google drive root 'market-data-backup/current/gss-cache_seed': 0 differences found
+2026/10/12 20:48:08 NOTICE: Google drive root 'market-data-backup/current/gss-cache_seed': 75 matching files
+OK   gss-cache_seed -> googledrive:market-data-backup
+2026/10/12 20:49:09 NOTICE: Google drive root 'market-data-backup/current/pipeline-reports': 0 differences found
+2026/10/12 20:49:09 NOTICE: Google drive root 'market-data-backup/current/pipeline-reports': 499 matching files
+OK   pipeline-reports -> googledrive:market-data-backup
+2026/10/12 20:53:11 NOTICE: Google drive root 'market-data-backup/current/pipeline-data': 0 differences found
+2026/10/12 20:53:11 NOTICE: Google drive root 'market-data-backup/current/pipeline-data': 3656 matching files
+OK   pipeline-data -> googledrive:market-data-backup
+2026/10/12 20:54:32 NOTICE: Google drive root 'market-data-backup/current/correlation-scan': 0 differences found
+2026/10/12 20:54:32 NOTICE: Google drive root 'market-data-backup/current/correlation-scan': 35 matching files
+OK   correlation-scan -> googledrive:market-data-backup
+2026/10/12 20:56:12 NOTICE: Google drive root 'market-data-backup/current/warehouse-duckdb': 0 differences found
+2026/10/12 20:56:12 NOTICE: Google drive root 'market-data-backup/current/warehouse-duckdb': 17 matching files
+OK   warehouse-duckdb -> googledrive:market-data-backup
+2026/10/12 20:56:24 NOTICE: Google drive root 'market-data-backup/current/branch-archives': 0 differences found
+OK   branch-archives -> googledrive:market-data-backup
+2026/10/12 20:56:35 NOTICE: Google drive root 'market-data-backup/current/tracker-trade-data': 0 differences found
+2026/10/12 20:56:35 NOTICE: Google drive root 'market-data-backup/current/tracker-trade-data': 4 matching files
+OK   tracker-trade-data -> googledrive:market-data-backup
+2026/10/12 20:56:47 NOTICE: Google drive root 'market-data-backup/current/tracker-agri-data': 0 differences found
+2026/10/12 20:56:47 NOTICE: Google drive root 'market-data-backup/current/tracker-agri-data': 4 matching files
+OK   tracker-agri-data -> googledrive:market-data-backup
+2026/10/12 20:58:31 NOTICE: Google drive root 'market-data-backup/current/iudx-flood-collector': 0 differences found
+2026/10/12 20:58:31 NOTICE: Google drive root 'market-data-backup/current/iudx-flood-collector': 386 matching files
+OK   iudx-flood-collector -> googledrive:market-data-backup
+2026/10/12 20:58:42 NOTICE: Google drive root 'market-data-backup/current/mempalace': 0 differences found
+2026/10/12 20:58:42 NOTICE: Google drive root 'market-data-backup/current/mempalace': 3 matching files
+OK   mempalace -> googledrive:market-data-backup
+2026/10/12 21:00:03 NOTICE: Google drive root 'market-data-backup/current/static-archives': 0 differences found
+2026/10/12 21:00:03 NOTICE: Google drive root 'market-data-backup/current/static-archives': 8 matching files
+OK   static-archives -> googledrive:market-data-backup
+2026/10/12 21:00:15 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 0 differences found
+2026/10/12 21:00:15 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 2 matching files
+OK   market-data-config -> googledrive:market-data-backup
+2026/10/12 21:00:24 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 0 differences found
+2026/10/12 21:00:24 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 8 matching files
+OK   twin-state-registers -> googledrive:market-data-backup
+2026/10/12 21:00:50 NOTICE: Google drive root 'market-data-backup/current/home-desktop': 0 differences found
+2026/10/12 21:00:50 NOTICE: Google drive root 'market-data-backup/current/home-desktop': 10 matching files
+OK   home-desktop -> googledrive:market-data-backup
+2026/10/12 21:01:01 NOTICE: Google drive root 'market-data-backup/current/home-documents': 0 differences found
+2026/10/12 21:01:01 NOTICE: Google drive root 'market-data-backup/current/home-documents': 38 matching files
+OK   home-documents -> googledrive:market-data-backup
+OK   history -> gdrive (server-side relay)
+done 21:01
+===== cloud_backup 2026-10-13 20:30 -> dropbox + gdrive =====
+ARCH nse_xbrl-xml rebuilt (29474:322072:1791823524)
+2026/10/13 20:31:49 NOTICE: Dropbox root 'market-data-backup/current/gmd-warehouse': 0 differences found
+2026/10/13 20:31:49 NOTICE: Dropbox root 'market-data-backup/current/gmd-warehouse': 21 matching files
+OK   gmd-warehouse -> dropbox:market-data-backup
+2026/10/13 20:31:55 NOTICE: Dropbox root 'market-data-backup/current/gmd-panels': 0 differences found
+2026/10/13 20:31:55 NOTICE: Dropbox root 'market-data-backup/current/gmd-panels': 143 matching files
+OK   gmd-panels -> dropbox:market-data-backup
+2026/10/13 20:31:58 NOTICE: Dropbox root 'market-data-backup/current/gmd-cache_seed': 0 differences found
+2026/10/13 20:31:58 NOTICE: Dropbox root 'market-data-backup/current/gmd-cache_seed': 61 matching files
+OK   gmd-cache_seed -> dropbox:market-data-backup
+2026/10/13 20:32:11 NOTICE: Dropbox root 'market-data-backup/current/pipeline-cache_seed': 0 differences found
+2026/10/13 20:32:11 NOTICE: Dropbox root 'market-data-backup/current/pipeline-cache_seed': 114 matching files
+OK   pipeline-cache_seed -> dropbox:market-data-backup
+2026/10/13 20:32:27 NOTICE: Dropbox root 'market-data-backup/current/pipeline-market_cache': 0 differences found
+2026/10/13 20:32:27 NOTICE: Dropbox root 'market-data-backup/current/pipeline-market_cache': 320 matching files
+OK   pipeline-market_cache -> dropbox:market-data-backup
+2026/10/13 20:32:31 NOTICE: Dropbox root 'market-data-backup/current/gss-cache_seed': 0 differences found
+2026/10/13 20:32:31 NOTICE: Dropbox root 'market-data-backup/current/gss-cache_seed': 75 matching files
+OK   gss-cache_seed -> dropbox:market-data-backup
+2026/10/13 20:32:48 NOTICE: Dropbox root 'market-data-backup/current/pipeline-reports': 0 differences found
+2026/10/13 20:32:48 NOTICE: Dropbox root 'market-data-backup/current/pipeline-reports': 501 matching files
+OK   pipeline-reports -> dropbox:market-data-backup
+2026/10/13 20:33:03 NOTICE: Dropbox root 'market-data-backup/current/pipeline-data': 0 differences found
+2026/10/13 20:33:03 NOTICE: Dropbox root 'market-data-backup/current/pipeline-data': 3656 matching files
+OK   pipeline-data -> dropbox:market-data-backup
+2026/10/13 20:33:06 NOTICE: Dropbox root 'market-data-backup/current/correlation-scan': 0 differences found
+2026/10/13 20:33:06 NOTICE: Dropbox root 'market-data-backup/current/correlation-scan': 35 matching files
+OK   correlation-scan -> dropbox:market-data-backup
+2026/10/13 20:33:09 NOTICE: Dropbox root 'market-data-backup/current/warehouse-duckdb': 0 differences found
+2026/10/13 20:33:09 NOTICE: Dropbox root 'market-data-backup/current/warehouse-duckdb': 17 matching files
+OK   warehouse-duckdb -> dropbox:market-data-backup
+2026/10/13 20:33:13 NOTICE: Dropbox root 'market-data-backup/current/branch-archives': 0 differences found
+OK   branch-archives -> dropbox:market-data-backup
+2026/10/13 20:33:17 NOTICE: Dropbox root 'market-data-backup/current/tracker-trade-data': 0 differences found
+2026/10/13 20:33:17 NOTICE: Dropbox root 'market-data-backup/current/tracker-trade-data': 4 matching files
+OK   tracker-trade-data -> dropbox:market-data-backup
+2026/10/13 20:33:19 NOTICE: Dropbox root 'market-data-backup/current/tracker-agri-data': 0 differences found
+2026/10/13 20:33:19 NOTICE: Dropbox root 'market-data-backup/current/tracker-agri-data': 4 matching files
+OK   tracker-agri-data -> dropbox:market-data-backup
+2026/10/13 20:33:34 NOTICE: Dropbox root 'market-data-backup/current/iudx-flood-collector': 0 differences found
+2026/10/13 20:33:34 NOTICE: Dropbox root 'market-data-backup/current/iudx-flood-collector': 386 matching files
+OK   iudx-flood-collector -> dropbox:market-data-backup
+2026/10/13 20:33:38 NOTICE: Dropbox root 'market-data-backup/current/mempalace': 0 differences found
+2026/10/13 20:33:38 NOTICE: Dropbox root 'market-data-backup/current/mempalace': 3 matching files
+OK   mempalace -> dropbox:market-data-backup
+2026/10/13 20:34:12 NOTICE: Dropbox root 'market-data-backup/current/static-archives': 0 differences found
+2026/10/13 20:34:12 NOTICE: Dropbox root 'market-data-backup/current/static-archives': 8 matching files
+OK   static-archives -> dropbox:market-data-backup
+2026/10/13 20:34:14 NOTICE: Dropbox root 'market-data-backup/current/market-data-config': 0 differences found
+2026/10/13 20:34:14 NOTICE: Dropbox root 'market-data-backup/current/market-data-config': 2 matching files
+OK   market-data-config -> dropbox:market-data-backup
+2026/10/13 20:34:17 NOTICE: Dropbox root 'market-data-backup/current/twin-state-registers': 0 differences found
+2026/10/13 20:34:17 NOTICE: Dropbox root 'market-data-backup/current/twin-state-registers': 8 matching files
+OK   twin-state-registers -> dropbox:market-data-backup
+2026/10/13 20:34:21 NOTICE: Dropbox root 'market-data-backup/current/home-desktop': 0 differences found
+2026/10/13 20:34:21 NOTICE: Dropbox root 'market-data-backup/current/home-desktop': 10 matching files
+OK   home-desktop -> dropbox:market-data-backup
+2026/10/13 20:34:25 NOTICE: Dropbox root 'market-data-backup/current/home-documents': 0 differences found
+2026/10/13 20:34:25 NOTICE: Dropbox root 'market-data-backup/current/home-documents': 38 matching files
+OK   home-documents -> dropbox:market-data-backup
+2026/10/13 20:35:09 NOTICE: Google drive root 'market-data-backup/current/gmd-warehouse': 0 differences found
+2026/10/13 20:35:09 NOTICE: Google drive root 'market-data-backup/current/gmd-warehouse': 21 matching files
+OK   gmd-warehouse -> googledrive:market-data-backup
+2026/10/13 20:35:25 NOTICE: Google drive root 'market-data-backup/current/gmd-panels': 0 differences found
+2026/10/13 20:35:25 NOTICE: Google drive root 'market-data-backup/current/gmd-panels': 143 matching files
+OK   gmd-panels -> googledrive:market-data-backup
+2026/10/13 20:35:35 NOTICE: Google drive root 'market-data-backup/current/gmd-cache_seed': 0 differences found
+2026/10/13 20:35:35 NOTICE: Google drive root 'market-data-backup/current/gmd-cache_seed': 61 matching files
+OK   gmd-cache_seed -> googledrive:market-data-backup
+2026/10/13 20:35:59 NOTICE: Google drive root 'market-data-backup/current/pipeline-cache_seed': 0 differences found
+2026/10/13 20:35:59 NOTICE: Google drive root 'market-data-backup/current/pipeline-cache_seed': 114 matching files
+OK   pipeline-cache_seed -> googledrive:market-data-backup
+2026/10/13 20:36:30 NOTICE: Google drive root 'market-data-backup/current/pipeline-market_cache': 0 differences found
+2026/10/13 20:36:30 NOTICE: Google drive root 'market-data-backup/current/pipeline-market_cache': 320 matching files
+OK   pipeline-market_cache -> googledrive:market-data-backup
+2026/10/13 20:36:41 NOTICE: Google drive root 'market-data-backup/current/gss-cache_seed': 0 differences found
+2026/10/13 20:36:41 NOTICE: Google drive root 'market-data-backup/current/gss-cache_seed': 75 matching files
+OK   gss-cache_seed -> googledrive:market-data-backup
+2026/10/13 20:37:05 NOTICE: Google drive root 'market-data-backup/current/pipeline-reports': 0 differences found
+2026/10/13 20:37:05 NOTICE: Google drive root 'market-data-backup/current/pipeline-reports': 501 matching files
+OK   pipeline-reports -> googledrive:market-data-backup
+2026/10/13 20:37:36 NOTICE: Google drive root 'market-data-backup/current/pipeline-data': 0 differences found
+2026/10/13 20:37:36 NOTICE: Google drive root 'market-data-backup/current/pipeline-data': 3656 matching files
+OK   pipeline-data -> googledrive:market-data-backup
+2026/10/13 20:37:46 NOTICE: Google drive root 'market-data-backup/current/correlation-scan': 0 differences found
+2026/10/13 20:37:46 NOTICE: Google drive root 'market-data-backup/current/correlation-scan': 35 matching files
+OK   correlation-scan -> googledrive:market-data-backup
+2026/10/13 20:37:59 NOTICE: Google drive root 'market-data-backup/current/warehouse-duckdb': 0 differences found
+2026/10/13 20:37:59 NOTICE: Google drive root 'market-data-backup/current/warehouse-duckdb': 17 matching files
+OK   warehouse-duckdb -> googledrive:market-data-backup
+2026/10/13 20:38:09 NOTICE: Google drive root 'market-data-backup/current/branch-archives': 0 differences found
+OK   branch-archives -> googledrive:market-data-backup
+2026/10/13 20:38:19 NOTICE: Google drive root 'market-data-backup/current/tracker-trade-data': 0 differences found
+2026/10/13 20:38:19 NOTICE: Google drive root 'market-data-backup/current/tracker-trade-data': 4 matching files
+OK   tracker-trade-data -> googledrive:market-data-backup
+2026/10/13 20:38:29 NOTICE: Google drive root 'market-data-backup/current/tracker-agri-data': 0 differences found
+2026/10/13 20:38:29 NOTICE: Google drive root 'market-data-backup/current/tracker-agri-data': 4 matching files
+OK   tracker-agri-data -> googledrive:market-data-backup
+2026/10/13 20:38:56 NOTICE: Google drive root 'market-data-backup/current/iudx-flood-collector': 0 differences found
+2026/10/13 20:38:56 NOTICE: Google drive root 'market-data-backup/current/iudx-flood-collector': 386 matching files
+OK   iudx-flood-collector -> googledrive:market-data-backup
+2026/10/13 20:39:08 NOTICE: Google drive root 'market-data-backup/current/mempalace': 0 differences found
+2026/10/13 20:39:08 NOTICE: Google drive root 'market-data-backup/current/mempalace': 3 matching files
+OK   mempalace -> googledrive:market-data-backup
+2026/10/13 20:39:49 NOTICE: Google drive root 'market-data-backup/current/static-archives': 0 differences found
+2026/10/13 20:39:49 NOTICE: Google drive root 'market-data-backup/current/static-archives': 8 matching files
+OK   static-archives -> googledrive:market-data-backup
+2026/10/13 20:40:02 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 0 differences found
+2026/10/13 20:40:02 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 2 matching files
+OK   market-data-config -> googledrive:market-data-backup
+2026/10/13 20:40:13 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 0 differences found
+2026/10/13 20:40:13 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 8 matching files
+OK   twin-state-registers -> googledrive:market-data-backup
+2026/10/13 20:40:28 NOTICE: Google drive root 'market-data-backup/current/home-desktop': 0 differences found
+2026/10/13 20:40:28 NOTICE: Google drive root 'market-data-backup/current/home-desktop': 10 matching files
+OK   home-desktop -> googledrive:market-data-backup
+2026/10/13 20:40:40 NOTICE: Google drive root 'market-data-backup/current/home-documents': 0 differences found
+2026/10/13 20:40:40 NOTICE: Google drive root 'market-data-backup/current/home-documents': 38 matching files
+OK   home-documents -> googledrive:market-data-backup
+OK   history -> gdrive (server-side relay)
+done 20:40
+===== cloud_backup 2026-10-14 20:30 -> dropbox + gdrive =====
+ARCH market_cache-ohlc rebuilt (7732:342864:1791929296)
+ARCH market_cache-dart rebuilt (3842:25204:1791930026)
+2026/10/14 20:31:04 NOTICE: Dropbox root 'market-data-backup/current/gmd-warehouse': 0 differences found
+2026/10/14 20:31:04 NOTICE: Dropbox root 'market-data-backup/current/gmd-warehouse': 21 matching files
+OK   gmd-warehouse -> dropbox:market-data-backup
+2026/10/14 20:31:33 NOTICE: Dropbox root 'market-data-backup/current/gmd-panels': 0 differences found
+2026/10/14 20:31:33 NOTICE: Dropbox root 'market-data-backup/current/gmd-panels': 143 matching files
+OK   gmd-panels -> dropbox:market-data-backup
+2026/10/14 20:31:37 NOTICE: Dropbox root 'market-data-backup/current/gmd-cache_seed': 0 differences found
+2026/10/14 20:31:37 NOTICE: Dropbox root 'market-data-backup/current/gmd-cache_seed': 61 matching files
+OK   gmd-cache_seed -> dropbox:market-data-backup
+2026/10/14 20:31:53 NOTICE: Dropbox root 'market-data-backup/current/pipeline-cache_seed': 0 differences found
+2026/10/14 20:31:53 NOTICE: Dropbox root 'market-data-backup/current/pipeline-cache_seed': 114 matching files
+OK   pipeline-cache_seed -> dropbox:market-data-backup
+2026/10/14 20:32:07 NOTICE: Dropbox root 'market-data-backup/current/pipeline-market_cache': 0 differences found
+2026/10/14 20:32:07 NOTICE: Dropbox root 'market-data-backup/current/pipeline-market_cache': 320 matching files
+OK   pipeline-market_cache -> dropbox:market-data-backup
+2026/10/14 20:32:12 NOTICE: Dropbox root 'market-data-backup/current/gss-cache_seed': 0 differences found
+2026/10/14 20:32:12 NOTICE: Dropbox root 'market-data-backup/current/gss-cache_seed': 75 matching files
+OK   gss-cache_seed -> dropbox:market-data-backup
+2026/10/14 20:32:53 NOTICE: Dropbox root 'market-data-backup/current/pipeline-reports': 0 differences found
+2026/10/14 20:32:53 NOTICE: Dropbox root 'market-data-backup/current/pipeline-reports': 506 matching files
+OK   pipeline-reports -> dropbox:market-data-backup
+2026/10/14 20:35:31 NOTICE: Dropbox root 'market-data-backup/current/pipeline-data': 0 differences found
+2026/10/14 20:35:31 NOTICE: Dropbox root 'market-data-backup/current/pipeline-data': 3660 matching files
+OK   pipeline-data -> dropbox:market-data-backup
+2026/10/14 20:36:16 ERROR : Dropbox root 'market-data-backup/current/correlation-scan': sync batch commit: failed to commit batch length 1: batch had 1 errors: last error: upload failed: too_many_write_operations
+2026/10/14 20:36:16 ERROR : japan_cluster_4.png: Failed to copy: upload failed: batch upload failed: upload failed: too_many_write_operations
+2026/10/14 20:36:20 ERROR : Dropbox root 'market-data-backup/current/correlation-scan': sync batch commit: failed to commit batch length 1: batch had 1 errors: last error: upload failed: too_many_write_operations
+2026/10/14 20:36:20 ERROR : korea_cluster_1.png: Failed to copy: upload failed: batch upload failed: upload failed: too_many_write_operations
+2026/10/14 20:37:04 ERROR : Dropbox root 'market-data-backup/current/correlation-scan': not deleting files as there were IO errors
+2026/10/14 20:37:04 ERROR : Dropbox root 'market-data-backup/current/correlation-scan': not deleting directories as there were IO errors
+2026/10/14 20:37:04 ERROR : Attempt 1/3 failed with 2 errors and: upload failed: batch upload failed: upload failed: too_many_write_operations
+2026/10/14 20:37:08 ERROR : Attempt 2/3 succeeded
+2026/10/14 20:37:09 NOTICE: Dropbox root 'market-data-backup/current/correlation-scan': 0 differences found
+2026/10/14 20:37:09 NOTICE: Dropbox root 'market-data-backup/current/correlation-scan': 39 matching files
+OK   correlation-scan -> dropbox:market-data-backup
+2026/10/14 20:39:42 NOTICE: Dropbox root 'market-data-backup/current/warehouse-duckdb': 0 differences found
+2026/10/14 20:39:42 NOTICE: Dropbox root 'market-data-backup/current/warehouse-duckdb': 17 matching files
+OK   warehouse-duckdb -> dropbox:market-data-backup
+2026/10/14 20:39:46 NOTICE: Dropbox root 'market-data-backup/current/branch-archives': 0 differences found
+OK   branch-archives -> dropbox:market-data-backup
+2026/10/14 20:39:49 NOTICE: Dropbox root 'market-data-backup/current/tracker-trade-data': 0 differences found
+2026/10/14 20:39:49 NOTICE: Dropbox root 'market-data-backup/current/tracker-trade-data': 4 matching files
+OK   tracker-trade-data -> dropbox:market-data-backup
+2026/10/14 20:39:52 NOTICE: Dropbox root 'market-data-backup/current/tracker-agri-data': 0 differences found
+2026/10/14 20:39:52 NOTICE: Dropbox root 'market-data-backup/current/tracker-agri-data': 4 matching files
+OK   tracker-agri-data -> dropbox:market-data-backup
+2026/10/14 20:40:10 NOTICE: Dropbox root 'market-data-backup/current/iudx-flood-collector': 0 differences found
+2026/10/14 20:40:10 NOTICE: Dropbox root 'market-data-backup/current/iudx-flood-collector': 386 matching files
+OK   iudx-flood-collector -> dropbox:market-data-backup
+2026/10/14 20:40:14 NOTICE: Dropbox root 'market-data-backup/current/mempalace': 0 differences found
+2026/10/14 20:40:14 NOTICE: Dropbox root 'market-data-backup/current/mempalace': 3 matching files
+OK   mempalace -> dropbox:market-data-backup
+2026/10/14 20:41:27 NOTICE: Dropbox root 'market-data-backup/current/static-archives': 0 differences found
+2026/10/14 20:41:27 NOTICE: Dropbox root 'market-data-backup/current/static-archives': 8 matching files
+OK   static-archives -> dropbox:market-data-backup
+2026/10/14 20:41:30 NOTICE: Dropbox root 'market-data-backup/current/market-data-config': 0 differences found
+2026/10/14 20:41:30 NOTICE: Dropbox root 'market-data-backup/current/market-data-config': 2 matching files
+OK   market-data-config -> dropbox:market-data-backup
+2026/10/14 20:41:33 NOTICE: Dropbox root 'market-data-backup/current/twin-state-registers': 0 differences found
+2026/10/14 20:41:33 NOTICE: Dropbox root 'market-data-backup/current/twin-state-registers': 8 matching files
+OK   twin-state-registers -> dropbox:market-data-backup
+2026/10/14 20:41:37 NOTICE: Dropbox root 'market-data-backup/current/home-desktop': 0 differences found
+2026/10/14 20:41:37 NOTICE: Dropbox root 'market-data-backup/current/home-desktop': 10 matching files
+OK   home-desktop -> dropbox:market-data-backup
+2026/10/14 20:41:41 NOTICE: Dropbox root 'market-data-backup/current/home-documents': 0 differences found
+2026/10/14 20:41:41 NOTICE: Dropbox root 'market-data-backup/current/home-documents': 38 matching files
+OK   home-documents -> dropbox:market-data-backup
+2026/10/14 20:42:37 NOTICE: Google drive root 'market-data-backup/current/gmd-warehouse': 0 differences found
+2026/10/14 20:42:37 NOTICE: Google drive root 'market-data-backup/current/gmd-warehouse': 21 matching files
+OK   gmd-warehouse -> googledrive:market-data-backup
+2026/10/14 20:43:44 NOTICE: Google drive root 'market-data-backup/current/gmd-panels': 0 differences found
+2026/10/14 20:43:44 NOTICE: Google drive root 'market-data-backup/current/gmd-panels': 143 matching files
+OK   gmd-panels -> googledrive:market-data-backup
+2026/10/14 20:43:56 NOTICE: Google drive root 'market-data-backup/current/gmd-cache_seed': 0 differences found
+2026/10/14 20:43:56 NOTICE: Google drive root 'market-data-backup/current/gmd-cache_seed': 61 matching files
+OK   gmd-cache_seed -> googledrive:market-data-backup
+2026/10/14 20:44:15 NOTICE: Google drive root 'market-data-backup/current/pipeline-cache_seed': 0 differences found
+2026/10/14 20:44:15 NOTICE: Google drive root 'market-data-backup/current/pipeline-cache_seed': 114 matching files
+OK   pipeline-cache_seed -> googledrive:market-data-backup
+2026/10/14 20:45:37 NOTICE: Google drive root 'market-data-backup/current/pipeline-market_cache': 0 differences found
+2026/10/14 20:45:37 NOTICE: Google drive root 'market-data-backup/current/pipeline-market_cache': 320 matching files
+OK   pipeline-market_cache -> googledrive:market-data-backup
+2026/10/14 20:45:49 NOTICE: Google drive root 'market-data-backup/current/gss-cache_seed': 0 differences found
+2026/10/14 20:45:49 NOTICE: Google drive root 'market-data-backup/current/gss-cache_seed': 75 matching files
+OK   gss-cache_seed -> googledrive:market-data-backup
+2026/10/14 20:46:17 NOTICE: Google drive root 'market-data-backup/current/pipeline-reports': 0 differences found
+2026/10/14 20:46:17 NOTICE: Google drive root 'market-data-backup/current/pipeline-reports': 506 matching files
+OK   pipeline-reports -> googledrive:market-data-backup
+2026/10/14 20:48:41 NOTICE: bhavcopy_cache/assembled_long.parquet: Duplicate object found in destination - ignoring
+2026/10/14 20:48:48 NOTICE: Google drive root 'market-data-backup/current/pipeline-data': 0 differences found
+2026/10/14 20:48:48 NOTICE: Google drive root 'market-data-backup/current/pipeline-data': 3660 matching files
+OK   pipeline-data -> googledrive:market-data-backup
+2026/10/14 20:50:12 NOTICE: Google drive root 'market-data-backup/current/correlation-scan': 0 differences found
+2026/10/14 20:50:12 NOTICE: Google drive root 'market-data-backup/current/correlation-scan': 39 matching files
+OK   correlation-scan -> googledrive:market-data-backup
+2026/10/14 20:52:35 NOTICE: Google drive root 'market-data-backup/current/warehouse-duckdb': 0 differences found
+2026/10/14 20:52:35 NOTICE: Google drive root 'market-data-backup/current/warehouse-duckdb': 17 matching files
+OK   warehouse-duckdb -> googledrive:market-data-backup
+2026/10/14 20:52:45 NOTICE: Google drive root 'market-data-backup/current/branch-archives': 0 differences found
+OK   branch-archives -> googledrive:market-data-backup
+2026/10/14 20:52:56 NOTICE: Google drive root 'market-data-backup/current/tracker-trade-data': 0 differences found
+2026/10/14 20:52:56 NOTICE: Google drive root 'market-data-backup/current/tracker-trade-data': 4 matching files
+OK   tracker-trade-data -> googledrive:market-data-backup
+2026/10/14 20:53:06 NOTICE: Google drive root 'market-data-backup/current/tracker-agri-data': 0 differences found
+2026/10/14 20:53:06 NOTICE: Google drive root 'market-data-backup/current/tracker-agri-data': 4 matching files
+OK   tracker-agri-data -> googledrive:market-data-backup
+2026/10/14 20:53:31 NOTICE: Google drive root 'market-data-backup/current/iudx-flood-collector': 0 differences found
+2026/10/14 20:53:31 NOTICE: Google drive root 'market-data-backup/current/iudx-flood-collector': 386 matching files
+OK   iudx-flood-collector -> googledrive:market-data-backup
+2026/10/14 20:53:42 NOTICE: Google drive root 'market-data-backup/current/mempalace': 0 differences found
+2026/10/14 20:53:42 NOTICE: Google drive root 'market-data-backup/current/mempalace': 3 matching files
+OK   mempalace -> googledrive:market-data-backup
+2026/10/14 20:54:41 NOTICE: Google drive root 'market-data-backup/current/static-archives': 0 differences found
+2026/10/14 20:54:41 NOTICE: Google drive root 'market-data-backup/current/static-archives': 8 matching files
+OK   static-archives -> googledrive:market-data-backup
+2026/10/14 20:54:51 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 0 differences found
+2026/10/14 20:54:51 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 2 matching files
+OK   market-data-config -> googledrive:market-data-backup
+2026/10/14 20:55:02 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 0 differences found
+2026/10/14 20:55:02 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 8 matching files
+OK   twin-state-registers -> googledrive:market-data-backup
+2026/10/14 20:55:14 NOTICE: Google drive root 'market-data-backup/current/home-desktop': 0 differences found
+2026/10/14 20:55:14 NOTICE: Google drive root 'market-data-backup/current/home-desktop': 10 matching files
+OK   home-desktop -> googledrive:market-data-backup
+2026/10/14 20:55:25 NOTICE: Google drive root 'market-data-backup/current/home-documents': 0 differences found
+2026/10/14 20:55:25 NOTICE: Google drive root 'market-data-backup/current/home-documents': 38 matching files
+OK   home-documents -> googledrive:market-data-backup
+OK   history -> gdrive (server-side relay)
+done 20:55
+===== cloud_backup 2026-10-15 20:30 -> dropbox + gdrive =====
+ARCH nse_xbrl-xml rebuilt (31378:440268:1791996677)
+ARCH market_cache-ohlc rebuilt (7732:343200:1792014110)
+ARCH market_cache-intl_pit rebuilt (12815:51472:1791997741)
+2026/10/15 20:33:30 NOTICE: Dropbox root 'market-data-backup/current/gmd-warehouse': 0 differences found
+2026/10/15 20:33:30 NOTICE: Dropbox root 'market-data-backup/current/gmd-warehouse': 21 matching files
+OK   gmd-warehouse -> dropbox:market-data-backup
+2026/10/15 20:34:33 NOTICE: Dropbox root 'market-data-backup/current/gmd-panels': 0 differences found
+2026/10/15 20:34:33 NOTICE: Dropbox root 'market-data-backup/current/gmd-panels': 143 matching files
+OK   gmd-panels -> dropbox:market-data-backup
+2026/10/15 20:34:37 NOTICE: Dropbox root 'market-data-backup/current/gmd-cache_seed': 0 differences found
+2026/10/15 20:34:37 NOTICE: Dropbox root 'market-data-backup/current/gmd-cache_seed': 61 matching files
+OK   gmd-cache_seed -> dropbox:market-data-backup
+2026/10/15 20:34:49 NOTICE: Dropbox root 'market-data-backup/current/pipeline-cache_seed': 0 differences found
+2026/10/15 20:34:49 NOTICE: Dropbox root 'market-data-backup/current/pipeline-cache_seed': 114 matching files
+OK   pipeline-cache_seed -> dropbox:market-data-backup
+2026/10/15 20:35:49 NOTICE: Dropbox root 'market-data-backup/current/pipeline-market_cache': 0 differences found
+2026/10/15 20:35:49 NOTICE: Dropbox root 'market-data-backup/current/pipeline-market_cache': 327 matching files
+OK   pipeline-market_cache -> dropbox:market-data-backup
+2026/10/15 20:35:53 NOTICE: Dropbox root 'market-data-backup/current/gss-cache_seed': 0 differences found
+2026/10/15 20:35:53 NOTICE: Dropbox root 'market-data-backup/current/gss-cache_seed': 75 matching files
+OK   gss-cache_seed -> dropbox:market-data-backup
+2026/10/15 20:36:03 NOTICE: Dropbox root 'market-data-backup/current/pipeline-reports': 0 differences found
+2026/10/15 20:36:03 NOTICE: Dropbox root 'market-data-backup/current/pipeline-reports': 507 matching files
+OK   pipeline-reports -> dropbox:market-data-backup
+2026/10/15 20:37:18 NOTICE: Dropbox root 'market-data-backup/current/pipeline-data': 0 differences found
+2026/10/15 20:37:18 NOTICE: Dropbox root 'market-data-backup/current/pipeline-data': 3662 matching files
+OK   pipeline-data -> dropbox:market-data-backup
+2026/10/15 20:37:22 NOTICE: Dropbox root 'market-data-backup/current/correlation-scan': 0 differences found
+2026/10/15 20:37:22 NOTICE: Dropbox root 'market-data-backup/current/correlation-scan': 39 matching files
+OK   correlation-scan -> dropbox:market-data-backup
+2026/10/15 20:37:25 NOTICE: Dropbox root 'market-data-backup/current/warehouse-duckdb': 0 differences found
+2026/10/15 20:37:25 NOTICE: Dropbox root 'market-data-backup/current/warehouse-duckdb': 17 matching files
+OK   warehouse-duckdb -> dropbox:market-data-backup
+2026/10/15 20:37:31 NOTICE: Dropbox root 'market-data-backup/current/branch-archives': 0 differences found
+OK   branch-archives -> dropbox:market-data-backup
+2026/10/15 20:37:34 NOTICE: Dropbox root 'market-data-backup/current/tracker-trade-data': 0 differences found
+2026/10/15 20:37:34 NOTICE: Dropbox root 'market-data-backup/current/tracker-trade-data': 4 matching files
+OK   tracker-trade-data -> dropbox:market-data-backup
+2026/10/15 20:37:36 NOTICE: Dropbox root 'market-data-backup/current/tracker-agri-data': 0 differences found
+2026/10/15 20:37:36 NOTICE: Dropbox root 'market-data-backup/current/tracker-agri-data': 4 matching files
+OK   tracker-agri-data -> dropbox:market-data-backup
+2026/10/15 20:37:54 NOTICE: Dropbox root 'market-data-backup/current/iudx-flood-collector': 0 differences found
+2026/10/15 20:37:54 NOTICE: Dropbox root 'market-data-backup/current/iudx-flood-collector': 386 matching files
+OK   iudx-flood-collector -> dropbox:market-data-backup
+2026/10/15 20:37:58 NOTICE: Dropbox root 'market-data-backup/current/mempalace': 0 differences found
+2026/10/15 20:37:58 NOTICE: Dropbox root 'market-data-backup/current/mempalace': 3 matching files
+OK   mempalace -> dropbox:market-data-backup
+2026/10/15 20:40:10 NOTICE: Dropbox root 'market-data-backup/current/static-archives': 0 differences found
+2026/10/15 20:40:10 NOTICE: Dropbox root 'market-data-backup/current/static-archives': 8 matching files
+OK   static-archives -> dropbox:market-data-backup
+2026/10/15 20:40:13 NOTICE: Dropbox root 'market-data-backup/current/market-data-config': 0 differences found
+2026/10/15 20:40:13 NOTICE: Dropbox root 'market-data-backup/current/market-data-config': 2 matching files
+OK   market-data-config -> dropbox:market-data-backup
+2026/10/15 20:40:16 NOTICE: Dropbox root 'market-data-backup/current/twin-state-registers': 0 differences found
+2026/10/15 20:40:16 NOTICE: Dropbox root 'market-data-backup/current/twin-state-registers': 8 matching files
+OK   twin-state-registers -> dropbox:market-data-backup
+2026/10/15 20:40:20 NOTICE: Dropbox root 'market-data-backup/current/home-desktop': 0 differences found
+2026/10/15 20:40:20 NOTICE: Dropbox root 'market-data-backup/current/home-desktop': 10 matching files
+OK   home-desktop -> dropbox:market-data-backup
+2026/10/15 20:40:24 NOTICE: Dropbox root 'market-data-backup/current/home-documents': 0 differences found
+2026/10/15 20:40:24 NOTICE: Dropbox root 'market-data-backup/current/home-documents': 38 matching files
+OK   home-documents -> dropbox:market-data-backup
+2026/10/15 20:41:29 NOTICE: Google drive root 'market-data-backup/current/gmd-warehouse': 0 differences found
+2026/10/15 20:41:29 NOTICE: Google drive root 'market-data-backup/current/gmd-warehouse': 21 matching files
+OK   gmd-warehouse -> googledrive:market-data-backup
+2026/10/15 20:42:23 NOTICE: Google drive root 'market-data-backup/current/gmd-panels': 0 differences found
+2026/10/15 20:42:23 NOTICE: Google drive root 'market-data-backup/current/gmd-panels': 143 matching files
+OK   gmd-panels -> googledrive:market-data-backup
+2026/10/15 20:42:36 NOTICE: Google drive root 'market-data-backup/current/gmd-cache_seed': 0 differences found
+2026/10/15 20:42:36 NOTICE: Google drive root 'market-data-backup/current/gmd-cache_seed': 61 matching files
+OK   gmd-cache_seed -> googledrive:market-data-backup
+2026/10/15 20:42:57 NOTICE: Google drive root 'market-data-backup/current/pipeline-cache_seed': 0 differences found
+2026/10/15 20:42:57 NOTICE: Google drive root 'market-data-backup/current/pipeline-cache_seed': 114 matching files
+OK   pipeline-cache_seed -> googledrive:market-data-backup
+2026/10/15 20:44:34 NOTICE: Google drive root 'market-data-backup/current/pipeline-market_cache': 0 differences found
+2026/10/15 20:44:34 NOTICE: Google drive root 'market-data-backup/current/pipeline-market_cache': 327 matching files
+OK   pipeline-market_cache -> googledrive:market-data-backup
+2026/10/15 20:44:47 NOTICE: Google drive root 'market-data-backup/current/gss-cache_seed': 0 differences found
+2026/10/15 20:44:47 NOTICE: Google drive root 'market-data-backup/current/gss-cache_seed': 75 matching files
+OK   gss-cache_seed -> googledrive:market-data-backup
+2026/10/15 20:45:12 NOTICE: Google drive root 'market-data-backup/current/pipeline-reports': 0 differences found
+2026/10/15 20:45:12 NOTICE: Google drive root 'market-data-backup/current/pipeline-reports': 507 matching files
+OK   pipeline-reports -> googledrive:market-data-backup
+2026/10/15 20:46:28 NOTICE: Google drive root 'market-data-backup/current/pipeline-data': 0 differences found
+2026/10/15 20:46:28 NOTICE: Google drive root 'market-data-backup/current/pipeline-data': 3662 matching files
+OK   pipeline-data -> googledrive:market-data-backup
+2026/10/15 20:46:38 NOTICE: Google drive root 'market-data-backup/current/correlation-scan': 0 differences found
+2026/10/15 20:46:38 NOTICE: Google drive root 'market-data-backup/current/correlation-scan': 39 matching files
+OK   correlation-scan -> googledrive:market-data-backup
+2026/10/15 20:46:49 NOTICE: Google drive root 'market-data-backup/current/warehouse-duckdb': 0 differences found
+2026/10/15 20:46:49 NOTICE: Google drive root 'market-data-backup/current/warehouse-duckdb': 17 matching files
+OK   warehouse-duckdb -> googledrive:market-data-backup
+2026/10/15 20:47:00 NOTICE: Google drive root 'market-data-backup/current/branch-archives': 0 differences found
+OK   branch-archives -> googledrive:market-data-backup
+2026/10/15 20:47:09 NOTICE: Google drive root 'market-data-backup/current/tracker-trade-data': 0 differences found
+2026/10/15 20:47:09 NOTICE: Google drive root 'market-data-backup/current/tracker-trade-data': 4 matching files
+OK   tracker-trade-data -> googledrive:market-data-backup
+2026/10/15 20:47:19 NOTICE: Google drive root 'market-data-backup/current/tracker-agri-data': 0 differences found
+2026/10/15 20:47:19 NOTICE: Google drive root 'market-data-backup/current/tracker-agri-data': 4 matching files
+OK   tracker-agri-data -> googledrive:market-data-backup
+2026/10/15 20:47:48 NOTICE: Google drive root 'market-data-backup/current/iudx-flood-collector': 0 differences found
+2026/10/15 20:47:48 NOTICE: Google drive root 'market-data-backup/current/iudx-flood-collector': 386 matching files
+OK   iudx-flood-collector -> googledrive:market-data-backup
+2026/10/15 20:47:59 NOTICE: Google drive root 'market-data-backup/current/mempalace': 0 differences found
+2026/10/15 20:47:59 NOTICE: Google drive root 'market-data-backup/current/mempalace': 3 matching files
+OK   mempalace -> googledrive:market-data-backup
+2026/10/15 20:50:29 NOTICE: Google drive root 'market-data-backup/current/static-archives': 0 differences found
+2026/10/15 20:50:29 NOTICE: Google drive root 'market-data-backup/current/static-archives': 8 matching files
+OK   static-archives -> googledrive:market-data-backup
+2026/10/15 20:50:39 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 0 differences found
+2026/10/15 20:50:39 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 2 matching files
+OK   market-data-config -> googledrive:market-data-backup
+2026/10/15 20:50:50 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 0 differences found
+2026/10/15 20:50:50 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 8 matching files
+OK   twin-state-registers -> googledrive:market-data-backup
+2026/10/15 20:51:02 NOTICE: Google drive root 'market-data-backup/current/home-desktop': 0 differences found
+2026/10/15 20:51:02 NOTICE: Google drive root 'market-data-backup/current/home-desktop': 10 matching files
+OK   home-desktop -> googledrive:market-data-backup
+2026/10/15 20:51:13 NOTICE: Google drive root 'market-data-backup/current/home-documents': 0 differences found
+2026/10/15 20:51:13 NOTICE: Google drive root 'market-data-backup/current/home-documents': 38 matching files
+OK   home-documents -> googledrive:market-data-backup
+OK   history -> gdrive (server-side relay)
+done 20:51
+===== cloud_backup 2026-10-16 20:30 -> dropbox + gdrive =====
+ARCH nse_xbrl-xml rebuilt (33277:248180:1792082234)
+ARCH market_cache-ohlc rebuilt (7743:259248:1792100592)
+ARCH market_cache-dart rebuilt (4117:13912:1792112992)
+ARCH market_cache-intl_pit rebuilt (12817:51276:1792083138)
+2026/10/16 20:33:59 NOTICE: Dropbox root 'market-data-backup/current/gmd-warehouse': 0 differences found
+2026/10/16 20:33:59 NOTICE: Dropbox root 'market-data-backup/current/gmd-warehouse': 21 matching files
+OK   gmd-warehouse -> dropbox:market-data-backup
+2026/10/16 20:34:37 ERROR : Dropbox root 'market-data-backup/current/gmd-panels': sync batch commit: failed to commit batch length 1: batch had 1 errors: last error: upload failed: too_many_write_operations
+2026/10/16 20:34:37 ERROR : ohlcv_adj/IN/year=2025.parquet: Failed to copy: upload failed: batch upload failed: upload failed: too_many_write_operations
+2026/10/16 20:34:56 ERROR : Dropbox root 'market-data-backup/current/gmd-panels': not deleting files as there were IO errors
+2026/10/16 20:34:56 ERROR : Dropbox root 'market-data-backup/current/gmd-panels': not deleting directories as there were IO errors
+2026/10/16 20:34:56 ERROR : Attempt 1/3 failed with 1 errors and: upload failed: batch upload failed: upload failed: too_many_write_operations
+2026/10/16 20:35:02 ERROR : Attempt 2/3 succeeded
+2026/10/16 20:35:05 NOTICE: Dropbox root 'market-data-backup/current/gmd-panels': 0 differences found
+2026/10/16 20:35:05 NOTICE: Dropbox root 'market-data-backup/current/gmd-panels': 143 matching files
+OK   gmd-panels -> dropbox:market-data-backup
+2026/10/16 20:35:09 NOTICE: Dropbox root 'market-data-backup/current/gmd-cache_seed': 0 differences found
+2026/10/16 20:35:09 NOTICE: Dropbox root 'market-data-backup/current/gmd-cache_seed': 61 matching files
+OK   gmd-cache_seed -> dropbox:market-data-backup
+2026/10/16 20:35:36 NOTICE: Dropbox root 'market-data-backup/current/pipeline-cache_seed': 0 differences found
+2026/10/16 20:35:36 NOTICE: Dropbox root 'market-data-backup/current/pipeline-cache_seed': 114 matching files
+OK   pipeline-cache_seed -> dropbox:market-data-backup
+2026/10/16 20:36:31 ERROR : Dropbox root 'market-data-backup/current/pipeline-market_cache': sync batch commit: failed to commit batch length 1: batch had 1 errors: last error: upload failed: too_many_write_operations
+2026/10/16 20:36:31 ERROR : fundamentals/IN_current.parquet: Failed to copy: upload failed: batch upload failed: upload failed: too_many_write_operations
+2026/10/16 20:36:41 ERROR : Dropbox root 'market-data-backup/current/pipeline-market_cache': not deleting files as there were IO errors
+2026/10/16 20:36:41 ERROR : Dropbox root 'market-data-backup/current/pipeline-market_cache': not deleting directories as there were IO errors
+2026/10/16 20:36:41 ERROR : Attempt 1/3 failed with 1 errors and: upload failed: batch upload failed: upload failed: too_many_write_operations
+2026/10/16 20:36:45 ERROR : Attempt 2/3 succeeded
+2026/10/16 20:36:47 NOTICE: Dropbox root 'market-data-backup/current/pipeline-market_cache': 0 differences found
+2026/10/16 20:36:47 NOTICE: Dropbox root 'market-data-backup/current/pipeline-market_cache': 334 matching files
+OK   pipeline-market_cache -> dropbox:market-data-backup
+2026/10/16 20:36:51 NOTICE: Dropbox root 'market-data-backup/current/gss-cache_seed': 0 differences found
+2026/10/16 20:36:51 NOTICE: Dropbox root 'market-data-backup/current/gss-cache_seed': 75 matching files
+OK   gss-cache_seed -> dropbox:market-data-backup
+2026/10/16 20:37:49 NOTICE: Dropbox root 'market-data-backup/current/pipeline-reports': 0 differences found
+2026/10/16 20:37:49 NOTICE: Dropbox root 'market-data-backup/current/pipeline-reports': 509 matching files
+OK   pipeline-reports -> dropbox:market-data-backup
+2026/10/16 20:40:47 NOTICE: Dropbox root 'market-data-backup/current/pipeline-data': 0 differences found
+2026/10/16 20:40:47 NOTICE: Dropbox root 'market-data-backup/current/pipeline-data': 3664 matching files
+OK   pipeline-data -> dropbox:market-data-backup
+2026/10/16 20:42:52 NOTICE: Dropbox root 'market-data-backup/current/correlation-scan': 0 differences found
+2026/10/16 20:42:52 NOTICE: Dropbox root 'market-data-backup/current/correlation-scan': 39 matching files
+OK   correlation-scan -> dropbox:market-data-backup
+2026/10/16 20:45:12 NOTICE: Dropbox root 'market-data-backup/current/warehouse-duckdb': 0 differences found
+2026/10/16 20:45:12 NOTICE: Dropbox root 'market-data-backup/current/warehouse-duckdb': 17 matching files
+OK   warehouse-duckdb -> dropbox:market-data-backup
+2026/10/16 20:45:17 NOTICE: Dropbox root 'market-data-backup/current/branch-archives': 0 differences found
+OK   branch-archives -> dropbox:market-data-backup
+2026/10/16 20:45:20 NOTICE: Dropbox root 'market-data-backup/current/tracker-trade-data': 0 differences found
+2026/10/16 20:45:20 NOTICE: Dropbox root 'market-data-backup/current/tracker-trade-data': 4 matching files
+OK   tracker-trade-data -> dropbox:market-data-backup
+2026/10/16 20:45:23 NOTICE: Dropbox root 'market-data-backup/current/tracker-agri-data': 0 differences found
+2026/10/16 20:45:23 NOTICE: Dropbox root 'market-data-backup/current/tracker-agri-data': 4 matching files
+OK   tracker-agri-data -> dropbox:market-data-backup
+2026/10/16 20:45:41 NOTICE: Dropbox root 'market-data-backup/current/iudx-flood-collector': 0 differences found
+2026/10/16 20:45:41 NOTICE: Dropbox root 'market-data-backup/current/iudx-flood-collector': 386 matching files
+OK   iudx-flood-collector -> dropbox:market-data-backup
+2026/10/16 20:45:45 NOTICE: Dropbox root 'market-data-backup/current/mempalace': 0 differences found
+2026/10/16 20:45:45 NOTICE: Dropbox root 'market-data-backup/current/mempalace': 3 matching files
+OK   mempalace -> dropbox:market-data-backup
+2026/10/16 20:48:01 NOTICE: Dropbox root 'market-data-backup/current/static-archives': 0 differences found
+2026/10/16 20:48:01 NOTICE: Dropbox root 'market-data-backup/current/static-archives': 8 matching files
+OK   static-archives -> dropbox:market-data-backup
+2026/10/16 20:48:04 NOTICE: Dropbox root 'market-data-backup/current/market-data-config': 0 differences found
+2026/10/16 20:48:04 NOTICE: Dropbox root 'market-data-backup/current/market-data-config': 2 matching files
+OK   market-data-config -> dropbox:market-data-backup
+2026/10/16 20:48:07 NOTICE: Dropbox root 'market-data-backup/current/twin-state-registers': 0 differences found
+2026/10/16 20:48:07 NOTICE: Dropbox root 'market-data-backup/current/twin-state-registers': 8 matching files
+OK   twin-state-registers -> dropbox:market-data-backup
+2026/10/16 20:48:11 NOTICE: Dropbox root 'market-data-backup/current/home-desktop': 0 differences found
+2026/10/16 20:48:11 NOTICE: Dropbox root 'market-data-backup/current/home-desktop': 10 matching files
+OK   home-desktop -> dropbox:market-data-backup
+2026/10/16 20:48:14 NOTICE: Dropbox root 'market-data-backup/current/home-documents': 0 differences found
+2026/10/16 20:48:14 NOTICE: Dropbox root 'market-data-backup/current/home-documents': 38 matching files
+OK   home-documents -> dropbox:market-data-backup
+2026/10/16 20:49:29 NOTICE: Google drive root 'market-data-backup/current/gmd-warehouse': 0 differences found
+2026/10/16 20:49:29 NOTICE: Google drive root 'market-data-backup/current/gmd-warehouse': 21 matching files
+OK   gmd-warehouse -> googledrive:market-data-backup
+2026/10/16 20:51:36 NOTICE: Google drive root 'market-data-backup/current/gmd-panels': 0 differences found
+2026/10/16 20:51:36 NOTICE: Google drive root 'market-data-backup/current/gmd-panels': 143 matching files
+OK   gmd-panels -> googledrive:market-data-backup
+2026/10/16 20:51:49 NOTICE: Google drive root 'market-data-backup/current/gmd-cache_seed': 0 differences found
+2026/10/16 20:51:49 NOTICE: Google drive root 'market-data-backup/current/gmd-cache_seed': 61 matching files
+OK   gmd-cache_seed -> googledrive:market-data-backup
+2026/10/16 20:53:08 NOTICE: Google drive root 'market-data-backup/current/pipeline-cache_seed': 0 differences found
+2026/10/16 20:53:08 NOTICE: Google drive root 'market-data-backup/current/pipeline-cache_seed': 114 matching files
+OK   pipeline-cache_seed -> googledrive:market-data-backup
+2026/10/16 20:55:50 NOTICE: Google drive root 'market-data-backup/current/pipeline-market_cache': 0 differences found
+2026/10/16 20:55:50 NOTICE: Google drive root 'market-data-backup/current/pipeline-market_cache': 334 matching files
+OK   pipeline-market_cache -> googledrive:market-data-backup
+2026/10/16 20:56:04 NOTICE: Google drive root 'market-data-backup/current/gss-cache_seed': 0 differences found
+2026/10/16 20:56:04 NOTICE: Google drive root 'market-data-backup/current/gss-cache_seed': 75 matching files
+OK   gss-cache_seed -> googledrive:market-data-backup
+2026/10/16 20:57:33 NOTICE: Google drive root 'market-data-backup/current/pipeline-reports': 0 differences found
+2026/10/16 20:57:33 NOTICE: Google drive root 'market-data-backup/current/pipeline-reports': 509 matching files
+OK   pipeline-reports -> googledrive:market-data-backup
+2026/10/16 20:59:45 NOTICE: Google drive root 'market-data-backup/current/pipeline-data': 0 differences found
+2026/10/16 20:59:45 NOTICE: Google drive root 'market-data-backup/current/pipeline-data': 3664 matching files
+OK   pipeline-data -> googledrive:market-data-backup
+2026/10/16 21:01:16 NOTICE: Google drive root 'market-data-backup/current/correlation-scan': 0 differences found
+2026/10/16 21:01:16 NOTICE: Google drive root 'market-data-backup/current/correlation-scan': 39 matching files
+OK   correlation-scan -> googledrive:market-data-backup
+2026/10/16 21:03:08 NOTICE: Google drive root 'market-data-backup/current/warehouse-duckdb': 0 differences found
+2026/10/16 21:03:08 NOTICE: Google drive root 'market-data-backup/current/warehouse-duckdb': 17 matching files
+OK   warehouse-duckdb -> googledrive:market-data-backup
+2026/10/16 21:03:18 NOTICE: Google drive root 'market-data-backup/current/branch-archives': 0 differences found
+OK   branch-archives -> googledrive:market-data-backup
+2026/10/16 21:03:29 NOTICE: Google drive root 'market-data-backup/current/tracker-trade-data': 0 differences found
+2026/10/16 21:03:29 NOTICE: Google drive root 'market-data-backup/current/tracker-trade-data': 4 matching files
+OK   tracker-trade-data -> googledrive:market-data-backup
+2026/10/16 21:03:39 NOTICE: Google drive root 'market-data-backup/current/tracker-agri-data': 0 differences found
+2026/10/16 21:03:39 NOTICE: Google drive root 'market-data-backup/current/tracker-agri-data': 4 matching files
+OK   tracker-agri-data -> googledrive:market-data-backup
+2026/10/16 21:04:08 NOTICE: Google drive root 'market-data-backup/current/iudx-flood-collector': 0 differences found
+2026/10/16 21:04:08 NOTICE: Google drive root 'market-data-backup/current/iudx-flood-collector': 386 matching files
+OK   iudx-flood-collector -> googledrive:market-data-backup
+2026/10/16 21:04:19 NOTICE: Google drive root 'market-data-backup/current/mempalace': 0 differences found
+2026/10/16 21:04:19 NOTICE: Google drive root 'market-data-backup/current/mempalace': 3 matching files
+OK   mempalace -> googledrive:market-data-backup
+2026/10/16 21:05:52 NOTICE: Google drive root 'market-data-backup/current/static-archives': 0 differences found
+2026/10/16 21:05:52 NOTICE: Google drive root 'market-data-backup/current/static-archives': 8 matching files
+OK   static-archives -> googledrive:market-data-backup
+2026/10/16 21:06:02 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 0 differences found
+2026/10/16 21:06:02 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 2 matching files
+OK   market-data-config -> googledrive:market-data-backup
+2026/10/16 21:06:13 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 0 differences found
+2026/10/16 21:06:13 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 8 matching files
+OK   twin-state-registers -> googledrive:market-data-backup
+2026/10/16 21:06:25 NOTICE: Google drive root 'market-data-backup/current/home-desktop': 0 differences found
+2026/10/16 21:06:25 NOTICE: Google drive root 'market-data-backup/current/home-desktop': 10 matching files
+OK   home-desktop -> googledrive:market-data-backup
+2026/10/16 21:06:37 NOTICE: Google drive root 'market-data-backup/current/home-documents': 0 differences found
+2026/10/16 21:06:37 NOTICE: Google drive root 'market-data-backup/current/home-documents': 38 matching files
+OK   home-documents -> googledrive:market-data-backup
+OK   history -> gdrive (server-side relay)
+done 21:06

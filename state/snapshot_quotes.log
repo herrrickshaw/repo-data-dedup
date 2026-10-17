@@ -214,3 +214,27 @@ done 07:15 rc=0
 Cassandra: unavailable (('Unable to connect to any servers', {'127.0.0.1:9042': ConnectionRefusedError(61, "Tried connecting to [('127.0.0.1', 9042)]. Last error: Connection refused")})) — CSV fallback active
   🔴 Cassandra unreachable — nothing snapshotted, and today is lost
 done 07:15 rc=1
+=== snapshot 2026-10-03 07:15:00 IST ===
+Cassandra: unavailable (('Unable to connect to any servers', {'127.0.0.1:9042': ConnectionRefusedError(61, "Tried connecting to [('127.0.0.1', 9042)]. Last error: Connection refused")})) — CSV fallback active
+  🔴 Cassandra unreachable — nothing snapshotted, and today is lost
+done 07:15 rc=1
+=== snapshot 2026-10-04 07:15:01 IST ===
+Cassandra: unavailable (('Unable to connect to any servers', {'127.0.0.1:9042': ConnectionRefusedError(61, "Tried connecting to [('127.0.0.1', 9042)]. Last error: Connection refused")})) — CSV fallback active
+  🔴 Cassandra unreachable — nothing snapshotted, and today is lost
+done 07:15 rc=1
+=== snapshot 2026-10-06 07:15:00 IST ===
+Cassandra: unavailable (('Unable to connect to any servers', {'127.0.0.1:9042': ConnectionRefusedError(61, "Tried connecting to [('127.0.0.1', 9042)]. Last error: Connection refused")})) — CSV fallback active
+  🔴 Cassandra unreachable — nothing snapshotted, and today is lost
+done 07:15 rc=1
+=== snapshot 2026-10-07 07:15:00 IST ===
+Cassandra: unavailable (('Unable to connect to any servers', {'127.0.0.1:9042': ConnectionRefusedError(61, "Tried connecting to [('127.0.0.1', 9042)]. Last error: Connection refused")})) — CSV fallback active
+  🔴 Cassandra unreachable — nothing snapshotted, and today is lost
+done 07:15 rc=1
+=== snapshot 2026-10-10 07:15:01 IST ===
+Cassandra: unavailable (('Unable to connect to any servers', {'127.0.0.1:9042': ConnectionRefusedError(61, "Tried connecting to [('127.0.0.1', 9042)]. Last error: Connection refused")})) — CSV fallback active
+  🔴 Cassandra unreachable — nothing snapshotted, and today is lost
+done 07:15 rc=1
+=== snapshot 2026-10-17 07:15:01 IST ===
+Cassandra: unavailable (('Unable to connect to any servers', {'127.0.0.1:9042': ConnectionRefusedError(61, "Tried connecting to [('127.0.0.1', 9042)]. Last error: Connection refused")})) — CSV fallback active
+  🔴 Cassandra unreachable — nothing snapshotted, and today is lost
+done 07:15 rc=1
