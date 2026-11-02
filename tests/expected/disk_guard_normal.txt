@@ -1,0 +1,4 @@
+===== disk_guard <TS> — free: 400 GB =====
+done <HM> — free: 400 GB
+exit=0
+post-upload free: 400 GB

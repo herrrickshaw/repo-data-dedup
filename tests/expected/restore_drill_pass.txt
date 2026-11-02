@@ -1,0 +1,6 @@
+[<TS>] PASS pg-dump integrity: x/db_1.sql.gz
+[<TS>] PASS: b.txt
+[<TS>] PASS: dir/a.txt
+[<TS>] drill end rc=0
+[<TS>] drill start (sample=3)
+exit=0

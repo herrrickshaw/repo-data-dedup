@@ -1,0 +1,2 @@
+cloud_backup: dataset SSOT empty or unreadable (<T>/home/.config/market-data) — aborting
+exit=1
