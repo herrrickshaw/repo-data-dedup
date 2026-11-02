@@ -21,53 +21,69 @@
 #   scripts/delete_archive_twins.sh --run    # actually delete
 set -euo pipefail
 
-TWINS="
-BazaarTalks-archive-2026-07-17
-Bazartalks_Py2Cplus-archive-2026-07-17
-Merlin-archive-2026-07-17
-bms-battery-management-archive-2026-07-17
-claude-lmstudio-router-archive-2026-07-17
-claude-stock-tools-archive-2026-07-17
-colab-experiments-archive-2026-07-17
-colab-market-fundamentals-archive-2026-07-17
-data_validator-archive-2026-07-17
-discom-debt-and-revenue-models-archive-2026-07-17
-europe-stock-screener-archive-2026-07-17
-ev-battery-management-sim-archive-2026-07-17
-event-driven-stock-analysis-archive-2026-07-17
-fuel-retail-outlets-archive-2026-07-17
-global-market-data-archive-2026-07-17
-global-stock-screener-archive-2026-07-17
-global-ticker-universe-archive-2026-07-17
-heart-valve-defect-detection-archive-2026-07-17
-hydrogen-electrolyser-control-archive-2026-07-17
-india-election-analysis-archive-2026-07-17
-india-forex-analysis-archive-2026-07-17
-india-trade-export-analysis-archive-2026-07-17
-interpreter_toolkit-archive-2026-07-17
-karz-archive-2026-07-17
-ltm-warehouse-tests-archive-2026-07-17
-market-data-artifacts-archive-2026-07-17
-piotroski-liquidity-research-archive-2026-07-17
-prenatal-care-toolkit-archive-2026-07-17
-saf-monitoring-system-archive-2026-07-17
-stock-portfolio-evaluator-archive-2026-07-17
-stock-screener-ddd-archive-2026-07-17
-stock-screener-platform-archive-2026-07-17
-toll-plaza-highways-archive-2026-07-17
-tools-handling_data-archive-2026-07-17
-working-files-archive-2026-07-17
-"
+# shellcheck source=../lib/common.sh
+source "$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)/lib/common.sh"
 
-MODE="${1:-dry}"
-n=0
-for t in $TWINS; do
-  n=$((n+1))
-  if [ "$MODE" = "--run" ]; then
-    echo "[$n/35] deleting herrrickshaw/$t"
-    gh repo delete "herrrickshaw/$t" --yes
-  else
-    echo "[dry] would delete herrrickshaw/$t"
-  fi
-done
-[ "$MODE" = "--run" ] || echo "Dry run only. Re-run with --run to delete. Needs: gh auth refresh -h github.com -s delete_repo"
+USAGE="Usage: scripts/delete_archive_twins.sh [--run]
+  (no flag)  dry run: print the repos that would be deleted, exit 0
+  --run      delete every twin listed below via 'gh repo delete --yes'
+Any other argument is treated as a dry run."
+
+TWINS=(
+  BazaarTalks-archive-2026-07-17
+  Bazartalks_Py2Cplus-archive-2026-07-17
+  Merlin-archive-2026-07-17
+  bms-battery-management-archive-2026-07-17
+  claude-lmstudio-router-archive-2026-07-17
+  claude-stock-tools-archive-2026-07-17
+  colab-experiments-archive-2026-07-17
+  colab-market-fundamentals-archive-2026-07-17
+  data_validator-archive-2026-07-17
+  discom-debt-and-revenue-models-archive-2026-07-17
+  europe-stock-screener-archive-2026-07-17
+  ev-battery-management-sim-archive-2026-07-17
+  event-driven-stock-analysis-archive-2026-07-17
+  fuel-retail-outlets-archive-2026-07-17
+  global-market-data-archive-2026-07-17
+  global-stock-screener-archive-2026-07-17
+  global-ticker-universe-archive-2026-07-17
+  heart-valve-defect-detection-archive-2026-07-17
+  hydrogen-electrolyser-control-archive-2026-07-17
+  india-election-analysis-archive-2026-07-17
+  india-forex-analysis-archive-2026-07-17
+  india-trade-export-analysis-archive-2026-07-17
+  interpreter_toolkit-archive-2026-07-17
+  karz-archive-2026-07-17
+  ltm-warehouse-tests-archive-2026-07-17
+  market-data-artifacts-archive-2026-07-17
+  piotroski-liquidity-research-archive-2026-07-17
+  prenatal-care-toolkit-archive-2026-07-17
+  saf-monitoring-system-archive-2026-07-17
+  stock-portfolio-evaluator-archive-2026-07-17
+  stock-screener-ddd-archive-2026-07-17
+  stock-screener-platform-archive-2026-07-17
+  toll-plaza-highways-archive-2026-07-17
+  tools-handling_data-archive-2026-07-17
+  working-files-archive-2026-07-17
+)
+
+delete_twin() {  # delete_twin <index> <total> <repo>
+  echo "[$1/$2] deleting $GH_OWNER/$3"
+  gh repo delete "$GH_OWNER/$3" --yes
+}
+
+main() {
+  usage_if_requested "$USAGE" "$@"
+  local mode="${1:-dry}" total=${#TWINS[@]} n=0 t
+  for t in "${TWINS[@]}"; do
+    n=$((n + 1))
+    if [ "$mode" = "--run" ]; then
+      delete_twin "$n" "$total" "$t"
+    else
+      echo "[dry] would delete $GH_OWNER/$t"
+    fi
+  done
+  [ "$mode" = "--run" ] || echo "Dry run only. Re-run with --run to delete. Needs: gh auth refresh -h github.com -s delete_repo"
+}
+
+main "$@"

@@ -1,0 +1,9 @@
+-- dumping market_data --
+-- dumping repo_csv_archive --
+-- dumping vcrud --
+===== pg_cloud_backup <TS> =====
+FAIL dump market_data
+FAIL dump repo_csv_archive
+FAIL dump vcrud
+done <HM>
+exit=0

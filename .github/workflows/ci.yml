@@ -1,0 +1,22 @@
+name: ci
+# Shell checks for scripts/*.sh. The smoke test runs entirely inside a throw-away
+# $HOME with stub df/rclone/pg_dump — it never touches a cloud remote or a repo.
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  shell:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Syntax check
+        run: for f in scripts/*.sh lib/*.sh tests/*.sh; do bash -n "$f"; done
+      - name: shellcheck (errors only)
+        run: shellcheck -S error scripts/*.sh lib/*.sh tests/*.sh
+      - name: Smoke test
+        run: tests/smoke.sh

@@ -14,30 +14,47 @@
 # Cron: daily 20:30 via disk_guard_daily.sh. Log: state/cloud_backup.log
 set -uo pipefail
 
+# shellcheck source=../lib/common.sh
+source "$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)/lib/common.sh"
+
+USAGE="Usage: scripts/cloud_backup.sh
+Replicates every dataset in ~/.config/market-data/datasets.conf to Dropbox and
+Google Drive (rclone sync + check), then relays history/ to Drive. No arguments.
+Log: $DEDUP_STATE_DIR/cloud_backup.log"
+
 # Dataset list, paths and excludes come from the SSOT manifest — see
 # ~/.config/market-data/datasets.conf. Patch there, not here: this list and
 # etl_registry.py's copy of the same facts drifted for three weeks and the
 # weekly audit could not tell a real loss from a stale path.
+
+# ── constants ────────────────────────────────────────────────────────────────
 SSOT_DIR="$HOME/.config/market-data"
-SSOT_ROWS=()
-while IFS= read -r _row; do
-  [ -n "$_row" ] && SSOT_ROWS+=("$_row")
-done < <(/usr/bin/python3 "$SSOT_DIR/datasets.py" backup)
-if [ ${#SSOT_ROWS[@]} -eq 0 ]; then
-  # Refuse to run rather than back up nothing and report success: an empty list
-  # would make every `rclone sync` a no-op and still exit 0.
-  echo "cloud_backup: dataset SSOT empty or unreadable ($SSOT_DIR) — aborting" >&2
-  exit 1
-fi
-
-DBX="$(/usr/bin/python3 "$SSOT_DIR/datasets.py" remote)"
-GDR="googledrive:market-data-backup"
-STAMP=$(date +%Y-%m-%d)
-LOG="$HOME/repos/repo-data-dedup/state/cloud_backup.log"
-RC="/opt/homebrew/bin/rclone"
+GDR="$GDRIVE_BACKUP"
+STAMP=$(today)
+LOG="$DEDUP_STATE_DIR/cloud_backup.log"
+RC="$RCLONE_BIN"
 FLAGS=(--transfers 4 --timeout 60s --retries 3 --log-level ERROR)
+ACCT_LOCK="/tmp/cloud_backup.rclone-dropbox.lock"
+LOCK_MAX_WAIT_S=5400     # 90 minutes
+LOCK_POLL_S=30
+ARCH_ROOT="$HOME/.backup-archives"
 
-echo "===== cloud_backup $STAMP $(date +%H:%M) -> dropbox + gdrive =====" >> "$LOG"
+SSOT_ROWS=()   # "<local_path>|<name>|<excludes>" rows, filled by load_ssot
+DBX=""         # Dropbox remote, from the SSOT
+ACCT_OWNED=0
+
+load_ssot() {
+  local row
+  while IFS= read -r row; do
+    [ -n "$row" ] && SSOT_ROWS+=("$row")
+  done < <(/usr/bin/python3 "$SSOT_DIR/datasets.py" backup)
+  if [ ${#SSOT_ROWS[@]} -eq 0 ]; then
+    # Refuse to run rather than back up nothing and report success: an empty list
+    # would make every `rclone sync` a no-op and still exit 0.
+    die "cloud_backup: dataset SSOT empty or unreadable ($SSOT_DIR) — aborting"
+  fi
+  DBX="$(/usr/bin/python3 "$SSOT_DIR/datasets.py" remote)"
+}
 
 # ── account-level serialisation (2026-07-29) ─────────────────────────────────
 # rclone rate limits are per-ACCOUNT, not per-destination. Two backup scripts
@@ -54,27 +71,29 @@ echo "===== cloud_backup $STAMP $(date +%H:%M) -> dropbox + gdrive =====" >> "$L
 # so both genuinely have to run. After 90 minutes it gives up waiting and
 # proceeds anyway — a slow backup beats no backup, and a wedged peer must not be
 # able to suppress this one indefinitely.
-ACCT_LOCK="/tmp/cloud_backup.rclone-dropbox.lock"
-ACCT_OWNED=0
-_acct_waited=0
-while :; do
-  if mkdir "$ACCT_LOCK" 2>/dev/null; then
-    ACCT_OWNED=1; echo $$ > "$ACCT_LOCK/pid"; break
-  fi
-  _acct_peer="$(cat "$ACCT_LOCK/pid" 2>/dev/null || true)"
-  if [ -z "${_acct_peer:-}" ] || ! kill -0 "$_acct_peer" 2>/dev/null; then
-    rm -rf "$ACCT_LOCK" 2>/dev/null; continue          # stale: owner is gone
-  fi
-  if [ "$_acct_waited" -ge 5400 ]; then
-    echo "cloud_backup: waited 90m on $ACCT_LOCK (pid $_acct_peer) — proceeding concurrently" >> "$LOG"
-    break
-  fi
-  [ "$_acct_waited" = 0 ] && echo "cloud_backup: waiting for rclone account lock (pid $_acct_peer)" >> "$LOG"
-  sleep 30; _acct_waited=$((_acct_waited + 30))
-done
+acquire_account_lock() {
+  local waited=0 peer
+  while :; do
+    if mkdir "$ACCT_LOCK" 2>/dev/null; then
+      ACCT_OWNED=1; echo $$ > "$ACCT_LOCK/pid"; break
+    fi
+    peer="$(cat "$ACCT_LOCK/pid" 2>/dev/null || true)"
+    if [ -z "${peer:-}" ] || ! kill -0 "$peer" 2>/dev/null; then
+      rm -rf "$ACCT_LOCK" 2>/dev/null; continue          # stale: owner is gone
+    fi
+    if [ "$waited" -ge "$LOCK_MAX_WAIT_S" ]; then
+      log_to "$LOG" "cloud_backup: waited 90m on $ACCT_LOCK (pid $peer) — proceeding concurrently"
+      break
+    fi
+    [ "$waited" = 0 ] && log_to "$LOG" "cloud_backup: waiting for rclone account lock (pid $peer)"
+    sleep "$LOCK_POLL_S"; waited=$((waited + LOCK_POLL_S))
+  done
+  trap release_account_lock EXIT
+}
 
-trap '[ "$ACCT_OWNED" = 1 ] && rm -rf "$ACCT_LOCK" 2>/dev/null' EXIT
-
+release_account_lock() {
+  [ "$ACCT_OWNED" = 1 ] && rm -rf "$ACCT_LOCK" 2>/dev/null
+}
 
 # ── static-subdir archive pattern (standard 2026-07-23) ──────────────────────
 # Many-small-file subdirs that are STATIC or APPEND-ONLY upload catastrophically
@@ -82,7 +101,7 @@ trap '[ "$ACCT_OWNED" = 1 ] && rm -rf "$ACCT_LOCK" 2>/dev/null' EXIT
 # slower than a 3.5GB archive). Such subdirs are tar.zst'd into ~/.backup-archives
 # (rebuilt only when their file-count:size fingerprint changes), EXCLUDED from
 # their dataset's raw sync, and the archives dir syncs as its own dataset.
-# To add one: append to STATIC_SUBDIRS and add its pattern in exclude_patterns_for.
+# To add one: append to STATIC_SUBDIRS and add its pattern in the SSOT excludes.
 #
 # 🔴 market_cache/ohlc ADDED 2026-07-30, and it is NOT static or append-only —
 # 7,571 of its 7,682 parquets (98.6%) are rewritten every day (new price bar per
@@ -100,7 +119,6 @@ trap '[ "$ACCT_OWNED" = 1 ] && rm -rf "$ACCT_LOCK" 2>/dev/null' EXIT
 # for every entry (nse_xbrl/xml gets no less protection, since a genuinely static
 # dir's mtimes do not move either — this is strictly additive) rather than adding
 # a special case only for the new directory.
-ARCH_ROOT="$HOME/.backup-archives"
 STATIC_SUBDIRS=(
   "$HOME/market-pipeline/market_cache/nse_xbrl/xml|nse_xbrl-xml"
   "$HOME/market-pipeline/market_cache/ohlc|market_cache-ohlc"
@@ -108,13 +126,21 @@ STATIC_SUBDIRS=(
   "$HOME/market-pipeline/market_cache/intl_pit|market_cache-intl_pit"
 )
 
-archive_static () {
+dir_fingerprint() {  # dir_fingerprint <dir> — "<file count>:<size KB>:<newest mtime>"
+  local src=$1
+  printf '%s:%s:%s' \
+    "$(find "$src" -type f | wc -l | tr -d ' ')" \
+    "$(du -sk "$src" | cut -f1)" \
+    "$(find "$src" -type f -exec stat -f '%m' {} + 2>/dev/null | sort -rn | head -1)"
+}
+
+archive_static() {
   local pair src name fp stamp old
   mkdir -p "$ARCH_ROOT"
   for pair in "${STATIC_SUBDIRS[@]}"; do
     src="${pair%%|*}"; name="${pair##*|}"
     [ -d "$src" ] || continue
-    fp="$(find "$src" -type f | wc -l | tr -d ' '):$(du -sk "$src" | cut -f1):$(find "$src" -type f -exec stat -f '%m' {} + 2>/dev/null | sort -rn | head -1)"
+    fp="$(dir_fingerprint "$src")"
     stamp="$ARCH_ROOT/$name.fingerprint"
     old="$(cat "$stamp" 2>/dev/null || true)"
     if [ "$fp" != "$old" ] || [ ! -f "$ARCH_ROOT/$name.tar.zst" ]; then
@@ -122,22 +148,22 @@ archive_static () {
           -C "$(dirname "$src")" "$(basename "$src")" \
         && mv "$ARCH_ROOT/$name.tar.zst.tmp" "$ARCH_ROOT/$name.tar.zst" \
         && echo "$fp" > "$stamp" \
-        && echo "ARCH $name rebuilt ($fp)" >> "$LOG" \
-        || echo "FAIL archive $name" >> "$LOG"
+        && log_to "$LOG" "ARCH $name rebuilt ($fp)" \
+        || log_to "$LOG" "FAIL archive $name"
     fi
   done
 }
 
-exclude_patterns_for () {  # dataset name -> raw subdir patterns replaced by archives
+exclude_patterns_for() {  # dataset name -> raw subdir patterns replaced by archives
   # Looked up from the SSOT rows by awk, not an associative array: macOS ships
   # bash 3.2, where `declare -A` does not exist and would fail silently-ish.
   printf '%s\n' ${SSOT_ROWS[@]+"${SSOT_ROWS[@]}"} \
     | awk -F'|' -v n="$1" '$2==n{print $3}' | tr ',' '\n' | grep -v '^$' || true
 }
 
-backup () {  # backup <local_dir> <name> <remote>
+backup() {  # backup <local_dir> <name> <remote>
   local src=$1 name=$2 rem=$3 p
-  [ -d "$src" ] || { echo "SKIP missing $src" >> "$LOG"; return; }
+  [ -d "$src" ] || { log_to "$LOG" "SKIP missing $src"; return; }
   local sync_x=() check_x=()
   for p in $(exclude_patterns_for "$name"); do
     sync_x+=(--exclude "$p"); check_x+=(--exclude "$p")
@@ -152,39 +178,51 @@ backup () {  # backup <local_dir> <name> <remote>
   for p in ".DS_Store" "._*"; do
     sync_x+=(--exclude "$p"); check_x+=(--exclude "$p")
   done
-  $RC sync "$src" "$rem/current/$name" \
+  "$RC" sync "$src" "$rem/current/$name" \
       --backup-dir "$rem/versions/$STAMP/$name" \
       ${sync_x[@]+"${sync_x[@]}"} \
       "${FLAGS[@]}" >> "$LOG" 2>&1 \
-    && $RC check "$src" "$rem/current/$name" --one-way --size-only \
+    && "$RC" check "$src" "$rem/current/$name" --one-way --size-only \
         ${check_x[@]+"${check_x[@]}"} \
         >> "$LOG" 2>&1 \
-    && echo "OK   $name -> $rem" >> "$LOG" \
-    || echo "FAIL $name -> $rem" >> "$LOG"
+    && log_to "$LOG" "OK   $name -> $rem" \
+    || log_to "$LOG" "FAIL $name -> $rem"
 }
 
-archive_static
-
-# DATASETS now comes from the SSOT manifest, loaded into SSOT_ROWS at the top
-# of this script as "<local_path>|<name>|<excludes>" rows. The literal list that
-# used to live here is gone on purpose — it was one of the three places the same
+# DATASETS comes from the SSOT manifest (SSOT_ROWS). The literal list that used
+# to live here is gone on purpose — it was one of the three places the same
 # facts were declared, and they drifted. Add or move a dataset in
 # ~/.config/market-data/datasets.conf and BOTH this backup and the weekly ETL
 # audit pick it up; edit it here and only one of them will.
-
-for rem in "$DBX" "$GDR"; do
-  for pair in "${SSOT_ROWS[@]}"; do
-    # rows are local|name|excludes — take fields 1 and 2, not %%/## on the whole
-    # string (a 3-field row would otherwise hand `backup` the excludes as a name)
-    backup "$(printf '%s' "$pair" | cut -d'|' -f1)" \
-           "$(printf '%s' "$pair" | cut -d'|' -f2)" "$rem"
+backup_all_datasets() {
+  local rem pair
+  for rem in "$DBX" "$GDR"; do
+    for pair in "${SSOT_ROWS[@]}"; do
+      # rows are local|name|excludes — take fields 1 and 2, not %%/## on the whole
+      # string (a 3-field row would otherwise hand `backup` the excludes as a name)
+      backup "$(printf '%s' "$pair" | cut -d'|' -f1)" \
+             "$(printf '%s' "$pair" | cut -d'|' -f2)" "$rem"
+    done
   done
-done
+}
 
 # history/ is append-only: replicate dropbox's history tree to gdrive
-$RC copy "$DBX/history" "$GDR/history" "${FLAGS[@]}" >> "$LOG" 2>&1 \
-  && echo "OK   history -> gdrive (server-side relay)" >> "$LOG" \
-  || echo "FAIL history -> gdrive" >> "$LOG"
+relay_history() {
+  "$RC" copy "$DBX/history" "$GDR/history" "${FLAGS[@]}" >> "$LOG" 2>&1 \
+    && log_to "$LOG" "OK   history -> gdrive (server-side relay)" \
+    || log_to "$LOG" "FAIL history -> gdrive"
+}
 
-echo "done $(date +%H:%M)" >> "$LOG"
-tail -14 "$LOG"
+main() {
+  usage_if_requested "$USAGE" "$@"
+  load_ssot
+  log_to "$LOG" "===== cloud_backup $STAMP $(now_hm) -> dropbox + gdrive ====="
+  acquire_account_lock
+  archive_static
+  backup_all_datasets
+  relay_history
+  log_to "$LOG" "done $(now_hm)"
+  tail -14 "$LOG"
+}
+
+main "$@"
