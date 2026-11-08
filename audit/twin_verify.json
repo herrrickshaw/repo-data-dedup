@@ -18,37 +18,37 @@
  },
  {
   "twin": "data_validator-archive-2026-07-17",
-  "src": "data_validator",
+  "src": "private-repo-07",
   "refs": 1,
   "missing": []
  },
  {
   "twin": "Bazartalks_Py2Cplus-archive-2026-07-17",
-  "src": "Bazartalks_Py2Cplus",
+  "src": "private-repo-02",
   "refs": 1,
   "missing": []
  },
  {
   "twin": "global-market-data-archive-2026-07-17",
-  "src": "global-market-data",
+  "src": "private-repo-09",
   "refs": 1,
   "missing": []
  },
  {
   "twin": "BazaarTalks-archive-2026-07-17",
-  "src": "BazaarTalks",
+  "src": "private-repo-01",
   "refs": 2,
   "missing": []
  },
  {
   "twin": "global-stock-screener-archive-2026-07-17",
-  "src": "global-stock-screener",
+  "src": "private-repo-12",
   "refs": 43,
   "missing": []
  },
  {
   "twin": "stock-screener-platform-archive-2026-07-17",
-  "src": "stock-screener-platform",
+  "src": "private-repo-23",
   "refs": 2,
   "missing": []
  },
@@ -72,7 +72,7 @@
  },
  {
   "twin": "market-data-artifacts-archive-2026-07-17",
-  "src": "market-data-artifacts",
+  "src": "private-repo-15",
   "refs": 1,
   "missing": []
  },
@@ -84,7 +84,7 @@
  },
  {
   "twin": "stock-portfolio-evaluator-archive-2026-07-17",
-  "src": "stock-portfolio-evaluator",
+  "src": "private-repo-21",
   "refs": 1,
   "missing": []
  },
@@ -108,7 +108,7 @@
  },
  {
   "twin": "europe-stock-screener-archive-2026-07-17",
-  "src": "europe-stock-screener",
+  "src": "private-repo-08",
   "refs": 1,
   "missing": []
  },
@@ -126,7 +126,7 @@
  },
  {
   "twin": "karz-archive-2026-07-17",
-  "src": "karz",
+  "src": "private-repo-14",
   "refs": 1,
   "missing": []
  },
@@ -156,19 +156,19 @@
  },
  {
   "twin": "claude-stock-tools-archive-2026-07-17",
-  "src": "claude-stock-tools",
+  "src": "private-repo-06",
   "refs": 1,
   "missing": []
  },
  {
   "twin": "Merlin-archive-2026-07-17",
-  "src": "Merlin",
+  "src": "private-repo-03",
   "refs": 1,
   "missing": []
  },
  {
   "twin": "piotroski-liquidity-research-archive-2026-07-17",
-  "src": "piotroski-liquidity-research",
+  "src": "private-repo-18",
   "refs": 1,
   "missing": []
  },
@@ -204,7 +204,7 @@
  },
  {
   "twin": "stock-screener-ddd-archive-2026-07-17",
-  "src": "stock-screener-ddd",
+  "src": "private-repo-22",
   "refs": 1,
   "missing": []
  },
