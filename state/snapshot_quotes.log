@@ -238,3 +238,121 @@ done 07:15 rc=1
 Cassandra: unavailable (('Unable to connect to any servers', {'127.0.0.1:9042': ConnectionRefusedError(61, "Tried connecting to [('127.0.0.1', 9042)]. Last error: Connection refused")})) — CSV fallback active
   🔴 Cassandra unreachable — nothing snapshotted, and today is lost
 done 07:15 rc=1
+=== snapshot 2026-10-18 07:15:00 IST ===
+Cassandra: unavailable (('Unable to connect to any servers', {'127.0.0.1:9042': ConnectionRefusedError(61, "Tried connecting to [('127.0.0.1', 9042)]. Last error: Connection refused")})) — CSV fallback active
+  🔴 Cassandra unreachable — nothing snapshotted, and today is lost
+done 07:15 rc=1
+=== snapshot 2026-10-19 07:15:01 IST ===
+snapshot_market: india — skipped 3484 row(s) with data older than 2026-10-17 (max_age_days=2); serving table may not have refreshed
+snapshot_market: india — nothing fresh to snapshot for 2026-10-19
+snapshot_market: us — skipped 9534 row(s) with data older than 2026-10-17 (max_age_days=2); serving table may not have refreshed
+snapshot_market: us — nothing fresh to snapshot for 2026-10-19
+snapshot_market: europe — skipped 2434 row(s) with data older than 2026-10-17 (max_age_days=2); serving table may not have refreshed
+snapshot_market: europe — nothing fresh to snapshot for 2026-10-19
+snapshot_market: japan — skipped 3873 row(s) with data older than 2026-10-17 (max_age_days=2); serving table may not have refreshed
+snapshot_market: japan — nothing fresh to snapshot for 2026-10-19
+snapshot_market: korea — skipped 2885 row(s) with data older than 2026-10-17 (max_age_days=2); serving table may not have refreshed
+snapshot_market: korea — nothing fresh to snapshot for 2026-10-19
+  india         0 rows
+  us            0 rows
+  europe        0 rows
+  japan         0 rows
+  korea         0 rows
+  total 0 rows for 2026-10-19
+done 07:15 rc=0
+=== snapshot 2026-10-22 07:15:00 IST ===
+Cassandra: unavailable (('Unable to connect to any servers', {'127.0.0.1:9042': ConnectionRefusedError(61, "Tried connecting to [('127.0.0.1', 9042)]. Last error: Connection refused")})) — CSV fallback active
+  🔴 Cassandra unreachable — nothing snapshotted, and today is lost
+done 07:15 rc=1
+=== snapshot 2026-10-23 07:15:00 IST ===
+Cassandra: unavailable (('Unable to connect to any servers', {'127.0.0.1:9042': ConnectionRefusedError(61, "Tried connecting to [('127.0.0.1', 9042)]. Last error: Connection refused")})) — CSV fallback active
+  🔴 Cassandra unreachable — nothing snapshotted, and today is lost
+done 07:15 rc=1
+=== snapshot 2026-10-24 07:15:00 IST ===
+Cassandra: unavailable (('Unable to connect to any servers', {'127.0.0.1:9042': ConnectionRefusedError(61, "Tried connecting to [('127.0.0.1', 9042)]. Last error: Connection refused")})) — CSV fallback active
+  🔴 Cassandra unreachable — nothing snapshotted, and today is lost
+done 07:15 rc=1
+=== snapshot 2026-10-26 07:15:00 IST ===
+Cassandra: unavailable (('Unable to connect to any servers', {'127.0.0.1:9042': ConnectionRefusedError(61, "Tried connecting to [('127.0.0.1', 9042)]. Last error: Connection refused")})) — CSV fallback active
+  🔴 Cassandra unreachable — nothing snapshotted, and today is lost
+done 07:15 rc=1
+=== snapshot 2026-10-27 07:15:01 IST ===
+Cassandra: unavailable (('Unable to connect to any servers', {'127.0.0.1:9042': ConnectionRefusedError(61, "Tried connecting to [('127.0.0.1', 9042)]. Last error: Connection refused")})) — CSV fallback active
+  🔴 Cassandra unreachable — nothing snapshotted, and today is lost
+done 07:15 rc=1
+=== snapshot 2026-10-28 07:15:00 IST ===
+Cassandra: unavailable (('Unable to connect to any servers', {'127.0.0.1:9042': ConnectionRefusedError(61, "Tried connecting to [('127.0.0.1', 9042)]. Last error: Connection refused")})) — CSV fallback active
+  🔴 Cassandra unreachable — nothing snapshotted, and today is lost
+done 07:15 rc=1
+=== snapshot 2026-10-30 07:15:01 IST ===
+Cassandra: unavailable (('Unable to connect to any servers', {'127.0.0.1:9042': ConnectionRefusedError(61, "Tried connecting to [('127.0.0.1', 9042)]. Last error: Connection refused")})) — CSV fallback active
+  🔴 Cassandra unreachable — nothing snapshotted, and today is lost
+done 07:15 rc=1
+=== snapshot 2026-11-01 07:15:00 IST ===
+Cassandra: unavailable (('Unable to connect to any servers', {'127.0.0.1:9042': ConnectionRefusedError(61, "Tried connecting to [('127.0.0.1', 9042)]. Last error: Connection refused")})) — CSV fallback active
+  🔴 Cassandra unreachable — nothing snapshotted, and today is lost
+done 07:15 rc=1
+=== snapshot 2026-11-02 07:15:00 IST ===
+Cassandra: unavailable (('Unable to connect to any servers', {'127.0.0.1:9042': ConnectionRefusedError(61, "Tried connecting to [('127.0.0.1', 9042)]. Last error: Connection refused")})) — CSV fallback active
+  🔴 Cassandra unreachable — nothing snapshotted, and today is lost
+done 07:15 rc=1
+=== snapshot 2026-11-03 07:15:00 IST ===
+Cassandra: unavailable (('Unable to connect to any servers', {'127.0.0.1:9042': ConnectionRefusedError(61, "Tried connecting to [('127.0.0.1', 9042)]. Last error: Connection refused")})) — CSV fallback active
+  🔴 Cassandra unreachable — nothing snapshotted, and today is lost
+done 07:15 rc=1
+=== snapshot 2026-11-05 07:15:00 IST ===
+Cassandra: unavailable (('Unable to connect to any servers', {'127.0.0.1:9042': ConnectionRefusedError(61, "Tried connecting to [('127.0.0.1', 9042)]. Last error: Connection refused")})) — CSV fallback active
+  🔴 Cassandra unreachable — nothing snapshotted, and today is lost
+done 07:15 rc=1
+=== snapshot 2026-11-06 07:15:00 IST ===
+Cassandra: unavailable (('Unable to connect to any servers', {'127.0.0.1:9042': ConnectionRefusedError(61, "Tried connecting to [('127.0.0.1', 9042)]. Last error: Connection refused")})) — CSV fallback active
+  🔴 Cassandra unreachable — nothing snapshotted, and today is lost
+done 07:15 rc=1
+=== snapshot 2026-11-08 07:15:00 IST ===
+snapshot_market: india — skipped 3484 row(s) with data older than 2026-11-06 (max_age_days=2); serving table may not have refreshed
+snapshot_market: india — nothing fresh to snapshot for 2026-11-08
+snapshot_market: us — skipped 9534 row(s) with data older than 2026-11-06 (max_age_days=2); serving table may not have refreshed
+snapshot_market: us — nothing fresh to snapshot for 2026-11-08
+snapshot_market: europe — skipped 2434 row(s) with data older than 2026-11-06 (max_age_days=2); serving table may not have refreshed
+snapshot_market: europe — nothing fresh to snapshot for 2026-11-08
+snapshot_market: japan — skipped 3873 row(s) with data older than 2026-11-06 (max_age_days=2); serving table may not have refreshed
+snapshot_market: japan — nothing fresh to snapshot for 2026-11-08
+snapshot_market: korea — skipped 2885 row(s) with data older than 2026-11-06 (max_age_days=2); serving table may not have refreshed
+snapshot_market: korea — nothing fresh to snapshot for 2026-11-08
+  india         0 rows
+  us            0 rows
+  europe        0 rows
+  japan         0 rows
+  korea         0 rows
+  total 0 rows for 2026-11-08
+done 07:15 rc=0
+=== snapshot 2026-11-10 07:15:00 IST ===
+Cassandra: unavailable (('Unable to connect to any servers', {'127.0.0.1:9042': ConnectionRefusedError(61, "Tried connecting to [('127.0.0.1', 9042)]. Last error: Connection refused")})) — CSV fallback active
+  🔴 Cassandra unreachable — nothing snapshotted, and today is lost
+done 07:15 rc=1
+=== snapshot 2026-11-11 07:15:01 IST ===
+Cassandra: unavailable (('Unable to connect to any servers', {'127.0.0.1:9042': ConnectionRefusedError(61, "Tried connecting to [('127.0.0.1', 9042)]. Last error: Connection refused")})) — CSV fallback active
+  🔴 Cassandra unreachable — nothing snapshotted, and today is lost
+done 07:15 rc=1
+=== snapshot 2026-11-12 07:15:01 IST ===
+snapshot_market: india — skipped 3484 row(s) with data older than 2026-11-10 (max_age_days=2); serving table may not have refreshed
+snapshot_market: india — nothing fresh to snapshot for 2026-11-12
+snapshot_market: us — skipped 9534 row(s) with data older than 2026-11-10 (max_age_days=2); serving table may not have refreshed
+snapshot_market: us — nothing fresh to snapshot for 2026-11-12
+snapshot_market: europe — skipped 2434 row(s) with data older than 2026-11-10 (max_age_days=2); serving table may not have refreshed
+snapshot_market: europe — nothing fresh to snapshot for 2026-11-12
+snapshot_market: japan — skipped 3873 row(s) with data older than 2026-11-10 (max_age_days=2); serving table may not have refreshed
+snapshot_market: japan — nothing fresh to snapshot for 2026-11-12
+snapshot_market: korea — skipped 2885 row(s) with data older than 2026-11-10 (max_age_days=2); serving table may not have refreshed
+snapshot_market: korea — nothing fresh to snapshot for 2026-11-12
+  india         0 rows
+  us            0 rows
+  europe        0 rows
+  japan         0 rows
+  korea         0 rows
+  total 0 rows for 2026-11-12
+done 07:15 rc=0
+=== snapshot 2026-11-13 07:15:00 IST ===
+Cassandra: unavailable (('Unable to connect to any servers', {'127.0.0.1:9042': ConnectionRefusedError(61, "Tried connecting to [('127.0.0.1', 9042)]. Last error: Connection refused")})) — CSV fallback active
+  🔴 Cassandra unreachable — nothing snapshotted, and today is lost
+done 07:15 rc=1

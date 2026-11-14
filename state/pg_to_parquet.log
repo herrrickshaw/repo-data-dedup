@@ -2503,3 +2503,1048 @@ Reason: authError, Message: Invalid Credentials
 21:24:33  uploading -> googledrive:market-data-backup/current/pg_parquet
 21:30:53    OK 48/48 verified
 21:30:53  both clouds verified — staged copy removed
+21:15:01  48 tables, 11.6 GB free at stage
+21:15:01    indices.ingest_log                              4 rows       0.0 MB     0.1s
+21:15:01    etl.stage_fundamentals                      0 rows       0.0 MB     0.0s
+21:15:01    funds.ingest_log                              7 rows       0.0 MB     0.0s
+21:15:01    etl.load_batches                           49 rows       0.0 MB     0.0s
+21:15:01    public.markets                                 8 rows       0.0 MB     0.0s
+21:15:02    public.load_batches                           24 rows       0.0 MB     0.0s
+21:15:02    system_state.analysis_runs                           0 rows       0.0 MB     0.0s
+21:15:02    public.fundamentals                            1 rows       0.0 MB     0.0s
+21:15:02    market_daily.step_timings                          179 rows       0.0 MB     0.0s
+21:15:02    etl.source_registry                        16 rows       0.0 MB     0.0s
+21:15:02    pipeline.events                                  4 rows       0.0 MB     0.0s
+21:15:02    system_state.data_sources                           48 rows       0.0 MB     0.0s
+21:15:02    indices.factsheet_meta                        253 rows       0.0 MB     0.0s
+21:15:02    market_daily.ingest_log                            782 rows       0.0 MB     0.0s
+21:15:02    fundamentals.india_industry                      1,459 rows       0.0 MB     0.0s
+21:15:02    indices.factsheet_sector                    1,192 rows       0.0 MB     0.0s
+21:15:02    indices.factsheet_holding                   1,336 rows       0.0 MB     0.0s
+21:15:02    fundamentals.next_earnings                       2,757 rows       0.0 MB     0.0s
+21:15:02    system_state.data_snapshots                      2,270 rows       0.0 MB     0.0s
+21:15:03    public.japan_current                       2,937 rows       0.1 MB     0.0s
+21:15:03    system_state.connection_health                   9,589 rows       0.1 MB     0.0s
+21:15:03    public.korea_fundamentals_history         10,143 rows       0.4 MB     0.1s
+21:15:03    indices.nse_tri                            22,266 rows       0.1 MB     0.0s
+21:15:03    fundamentals.ratios                             12,045 rows       1.1 MB     0.1s
+21:15:03    market_daily.symbol_names                       26,984 rows       0.3 MB     0.1s
+21:15:03    indices.nse_membership                     12,850 rows       0.1 MB     0.0s
+21:15:03    public.stocks                             35,243 rows       0.4 MB     0.1s
+21:15:04    public.japan_fundamentals_history         18,682 rows       0.6 MB     0.1s
+21:15:04    fundamentals.intl_pit_quarterly                 46,857 rows       1.0 MB     0.2s
+21:15:04    funds.schemes                            22,677 rows       0.5 MB     0.2s
+21:15:05    fundamentals.india_quarterly                    55,002 rows       1.2 MB     0.2s
+21:15:05    indices.custom_daily                       63,634 rows       0.5 MB     0.1s
+21:15:05    market_daily.ticker_reference                   38,036 rows       0.7 MB     0.2s
+21:15:06    public.fact_short_interest                97,555 rows       1.7 MB     0.4s
+21:15:06    indices.nse_daily                         240,622 rows       6.3 MB     0.7s
+21:15:08    bhavcopy.cleaned_ohlcv                   1,171,677 rows      14.2 MB     1.2s
+21:15:09    public.fact_insider_transaction          204,977 rows       1.8 MB     0.4s
+21:15:10    public.global_fundamentals               245,116 rows       8.8 MB     0.9s
+21:15:11    market_daily.snapshots                       1,048,921 rows       9.2 MB     1.0s
+21:15:14    bhavcopy.nse_raw                           765,605 rows      25.1 MB     2.3s
+21:15:17    bhavcopy.bhavcopy_ohlcv                  2,042,297 rows      24.6 MB     2.2s
+21:15:19    fundamentals.india_pe_daily                  1,979,108 rows      29.6 MB     1.3s
+21:15:27    bhavcopy.bse_raw                         1,593,752 rows      52.2 MB     6.3s
+21:15:35    bhavcopy.nse_deep_ohlcv                  4,423,382 rows      53.3 MB     7.1s
+21:15:47    public.ohlcv_history_dedup_backup_20260914    5,338,185 rows     112.1 MB    10.3s
+21:16:04    funds.nav                            22,345,052 rows     114.9 MB    13.8s
+21:16:20    public.fact_screener_signal            4,980,728 rows     383.5 MB    14.2s
+21:17:21    public.ohlcv_history                  32,896,842 rows     595.0 MB    57.8s
+21:17:21  exported 48 tables, 79,761,153 rows, 1439 MB in 140s
+21:17:21  uploading -> dropbox:market-pipeline-cache/pg_parquet
+21:24:51    OK 48/48 verified
+21:24:51  uploading -> googledrive:market-data-backup/current/pg_parquet
+21:31:15    OK 48/48 verified
+21:31:15  both clouds verified — staged copy removed
+21:15:01  48 tables, 25.5 GB free at stage
+21:15:02    indices.ingest_log                              4 rows       0.0 MB     0.1s
+21:15:02    funds.ingest_log                              7 rows       0.0 MB     0.0s
+21:15:02    etl.stage_fundamentals                      0 rows       0.0 MB     0.0s
+21:15:02    etl.load_batches                           49 rows       0.0 MB     0.0s
+21:15:02    public.markets                                 8 rows       0.0 MB     0.0s
+21:15:02    system_state.analysis_runs                           0 rows       0.0 MB     0.0s
+21:15:02    public.load_batches                           24 rows       0.0 MB     0.0s
+21:15:02    public.fundamentals                            1 rows       0.0 MB     0.0s
+21:15:02    pipeline.events                                  4 rows       0.0 MB     0.0s
+21:15:02    etl.source_registry                        16 rows       0.0 MB     0.0s
+21:15:02    market_daily.step_timings                          179 rows       0.0 MB     0.0s
+21:15:02    system_state.data_sources                           48 rows       0.0 MB     0.0s
+21:15:02    indices.factsheet_meta                        253 rows       0.0 MB     0.0s
+21:15:02    market_daily.ingest_log                            831 rows       0.0 MB     0.0s
+21:15:03    fundamentals.india_industry                      1,459 rows       0.0 MB     0.0s
+21:15:03    indices.factsheet_sector                    1,192 rows       0.0 MB     0.0s
+21:15:03    indices.factsheet_holding                   1,336 rows       0.0 MB     0.0s
+21:15:03    fundamentals.next_earnings                       2,771 rows       0.0 MB     0.0s
+21:15:03    system_state.data_snapshots                      2,430 rows       0.0 MB     0.0s
+21:15:03    public.japan_current                       2,937 rows       0.1 MB     0.1s
+21:15:03    system_state.connection_health                   9,977 rows       0.1 MB     0.0s
+21:15:03    public.korea_fundamentals_history         10,143 rows       0.4 MB     0.1s
+21:15:04    indices.nse_tri                            22,266 rows       0.1 MB     0.0s
+21:15:04    fundamentals.ratios                             12,045 rows       1.1 MB     0.1s
+21:15:04    market_daily.symbol_names                       26,975 rows       0.3 MB     0.1s
+21:15:04    indices.nse_membership                     12,850 rows       0.1 MB     0.0s
+21:15:04    public.stocks                             35,243 rows       0.4 MB     0.1s
+21:15:04    public.japan_fundamentals_history         18,682 rows       0.6 MB     0.2s
+21:15:05    fundamentals.intl_pit_quarterly                 48,018 rows       1.0 MB     0.3s
+21:15:05    funds.schemes                            22,677 rows       0.5 MB     0.2s
+21:15:05    fundamentals.india_quarterly                    55,002 rows       1.2 MB     0.3s
+21:15:06    indices.custom_daily                       63,761 rows       0.5 MB     0.1s
+21:15:06    market_daily.ticker_reference                   38,048 rows       0.7 MB     0.2s
+21:15:06    public.fact_short_interest                97,555 rows       1.7 MB     0.4s
+21:15:07    indices.nse_daily                         240,622 rows       6.3 MB     0.9s
+21:15:10    bhavcopy.cleaned_ohlcv                   1,168,754 rows      14.2 MB     1.6s
+21:15:11    public.fact_insider_transaction          204,977 rows       1.8 MB     0.5s
+21:15:12    public.global_fundamentals               245,116 rows       8.8 MB     1.0s
+21:15:15    market_daily.snapshots                       1,101,278 rows       9.7 MB     1.4s
+21:15:19    bhavcopy.nse_raw                           770,287 rows      25.2 MB     3.7s
+21:15:23    bhavcopy.bhavcopy_ohlcv                  2,056,518 rows      24.8 MB     3.4s
+21:15:26    fundamentals.india_pe_daily                  1,979,108 rows      29.6 MB     1.8s
+21:15:34    bhavcopy.bse_raw                         1,603,291 rows      52.6 MB     6.3s
+21:15:39    bhavcopy.nse_deep_ohlcv                  4,423,382 rows      53.3 MB     4.5s
+21:15:48    public.ohlcv_history_dedup_backup_20260914    5,338,185 rows     112.1 MB     7.0s
+21:16:00    funds.nav                            22,345,052 rows     114.9 MB     8.4s
+21:16:18    public.fact_screener_signal            4,980,728 rows     383.3 MB    17.2s
+21:17:08    public.ohlcv_history                  32,896,842 rows     595.2 MB    45.7s
+21:17:08  exported 48 tables, 79,840,931 rows, 1440 MB in 127s
+21:17:08  uploading -> dropbox:market-pipeline-cache/pg_parquet
+21:23:33    OK 48/48 verified
+21:23:33  uploading -> googledrive:market-data-backup/current/pg_parquet
+21:23:34    🔴 rclone rc=1: t-data-backup/current/pg_parquet": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+21:23:34  🔴 not verified on every remote — keeping /private/tmp/claude-501/-Users-umashankar/230a0ab3-5c83-49eb-90f4-324f13d9cbba/scratchpad/pgparquet
+21:15:07  48 tables, 22.2 GB free at stage
+21:15:12    indices.ingest_log                              4 rows       0.0 MB     2.7s
+21:15:12    etl.stage_fundamentals                      0 rows       0.0 MB     0.2s
+21:15:12    funds.ingest_log                              7 rows       0.0 MB     0.0s
+21:15:13    etl.load_batches                           49 rows       0.0 MB     0.0s
+21:15:13    public.markets                                 8 rows       0.0 MB     0.0s
+21:15:13    public.load_batches                           24 rows       0.0 MB     0.0s
+21:15:13    system_state.analysis_runs                           0 rows       0.0 MB     0.0s
+21:15:13    public.fundamentals                            1 rows       0.0 MB     0.0s
+21:15:13    market_daily.step_timings                          179 rows       0.0 MB     0.0s
+21:15:14    etl.source_registry                        16 rows       0.0 MB     0.0s
+21:15:14    pipeline.events                                  4 rows       0.0 MB     0.0s
+21:15:14    system_state.data_sources                           48 rows       0.0 MB     0.0s
+21:15:14    indices.factsheet_meta                        253 rows       0.0 MB     0.0s
+21:15:14    market_daily.ingest_log                            838 rows       0.0 MB     0.0s
+21:15:14    fundamentals.india_industry                      1,459 rows       0.0 MB     0.0s
+21:15:15    indices.factsheet_sector                    1,192 rows       0.0 MB     0.0s
+21:15:15    indices.factsheet_holding                   1,336 rows       0.0 MB     0.0s
+21:15:15    fundamentals.next_earnings                       2,771 rows       0.0 MB     0.1s
+21:15:15    system_state.data_snapshots                      2,462 rows       0.0 MB     0.0s
+21:15:15    public.japan_current                       2,937 rows       0.1 MB     0.1s
+21:15:16    market_daily.symbol_names                       18,879 rows       0.2 MB     0.1s
+21:15:16    system_state.connection_health                  10,089 rows       0.1 MB     0.6s
+21:15:17    public.korea_fundamentals_history         10,143 rows       0.4 MB     0.6s
+21:15:18    indices.nse_tri                            22,266 rows       0.1 MB     0.1s
+21:15:18    fundamentals.ratios                             12,045 rows       1.1 MB     0.2s
+21:15:18    indices.nse_membership                     12,850 rows       0.1 MB     0.1s
+21:15:19    public.stocks                             35,243 rows       0.4 MB     0.2s
+21:15:19    public.japan_fundamentals_history         18,682 rows       0.6 MB     0.3s
+21:15:20    fundamentals.intl_pit_quarterly                 48,018 rows       1.0 MB     0.4s
+21:15:21    funds.schemes                            22,677 rows       0.5 MB     0.2s
+21:15:22    fundamentals.india_quarterly                    55,002 rows       1.2 MB     0.8s
+21:15:23    indices.custom_daily                       63,761 rows       0.5 MB     0.3s
+21:15:24    market_daily.ticker_reference                   38,052 rows       0.6 MB     0.3s
+21:15:28    public.fact_short_interest                97,555 rows       1.7 MB     2.9s
+21:15:33    indices.nse_daily                         240,622 rows       6.3 MB     4.1s
+21:15:47    bhavcopy.cleaned_ohlcv                   1,169,337 rows      14.2 MB    10.1s
+21:15:52    public.fact_insider_transaction          204,977 rows       1.8 MB     1.8s
+21:16:02    public.global_fundamentals               245,116 rows       8.8 MB     7.6s
+21:16:06    market_daily.snapshots                       1,114,386 rows       9.9 MB     3.0s
+21:16:14    bhavcopy.nse_raw                           772,627 rows      25.3 MB     6.0s
+21:16:31    bhavcopy.bhavcopy_ohlcv                  2,063,552 rows      24.9 MB    13.0s
+21:16:53    fundamentals.india_pe_daily                  1,979,108 rows      29.6 MB    15.0s
+21:17:27    bhavcopy.bse_raw                         1,607,985 rows      52.8 MB    23.4s
+21:17:36    bhavcopy.nse_deep_ohlcv                  4,423,382 rows      53.2 MB     6.6s
+21:17:58    public.ohlcv_history_dedup_backup_20260914    5,338,185 rows     112.1 MB    20.9s
+21:18:20    funds.nav                            22,345,052 rows     114.9 MB    12.5s
+21:19:12    public.fact_screener_signal            4,980,728 rows     383.7 MB    48.6s
+21:20:56    public.ohlcv_history                  32,896,842 rows     595.0 MB    81.4s
+21:20:56  exported 48 tables, 79,860,749 rows, 1441 MB in 348s
+21:20:56  uploading -> dropbox:market-pipeline-cache/pg_parquet
+21:28:09    OK 48/48 verified
+21:28:09  uploading -> googledrive:market-data-backup/current/pg_parquet
+21:28:10    🔴 rclone rc=1: t-data-backup/current/pg_parquet": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+21:28:10  🔴 not verified on every remote — keeping /private/tmp/claude-501/-Users-umashankar/230a0ab3-5c83-49eb-90f4-324f13d9cbba/scratchpad/pgparquet
+21:15:02  48 tables, 2.7 GB free at stage
+21:15:02  🔴 under 8 GB free — refusing to start rather than fail mid-export
+21:15:02  48 tables, 16.4 GB free at stage
+21:15:02    indices.ingest_log                              4 rows       0.0 MB     0.2s
+21:15:02    funds.ingest_log                              7 rows       0.0 MB     0.0s
+21:15:02    etl.stage_fundamentals                      0 rows       0.0 MB     0.0s
+21:15:02    etl.load_batches                           49 rows       0.0 MB     0.0s
+21:15:02    public.markets                                 8 rows       0.0 MB     0.0s
+21:15:02    system_state.analysis_runs                           0 rows       0.0 MB     0.0s
+21:15:02    public.fundamentals                            1 rows       0.0 MB     0.0s
+21:15:03    public.load_batches                           24 rows       0.0 MB     0.0s
+21:15:03    pipeline.events                                  4 rows       0.0 MB     0.0s
+21:15:03    market_daily.step_timings                          179 rows       0.0 MB     0.0s
+21:15:03    etl.source_registry                        16 rows       0.0 MB     0.0s
+21:15:03    system_state.data_sources                           48 rows       0.0 MB     0.0s
+21:15:03    indices.factsheet_meta                        253 rows       0.0 MB     0.0s
+21:15:03    market_daily.ingest_log                            852 rows       0.0 MB     0.0s
+21:15:03    fundamentals.india_industry                      1,459 rows       0.0 MB     0.0s
+21:15:03    indices.factsheet_sector                    1,192 rows       0.0 MB     0.0s
+21:15:03    indices.factsheet_holding                   1,336 rows       0.0 MB     0.0s
+21:15:04    fundamentals.next_earnings                       2,771 rows       0.0 MB     0.0s
+21:15:04    system_state.data_snapshots                      2,526 rows       0.0 MB     0.0s
+21:15:04    public.japan_current                       2,937 rows       0.1 MB     0.1s
+21:15:04    market_daily.symbol_names                       21,692 rows       0.3 MB     0.1s
+21:15:04    public.korea_fundamentals_history         10,143 rows       0.4 MB     0.1s
+21:15:05    system_state.connection_health                  10,515 rows       0.1 MB     0.0s
+21:15:05    indices.nse_tri                            22,266 rows       0.1 MB     0.0s
+21:15:05    fundamentals.ratios                             12,055 rows       1.1 MB     0.1s
+21:15:05    indices.nse_membership                     12,850 rows       0.1 MB     0.0s
+21:15:05    public.stocks                             35,243 rows       0.4 MB     0.1s
+21:15:06    public.japan_fundamentals_history         18,682 rows       0.6 MB     0.2s
+21:15:06    fundamentals.intl_pit_quarterly                 48,018 rows       1.0 MB     0.2s
+21:15:06    funds.schemes                            22,677 rows       0.5 MB     0.1s
+21:15:07    fundamentals.india_quarterly                    55,002 rows       1.2 MB     0.2s
+21:15:07    indices.custom_daily                       63,872 rows       0.5 MB     0.1s
+21:15:07    market_daily.ticker_reference                   38,071 rows       0.6 MB     0.3s
+21:15:08    public.fact_short_interest                97,555 rows       1.7 MB     0.5s
+21:15:10    indices.nse_daily                         240,622 rows       6.3 MB     1.2s
+21:15:13    bhavcopy.cleaned_ohlcv                   1,170,030 rows      14.2 MB     2.3s
+21:15:13    public.fact_insider_transaction          204,977 rows       1.8 MB     0.5s
+21:15:15    public.global_fundamentals               245,116 rows       8.8 MB     1.2s
+21:15:17    market_daily.snapshots                       1,147,398 rows      10.2 MB     1.4s
+21:15:21    bhavcopy.nse_raw                           774,978 rows      25.4 MB     3.5s
+21:15:25    bhavcopy.bhavcopy_ohlcv                  2,070,701 rows      25.0 MB     3.2s
+21:15:28    fundamentals.india_pe_daily                  1,979,108 rows      29.6 MB     2.2s
+21:15:39    bhavcopy.bse_raw                         1,612,783 rows      52.9 MB     8.8s
+21:15:48    bhavcopy.nse_deep_ohlcv                  4,423,382 rows      53.3 MB     7.7s
+21:16:01    public.ohlcv_history_dedup_backup_20260914    5,338,185 rows     112.2 MB     9.7s
+21:16:19    funds.nav                            22,345,052 rows     114.9 MB    13.0s
+21:16:46    public.fact_screener_signal            4,980,728 rows     383.7 MB    25.8s
+21:18:26    public.ohlcv_history                  32,896,842 rows     595.4 MB    94.3s
+21:18:26  exported 48 tables, 79,912,209 rows, 1442 MB in 205s
+21:18:26  uploading -> dropbox:market-pipeline-cache/pg_parquet
+21:24:41    OK 48/48 verified
+21:24:41  uploading -> googledrive:market-data-backup/current/pg_parquet
+21:30:22    OK 48/48 verified
+21:30:23  both clouds verified — staged copy removed
+21:15:01  48 tables, 28.2 GB free at stage
+21:15:02    indices.ingest_log                              4 rows       0.0 MB     0.4s
+21:15:02    funds.ingest_log                              7 rows       0.0 MB     0.0s
+21:15:02    etl.stage_fundamentals                      0 rows       0.0 MB     0.0s
+21:15:02    etl.load_batches                           49 rows       0.0 MB     0.0s
+21:15:02    public.markets                                 8 rows       0.0 MB     0.0s
+21:15:02    public.load_batches                           24 rows       0.0 MB     0.0s
+21:15:02    public.fundamentals                            1 rows       0.0 MB     0.0s
+21:15:02    system_state.analysis_runs                           0 rows       0.0 MB     0.0s
+21:15:02    market_daily.step_timings                          179 rows       0.0 MB     0.0s
+21:15:02    etl.source_registry                        16 rows       0.0 MB     0.0s
+21:15:02    pipeline.events                                  4 rows       0.0 MB     0.0s
+21:15:02    system_state.data_sources                           48 rows       0.0 MB     0.0s
+21:15:03    indices.factsheet_meta                        253 rows       0.0 MB     0.0s
+21:15:03    market_daily.ingest_log                            866 rows       0.0 MB     0.0s
+21:15:03    fundamentals.india_industry                      1,459 rows       0.0 MB     0.0s
+21:15:03    indices.factsheet_sector                    1,192 rows       0.0 MB     0.0s
+21:15:03    indices.factsheet_holding                   1,336 rows       0.0 MB     0.0s
+21:15:03    fundamentals.next_earnings                       2,771 rows       0.0 MB     0.0s
+21:15:03    system_state.data_snapshots                      2,558 rows       0.0 MB     0.0s
+21:15:03    public.japan_current                       2,937 rows       0.1 MB     0.1s
+21:15:03    public.korea_fundamentals_history         10,143 rows       0.4 MB     0.1s
+21:15:04    system_state.connection_health                  10,699 rows       0.1 MB     0.1s
+21:15:04    indices.nse_tri                            22,266 rows       0.1 MB     0.0s
+21:15:04    fundamentals.ratios                             12,055 rows       1.1 MB     0.1s
+21:15:04    market_daily.symbol_names                       26,981 rows       0.3 MB     0.1s
+21:15:04    indices.nse_membership                     12,850 rows       0.1 MB     0.0s
+21:15:04    public.stocks                             35,243 rows       0.4 MB     0.3s
+21:15:05    public.japan_fundamentals_history         18,682 rows       0.6 MB     0.2s
+21:15:05    fundamentals.intl_pit_quarterly                 48,018 rows       1.0 MB     0.3s
+21:15:05    funds.schemes                            22,677 rows       0.5 MB     0.2s
+21:15:06    fundamentals.india_quarterly                    55,002 rows       1.2 MB     0.3s
+21:15:06    indices.custom_daily                       63,872 rows       0.5 MB     0.1s
+21:15:07    market_daily.ticker_reference                   38,074 rows       0.7 MB     0.2s
+21:15:08    public.fact_short_interest                97,555 rows       1.7 MB     0.7s
+21:15:09    indices.nse_daily                         240,622 rows       6.3 MB     1.0s
+21:15:12    bhavcopy.cleaned_ohlcv                   1,174,981 rows      14.3 MB     2.4s
+21:15:13    public.fact_insider_transaction          204,977 rows       1.8 MB     0.7s
+21:15:15    public.global_fundamentals               245,116 rows       8.8 MB     1.4s
+21:15:17    market_daily.snapshots                       1,160,321 rows      10.3 MB     1.7s
+21:15:23    bhavcopy.nse_raw                           777,333 rows      25.5 MB     4.3s
+21:15:28    bhavcopy.bhavcopy_ohlcv                  2,077,884 rows      25.0 MB     4.4s
+21:15:32    fundamentals.india_pe_daily                  1,979,108 rows      29.6 MB     3.0s
+21:15:48    bhavcopy.bse_raw                         1,617,611 rows      53.0 MB    13.8s
+21:15:58    bhavcopy.nse_deep_ohlcv                  4,423,382 rows      53.3 MB     9.2s
+21:16:08    public.ohlcv_history_dedup_backup_20260914    5,338,185 rows     112.1 MB     7.5s
+21:16:27    funds.nav                            22,345,052 rows     114.9 MB    13.7s
+21:16:46    public.fact_screener_signal            4,980,728 rows     383.4 MB    17.5s
+21:17:37    public.ohlcv_history                  32,896,842 rows     595.3 MB    46.2s
+21:17:37  exported 48 tables, 79,949,971 rows, 1442 MB in 156s
+21:17:37  uploading -> dropbox:market-pipeline-cache/pg_parquet
+21:23:33    OK 48/48 verified
+21:23:33  uploading -> googledrive:market-data-backup/current/pg_parquet
+21:29:16    OK 48/48 verified
+21:29:16  both clouds verified — staged copy removed
+21:15:01  48 tables, 28.4 GB free at stage
+21:15:01    indices.ingest_log                              4 rows       0.0 MB     0.1s
+21:15:01    funds.ingest_log                              7 rows       0.0 MB     0.0s
+21:15:01    etl.stage_fundamentals                      0 rows       0.0 MB     0.0s
+21:15:01    etl.load_batches                           49 rows       0.0 MB     0.0s
+21:15:01    public.markets                                 8 rows       0.0 MB     0.0s
+21:15:01    system_state.analysis_runs                           0 rows       0.0 MB     0.0s
+21:15:01    public.fundamentals                            1 rows       0.0 MB     0.0s
+21:15:01    public.load_batches                           24 rows       0.0 MB     0.0s
+21:15:02    market_daily.step_timings                          179 rows       0.0 MB     0.0s
+21:15:02    etl.source_registry                        16 rows       0.0 MB     0.0s
+21:15:02    pipeline.events                                  4 rows       0.0 MB     0.0s
+21:15:02    system_state.data_sources                           48 rows       0.0 MB     0.0s
+21:15:02    indices.factsheet_meta                        253 rows       0.0 MB     0.0s
+21:15:02    market_daily.ingest_log                            880 rows       0.0 MB     0.0s
+21:15:02    fundamentals.india_industry                      1,459 rows       0.0 MB     0.0s
+21:15:02    indices.factsheet_sector                    1,192 rows       0.0 MB     0.0s
+21:15:02    indices.factsheet_holding                   1,336 rows       0.0 MB     0.0s
+21:15:02    fundamentals.next_earnings                       2,777 rows       0.0 MB     0.0s
+21:15:02    system_state.data_snapshots                      2,590 rows       0.0 MB     0.0s
+21:15:02    public.japan_current                       2,937 rows       0.1 MB     0.0s
+21:15:02    public.korea_fundamentals_history         10,143 rows       0.4 MB     0.1s
+21:15:02    system_state.connection_health                  10,847 rows       0.1 MB     0.0s
+21:15:03    indices.nse_tri                            22,266 rows       0.1 MB     0.0s
+21:15:03    fundamentals.ratios                             12,057 rows       1.1 MB     0.1s
+21:15:03    market_daily.symbol_names                       26,885 rows       0.3 MB     0.1s
+21:15:03    indices.nse_membership                     12,850 rows       0.1 MB     0.0s
+21:15:03    public.stocks                             35,243 rows       0.4 MB     0.1s
+21:15:03    public.japan_fundamentals_history         18,682 rows       0.6 MB     0.1s
+21:15:04    fundamentals.intl_pit_quarterly                 48,433 rows       1.0 MB     0.2s
+21:15:04    funds.schemes                            22,677 rows       0.5 MB     0.1s
+21:15:04    fundamentals.india_quarterly                    55,002 rows       1.2 MB     0.2s
+21:15:04    indices.custom_daily                       63,872 rows       0.5 MB     0.1s
+21:15:04    market_daily.ticker_reference                   38,079 rows       0.7 MB     0.1s
+21:15:05    public.fact_short_interest                97,555 rows       1.7 MB     0.4s
+21:15:06    indices.nse_daily                         240,622 rows       6.3 MB     0.6s
+21:15:07    bhavcopy.cleaned_ohlcv                   1,171,247 rows      14.2 MB     1.1s
+21:15:08    public.fact_insider_transaction          204,977 rows       1.8 MB     0.4s
+21:15:09    public.global_fundamentals               245,116 rows       8.8 MB     0.9s
+21:15:11    market_daily.snapshots                       1,173,418 rows      10.5 MB     1.0s
+21:15:13    bhavcopy.nse_raw                           779,690 rows      25.5 MB     2.1s
+21:15:16    bhavcopy.bhavcopy_ohlcv                  2,084,921 rows      25.1 MB     2.2s
+21:15:18    fundamentals.india_pe_daily                  1,979,108 rows      29.6 MB     1.4s
+21:15:24    bhavcopy.nse_deep_ohlcv                  4,423,382 rows      53.2 MB     3.9s
+21:15:30    bhavcopy.bse_raw                         1,622,291 rows      53.2 MB     4.4s
+21:15:37    public.ohlcv_history_dedup_backup_20260914    5,338,185 rows     112.1 MB     5.6s
+21:15:48    funds.nav                            22,345,052 rows     114.9 MB     6.8s
+21:16:03    public.fact_screener_signal            4,980,728 rows     383.4 MB    14.4s
+21:16:47    public.ohlcv_history                  32,896,842 rows     595.0 MB    39.6s
+21:16:47  exported 48 tables, 79,973,934 rows, 1442 MB in 106s
+21:16:47  uploading -> dropbox:market-pipeline-cache/pg_parquet
+04:14:44    OK 48/48 verified
+04:14:44  uploading -> googledrive:market-data-backup/current/pg_parquet
+04:22:42    OK 48/48 verified
+04:22:42  both clouds verified — staged copy removed
+21:15:02  48 tables, 16.5 GB free at stage
+21:15:02    indices.ingest_log                              4 rows       0.0 MB     0.2s
+21:15:02    etl.stage_fundamentals                      0 rows       0.0 MB     0.0s
+21:15:02    funds.ingest_log                              7 rows       0.0 MB     0.0s
+21:15:02    etl.load_batches                           49 rows       0.0 MB     0.0s
+21:15:02    public.markets                                 8 rows       0.0 MB     0.0s
+21:15:02    public.load_batches                           24 rows       0.0 MB     0.0s
+21:15:02    system_state.analysis_runs                           0 rows       0.0 MB     0.0s
+21:15:02    public.fundamentals                            1 rows       0.0 MB     0.0s
+21:15:02    etl.source_registry                        16 rows       0.0 MB     0.0s
+21:15:03    market_daily.step_timings                          179 rows       0.0 MB     0.0s
+21:15:03    pipeline.events                                  4 rows       0.0 MB     0.0s
+21:15:03    system_state.data_sources                           48 rows       0.0 MB     0.0s
+21:15:03    indices.factsheet_meta                        253 rows       0.0 MB     0.0s
+21:15:03    market_daily.ingest_log                            887 rows       0.0 MB     0.0s
+21:15:03    fundamentals.india_industry                      1,459 rows       0.0 MB     0.0s
+21:15:03    indices.factsheet_sector                    1,192 rows       0.0 MB     0.0s
+21:15:03    indices.factsheet_holding                   1,336 rows       0.0 MB     0.0s
+21:15:03    fundamentals.next_earnings                       2,777 rows       0.0 MB     0.0s
+21:15:03    system_state.data_snapshots                      2,622 rows       0.0 MB     0.0s
+21:15:03    public.japan_current                       2,937 rows       0.1 MB     0.1s
+21:15:03    market_daily.symbol_names                       18,865 rows       0.2 MB     0.1s
+21:15:04    public.korea_fundamentals_history         10,143 rows       0.4 MB     0.1s
+21:15:04    system_state.connection_health                  10,979 rows       0.1 MB     0.0s
+21:15:04    indices.nse_tri                            22,266 rows       0.1 MB     0.0s
+21:15:04    fundamentals.ratios                             12,057 rows       1.1 MB     0.1s
+21:15:04    indices.nse_membership                     12,850 rows       0.1 MB     0.0s
+21:15:04    public.stocks                             35,243 rows       0.4 MB     0.1s
+21:15:05    public.japan_fundamentals_history         18,682 rows       0.6 MB     0.2s
+21:15:05    fundamentals.intl_pit_quarterly                 48,433 rows       1.0 MB     0.2s
+21:15:06    funds.schemes                            22,677 rows       0.5 MB     0.2s
+21:15:06    fundamentals.india_quarterly                    55,002 rows       1.2 MB     0.2s
+21:15:07    indices.custom_daily                       63,872 rows       0.5 MB     0.1s
+21:15:07    market_daily.ticker_reference                   38,086 rows       0.6 MB     0.4s
+21:15:08    public.fact_short_interest                97,555 rows       1.7 MB     0.7s
+21:15:09    indices.nse_daily                         240,622 rows       6.3 MB     1.1s
+21:15:12    bhavcopy.cleaned_ohlcv                   1,171,860 rows      14.2 MB     1.7s
+21:15:12    public.fact_insider_transaction          204,977 rows       1.8 MB     0.5s
+21:15:14    public.global_fundamentals               245,116 rows       8.8 MB     1.1s
+21:15:16    market_daily.snapshots                       1,186,050 rows      10.5 MB     1.3s
+21:15:21    bhavcopy.nse_raw                           782,048 rows      25.6 MB     3.8s
+21:15:24    bhavcopy.bhavcopy_ohlcv                  2,091,978 rows      25.2 MB     2.7s
+21:15:27    fundamentals.india_pe_daily                  1,979,108 rows      29.6 MB     1.5s
+21:15:33    bhavcopy.nse_deep_ohlcv                  4,423,382 rows      53.2 MB     5.3s
+21:15:45    bhavcopy.bse_raw                         1,626,990 rows      53.3 MB     9.3s
+21:15:56    public.ohlcv_history_dedup_backup_20260914    5,338,185 rows     112.1 MB     9.3s
+21:16:11    funds.nav                            22,345,052 rows     114.9 MB    10.0s
+21:16:32    public.fact_screener_signal            4,980,728 rows     383.4 MB    20.1s
+21:17:52    public.ohlcv_history                  32,896,842 rows     595.1 MB    73.3s
+21:17:52  exported 48 tables, 79,993,451 rows, 1443 MB in 170s
+21:17:52  uploading -> dropbox:market-pipeline-cache/pg_parquet
+21:24:32    OK 48/48 verified
+21:24:32  uploading -> googledrive:market-data-backup/current/pg_parquet
+21:31:06    OK 48/48 verified
+21:31:07  both clouds verified — staged copy removed
+21:15:01  48 tables, 36.0 GB free at stage
+21:15:02    indices.ingest_log                              4 rows       0.0 MB     0.1s
+21:15:02    etl.stage_fundamentals                      0 rows       0.0 MB     0.0s
+21:15:02    funds.ingest_log                              7 rows       0.0 MB     0.0s
+21:15:02    etl.load_batches                           49 rows       0.0 MB     0.0s
+21:15:02    public.markets                                 8 rows       0.0 MB     0.0s
+21:15:02    public.load_batches                           24 rows       0.0 MB     0.0s
+21:15:02    system_state.analysis_runs                           0 rows       0.0 MB     0.0s
+21:15:02    public.fundamentals                            1 rows       0.0 MB     0.0s
+21:15:02    market_daily.step_timings                          179 rows       0.0 MB     0.0s
+21:15:02    etl.source_registry                        16 rows       0.0 MB     0.0s
+21:15:02    pipeline.events                                  4 rows       0.0 MB     0.0s
+21:15:02    system_state.data_sources                           48 rows       0.0 MB     0.0s
+21:15:02    indices.factsheet_meta                        253 rows       0.0 MB     0.0s
+21:15:03    market_daily.ingest_log                            894 rows       0.0 MB     0.0s
+21:15:03    fundamentals.india_industry                      1,459 rows       0.0 MB     0.0s
+21:15:03    indices.factsheet_sector                    1,192 rows       0.0 MB     0.0s
+21:15:03    indices.factsheet_holding                   1,336 rows       0.0 MB     0.0s
+21:15:03    fundamentals.next_earnings                       2,777 rows       0.0 MB     0.0s
+21:15:03    system_state.data_snapshots                      2,654 rows       0.0 MB     0.0s
+21:15:03    public.japan_current                       2,937 rows       0.1 MB     0.1s
+21:15:03    public.korea_fundamentals_history         10,143 rows       0.4 MB     0.1s
+21:15:03    market_daily.symbol_names                       21,691 rows       0.3 MB     0.1s
+21:15:03    indices.nse_tri                            22,266 rows       0.1 MB     0.0s
+21:15:04    system_state.connection_health                  11,099 rows       0.1 MB     0.0s
+21:15:04    fundamentals.ratios                             12,057 rows       1.1 MB     0.1s
+21:15:04    indices.nse_membership                     12,850 rows       0.1 MB     0.0s
+21:15:04    public.stocks                             35,243 rows       0.4 MB     0.1s
+21:15:04    public.japan_fundamentals_history         18,682 rows       0.6 MB     0.1s
+21:15:04    fundamentals.intl_pit_quarterly                 48,433 rows       1.0 MB     0.2s
+21:15:05    funds.schemes                            22,677 rows       0.5 MB     0.1s
+21:15:05    fundamentals.india_quarterly                    55,002 rows       1.2 MB     0.3s
+21:15:05    indices.custom_daily                       63,872 rows       0.5 MB     0.1s
+21:15:06    market_daily.ticker_reference                   38,089 rows       0.6 MB     0.2s
+21:15:06    public.fact_short_interest                97,555 rows       1.7 MB     0.5s
+21:15:07    indices.nse_daily                         240,622 rows       6.3 MB     0.7s
+21:15:09    bhavcopy.cleaned_ohlcv                   1,172,486 rows      14.2 MB     1.2s
+21:15:09    public.fact_insider_transaction          204,977 rows       1.8 MB     0.5s
+21:15:10    public.global_fundamentals               245,116 rows       8.8 MB     0.9s
+21:15:12    market_daily.snapshots                       1,199,301 rows      10.7 MB     1.1s
+21:15:15    bhavcopy.nse_raw                           784,404 rows      25.7 MB     2.4s
+21:15:18    bhavcopy.bhavcopy_ohlcv                  2,099,044 rows      25.3 MB     2.1s
+21:15:20    fundamentals.india_pe_daily                  1,979,108 rows      29.6 MB     1.3s
+21:15:25    bhavcopy.nse_deep_ohlcv                  4,423,382 rows      53.2 MB     4.2s
+21:15:32    bhavcopy.bse_raw                         1,631,700 rows      53.6 MB     5.4s
+21:15:39    public.ohlcv_history_dedup_backup_20260914    5,338,185 rows     112.1 MB     5.9s
+21:15:49    funds.nav                            22,345,052 rows     114.9 MB     6.4s
+21:16:04    public.fact_screener_signal            4,980,728 rows     383.8 MB    13.3s
+21:16:45    public.ohlcv_history                  32,896,842 rows     595.1 MB    36.6s
+21:16:45  exported 48 tables, 80,024,448 rows, 1444 MB in 103s
+21:16:45  uploading -> dropbox:market-pipeline-cache/pg_parquet
+21:22:37    OK 48/48 verified
+21:22:37  uploading -> googledrive:market-data-backup/current/pg_parquet
+21:28:16    OK 48/48 verified
+21:28:16  both clouds verified — staged copy removed
+21:15:02  48 tables, 10.8 GB free at stage
+21:15:02    indices.ingest_log                              4 rows       0.0 MB     0.1s
+21:15:02    etl.stage_fundamentals                      0 rows       0.0 MB     0.0s
+21:15:02    funds.ingest_log                              7 rows       0.0 MB     0.0s
+21:15:03    etl.load_batches                           49 rows       0.0 MB     0.0s
+21:15:03    public.markets                                 8 rows       0.0 MB     0.0s
+21:15:03    public.load_batches                           24 rows       0.0 MB     0.0s
+21:15:03    public.fundamentals                            1 rows       0.0 MB     0.0s
+21:15:03    system_state.analysis_runs                           0 rows       0.0 MB     0.0s
+21:15:03    pipeline.events                                  4 rows       0.0 MB     0.0s
+21:15:03    etl.source_registry                        16 rows       0.0 MB     0.0s
+21:15:03    market_daily.step_timings                          179 rows       0.0 MB     0.0s
+21:15:03    system_state.data_sources                           48 rows       0.0 MB     0.0s
+21:15:03    indices.factsheet_meta                        253 rows       0.0 MB     0.0s
+21:15:03    market_daily.ingest_log                            901 rows       0.0 MB     0.0s
+21:15:03    fundamentals.india_industry                      1,459 rows       0.0 MB     0.0s
+21:15:03    indices.factsheet_sector                    1,192 rows       0.0 MB     0.0s
+21:15:04    indices.factsheet_holding                   1,336 rows       0.0 MB     0.0s
+21:15:04    fundamentals.next_earnings                       2,777 rows       0.0 MB     0.0s
+21:15:04    system_state.data_snapshots                      2,686 rows       0.0 MB     0.0s
+21:15:04    public.japan_current                       2,937 rows       0.1 MB     0.1s
+21:15:04    public.korea_fundamentals_history         10,143 rows       0.4 MB     0.1s
+21:15:04    market_daily.symbol_names                       21,666 rows       0.3 MB     0.1s
+21:15:04    indices.nse_tri                            22,266 rows       0.1 MB     0.0s
+21:15:04    system_state.connection_health                  11,217 rows       0.1 MB     0.0s
+21:15:05    fundamentals.ratios                             12,066 rows       1.1 MB     0.1s
+21:15:05    indices.nse_membership                     12,850 rows       0.1 MB     0.0s
+21:15:05    public.stocks                             35,243 rows       0.4 MB     0.1s
+21:15:05    public.japan_fundamentals_history         18,682 rows       0.6 MB     0.2s
+21:15:06    fundamentals.intl_pit_quarterly                 48,433 rows       1.0 MB     0.2s
+21:15:06    funds.schemes                            22,677 rows       0.5 MB     0.2s
+21:15:07    fundamentals.india_quarterly                    55,002 rows       1.2 MB     0.2s
+21:15:07    indices.custom_daily                       63,872 rows       0.5 MB     0.1s
+21:15:07    market_daily.ticker_reference                   38,093 rows       0.6 MB     0.4s
+21:15:08    public.fact_short_interest                97,555 rows       1.7 MB     0.7s
+21:15:09    indices.nse_daily                         240,622 rows       6.3 MB     0.5s
+21:15:11    bhavcopy.cleaned_ohlcv                   1,173,120 rows      14.2 MB     1.4s
+21:15:11    public.fact_insider_transaction          204,977 rows       1.8 MB     0.5s
+21:15:12    public.global_fundamentals               245,116 rows       8.8 MB     0.9s
+21:15:14    market_daily.snapshots                       1,212,323 rows      10.8 MB     1.2s
+21:15:18    bhavcopy.nse_raw                           786,751 rows      25.8 MB     3.0s
+21:15:21    bhavcopy.bhavcopy_ohlcv                  2,106,062 rows      25.4 MB     2.5s
+21:15:23    fundamentals.india_pe_daily                  1,979,108 rows      29.6 MB     1.6s
+21:15:30    bhavcopy.nse_deep_ohlcv                  4,423,382 rows      53.2 MB     6.1s
+21:15:38    bhavcopy.bse_raw                         1,636,371 rows      53.8 MB     6.7s
+21:15:50    public.ohlcv_history_dedup_backup_20260914    5,338,185 rows     112.1 MB     9.3s
+21:16:04    funds.nav                            22,345,052 rows     114.9 MB    10.3s
+21:16:30    public.fact_screener_signal            4,980,728 rows     383.5 MB    24.0s
+21:17:45    public.ohlcv_history                  32,896,842 rows     595.0 MB    69.3s
+21:17:45  exported 48 tables, 80,052,285 rows, 1444 MB in 163s
+21:17:45  uploading -> dropbox:market-pipeline-cache/pg_parquet
+21:23:37    OK 48/48 verified
+21:23:37  uploading -> googledrive:market-data-backup/current/pg_parquet
+21:29:28    OK 48/48 verified
+21:29:29  both clouds verified — staged copy removed
+21:15:01  48 tables, 23.5 GB free at stage
+21:15:01    indices.ingest_log                              4 rows       0.0 MB     0.1s
+21:15:01    etl.stage_fundamentals                      0 rows       0.0 MB     0.0s
+21:15:01    funds.ingest_log                              7 rows       0.0 MB     0.0s
+21:15:01    etl.load_batches                           49 rows       0.0 MB     0.0s
+21:15:01    public.markets                                 8 rows       0.0 MB     0.0s
+21:15:01    public.load_batches                           24 rows       0.0 MB     0.0s
+21:15:01    system_state.analysis_runs                           0 rows       0.0 MB     0.0s
+21:15:02    public.fundamentals                            1 rows       0.0 MB     0.0s
+21:15:02    market_daily.step_timings                          179 rows       0.0 MB     0.0s
+21:15:02    etl.source_registry                        16 rows       0.0 MB     0.0s
+21:15:02    pipeline.events                                  4 rows       0.0 MB     0.0s
+21:15:02    system_state.data_sources                           48 rows       0.0 MB     0.0s
+21:15:02    indices.factsheet_meta                        253 rows       0.0 MB     0.0s
+21:15:02    market_daily.ingest_log                            901 rows       0.0 MB     0.0s
+21:15:02    fundamentals.india_industry                      1,459 rows       0.0 MB     0.0s
+21:15:02    indices.factsheet_sector                    1,192 rows       0.0 MB     0.0s
+21:15:02    indices.factsheet_holding                   1,336 rows       0.0 MB     0.0s
+21:15:02    fundamentals.next_earnings                       2,777 rows       0.0 MB     0.0s
+21:15:02    system_state.data_snapshots                      2,686 rows       0.0 MB     0.0s
+21:15:03    public.japan_current                       2,937 rows       0.1 MB     0.1s
+21:15:03    public.korea_fundamentals_history         10,143 rows       0.4 MB     0.1s
+21:15:03    market_daily.symbol_names                       21,666 rows       0.3 MB     0.1s
+21:15:03    indices.nse_tri                            22,266 rows       0.1 MB     0.0s
+21:15:03    fundamentals.ratios                             12,066 rows       1.1 MB     0.1s
+21:15:03    system_state.connection_health                  11,391 rows       0.1 MB     0.0s
+21:15:03    indices.nse_membership                     12,850 rows       0.1 MB     0.0s
+21:15:04    public.stocks                             35,243 rows       0.4 MB     0.1s
+21:15:04    public.japan_fundamentals_history         18,682 rows       0.6 MB     0.2s
+21:15:04    fundamentals.intl_pit_quarterly                 48,433 rows       1.0 MB     0.2s
+21:15:05    funds.schemes                            22,677 rows       0.5 MB     0.2s
+21:15:05    fundamentals.india_quarterly                    55,002 rows       1.2 MB     0.3s
+21:15:05    indices.custom_daily                       63,872 rows       0.5 MB     0.1s
+21:15:06    market_daily.ticker_reference                   38,093 rows       0.6 MB     0.2s
+21:15:06    public.fact_short_interest                97,555 rows       1.7 MB     0.6s
+21:15:07    indices.nse_daily                         240,622 rows       6.3 MB     0.7s
+21:15:09    bhavcopy.cleaned_ohlcv                   1,173,120 rows      14.2 MB     1.7s
+21:15:10    public.fact_insider_transaction          204,977 rows       1.8 MB     0.5s
+21:15:11    public.global_fundamentals               245,116 rows       8.8 MB     1.0s
+21:15:13    market_daily.snapshots                       1,212,323 rows      10.8 MB     1.5s
+21:15:18    bhavcopy.nse_raw                           786,751 rows      25.8 MB     3.9s
+21:15:22    bhavcopy.bhavcopy_ohlcv                  2,106,062 rows      25.4 MB     3.3s
+21:15:25    fundamentals.india_pe_daily                  1,979,108 rows      29.6 MB     2.4s
+21:15:33    bhavcopy.nse_deep_ohlcv                  4,423,382 rows      53.3 MB     6.6s
+21:15:47    bhavcopy.bse_raw                         1,636,371 rows      53.8 MB    12.9s
+21:16:02    public.ohlcv_history_dedup_backup_20260914    5,338,185 rows     112.1 MB    12.8s
+21:16:16    funds.nav                            22,345,052 rows     114.9 MB     9.5s
+21:16:43    public.fact_screener_signal            4,980,728 rows     383.7 MB    25.1s
+21:17:34    public.ohlcv_history                  32,896,842 rows     595.1 MB    47.0s
+21:17:34  exported 48 tables, 80,052,459 rows, 1444 MB in 154s
+21:17:34  uploading -> dropbox:market-pipeline-cache/pg_parquet
+21:33:19    OK 48/48 verified
+21:33:19  uploading -> googledrive:market-data-backup/current/pg_parquet
+21:33:19    🔴 rclone rc=1: t-data-backup/current/pg_parquet": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+21:33:19  🔴 not verified on every remote — keeping /private/tmp/claude-501/-Users-umashankar/230a0ab3-5c83-49eb-90f4-324f13d9cbba/scratchpad/pgparquet
+21:15:01  48 tables, 16.1 GB free at stage
+21:15:01    indices.ingest_log                              4 rows       0.0 MB     0.1s
+21:15:01    etl.stage_fundamentals                      0 rows       0.0 MB     0.0s
+21:15:01    funds.ingest_log                              7 rows       0.0 MB     0.0s
+21:15:01    etl.load_batches                           49 rows       0.0 MB     0.0s
+21:15:01    public.markets                                 8 rows       0.0 MB     0.0s
+21:15:01    public.load_batches                           24 rows       0.0 MB     0.0s
+21:15:01    system_state.analysis_runs                           0 rows       0.0 MB     0.0s
+21:15:01    public.fundamentals                            1 rows       0.0 MB     0.0s
+21:15:02    market_daily.step_timings                          179 rows       0.0 MB     0.0s
+21:15:02    etl.source_registry                        16 rows       0.0 MB     0.0s
+21:15:02    pipeline.events                                  4 rows       0.0 MB     0.0s
+21:15:02    system_state.data_sources                           48 rows       0.0 MB     0.0s
+21:15:02    indices.factsheet_meta                        253 rows       0.0 MB     0.0s
+21:15:02    market_daily.ingest_log                            908 rows       0.0 MB     0.0s
+21:15:02    fundamentals.india_industry                      1,459 rows       0.0 MB     0.0s
+21:15:02    indices.factsheet_sector                    1,192 rows       0.0 MB     0.0s
+21:15:02    indices.factsheet_holding                   1,336 rows       0.0 MB     0.0s
+21:15:02    fundamentals.next_earnings                       2,777 rows       0.0 MB     0.0s
+21:15:02    system_state.data_snapshots                      2,718 rows       0.0 MB     0.0s
+21:15:02    public.japan_current                       2,937 rows       0.1 MB     0.0s
+21:15:02    public.korea_fundamentals_history         10,143 rows       0.4 MB     0.1s
+21:15:02    market_daily.symbol_names                       21,666 rows       0.3 MB     0.1s
+21:15:02    indices.nse_tri                            22,266 rows       0.1 MB     0.0s
+21:15:03    fundamentals.ratios                             12,066 rows       1.1 MB     0.1s
+21:15:03    system_state.connection_health                  11,563 rows       0.1 MB     0.0s
+21:15:03    indices.nse_membership                     12,850 rows       0.1 MB     0.0s
+21:15:03    public.stocks                             35,243 rows       0.4 MB     0.1s
+21:15:03    public.japan_fundamentals_history         18,682 rows       0.6 MB     0.1s
+21:15:03    fundamentals.intl_pit_quarterly                 48,433 rows       1.0 MB     0.2s
+21:15:04    funds.schemes                            22,677 rows       0.5 MB     0.1s
+21:15:04    fundamentals.india_quarterly                    55,002 rows       1.2 MB     0.2s
+21:15:04    indices.custom_daily                       63,878 rows       0.5 MB     0.1s
+21:15:04    market_daily.ticker_reference                   38,093 rows       0.6 MB     0.1s
+21:15:05    public.fact_short_interest                97,555 rows       1.7 MB     0.4s
+21:15:06    indices.nse_daily                         240,622 rows       6.3 MB     0.9s
+21:15:07    bhavcopy.cleaned_ohlcv                   1,173,120 rows      14.2 MB     1.4s
+21:15:08    public.fact_insider_transaction          204,977 rows       1.8 MB     0.5s
+21:15:10    public.global_fundamentals               245,116 rows       8.8 MB     1.5s
+21:15:12    market_daily.snapshots                       1,225,572 rows      10.9 MB     1.4s
+21:15:15    bhavcopy.nse_raw                           786,751 rows      25.8 MB     2.9s
+21:15:20    bhavcopy.bhavcopy_ohlcv                  2,106,062 rows      25.4 MB     3.5s
+21:15:24    fundamentals.india_pe_daily                  1,979,108 rows      29.6 MB     2.8s
+21:15:35    bhavcopy.nse_deep_ohlcv                  4,423,382 rows      53.2 MB     9.7s
+21:15:43    bhavcopy.bse_raw                         1,636,371 rows      53.8 MB     6.7s
+21:15:57    public.ohlcv_history_dedup_backup_20260914    5,338,185 rows     112.1 MB    12.3s
+21:16:19    funds.nav                            22,345,052 rows     114.9 MB    15.2s
+21:16:48    public.fact_screener_signal            4,980,728 rows     383.5 MB    27.9s
+21:17:48    public.ohlcv_history                  32,896,842 rows     595.1 MB    53.0s
+21:17:48  exported 48 tables, 80,065,925 rows, 1444 MB in 167s
+21:17:48  uploading -> dropbox:market-pipeline-cache/pg_parquet
+21:23:53    OK 48/48 verified
+21:23:53  uploading -> googledrive:market-data-backup/current/pg_parquet
+21:23:54    🔴 rclone rc=1: t-data-backup/current/pg_parquet": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+21:23:54  🔴 not verified on every remote — keeping /private/tmp/claude-501/-Users-umashankar/230a0ab3-5c83-49eb-90f4-324f13d9cbba/scratchpad/pgparquet
+21:15:01  48 tables, 15.2 GB free at stage
+21:15:02    funds.ingest_log                              7 rows       0.0 MB     0.1s
+21:15:02    etl.stage_fundamentals                      0 rows       0.0 MB     0.0s
+21:15:02    indices.ingest_log                              4 rows       0.0 MB     0.0s
+21:15:02    etl.load_batches                           49 rows       0.0 MB     0.0s
+21:15:02    public.markets                                 8 rows       0.0 MB     0.0s
+21:15:02    public.load_batches                           24 rows       0.0 MB     0.0s
+21:15:02    public.fundamentals                            1 rows       0.0 MB     0.0s
+21:15:02    system_state.analysis_runs                           0 rows       0.0 MB     0.0s
+21:15:02    etl.source_registry                        16 rows       0.0 MB     0.0s
+21:15:02    pipeline.events                                  4 rows       0.0 MB     0.0s
+21:15:02    market_daily.step_timings                          179 rows       0.0 MB     0.0s
+21:15:02    system_state.data_sources                           48 rows       0.0 MB     0.0s
+21:15:02    indices.factsheet_meta                        253 rows       0.0 MB     0.0s
+21:15:03    market_daily.ingest_log                            922 rows       0.0 MB     0.0s
+21:15:03    fundamentals.india_industry                      1,459 rows       0.0 MB     0.0s
+21:15:03    indices.factsheet_sector                    1,192 rows       0.0 MB     0.0s
+21:15:03    indices.factsheet_holding                   1,336 rows       0.0 MB     0.0s
+21:15:03    fundamentals.next_earnings                       2,777 rows       0.0 MB     0.0s
+21:15:03    system_state.data_snapshots                      2,750 rows       0.0 MB     0.0s
+21:15:03    public.japan_current                       2,937 rows       0.1 MB     0.1s
+21:15:03    public.korea_fundamentals_history         10,143 rows       0.4 MB     0.1s
+21:15:03    market_daily.symbol_names                       21,778 rows       0.3 MB     0.1s
+21:15:03    indices.nse_tri                            22,266 rows       0.1 MB     0.0s
+21:15:04    fundamentals.ratios                             12,066 rows       1.1 MB     0.1s
+21:15:04    system_state.connection_health                  11,697 rows       0.1 MB     0.0s
+21:15:04    indices.nse_membership                     12,850 rows       0.1 MB     0.0s
+21:15:04    public.stocks                             35,243 rows       0.4 MB     0.1s
+21:15:04    public.japan_fundamentals_history         18,682 rows       0.6 MB     0.2s
+21:15:05    fundamentals.intl_pit_quarterly                 48,433 rows       1.0 MB     0.2s
+21:15:05    funds.schemes                            22,677 rows       0.5 MB     0.2s
+21:15:06    fundamentals.india_quarterly                    55,002 rows       1.2 MB     0.2s
+21:15:06    indices.custom_daily                       63,878 rows       0.5 MB     0.1s
+21:15:06    market_daily.ticker_reference                   38,100 rows       0.6 MB     0.2s
+21:15:07    public.fact_short_interest                97,555 rows       1.7 MB     0.7s
+21:15:08    indices.nse_daily                         240,622 rows       6.3 MB     1.1s
+21:15:10    bhavcopy.cleaned_ohlcv                   1,173,803 rows      14.2 MB     1.7s
+21:15:11    public.fact_insider_transaction          204,977 rows       1.8 MB     0.5s
+21:15:12    public.global_fundamentals               245,116 rows       8.8 MB     1.0s
+21:15:14    market_daily.snapshots                       1,238,532 rows      11.0 MB     1.6s
+21:15:19    bhavcopy.nse_raw                           789,109 rows      25.8 MB     3.7s
+21:15:22    bhavcopy.bhavcopy_ohlcv                  2,113,249 rows      25.5 MB     2.8s
+21:15:25    fundamentals.india_pe_daily                  1,979,108 rows      29.6 MB     1.7s
+21:15:33    bhavcopy.nse_deep_ohlcv                  4,423,382 rows      53.2 MB     7.4s
+21:15:48    bhavcopy.bse_raw                         1,641,200 rows      53.9 MB    12.9s
+21:16:05    public.ohlcv_history_dedup_backup_20260914    5,338,185 rows     112.1 MB    15.5s
+21:16:22    funds.nav                            22,345,052 rows     114.9 MB    13.6s
+21:16:54    public.fact_screener_signal            4,980,728 rows     383.6 MB    31.0s
+21:17:55    public.ohlcv_history                  32,896,842 rows     595.2 MB    55.8s
+21:17:55  exported 48 tables, 80,094,241 rows, 1445 MB in 174s
+21:17:55  uploading -> dropbox:market-pipeline-cache/pg_parquet
+21:24:00    OK 48/48 verified
+21:24:00  uploading -> googledrive:market-data-backup/current/pg_parquet
+21:24:01    🔴 rclone rc=1: t-data-backup/current/pg_parquet": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+21:24:01  🔴 not verified on every remote — keeping /private/tmp/claude-501/-Users-umashankar/230a0ab3-5c83-49eb-90f4-324f13d9cbba/scratchpad/pgparquet
+21:15:02  48 tables, 20.9 GB free at stage
+21:15:03    funds.ingest_log                              7 rows       0.0 MB     0.1s
+21:15:03    etl.stage_fundamentals                      0 rows       0.0 MB     0.0s
+21:15:03    indices.ingest_log                              4 rows       0.0 MB     0.0s
+21:15:03    etl.load_batches                           49 rows       0.0 MB     0.0s
+21:15:03    public.markets                                 8 rows       0.0 MB     0.0s
+21:15:03    public.load_batches                           24 rows       0.0 MB     0.0s
+21:15:03    public.fundamentals                            1 rows       0.0 MB     0.0s
+21:15:03    system_state.analysis_runs                           0 rows       0.0 MB     0.0s
+21:15:03    etl.source_registry                        16 rows       0.0 MB     0.0s
+21:15:03    pipeline.events                                  4 rows       0.0 MB     0.0s
+21:15:03    market_daily.step_timings                          179 rows       0.0 MB     0.0s
+21:15:03    system_state.data_sources                           48 rows       0.0 MB     0.0s
+21:15:03    indices.factsheet_meta                        253 rows       0.0 MB     0.0s
+21:15:04    market_daily.ingest_log                            943 rows       0.0 MB     0.0s
+21:15:04    fundamentals.india_industry                      1,459 rows       0.0 MB     0.0s
+21:15:04    indices.factsheet_sector                    1,192 rows       0.0 MB     0.0s
+21:15:04    indices.factsheet_holding                   1,336 rows       0.0 MB     0.0s
+21:15:04    fundamentals.next_earnings                       2,777 rows       0.0 MB     0.0s
+21:15:04    system_state.data_snapshots                      2,814 rows       0.0 MB     0.0s
+21:15:04    public.japan_current                       2,937 rows       0.1 MB     0.1s
+21:15:04    market_daily.symbol_names                       21,716 rows       0.3 MB     0.1s
+21:15:04    public.korea_fundamentals_history         10,143 rows       0.4 MB     0.2s
+21:15:05    indices.nse_tri                            22,266 rows       0.1 MB     0.0s
+21:15:05    fundamentals.ratios                             12,066 rows       1.1 MB     0.2s
+21:15:05    system_state.connection_health                  11,749 rows       0.1 MB     0.0s
+21:15:05    indices.nse_membership                     12,850 rows       0.1 MB     0.0s
+21:15:05    public.stocks                             35,243 rows       0.4 MB     0.1s
+21:15:06    public.japan_fundamentals_history         18,682 rows       0.6 MB     0.2s
+21:15:07    fundamentals.intl_pit_quarterly                 48,433 rows       1.0 MB     0.4s
+21:15:07    funds.schemes                            22,677 rows       0.5 MB     0.2s
+21:15:08    fundamentals.india_quarterly                    55,002 rows       1.2 MB     0.3s
+21:15:08    indices.custom_daily                       63,878 rows       0.5 MB     0.1s
+21:15:09    market_daily.ticker_reference                   38,131 rows       0.6 MB     0.3s
+21:15:09    public.fact_short_interest                97,555 rows       1.7 MB     0.7s
+21:15:11    indices.nse_daily                         240,622 rows       6.3 MB     1.2s
+21:15:13    bhavcopy.cleaned_ohlcv                   1,179,343 rows      14.3 MB     2.1s
+21:15:15    public.fact_insider_transaction          204,977 rows       1.8 MB     1.1s
+21:15:16    public.global_fundamentals               245,116 rows       8.8 MB     1.5s
+21:15:21    market_daily.snapshots                       1,251,786 rows      11.2 MB     2.8s
+21:15:27    bhavcopy.nse_raw                           793,879 rows      26.0 MB     5.0s
+21:15:33    bhavcopy.bhavcopy_ohlcv                  2,127,454 rows      25.6 MB     4.7s
+21:15:37    fundamentals.india_pe_daily                  1,979,108 rows      29.6 MB     3.0s
+21:15:54    bhavcopy.nse_deep_ohlcv                  4,423,382 rows      53.2 MB    13.6s
+21:16:06    bhavcopy.bse_raw                         1,650,635 rows      54.2 MB    10.3s
+21:16:18    public.ohlcv_history_dedup_backup_20260914    5,338,185 rows     112.1 MB    10.1s
+21:16:32    funds.nav                            22,345,052 rows     114.9 MB     9.5s
+21:16:53    public.fact_screener_signal            4,980,728 rows     383.6 MB    19.6s
+21:17:46    public.ohlcv_history                  32,896,842 rows     595.2 MB    49.3s
+21:17:46  exported 48 tables, 80,141,551 rows, 1445 MB in 164s
+21:17:46  uploading -> dropbox:market-pipeline-cache/pg_parquet
+21:20:45    OK 48/48 verified
+21:20:45  uploading -> googledrive:market-data-backup/current/pg_parquet
+21:23:17    OK 48/48 verified
+21:23:19  both clouds verified — staged copy removed
+21:15:01  48 tables, 18.0 GB free at stage
+21:15:02    funds.ingest_log                              7 rows       0.0 MB     0.1s
+21:15:02    etl.stage_fundamentals                      0 rows       0.0 MB     0.0s
+21:15:02    indices.ingest_log                              4 rows       0.0 MB     0.0s
+21:15:02    etl.load_batches                           49 rows       0.0 MB     0.0s
+21:15:02    public.markets                                 8 rows       0.0 MB     0.0s
+21:15:02    public.fundamentals                            1 rows       0.0 MB     0.0s
+21:15:02    system_state.analysis_runs                           0 rows       0.0 MB     0.0s
+21:15:02    public.load_batches                           24 rows       0.0 MB     0.0s
+21:15:02    pipeline.events                                  4 rows       0.0 MB     0.0s
+21:15:02    etl.source_registry                        16 rows       0.0 MB     0.0s
+21:15:02    market_daily.step_timings                          179 rows       0.0 MB     0.0s
+21:15:02    system_state.data_sources                           48 rows       0.0 MB     0.0s
+21:15:03    indices.factsheet_meta                        253 rows       0.0 MB     0.0s
+21:15:03    market_daily.ingest_log                            950 rows       0.0 MB     0.0s
+21:15:03    fundamentals.india_industry                      1,459 rows       0.0 MB     0.0s
+21:15:03    indices.factsheet_sector                    1,192 rows       0.0 MB     0.0s
+21:15:03    indices.factsheet_holding                   1,336 rows       0.0 MB     0.0s
+21:15:03    fundamentals.next_earnings                       2,777 rows       0.0 MB     0.0s
+21:15:03    system_state.data_snapshots                      2,846 rows       0.0 MB     0.0s
+21:15:03    public.japan_current                       2,937 rows       0.1 MB     0.0s
+21:15:03    public.korea_fundamentals_history         10,143 rows       0.4 MB     0.1s
+21:15:03    market_daily.symbol_names                       21,720 rows       0.3 MB     0.1s
+21:15:03    indices.nse_tri                            22,266 rows       0.1 MB     0.0s
+21:15:04    fundamentals.ratios                             12,073 rows       1.1 MB     0.1s
+21:15:04    system_state.connection_health                  11,865 rows       0.1 MB     0.0s
+21:15:04    indices.nse_membership                     12,850 rows       0.1 MB     0.0s
+21:15:04    public.stocks                             35,243 rows       0.4 MB     0.1s
+21:15:04    public.japan_fundamentals_history         18,682 rows       0.6 MB     0.2s
+21:15:05    fundamentals.intl_pit_quarterly                 48,433 rows       1.0 MB     0.2s
+21:15:05    funds.schemes                            22,677 rows       0.5 MB     0.2s
+21:15:06    fundamentals.india_quarterly                    55,002 rows       1.2 MB     0.3s
+21:15:06    indices.custom_daily                       63,878 rows       0.5 MB     0.1s
+21:15:06    market_daily.ticker_reference                   38,131 rows       0.6 MB     0.2s
+21:15:07    public.fact_short_interest                97,555 rows       1.7 MB     1.1s
+21:15:08    indices.nse_daily                         240,622 rows       6.3 MB     0.9s
+21:15:10    bhavcopy.cleaned_ohlcv                   1,179,343 rows      14.3 MB     1.2s
+21:15:11    public.fact_insider_transaction          204,977 rows       1.8 MB     0.6s
+21:15:12    public.global_fundamentals               245,116 rows       8.8 MB     1.0s
+21:15:14    market_daily.snapshots                       1,264,840 rows      11.2 MB     1.1s
+21:15:17    bhavcopy.nse_raw                           793,879 rows      26.0 MB     2.2s
+21:15:20    bhavcopy.bhavcopy_ohlcv                  2,127,454 rows      25.6 MB     1.9s
+21:15:22    fundamentals.india_pe_daily                  1,979,108 rows      29.6 MB     1.1s
+21:15:26    bhavcopy.nse_deep_ohlcv                  4,423,382 rows      53.2 MB     3.7s
+21:15:33    bhavcopy.bse_raw                         1,650,635 rows      54.2 MB     5.2s
+21:15:40    public.ohlcv_history_dedup_backup_20260914    5,338,185 rows     112.1 MB     5.3s
+21:15:50    funds.nav                            22,345,052 rows     114.9 MB     6.1s
+21:16:03    public.fact_screener_signal            4,980,728 rows     383.6 MB    12.0s
+21:16:39    public.ohlcv_history                  32,896,842 rows     595.0 MB    32.1s
+21:16:39  exported 48 tables, 80,154,771 rows, 1445 MB in 98s
+21:16:39  uploading -> dropbox:market-pipeline-cache/pg_parquet
+21:19:39    OK 48/48 verified
+21:19:39  uploading -> googledrive:market-data-backup/current/pg_parquet
+21:22:33    OK 48/48 verified
+21:22:34  both clouds verified — staged copy removed
+21:15:01  48 tables, 12.7 GB free at stage
+21:15:02    indices.ingest_log                              4 rows       0.0 MB     0.1s
+21:15:02    funds.ingest_log                              7 rows       0.0 MB     0.0s
+21:15:02    etl.stage_fundamentals                      0 rows       0.0 MB     0.0s
+21:15:02    etl.load_batches                           49 rows       0.0 MB     0.0s
+21:15:02    public.markets                                 8 rows       0.0 MB     0.0s
+21:15:02    system_state.analysis_runs                           0 rows       0.0 MB     0.0s
+21:15:02    public.fundamentals                            1 rows       0.0 MB     0.0s
+21:15:02    public.load_batches                           24 rows       0.0 MB     0.0s
+21:15:02    pipeline.events                                  4 rows       0.0 MB     0.0s
+21:15:02    market_daily.step_timings                          179 rows       0.0 MB     0.0s
+21:15:02    etl.source_registry                        16 rows       0.0 MB     0.0s
+21:15:02    system_state.data_sources                           48 rows       0.0 MB     0.0s
+21:15:02    indices.factsheet_meta                        253 rows       0.0 MB     0.0s
+21:15:02    market_daily.ingest_log                            964 rows       0.0 MB     0.0s
+21:15:03    fundamentals.india_industry                      1,459 rows       0.0 MB     0.0s
+21:15:03    indices.factsheet_sector                    1,192 rows       0.0 MB     0.0s
+21:15:03    indices.factsheet_holding                   1,336 rows       0.0 MB     0.0s
+21:15:03    fundamentals.next_earnings                       2,777 rows       0.0 MB     0.0s
+21:15:03    system_state.data_snapshots                      2,878 rows       0.0 MB     0.0s
+21:15:03    public.japan_current                       2,937 rows       0.1 MB     0.1s
+21:15:03    public.korea_fundamentals_history         10,143 rows       0.4 MB     0.1s
+21:15:03    market_daily.symbol_names                       21,732 rows       0.3 MB     0.1s
+21:15:03    indices.nse_tri                            22,266 rows       0.1 MB     0.0s
+21:15:03    fundamentals.ratios                             12,073 rows       1.1 MB     0.1s
+21:15:04    system_state.connection_health                  12,053 rows       0.1 MB     0.0s
+21:15:04    indices.nse_membership                     12,850 rows       0.1 MB     0.0s
+21:15:04    public.stocks                             35,243 rows       0.4 MB     0.1s
+21:15:04    public.japan_fundamentals_history         18,682 rows       0.6 MB     0.2s
+21:15:04    fundamentals.intl_pit_quarterly                 48,433 rows       1.0 MB     0.2s
+21:15:05    funds.schemes                            22,677 rows       0.5 MB     0.2s
+21:15:05    fundamentals.india_quarterly                    55,002 rows       1.2 MB     0.2s
+21:15:06    indices.custom_daily                       63,878 rows       0.5 MB     0.1s
+21:15:06    market_daily.ticker_reference                   38,140 rows       0.6 MB     0.2s
+21:15:07    public.fact_short_interest                97,555 rows       1.7 MB     0.6s
+21:15:07    indices.nse_daily                         240,622 rows       6.3 MB     0.6s
+21:15:09    bhavcopy.cleaned_ohlcv                   1,180,020 rows      14.3 MB     1.1s
+21:15:09    public.fact_insider_transaction          204,977 rows       1.8 MB     0.4s
+21:15:11    public.global_fundamentals               245,116 rows       8.8 MB     1.3s
+21:15:13    market_daily.snapshots                       1,277,506 rows      11.4 MB     1.2s
+21:15:16    bhavcopy.nse_raw                           796,265 rows      26.1 MB     2.7s
+21:15:19    bhavcopy.bhavcopy_ohlcv                  2,134,584 rows      25.7 MB     2.2s
+21:15:22    fundamentals.india_pe_daily                  1,979,108 rows      29.6 MB     1.6s
+21:15:27    bhavcopy.nse_deep_ohlcv                  4,423,382 rows      53.2 MB     3.8s
+21:15:34    bhavcopy.bse_raw                         1,655,379 rows      54.4 MB     5.6s
+21:15:41    public.ohlcv_history_dedup_backup_20260914    5,338,185 rows     112.1 MB     5.7s
+21:15:52    funds.nav                            22,345,052 rows     114.9 MB     7.0s
+21:16:06    public.fact_screener_signal            4,980,728 rows     383.6 MB    13.4s
+21:16:47    public.ohlcv_history                  32,896,842 rows     595.0 MB    36.6s
+21:16:47  exported 48 tables, 80,182,629 rows, 1446 MB in 105s
+21:16:47  uploading -> dropbox:market-pipeline-cache/pg_parquet
+21:19:40    OK 48/48 verified
+21:19:40  uploading -> googledrive:market-data-backup/current/pg_parquet
+21:22:47    OK 48/48 verified
+21:22:48  both clouds verified — staged copy removed
+21:15:02  48 tables, 19.1 GB free at stage
+21:15:02    etl.stage_fundamentals                      0 rows       0.0 MB     0.1s
+21:15:02    funds.ingest_log                              7 rows       0.0 MB     0.0s
+21:15:02    indices.ingest_log                              4 rows       0.0 MB     0.0s
+21:15:02    etl.load_batches                           49 rows       0.0 MB     0.0s
+21:15:02    public.markets                                 8 rows       0.0 MB     0.0s
+21:15:02    public.fundamentals                            1 rows       0.0 MB     0.0s
+21:15:02    system_state.analysis_runs                           0 rows       0.0 MB     0.0s
+21:15:02    public.load_batches                           24 rows       0.0 MB     0.0s
+21:15:03    pipeline.events                                  4 rows       0.0 MB     0.0s
+21:15:03    market_daily.step_timings                          179 rows       0.0 MB     0.0s
+21:15:03    etl.source_registry                        16 rows       0.0 MB     0.0s
+21:15:03    system_state.data_sources                           48 rows       0.0 MB     0.0s
+21:15:03    indices.factsheet_meta                        253 rows       0.0 MB     0.0s
+21:15:03    market_daily.ingest_log                          1,006 rows       0.0 MB     0.0s
+21:15:03    fundamentals.india_industry                      1,459 rows       0.0 MB     0.0s
+21:15:03    indices.factsheet_sector                    1,192 rows       0.0 MB     0.0s
+21:15:03    indices.factsheet_holding                   1,336 rows       0.0 MB     0.0s
+21:15:03    fundamentals.next_earnings                       2,786 rows       0.0 MB     0.0s
+21:15:03    system_state.data_snapshots                      3,006 rows       0.0 MB     0.0s
+21:15:03    public.japan_current                       2,937 rows       0.1 MB     0.1s
+21:15:04    market_daily.symbol_names                       18,954 rows       0.2 MB     0.1s
+21:15:04    public.korea_fundamentals_history         10,143 rows       0.4 MB     0.1s
+21:15:04    indices.nse_tri                            22,266 rows       0.1 MB     0.0s
+21:15:04    fundamentals.ratios                             12,083 rows       1.1 MB     0.1s
+21:15:04    system_state.connection_health                  12,559 rows       0.1 MB     0.0s
+21:15:04    indices.nse_membership                     12,850 rows       0.1 MB     0.0s
+21:15:05    public.stocks                             35,243 rows       0.4 MB     0.1s
+21:15:05    public.japan_fundamentals_history         18,682 rows       0.6 MB     0.2s
+21:15:05    fundamentals.intl_pit_quarterly                 49,328 rows       1.0 MB     0.3s
+21:15:06    funds.schemes                            22,677 rows       0.5 MB     0.2s
+21:15:06    fundamentals.india_quarterly                    55,002 rows       1.2 MB     0.3s
+21:15:07    indices.custom_daily                       64,007 rows       0.5 MB     0.1s
+21:15:07    market_daily.ticker_reference                   38,159 rows       0.6 MB     0.3s
+21:15:08    public.fact_short_interest                97,555 rows       1.7 MB     0.8s
+21:15:09    indices.nse_daily                         240,622 rows       6.3 MB     0.7s
+21:15:11    bhavcopy.cleaned_ohlcv                   1,181,153 rows      14.3 MB     1.3s
+21:15:11    public.fact_insider_transaction          204,977 rows       1.8 MB     0.5s
+21:15:13    public.global_fundamentals               245,116 rows       8.8 MB     1.0s
+21:15:15    market_daily.snapshots                       1,316,505 rows      11.7 MB     1.3s
+21:15:18    bhavcopy.nse_raw                           801,036 rows      26.2 MB     2.9s
+21:15:22    bhavcopy.bhavcopy_ohlcv                  2,148,814 rows      25.9 MB     2.5s
+21:15:24    fundamentals.india_pe_daily                  1,979,108 rows      29.6 MB     1.2s
+21:15:29    bhavcopy.nse_deep_ohlcv                  4,423,382 rows      53.3 MB     4.4s
+21:15:37    bhavcopy.bse_raw                         1,664,838 rows      54.7 MB     6.3s
+21:15:45    public.ohlcv_history_dedup_backup_20260914    5,338,185 rows     112.1 MB     6.3s
+21:15:56    funds.nav                            22,345,052 rows     114.9 MB     7.2s
+21:16:12    public.fact_screener_signal            4,980,728 rows     383.2 MB    14.6s
+21:16:55    public.ohlcv_history                  32,896,842 rows     594.9 MB    38.6s
+21:16:55  exported 48 tables, 80,250,181 rows, 1446 MB in 113s
+21:16:55  uploading -> dropbox:market-pipeline-cache/pg_parquet
+21:20:02    OK 48/48 verified
+21:20:02  uploading -> googledrive:market-data-backup/current/pg_parquet
+21:22:38    OK 48/48 verified
+21:22:38  both clouds verified — staged copy removed
+21:15:01  48 tables, 31.7 GB free at stage
+21:15:02    indices.ingest_log                              4 rows       0.0 MB     0.1s
+21:15:02    etl.stage_fundamentals                      0 rows       0.0 MB     0.0s
+21:15:02    funds.ingest_log                              7 rows       0.0 MB     0.0s
+21:15:02    etl.load_batches                           49 rows       0.0 MB     0.0s
+21:15:02    public.markets                                 8 rows       0.0 MB     0.0s
+21:15:02    public.load_batches                           24 rows       0.0 MB     0.0s
+21:15:02    system_state.analysis_runs                           0 rows       0.0 MB     0.0s
+21:15:03    public.fundamentals                            1 rows       0.0 MB     0.0s
+21:15:03    market_daily.step_timings                          179 rows       0.0 MB     0.0s
+21:15:03    etl.source_registry                        16 rows       0.0 MB     0.0s
+21:15:03    pipeline.events                                  4 rows       0.0 MB     0.0s
+21:15:03    system_state.data_sources                           48 rows       0.0 MB     0.0s
+21:15:03    indices.factsheet_meta                        253 rows       0.0 MB     0.0s
+21:15:03    market_daily.ingest_log                          1,027 rows       0.0 MB     0.0s
+21:15:03    fundamentals.india_industry                      1,459 rows       0.0 MB     0.0s
+21:15:03    indices.factsheet_sector                    1,192 rows       0.0 MB     0.0s
+21:15:03    indices.factsheet_holding                   1,336 rows       0.0 MB     0.0s
+21:15:03    fundamentals.next_earnings                       2,786 rows       0.0 MB     0.0s
+21:15:03    system_state.data_snapshots                      3,070 rows       0.0 MB     0.0s
+21:15:04    public.japan_current                       2,937 rows       0.1 MB     0.1s
+21:15:04    public.korea_fundamentals_history         10,143 rows       0.4 MB     0.1s
+21:15:04    market_daily.symbol_names                       21,745 rows       0.3 MB     0.1s
+21:15:04    indices.nse_tri                            22,266 rows       0.1 MB     0.0s
+21:15:04    fundamentals.ratios                             12,084 rows       1.1 MB     0.2s
+21:15:04    system_state.connection_health                  12,705 rows       0.1 MB     0.0s
+21:15:05    indices.nse_membership                     12,850 rows       0.1 MB     0.0s
+21:15:05    public.stocks                             35,243 rows       0.4 MB     0.1s
+21:15:05    public.japan_fundamentals_history         18,682 rows       0.6 MB     0.3s
+21:15:06    fundamentals.intl_pit_quarterly                 49,328 rows       1.0 MB     0.4s
+21:15:06    funds.schemes                            22,677 rows       0.5 MB     0.2s
+21:15:07    fundamentals.india_quarterly                    55,002 rows       1.2 MB     0.4s
+21:15:07    indices.custom_daily                       64,007 rows       0.5 MB     0.1s
+21:15:08    market_daily.ticker_reference                   38,163 rows       0.4 MB     0.3s
+21:15:09    public.fact_short_interest                97,555 rows       1.7 MB     0.7s
+21:15:10    indices.nse_daily                         240,622 rows       6.3 MB     0.9s
+21:15:13    bhavcopy.cleaned_ohlcv                   1,181,153 rows      14.3 MB     2.3s
+21:15:13    public.fact_insider_transaction          204,977 rows       1.8 MB     0.6s
+21:15:15    public.global_fundamentals               245,116 rows       8.8 MB     1.1s
+21:15:18    market_daily.snapshots                       1,329,202 rows      11.8 MB     2.2s
+21:15:23    bhavcopy.nse_raw                           801,036 rows      26.2 MB     5.1s
+21:15:28    bhavcopy.bhavcopy_ohlcv                  2,148,814 rows      25.9 MB     3.9s
+21:15:31    fundamentals.india_pe_daily                  1,979,108 rows      29.6 MB     2.2s
+21:15:41    bhavcopy.nse_deep_ohlcv                  4,423,382 rows      53.2 MB     9.1s
+21:15:54    bhavcopy.bse_raw                         1,664,838 rows      54.7 MB    11.1s
+21:16:10    public.ohlcv_history_dedup_backup_20260914    5,338,185 rows     112.1 MB    11.2s
+21:16:25    funds.nav                            22,345,052 rows     114.9 MB     8.6s
+21:16:43    public.fact_screener_signal            4,980,728 rows     383.7 MB    17.4s
+21:17:48    public.ohlcv_history                  32,896,842 rows     595.1 MB    60.1s
+21:17:48  exported 48 tables, 80,265,905 rows, 1447 MB in 166s
+21:17:48  uploading -> dropbox:market-pipeline-cache/pg_parquet
+21:20:41    OK 48/48 verified
+21:20:41  uploading -> googledrive:market-data-backup/current/pg_parquet
+21:15:01  48 tables, 45.9 GB free at stage
+21:15:01    indices.ingest_log                              4 rows       0.0 MB     0.1s
+21:15:01    etl.stage_fundamentals                      0 rows       0.0 MB     0.0s
+21:15:01    funds.ingest_log                              7 rows       0.0 MB     0.0s
+21:15:01    etl.load_batches                           49 rows       0.0 MB     0.0s
+21:15:02    public.markets                                 8 rows       0.0 MB     0.0s
+21:15:02    public.load_batches                           24 rows       0.0 MB     0.0s
+21:15:02    system_state.analysis_runs                           0 rows       0.0 MB     0.0s
+21:15:02    public.fundamentals                            1 rows       0.0 MB     0.0s
+21:15:02    etl.source_registry                        16 rows       0.0 MB     0.0s
+21:15:02    market_daily.step_timings                          179 rows       0.0 MB     0.0s
+21:15:02    pipeline.events                                  4 rows       0.0 MB     0.0s
+21:15:02    system_state.data_sources                           48 rows       0.0 MB     0.0s
+21:15:02    indices.factsheet_meta                        253 rows       0.0 MB     0.0s
+21:15:02    market_daily.ingest_log                          1,033 rows       0.0 MB     0.0s
+21:15:02    fundamentals.ratios                              1,105 rows       0.1 MB     0.0s
+21:15:02    fundamentals.india_industry                      1,459 rows       0.0 MB     0.0s
+21:15:02    indices.factsheet_sector                    1,192 rows       0.0 MB     0.0s
+21:15:02    indices.factsheet_holding                   1,336 rows       0.0 MB     0.0s
+21:15:03    fundamentals.next_earnings                       2,786 rows       0.0 MB     0.0s
+21:15:03    system_state.data_snapshots                      3,070 rows       0.0 MB     0.0s
+21:15:03    public.japan_current                       2,937 rows       0.1 MB     0.0s
+21:15:03    market_daily.symbol_names                       21,747 rows       0.3 MB     0.1s
+21:15:03    public.korea_fundamentals_history         10,143 rows       0.4 MB     0.1s
+21:15:03    indices.nse_tri                            22,266 rows       0.1 MB     0.0s
+21:15:03    system_state.connection_health                  12,741 rows       0.1 MB     0.0s
+21:15:03    indices.nse_membership                     12,850 rows       0.1 MB     0.0s
+21:15:03    public.stocks                             35,243 rows       0.4 MB     0.1s
+21:15:04    public.japan_fundamentals_history         18,682 rows       0.6 MB     0.1s
+21:15:04    fundamentals.intl_pit_quarterly                 49,412 rows       1.0 MB     0.2s
+21:15:04    funds.schemes                            22,677 rows       0.5 MB     0.2s
+21:15:05    fundamentals.india_quarterly                    55,002 rows       1.2 MB     0.2s
+21:15:05    indices.custom_daily                       64,007 rows       0.5 MB     0.1s
+21:15:05    market_daily.ticker_reference                   38,178 rows       0.4 MB     0.1s
+21:15:06    public.fact_short_interest                97,555 rows       1.7 MB     0.4s
+21:15:07    indices.nse_daily                         240,622 rows       6.3 MB     1.0s
+21:15:07    public.fact_insider_transaction          204,977 rows       1.8 MB     0.4s
+21:15:09    bhavcopy.cleaned_ohlcv                   1,258,503 rows      15.1 MB     1.3s
+21:15:10    public.global_fundamentals               245,116 rows       8.8 MB     0.9s
+21:15:12    bhavcopy.bhavcopy_ohlcv                  1,789,471 rows      21.5 MB     1.8s
+21:15:14    market_daily.snapshots                       1,342,296 rows      12.0 MB     1.2s
+21:15:17    bhavcopy.nse_raw                           803,423 rows      26.3 MB     2.2s
+21:15:19    fundamentals.india_pe_daily                  1,979,108 rows      29.6 MB     1.1s
+21:15:24    bhavcopy.nse_deep_ohlcv                  4,423,382 rows      53.2 MB     3.5s
+21:15:30    bhavcopy.bse_raw                         1,669,713 rows      54.8 MB     4.8s
+21:15:37    public.ohlcv_history_dedup_backup_20260914    5,338,185 rows     112.1 MB     5.3s
+21:15:47    funds.nav                            22,345,052 rows     114.9 MB     6.5s
+21:16:00    public.fact_screener_signal            4,980,728 rows     383.5 MB    12.0s
+21:16:35    public.ohlcv_history                  32,896,842 rows     595.0 MB    30.9s
+21:16:35  exported 48 tables, 79,993,432 rows, 1442 MB in 94s
+21:16:35  uploading -> dropbox:market-pipeline-cache/pg_parquet
+21:19:32    OK 48/48 verified
+21:19:32  uploading -> googledrive:market-data-backup/current/pg_parquet
+21:22:03    OK 48/48 verified
+21:22:03  both clouds verified — staged copy removed
+21:15:00  48 tables, 42.0 GB free at stage
+21:15:01    indices.ingest_log                              4 rows       0.0 MB     0.1s
+21:15:01    funds.ingest_log                              7 rows       0.0 MB     0.0s
+21:15:01    etl.stage_fundamentals                      0 rows       0.0 MB     0.0s
+21:15:01    etl.load_batches                           49 rows       0.0 MB     0.0s
+21:15:01    public.markets                                 8 rows       0.0 MB     0.0s
+21:15:01    system_state.analysis_runs                           0 rows       0.0 MB     0.0s
+21:15:01    public.fundamentals                            1 rows       0.0 MB     0.0s
+21:15:01    public.load_batches                           24 rows       0.0 MB     0.0s
+21:15:01    market_daily.step_timings                          179 rows       0.0 MB     0.0s
+21:15:01    etl.source_registry                        16 rows       0.0 MB     0.0s
+21:15:01    pipeline.events                                  4 rows       0.0 MB     0.0s
+21:15:01    system_state.data_sources                           48 rows       0.0 MB     0.0s
+21:15:01    indices.factsheet_meta                        253 rows       0.0 MB     0.0s
+21:15:02    market_daily.ingest_log                          1,039 rows       0.0 MB     0.0s
+21:15:02    fundamentals.india_industry                      1,459 rows       0.0 MB     0.0s
+21:15:02    indices.factsheet_sector                    1,192 rows       0.0 MB     0.0s
+21:15:02    indices.factsheet_holding                   1,336 rows       0.0 MB     0.0s
+21:15:02    fundamentals.next_earnings                       2,787 rows       0.0 MB     0.0s
+21:15:02    system_state.data_snapshots                      3,070 rows       0.0 MB     0.0s
+21:15:02    fundamentals.ratios                              4,574 rows       0.4 MB     0.0s
+21:15:02    public.japan_current                       2,937 rows       0.1 MB     0.0s
+21:15:02    public.korea_fundamentals_history         10,143 rows       0.4 MB     0.1s
+21:15:02    market_daily.symbol_names                       21,734 rows       0.3 MB     0.1s
+21:15:02    indices.nse_tri                            22,266 rows       0.1 MB     0.0s
+21:15:03    system_state.connection_health                  12,837 rows       0.1 MB     0.0s
+21:15:03    indices.nse_membership                     12,850 rows       0.1 MB     0.0s
+21:15:03    public.stocks                             35,243 rows       0.4 MB     0.1s
+21:15:03    public.japan_fundamentals_history         18,682 rows       0.6 MB     0.2s
+21:15:03    fundamentals.intl_pit_quarterly                 49,477 rows       1.0 MB     0.2s
+21:15:04    funds.schemes                            22,677 rows       0.5 MB     0.2s
+21:15:04    fundamentals.india_quarterly                    55,002 rows       1.2 MB     0.2s
+21:15:04    indices.custom_daily                       64,007 rows       0.5 MB     0.1s
+21:15:05    market_daily.ticker_reference                   38,189 rows       0.4 MB     0.2s
+21:15:05    public.fact_short_interest                97,555 rows       1.7 MB     0.6s
+21:15:07    indices.nse_daily                         240,622 rows       6.3 MB     1.2s
+21:15:07    public.fact_insider_transaction          204,977 rows       1.8 MB     0.5s
+21:15:10    bhavcopy.cleaned_ohlcv                   1,258,887 rows      15.1 MB     2.1s
+21:15:11    public.global_fundamentals               245,116 rows       8.8 MB     1.0s
+21:15:14    bhavcopy.bhavcopy_ohlcv                  1,796,690 rows      21.6 MB     2.2s
+21:15:18    bhavcopy.nse_raw                           805,813 rows      26.4 MB     3.6s
+21:15:21    market_daily.snapshots                       1,355,376 rows      12.0 MB     1.5s
+21:15:23    fundamentals.india_pe_daily                  1,979,108 rows      29.6 MB     1.9s
+21:15:29    bhavcopy.nse_deep_ohlcv                  4,423,382 rows      53.3 MB     5.1s
+21:15:40    bhavcopy.bse_raw                         1,674,542 rows      55.0 MB     8.8s
+21:15:49    public.ohlcv_history_dedup_backup_20260914    5,338,185 rows     112.1 MB     7.7s
+21:16:03    funds.nav                            22,345,052 rows     114.9 MB    10.0s
+21:16:23    public.fact_screener_signal            4,980,728 rows     383.4 MB    18.2s
+21:17:13    public.ohlcv_history                  32,896,842 rows     594.9 MB    45.7s
+21:17:13  exported 48 tables, 80,024,969 rows, 1443 MB in 133s
+21:17:13  uploading -> dropbox:market-pipeline-cache/pg_parquet
+21:21:54    OK 48/48 verified
+21:21:54  uploading -> googledrive:market-data-backup/current/pg_parquet
+21:24:12    OK 48/48 verified
+21:24:12  both clouds verified — staged copy removed

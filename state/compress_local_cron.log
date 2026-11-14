@@ -31,3 +31,14 @@
   /Users/umashankar/market-pipeline/data/reference_data:
   Number of HFS+/APFS compressed files: 10
 /Users/umashankar/market-pipeline/data/reference_data: 7.4M -> 7.4M
+  /Users/umashankar/.venvs:
+  Number of HFS+/APFS compressed files: 68345
+/Users/umashankar/.venvs: 1.4G -> 1.4G
+/Users/umashankar/.graphify/global-graph.json: 7.7M -> 7.7M
+/Users/umashankar/.graphify/global-index.json:  12K ->  12K
+  /Users/umashankar/market-pipeline/code/python_files/reports:
+  Number of HFS+/APFS compressed files: 513
+/Users/umashankar/market-pipeline/code/python_files/reports:  18M ->  18M
+  /Users/umashankar/market-pipeline/data/reference_data:
+  Number of HFS+/APFS compressed files: 10
+/Users/umashankar/market-pipeline/data/reference_data: 7.4M -> 7.4M

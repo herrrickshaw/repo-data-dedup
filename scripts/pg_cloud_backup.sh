@@ -36,20 +36,28 @@ for db in "${DBS[@]}"; do
 
   ok=1
   for rem in "dropbox:market-pipeline-cache/pg_backups" "googledrive:market-data-backup/current/pg_backups"; do
-    echo "-- uploading $db -> $rem --" >> "$LOG"
-    if ! "$RC" copy "$dump" "$rem" --log-level ERROR >> "$LOG" 2>&1; then
-      echo "FAIL upload $db -> $rem" >> "$LOG"
-      ok=0
-      continue
-    fi
-    local_size=$(stat -f%z "$dump")
-    remote_size=$("$RC" size "$rem/$(basename "$dump")" --json 2>/dev/null | python3 -c "import json,sys; print(json.load(sys.stdin)['bytes'])" 2>/dev/null || echo -1)
-    if [ "$local_size" = "$remote_size" ]; then
-      echo "OK   $db -> $rem (verified $local_size bytes)" >> "$LOG"
-    else
-      echo "FAIL verify $db -> $rem (local=$local_size remote=$remote_size)" >> "$LOG"
-      ok=0
-    fi
+    # invalid_grant/connection errors from rclone at this exact moment are usually
+    # transient (API hiccup, not a genuinely revoked OAuth grant -- a truly dead
+    # token doesn't come back on retry). Try 3 times with backoff before giving up,
+    # since giving up on the first hiccup is what let the local dump pile up before.
+    rem_ok=0
+    for attempt in 1 2 3; do
+      echo "-- uploading $db -> $rem (attempt $attempt) --" >> "$LOG"
+      if "$RC" copy "$dump" "$rem" --log-level ERROR >> "$LOG" 2>&1; then
+        local_size=$(stat -f%z "$dump")
+        remote_size=$("$RC" size "$rem/$(basename "$dump")" --json 2>/dev/null | python3 -c "import json,sys; print(json.load(sys.stdin)['bytes'])" 2>/dev/null || echo -1)
+        if [ "$local_size" = "$remote_size" ]; then
+          echo "OK   $db -> $rem (verified $local_size bytes, attempt $attempt)" >> "$LOG"
+          rem_ok=1
+          break
+        fi
+        echo "FAIL verify $db -> $rem (local=$local_size remote=$remote_size, attempt $attempt)" >> "$LOG"
+      else
+        echo "FAIL upload $db -> $rem (attempt $attempt)" >> "$LOG"
+      fi
+      [ "$attempt" -lt 3 ] && sleep $((attempt * 60))
+    done
+    [ "$rem_ok" = 1 ] || ok=0
   done
 
   if [ "$ok" = 1 ]; then

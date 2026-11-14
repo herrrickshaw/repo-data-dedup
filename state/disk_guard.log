@@ -1947,3 +1947,1063 @@ OK   history -> gdrive (server-side relay)
 done 21:06
 post-upload free: 26 GB
 done 21:06 — free: 26 GB
+===== disk_guard 2026-10-17 20:30 — free: 10 GB =====
+2026/10/17 21:00:23 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 0 differences found
+2026/10/17 21:00:23 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 2 matching files
+OK   market-data-config -> googledrive:market-data-backup
+2026/10/17 21:00:35 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 0 differences found
+2026/10/17 21:00:35 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 8 matching files
+OK   twin-state-registers -> googledrive:market-data-backup
+2026/10/17 21:00:48 NOTICE: Google drive root 'market-data-backup/current/home-desktop': 0 differences found
+2026/10/17 21:00:48 NOTICE: Google drive root 'market-data-backup/current/home-desktop': 10 matching files
+OK   home-desktop -> googledrive:market-data-backup
+2026/10/17 21:01:02 NOTICE: Google drive root 'market-data-backup/current/home-documents': 0 differences found
+2026/10/17 21:01:02 NOTICE: Google drive root 'market-data-backup/current/home-documents': 38 matching files
+OK   home-documents -> googledrive:market-data-backup
+OK   history -> gdrive (server-side relay)
+done 21:01
+post-upload free: 11 GB
+WARN tier: clearing caches
+Warning: Skipping ada-url: most recent version 4.0.0_1 not installed
+Warning: Skipping aws-c-auth: most recent version 1.0.1 not installed
+Warning: Skipping aws-c-cal: most recent version 1.0.0_1 not installed
+Warning: Skipping aws-c-common: most recent version 1.0.3 not installed
+Warning: Skipping aws-c-event-stream: most recent version 1.0.0_1 not installed
+Warning: Skipping aws-c-http: most recent version 1.1.1 not installed
+Warning: Skipping aws-c-io: most recent version 1.1.0 not installed
+Warning: Skipping aws-c-mqtt: most recent version 1.1.2 not installed
+Warning: Skipping aws-c-s3: most recent version 1.3.1_1 not installed
+Warning: Skipping aws-checksums: most recent version 1.0.1 not installed
+Warning: Skipping awscli: most recent version 2.38.1 not installed
+Warning: Skipping clang-format: most recent version 23.1.3 not installed
+Warning: Skipping cloudflared: most recent version 2026.10.1 not installed
+Warning: Skipping cmake: most recent version 4.4.4 not installed
+Warning: Skipping ffmpeg: most recent version 9.0.2_1 not installed
+Warning: Skipping flyctl: most recent version 0.4.118 not installed
+Warning: Skipping freetype: most recent version 2.15.0 not installed
+Warning: Skipping gh: most recent version 2.102.0 not installed
+Warning: Skipping glib: most recent version 2.90.1 not installed
+Warning: Skipping gnupg: most recent version 2.5.24_1 not installed
+Warning: Skipping go: most recent version 1.27.2 not installed
+Warning: Skipping harfbuzz: most recent version 14.6.0 not installed
+Warning: Skipping hdrhistogram_c: most recent version 0.12.1 not installed
+Warning: Skipping krb5: most recent version 1.22.2_2 not installed
+Warning: Skipping libarchive: most recent version 3.8.10 not installed
+Warning: Skipping libevent: most recent version 2.1.13_1 not installed
+Warning: Skipping libpng: most recent version 1.6.59 not installed
+Warning: Skipping libssh2: most recent version 1.11.1_7 not installed
+Warning: Skipping merve: most recent version 1.2.2_4 not installed
+Warning: Skipping mlx: most recent version 0.32.4 not installed
+Warning: Skipping mlx-c: most recent version 0.7.0_1 not installed
+Warning: Skipping mupdf: most recent version 1.28.5_2 not installed
+Warning: Skipping nmap: most recent version 7.992 not installed
+Warning: Skipping node: most recent version 26.12.0 not installed
+Warning: Skipping nss: most recent version 3.131 not installed
+Warning: Skipping ollama: most recent version 0.40.5 not installed
+Warning: Skipping openjpeg: most recent version 2.5.4_1 not installed
+Warning: Skipping openssl@3: most recent version 3.5.9 not installed
+Warning: Skipping pandoc: most recent version 3.12.1 not installed
+Warning: Skipping pcre2: most recent version 10.49 not installed
+Warning: Skipping pgvector: most recent version 0.8.7 not installed
+Warning: Skipping pipx: most recent version 1.18.1 not installed
+Warning: Skipping pkgconf: most recent version 3.0.8 not installed
+Warning: Skipping podman: most recent version 6.1.4 not installed
+Warning: Skipping poppler: most recent version 26.10.0 not installed
+Warning: Skipping postgresql@16: most recent version 16.15_1 not installed
+Warning: Skipping postgresql@17: most recent version 17.11_1 not installed
+Warning: Skipping pymupdf: most recent version 1.28.2_4 not installed
+Warning: Skipping python@3.11: most recent version 3.11.17 not installed
+Warning: Skipping python@3.14: most recent version 3.14.8_2 not installed
+Warning: Skipping rclone: most recent version 1.75.2 not installed
+Warning: Skipping s2n: most recent version 1.7.11_1 not installed
+Warning: Skipping sdl2-compat: most recent version 2.32.74 not installed
+Warning: Skipping sdl3: most recent version 3.4.18 not installed
+Warning: Skipping simdjson: most recent version 5.0.5 not installed
+Warning: Skipping simdutf: most recent version 9.3.0 not installed
+Warning: Skipping sqlite: most recent version 3.54.0 not installed
+Warning: Skipping tailscale: most recent version 1.104.1 not installed
+Warning: Skipping topgrade: most recent version 17.13.0 not installed
+Warning: Skipping tor: most recent version 0.4.9.14_1 not installed
+Warning: Skipping transmission-cli: most recent version 4.1.3_1 not installed
+Warning: Skipping uv: most recent version 0.13.1 not installed
+Warning: Skipping xorgproto: most recent version 2026.1 not installed
+after cache clear: 11 GB
+CRITICAL tier: verify-then-evict bundles
+  [alert] sent '⚠️ daily_mailer — 1 step(s) failed (17 Oct 2026)' -> umashankartd1991@gmail.com
+done 21:01 — free: 11 GB
+===== disk_guard 2026-10-25 20:30 — free: 6 GB =====
+2026/10/25 21:21:37 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 0 differences found
+2026/10/25 21:21:37 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 2 matching files
+OK   market-data-config -> googledrive:market-data-backup
+2026/10/25 21:21:49 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 0 differences found
+2026/10/25 21:21:49 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 8 matching files
+OK   twin-state-registers -> googledrive:market-data-backup
+2026/10/25 21:22:08 NOTICE: Google drive root 'market-data-backup/current/home-desktop': 0 differences found
+2026/10/25 21:22:08 NOTICE: Google drive root 'market-data-backup/current/home-desktop': 12 matching files
+OK   home-desktop -> googledrive:market-data-backup
+2026/10/25 21:22:20 NOTICE: Google drive root 'market-data-backup/current/home-documents': 0 differences found
+2026/10/25 21:22:20 NOTICE: Google drive root 'market-data-backup/current/home-documents': 38 matching files
+OK   home-documents -> googledrive:market-data-backup
+OK   history -> gdrive (server-side relay)
+done 21:22
+post-upload free: 2 GB
+WARN tier: clearing caches
+==> Downloading Homebrew API data
+✔︎ JSON API packages.arm64_golden_gate.jws.json
+Warning: Skipping ada-url: most recent version 4.0.0_1 not installed
+Warning: Skipping aws-c-auth: most recent version 1.0.1 not installed
+Warning: Skipping aws-c-cal: most recent version 1.0.0_1 not installed
+Warning: Skipping aws-c-common: most recent version 1.0.3 not installed
+Warning: Skipping aws-c-event-stream: most recent version 1.0.0_1 not installed
+Warning: Skipping aws-c-http: most recent version 1.1.1 not installed
+Warning: Skipping aws-c-io: most recent version 1.1.0 not installed
+Warning: Skipping aws-c-mqtt: most recent version 1.1.2 not installed
+Warning: Skipping aws-c-s3: most recent version 1.3.1_1 not installed
+Warning: Skipping aws-c-sdkutils: most recent version 1.0.1 not installed
+Warning: Skipping aws-checksums: most recent version 1.0.1 not installed
+Warning: Skipping awscli: most recent version 2.38.5 not installed
+Warning: Skipping brotli: most recent version 1.2.1 not installed
+Warning: Skipping c-ares: most recent version 1.34.9 not installed
+Warning: Skipping clang-format: most recent version 23.1.4 not installed
+Warning: Skipping cloudflared: most recent version 2026.10.3 not installed
+Warning: Skipping cmake: most recent version 4.4.4 not installed
+Warning: Skipping ffmpeg: most recent version 9.0.2_1 not installed
+Warning: Skipping flyctl: most recent version 0.4.122 not installed
+Warning: Skipping freetype: most recent version 2.15.0 not installed
+Warning: Skipping git-lfs: most recent version 3.8.1 not installed
+Warning: Skipping glib: most recent version 2.90.1 not installed
+Warning: Skipping gnupg: most recent version 2.5.24_1 not installed
+Warning: Skipping go: most recent version 1.27.3 not installed
+Warning: Skipping harfbuzz: most recent version 15.0.0_1 not installed
+Warning: Skipping hdrhistogram_c: most recent version 0.12.1 not installed
+Warning: Skipping icu4c@78: most recent version 78.3_1 not installed
+Warning: Skipping krb5: most recent version 1.22.2_2 not installed
+Warning: Skipping libarchive: most recent version 3.8.10 not installed
+Warning: Skipping libevent: most recent version 2.1.13_1 not installed
+Warning: Skipping libpng: most recent version 1.6.59 not installed
+Warning: Skipping libssh2: most recent version 1.11.1_7 not installed
+Warning: Skipping libunistring: most recent version 1.5 not installed
+Warning: Skipping libx11: most recent version 1.8.14 not installed
+Warning: Skipping libxrender: most recent version 0.9.13 not installed
+Warning: Skipping merve: most recent version 1.2.2_4 not installed
+Warning: Skipping mlx: most recent version 0.32.4 not installed
+Warning: Skipping mlx-c: most recent version 0.7.0_1 not installed
+Warning: Skipping mupdf: most recent version 1.28.5_2 not installed
+Warning: Skipping nmap: most recent version 7.992 not installed
+Warning: Skipping node: most recent version 26.12.1_1 not installed
+Warning: Skipping nss: most recent version 3.132 not installed
+Warning: Skipping ollama: most recent version 0.40.11 not installed
+Warning: Skipping openjdk: most recent version 27.0.1.0.3 not installed
+Warning: Skipping openjdk@17: most recent version 17.0.21.0.2 not installed
+Warning: Skipping openjpeg: most recent version 2.5.4_1 not installed
+Warning: Skipping openssl@3: most recent version 3.5.9 not installed
+Warning: Skipping pandoc: most recent version 3.12.1 not installed
+Warning: Skipping pcre2: most recent version 10.49 not installed
+Warning: Skipping pgvector: most recent version 0.8.7 not installed
+Warning: Skipping pipx: most recent version 1.18.4 not installed
+Warning: Skipping pkgconf: most recent version 3.0.10 not installed
+Warning: Skipping podman: most recent version 6.1.4 not installed
+Warning: Skipping poppler: most recent version 26.10.0 not installed
+Warning: Skipping postgresql@16: most recent version 16.15_1 not installed
+Warning: Skipping postgresql@17: most recent version 17.11_1 not installed
+Warning: Skipping pymupdf: most recent version 1.28.2_4 not installed
+Warning: Skipping python@3.11: most recent version 3.11.17_2 not installed
+Warning: Skipping python@3.14: most recent version 3.14.9 not installed
+Warning: Skipping rclone: most recent version 1.75.2 not installed
+Warning: Skipping s2n: most recent version 1.7.12 not installed
+Warning: Skipping sdl2-compat: most recent version 2.32.74 not installed
+Warning: Skipping sdl3: most recent version 3.4.18 not installed
+Warning: Skipping simdjson: most recent version 5.0.5 not installed
+Warning: Skipping simdutf: most recent version 9.3.2_1 not installed
+Warning: Skipping tailscale: most recent version 1.104.2 not installed
+Warning: Skipping tectonic: most recent version 0.17.0_1 not installed
+Warning: Skipping tesseract: most recent version 5.5.3_1 not installed
+Warning: Skipping topgrade: most recent version 17.14.1 not installed
+Warning: Skipping tor: most recent version 0.4.9.14_1 not installed
+Warning: Skipping transmission-cli: most recent version 4.1.4 not installed
+Warning: Skipping uv: most recent version 0.13.5 not installed
+Warning: Skipping xorgproto: most recent version 2026.1 not installed
+Removing: /opt/homebrew/lib/python3.14/site-packages/__pycache__/brotli.cpython-314.pyc... (1.9KB)
+Removing: /opt/homebrew/lib/python3.14/site-packages/__pycache__/six.cpython-314.pyc... (42.9KB)
+Removing: /opt/homebrew/lib/python3.14/site-packages/__pycache__/typing_extensions.cpython-314.pyc... (179.4KB)
+Pruned 0 symbolic links and 1 directories from /opt/homebrew
+Removing: /opt/homebrew/Library/Homebrew/vendor/portable-ruby/4.0.8... (1,707 files, 34.6MB)
+==> This operation has freed approximately 34.9MB of disk space.
+after cache clear: 2 GB
+CRITICAL tier: verify-then-evict bundles
+  [alert] sent '⚠️ daily_mailer — 1 step(s) failed (25 Oct 2026)' -> umashankartd1991@gmail.com
+EMERGENCY: ~/.pipeline_pause created
+  [alert] sent '⚠️ daily_mailer — 1 step(s) failed (25 Oct 2026)' -> umashankartd1991@gmail.com
+done 21:24 — free: 2 GB
+===== disk_guard 2026-10-26 20:30 — free: 14 GB =====
+OK   static-archives -> googledrive:market-data-backup
+2026/10/26 21:05:15 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 0 differences found
+2026/10/26 21:05:15 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 2 matching files
+OK   market-data-config -> googledrive:market-data-backup
+2026/10/26 21:05:28 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 0 differences found
+2026/10/26 21:05:28 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 8 matching files
+OK   twin-state-registers -> googledrive:market-data-backup
+2026/10/26 21:05:49 NOTICE: Google drive root 'market-data-backup/current/home-desktop': 0 differences found
+2026/10/26 21:05:49 NOTICE: Google drive root 'market-data-backup/current/home-desktop': 13 matching files
+OK   home-desktop -> googledrive:market-data-backup
+2026/10/26 21:06:19 NOTICE: Google drive root 'market-data-backup/current/home-documents': 0 differences found
+OK   home-documents -> googledrive:market-data-backup
+OK   history -> gdrive (server-side relay)
+done 21:06
+post-upload free: 18 GB
+WARN tier: clearing caches
+==> Downloading Homebrew API data
+✔︎ JSON API packages.arm64_golden_gate.jws.json
+Warning: Skipping ada-url: most recent version 4.0.0_1 not installed
+Warning: Skipping aws-c-auth: most recent version 1.0.1 not installed
+Warning: Skipping aws-c-cal: most recent version 1.0.0_1 not installed
+Warning: Skipping aws-c-common: most recent version 1.0.3 not installed
+Warning: Skipping aws-c-event-stream: most recent version 1.0.0_1 not installed
+Warning: Skipping aws-c-http: most recent version 1.1.1 not installed
+Warning: Skipping aws-c-io: most recent version 1.1.0 not installed
+Warning: Skipping aws-c-mqtt: most recent version 1.1.2 not installed
+Warning: Skipping aws-c-s3: most recent version 1.3.1_1 not installed
+Warning: Skipping aws-c-sdkutils: most recent version 1.0.1 not installed
+Warning: Skipping aws-checksums: most recent version 1.0.1 not installed
+Warning: Skipping awscli: most recent version 2.38.5 not installed
+Warning: Skipping brotli: most recent version 1.2.1 not installed
+Warning: Skipping c-ares: most recent version 1.34.9 not installed
+Warning: Skipping clang-format: most recent version 23.1.4 not installed
+Warning: Skipping cloudflared: most recent version 2026.10.3 not installed
+Warning: Skipping cmake: most recent version 4.4.4 not installed
+Warning: Skipping ffmpeg: most recent version 9.0.2_1 not installed
+Warning: Skipping flyctl: most recent version 0.4.122 not installed
+Warning: Skipping freetype: most recent version 2.15.0 not installed
+Warning: Skipping git-lfs: most recent version 3.8.1 not installed
+Warning: Skipping glib: most recent version 2.90.1 not installed
+Warning: Skipping gnupg: most recent version 2.5.24_1 not installed
+Warning: Skipping go: most recent version 1.27.3 not installed
+Warning: Skipping harfbuzz: most recent version 15.0.0_1 not installed
+Warning: Skipping hdrhistogram_c: most recent version 0.12.1 not installed
+Warning: Skipping icu4c@78: most recent version 78.3_1 not installed
+Warning: Skipping krb5: most recent version 1.22.2_2 not installed
+Warning: Skipping libarchive: most recent version 3.8.10 not installed
+Warning: Skipping libevent: most recent version 2.1.13_1 not installed
+Warning: Skipping libpng: most recent version 1.6.59 not installed
+Warning: Skipping libssh2: most recent version 1.11.1_7 not installed
+Warning: Skipping libunistring: most recent version 1.5 not installed
+Warning: Skipping libx11: most recent version 1.8.14 not installed
+Warning: Skipping libxrender: most recent version 0.9.13 not installed
+Warning: Skipping merve: most recent version 1.2.2_4 not installed
+Warning: Skipping mlx: most recent version 0.32.4 not installed
+Warning: Skipping mlx-c: most recent version 0.7.0_1 not installed
+Warning: Skipping mupdf: most recent version 1.28.5_2 not installed
+Warning: Skipping nmap: most recent version 7.992 not installed
+Warning: Skipping node: most recent version 26.12.1_1 not installed
+Warning: Skipping nss: most recent version 3.132 not installed
+Warning: Skipping ollama: most recent version 0.40.11 not installed
+Warning: Skipping openjdk: most recent version 27.0.1.0.3 not installed
+Warning: Skipping openjdk@17: most recent version 17.0.21.0.2 not installed
+Warning: Skipping openjpeg: most recent version 2.5.4_1 not installed
+Warning: Skipping openssl@3: most recent version 3.5.9 not installed
+Warning: Skipping pandoc: most recent version 3.12.1 not installed
+Removing: /opt/homebrew/Cellar/pcre2/10.48... (245 files, 7.3MB)
+Warning: Skipping pgvector: most recent version 0.8.7 not installed
+Warning: Skipping pipx: most recent version 1.18.4 not installed
+Warning: Skipping pkgconf: most recent version 3.0.10 not installed
+Warning: Skipping podman: most recent version 6.1.4 not installed
+Warning: Skipping poppler: most recent version 26.10.0 not installed
+Warning: Skipping postgresql@16: most recent version 16.15_1 not installed
+Warning: Skipping postgresql@17: most recent version 17.11_1 not installed
+Warning: Skipping pymupdf: most recent version 2.0 not installed
+Warning: Skipping python@3.11: most recent version 3.11.18 not installed
+Warning: Skipping python@3.13: most recent version 3.13.18 not installed
+Warning: Skipping python@3.14: most recent version 3.14.10 not installed
+Warning: Skipping rclone: most recent version 1.75.2 not installed
+Warning: Skipping s2n: most recent version 1.7.12 not installed
+Warning: Skipping sdl2-compat: most recent version 2.32.74 not installed
+Warning: Skipping sdl3: most recent version 3.4.18 not installed
+Warning: Skipping simdjson: most recent version 5.0.5 not installed
+Warning: Skipping simdutf: most recent version 9.3.2_1 not installed
+Warning: Skipping tailscale: most recent version 1.104.2 not installed
+Warning: Skipping tectonic: most recent version 0.17.0_1 not installed
+Warning: Skipping tesseract: most recent version 5.5.3_1 not installed
+Warning: Skipping topgrade: most recent version 17.14.1 not installed
+Warning: Skipping tor: most recent version 0.4.9.14_1 not installed
+Warning: Skipping transmission-cli: most recent version 4.1.4 not installed
+Warning: Skipping uv: most recent version 0.13.5 not installed
+Warning: Skipping xorgproto: most recent version 2026.1 not installed
+Pruned 0 symbolic links and 66 directories from /opt/homebrew
+==> This operation has freed approximately 7.3MB of disk space.
+after cache clear: 18 GB
+recovered: pause flag cleared
+done 21:07 — free: 18 GB
+===== disk_guard 2026-10-27 20:30 — free: 21 GB =====
+2026/10/27 21:05:53 NOTICE: Google drive root 'market-data-backup/current/static-archives': 0 differences found
+2026/10/27 21:05:53 NOTICE: Google drive root 'market-data-backup/current/static-archives': 8 matching files
+OK   static-archives -> googledrive:market-data-backup
+2026/10/27 21:06:03 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/market-data-config": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": dial tcp: lookup www.googleapis.com: no such host
+FAIL market-data-config -> googledrive:market-data-backup
+2026/10/27 21:06:03 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/twin-state-registers": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": dial tcp: lookup www.googleapis.com: no such host
+FAIL twin-state-registers -> googledrive:market-data-backup
+2026/10/27 21:06:03 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/home-desktop": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": dial tcp: lookup www.googleapis.com: no such host
+FAIL home-desktop -> googledrive:market-data-backup
+2026/10/27 21:06:03 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/home-documents": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": dial tcp: lookup www.googleapis.com: no such host
+FAIL home-documents -> googledrive:market-data-backup
+2026/10/27 21:06:03 CRITICAL: Failed to create file system for "googledrive:market-data-backup/history": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": dial tcp: lookup www.googleapis.com: no such host
+FAIL history -> gdrive
+done 21:06
+post-upload free: 23 GB
+WARN tier: clearing caches
+after cache clear: 23 GB
+done 21:06 — free: 23 GB
+===== disk_guard 2026-10-28 20:30 — free: 26 GB =====
+OK   static-archives -> googledrive:market-data-backup
+2026/10/28 21:04:32 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 0 differences found
+2026/10/28 21:04:32 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 2 matching files
+OK   market-data-config -> googledrive:market-data-backup
+2026/10/28 21:04:44 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 0 differences found
+2026/10/28 21:04:44 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 8 matching files
+OK   twin-state-registers -> googledrive:market-data-backup
+2026/10/28 21:05:06 NOTICE: Google drive root 'market-data-backup/current/home-desktop': 0 differences found
+2026/10/28 21:05:06 NOTICE: Google drive root 'market-data-backup/current/home-desktop': 12 matching files
+OK   home-desktop -> googledrive:market-data-backup
+2026/10/28 21:05:18 NOTICE: Google drive root 'market-data-backup/current/home-documents': 0 differences found
+OK   home-documents -> googledrive:market-data-backup
+OK   history -> gdrive (server-side relay)
+done 21:05
+post-upload free: 28 GB
+done 21:05 — free: 28 GB
+===== disk_guard 2026-10-29 20:30 — free: 13 GB =====
+OK   static-archives -> googledrive:market-data-backup
+2026/10/29 21:04:59 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 0 differences found
+2026/10/29 21:04:59 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 2 matching files
+OK   market-data-config -> googledrive:market-data-backup
+2026/10/29 21:05:13 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 0 differences found
+2026/10/29 21:05:13 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 8 matching files
+OK   twin-state-registers -> googledrive:market-data-backup
+2026/10/29 21:05:29 NOTICE: Google drive root 'market-data-backup/current/home-desktop': 0 differences found
+2026/10/29 21:05:29 NOTICE: Google drive root 'market-data-backup/current/home-desktop': 12 matching files
+OK   home-desktop -> googledrive:market-data-backup
+2026/10/29 21:05:43 NOTICE: Google drive root 'market-data-backup/current/home-documents': 0 differences found
+OK   home-documents -> googledrive:market-data-backup
+OK   history -> gdrive (server-side relay)
+done 21:05
+post-upload free: 16 GB
+WARN tier: clearing caches
+Warning: Skipping ada-url: most recent version 4.0.0_1 not installed
+Warning: Skipping aws-c-auth: most recent version 1.0.1 not installed
+Warning: Skipping aws-c-cal: most recent version 1.0.0_1 not installed
+Warning: Skipping aws-c-common: most recent version 1.0.3 not installed
+Warning: Skipping aws-c-event-stream: most recent version 1.0.0_1 not installed
+Warning: Skipping aws-c-http: most recent version 1.1.1 not installed
+Warning: Skipping aws-c-io: most recent version 1.1.0 not installed
+Warning: Skipping aws-c-mqtt: most recent version 1.1.2 not installed
+Warning: Skipping aws-c-s3: most recent version 1.3.1_1 not installed
+Warning: Skipping aws-c-sdkutils: most recent version 1.0.1 not installed
+Warning: Skipping aws-checksums: most recent version 1.0.1 not installed
+Warning: Skipping awscli: most recent version 2.38.5 not installed
+Warning: Skipping brotli: most recent version 1.2.1 not installed
+Warning: Skipping c-ares: most recent version 1.34.9 not installed
+Warning: Skipping clang-format: most recent version 23.1.4 not installed
+Warning: Skipping cloudflared: most recent version 2026.10.3 not installed
+Warning: Skipping cmake: most recent version 4.4.4 not installed
+Warning: Skipping ffmpeg: most recent version 9.0.2_1 not installed
+Warning: Skipping flyctl: most recent version 0.4.122 not installed
+Warning: Skipping freetype: most recent version 2.15.0 not installed
+Warning: Skipping git-lfs: most recent version 3.8.1 not installed
+Warning: Skipping glib: most recent version 2.90.1 not installed
+Warning: Skipping gnupg: most recent version 2.5.24_1 not installed
+Warning: Skipping go: most recent version 1.27.3 not installed
+Warning: Skipping harfbuzz: most recent version 15.0.0_1 not installed
+Warning: Skipping hdrhistogram_c: most recent version 0.12.1 not installed
+Warning: Skipping icu4c@78: most recent version 78.3_1 not installed
+Warning: Skipping krb5: most recent version 1.22.2_2 not installed
+Warning: Skipping libarchive: most recent version 3.8.10 not installed
+Warning: Skipping libevent: most recent version 2.1.13_1 not installed
+Warning: Skipping libpng: most recent version 1.6.59 not installed
+Warning: Skipping libssh2: most recent version 1.11.1_7 not installed
+Warning: Skipping libunistring: most recent version 1.5 not installed
+Warning: Skipping libx11: most recent version 1.8.14 not installed
+Warning: Skipping libxrender: most recent version 0.9.13 not installed
+Warning: Skipping merve: most recent version 1.2.2_4 not installed
+Warning: Skipping mlx: most recent version 0.32.4 not installed
+Warning: Skipping mlx-c: most recent version 0.7.0_1 not installed
+Warning: Skipping mupdf: most recent version 1.28.5_2 not installed
+Warning: Skipping nmap: most recent version 7.992 not installed
+Warning: Skipping node: most recent version 26.12.1_1 not installed
+Warning: Skipping nss: most recent version 3.132 not installed
+Warning: Skipping ollama: most recent version 0.40.11 not installed
+Warning: Skipping openjdk: most recent version 27.0.1.0.3 not installed
+Warning: Skipping openjdk@17: most recent version 17.0.21.0.2 not installed
+Warning: Skipping openjpeg: most recent version 2.5.4_1 not installed
+Warning: Skipping openssl@3: most recent version 3.5.9 not installed
+Warning: Skipping pandoc: most recent version 3.12.1 not installed
+Warning: Skipping pgvector: most recent version 0.8.7 not installed
+Warning: Skipping pipx: most recent version 1.18.4 not installed
+Warning: Skipping pkgconf: most recent version 3.0.10 not installed
+Warning: Skipping podman: most recent version 6.1.4 not installed
+Warning: Skipping poppler: most recent version 26.10.0 not installed
+Warning: Skipping postgresql@16: most recent version 16.15_1 not installed
+Warning: Skipping postgresql@17: most recent version 17.11_1 not installed
+Warning: Skipping pymupdf: most recent version 2.0 not installed
+Warning: Skipping python@3.11: most recent version 3.11.18 not installed
+Warning: Skipping python@3.13: most recent version 3.13.18 not installed
+Warning: Skipping python@3.14: most recent version 3.14.10 not installed
+Warning: Skipping rclone: most recent version 1.75.2 not installed
+Warning: Skipping s2n: most recent version 1.7.12 not installed
+Warning: Skipping sdl2-compat: most recent version 2.32.74 not installed
+Warning: Skipping sdl3: most recent version 3.4.18 not installed
+Warning: Skipping simdjson: most recent version 5.0.5 not installed
+Warning: Skipping simdutf: most recent version 9.3.2_1 not installed
+Warning: Skipping tailscale: most recent version 1.104.2 not installed
+Warning: Skipping tectonic: most recent version 0.17.0_1 not installed
+Warning: Skipping tesseract: most recent version 5.5.3_1 not installed
+Warning: Skipping topgrade: most recent version 17.14.1 not installed
+Warning: Skipping tor: most recent version 0.4.9.14_1 not installed
+Warning: Skipping transmission-cli: most recent version 4.1.4 not installed
+Warning: Skipping uv: most recent version 0.13.5 not installed
+Warning: Skipping xorgproto: most recent version 2026.1 not installed
+after cache clear: 16 GB
+done 21:07 — free: 16 GB
+===== disk_guard 2026-10-31 20:30 — free: 12 GB =====
+post-upload free: 11 GB
+WARN tier: clearing caches
+==> Downloading Homebrew API data
+✔︎ JSON API packages.arm64_golden_gate.jws.json
+Warning: Skipping ada-url: most recent version 4.0.0_1 not installed
+Warning: Skipping aws-c-auth: most recent version 1.0.2 not installed
+Warning: Skipping aws-c-cal: most recent version 1.0.0_1 not installed
+Warning: Skipping aws-c-common: most recent version 1.0.5 not installed
+Warning: Skipping aws-c-event-stream: most recent version 1.0.0_1 not installed
+Warning: Skipping aws-c-http: most recent version 1.1.1 not installed
+Warning: Skipping aws-c-io: most recent version 1.1.1 not installed
+Warning: Skipping aws-c-mqtt: most recent version 1.1.2 not installed
+Warning: Skipping aws-c-s3: most recent version 1.5.1 not installed
+Warning: Skipping aws-c-sdkutils: most recent version 1.0.1 not installed
+Warning: Skipping aws-checksums: most recent version 1.0.1 not installed
+Warning: Skipping awscli: most recent version 2.39.3 not installed
+Removing: /opt/homebrew/Cellar/brotli/1.2.0... (33 files, 1.9MB)
+Warning: Skipping clang-format: most recent version 23.1.4 not installed
+Warning: Skipping cloudflared: most recent version 2026.10.7 not installed
+Warning: Skipping cmake: most recent version 4.4.5 not installed
+Warning: Skipping ffmpeg: most recent version 9.0.2_1 not installed
+Warning: Skipping flyctl: most recent version 0.5.1 not installed
+Warning: Skipping freetype: most recent version 2.15.0 not installed
+Warning: Skipping fribidi: most recent version 1.0.18 not installed
+Warning: Skipping gh: most recent version 2.103.3 not installed
+Warning: Skipping git-lfs: most recent version 3.8.1 not installed
+Warning: Skipping glib: most recent version 2.90.1 not installed
+Warning: Skipping gnupg: most recent version 2.5.24_1 not installed
+Warning: Skipping go: most recent version 1.27.3 not installed
+Warning: Skipping harfbuzz: most recent version 15.0.0_1 not installed
+Warning: Skipping hdrhistogram_c: most recent version 0.12.1 not installed
+Warning: Skipping jpeg-turbo: most recent version 3.2.1 not installed
+Warning: Skipping krb5: most recent version 1.22.2_2 not installed
+Warning: Skipping libarchive: most recent version 3.8.11 not installed
+Warning: Skipping libevent: most recent version 2.1.13_1 not installed
+Warning: Skipping libpng: most recent version 1.6.59 not installed
+Warning: Skipping libssh2: most recent version 1.11.1_7 not installed
+Warning: Skipping libunistring: most recent version 1.5 not installed
+Warning: Skipping libx11: most recent version 1.8.14 not installed
+Warning: Skipping libxrender: most recent version 0.9.13 not installed
+Warning: Skipping merve: most recent version 1.2.2_4 not installed
+Warning: Skipping mlx: most recent version 0.32.4 not installed
+Warning: Skipping mlx-c: most recent version 0.8.0 not installed
+Warning: Skipping mupdf: most recent version 1.28.6 not installed
+Warning: Skipping nmap: most recent version 7.993 not installed
+Warning: Skipping node: most recent version 26.13.0_1 not installed
+Warning: Skipping nss: most recent version 3.132 not installed
+Warning: Skipping ollama: most recent version 0.40.13 not installed
+Warning: Skipping openjdk: most recent version 27.0.1.0.3 not installed
+Warning: Skipping openjdk@17: most recent version 17.0.21.0.3 not installed
+Warning: Skipping openjpeg: most recent version 2.5.4_1 not installed
+Warning: Skipping openssl@3: most recent version 3.5.9 not installed
+Warning: Skipping pandoc: most recent version 3.13 not installed
+Warning: Skipping pgvector: most recent version 0.8.7 not installed
+Warning: Skipping pipx: most recent version 1.18.10 not installed
+Warning: Skipping pkgconf: most recent version 3.0.10 not installed
+Warning: Skipping podman: most recent version 6.1.4 not installed
+Warning: Skipping poppler: most recent version 26.10.0 not installed
+Warning: Skipping postgresql@16: most recent version 16.15_1 not installed
+Warning: Skipping postgresql@17: most recent version 17.11_1 not installed
+Warning: Skipping pydantic: most recent version 2.14.2 not installed
+Warning: Skipping pymupdf: most recent version 2.0_1 not installed
+Warning: Skipping python@3.11: most recent version 3.11.18 not installed
+Warning: Skipping python@3.13: most recent version 3.13.18 not installed
+Warning: Skipping python@3.14: most recent version 3.14.10 not installed
+Warning: Skipping python@3.15: most recent version 3.15.2 not installed
+Warning: Skipping rclone: most recent version 1.75.2 not installed
+Warning: Skipping s2n: most recent version 1.7.13 not installed
+Warning: Skipping sdl2-compat: most recent version 2.32.74 not installed
+Warning: Skipping sdl3: most recent version 3.4.18 not installed
+Warning: Skipping semgrep: most recent version 1.183.0 not installed
+Warning: Skipping simdutf: most recent version 9.3.3 not installed
+Warning: Skipping tailscale: most recent version 1.104.4 not installed
+Warning: Skipping tectonic: most recent version 0.17.0_1 not installed
+Warning: Skipping tesseract: most recent version 5.5.4 not installed
+Warning: Skipping topgrade: most recent version 17.14.1 not installed
+Warning: Skipping tor: most recent version 0.4.9.15 not installed
+Warning: Skipping transmission-cli: most recent version 4.1.4 not installed
+Warning: Skipping uv: most recent version 0.13.6 not installed
+Warning: Skipping xorgproto: most recent version 2026.1 not installed
+Removing: /opt/homebrew/Cellar/c-ares/1.34.8... (176 files, 1MB)
+Removing: /opt/homebrew/Cellar/icu4c@78/78.3... (279 files, 87.7MB)
+Removing: /opt/homebrew/Cellar/simdjson/4.6.11... (19 files, 8MB)
+==> Autoremoving 1 unneeded formula:
+python@3.13
+Uninstalling /opt/homebrew/Cellar/python@3.13/3.13.17... (3,807 files, 75.6MB)
+Removing: /Users/umashankar/Library/Logs/Homebrew/python@3.13... (64B)
+Removing: /Users/umashankar/Library/Logs/Homebrew/ca-certificates... (64B)
+Removing: /opt/homebrew/var/homebrew/tmp/.cellar/openssl@3... (7,595 files, 37.2MB)
+==> This operation has freed approximately 135.8MB of disk space.
+after cache clear: 11 GB
+CRITICAL tier: verify-then-evict bundles
+  [alert] sent '⚠️ daily_mailer — 1 step(s) failed (31 Oct 2026)' -> umashankartd1991@gmail.com
+done 21:11 — free: 11 GB
+===== disk_guard 2026-11-01 20:30 — free: 26 GB =====
+FAIL mempalace -> googledrive:market-data-backup
+2026/11/01 20:46:41 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/static-archives": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL static-archives -> googledrive:market-data-backup
+2026/11/01 20:46:42 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/market-data-config": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL market-data-config -> googledrive:market-data-backup
+2026/11/01 20:46:42 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/twin-state-registers": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL twin-state-registers -> googledrive:market-data-backup
+2026/11/01 20:46:43 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/home-desktop": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL home-desktop -> googledrive:market-data-backup
+2026/11/01 20:46:43 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/home-documents": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL home-documents -> googledrive:market-data-backup
+2026/11/01 20:46:44 CRITICAL: Failed to create file system for "googledrive:market-data-backup/history": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL history -> gdrive
+done 20:46
+post-upload free: 23 GB
+WARN tier: clearing caches
+Warning: Skipping ada-url: most recent version 4.0.0_1 not installed
+Warning: Skipping aws-c-auth: most recent version 1.0.2 not installed
+Warning: Skipping aws-c-cal: most recent version 1.0.0_1 not installed
+Warning: Skipping aws-c-common: most recent version 1.0.5 not installed
+Warning: Skipping aws-c-event-stream: most recent version 1.0.0_1 not installed
+Warning: Skipping aws-c-http: most recent version 1.1.1 not installed
+Warning: Skipping aws-c-io: most recent version 1.1.1 not installed
+Warning: Skipping aws-c-mqtt: most recent version 1.1.2 not installed
+Warning: Skipping aws-c-s3: most recent version 1.5.1 not installed
+Warning: Skipping aws-c-sdkutils: most recent version 1.0.1 not installed
+Warning: Skipping aws-checksums: most recent version 1.0.1 not installed
+Warning: Skipping awscli: most recent version 2.39.3 not installed
+Warning: Skipping clang-format: most recent version 23.1.4 not installed
+Warning: Skipping cloudflared: most recent version 2026.10.7 not installed
+Warning: Skipping cmake: most recent version 4.4.5 not installed
+Warning: Skipping ffmpeg: most recent version 9.0.2_1 not installed
+Warning: Skipping flyctl: most recent version 0.5.1 not installed
+Warning: Skipping freetype: most recent version 2.15.0 not installed
+Warning: Skipping fribidi: most recent version 1.0.18 not installed
+Warning: Skipping gh: most recent version 2.103.3 not installed
+Warning: Skipping git-lfs: most recent version 3.8.1 not installed
+Warning: Skipping glib: most recent version 2.90.1 not installed
+Warning: Skipping gnupg: most recent version 2.5.24_1 not installed
+Warning: Skipping go: most recent version 1.27.3 not installed
+Warning: Skipping harfbuzz: most recent version 15.0.0_1 not installed
+Warning: Skipping hdrhistogram_c: most recent version 0.12.1 not installed
+Warning: Skipping jpeg-turbo: most recent version 3.2.1 not installed
+Warning: Skipping krb5: most recent version 1.22.2_2 not installed
+Warning: Skipping libarchive: most recent version 3.8.11 not installed
+Warning: Skipping libevent: most recent version 2.1.13_1 not installed
+Warning: Skipping libpng: most recent version 1.6.59 not installed
+Warning: Skipping libssh2: most recent version 1.11.1_7 not installed
+Warning: Skipping libunistring: most recent version 1.5 not installed
+Warning: Skipping libx11: most recent version 1.8.14 not installed
+Warning: Skipping libxrender: most recent version 0.9.13 not installed
+Warning: Skipping merve: most recent version 1.2.2_4 not installed
+Warning: Skipping mlx: most recent version 0.32.4 not installed
+Warning: Skipping mlx-c: most recent version 0.8.0 not installed
+Warning: Skipping mupdf: most recent version 1.28.6 not installed
+Warning: Skipping nmap: most recent version 7.993 not installed
+Warning: Skipping node: most recent version 26.13.0_2 not installed
+Warning: Skipping node@22: most recent version 22.23.4_2 not installed
+Warning: Skipping nss: most recent version 3.132 not installed
+Warning: Skipping ollama: most recent version 0.40.13 not installed
+Warning: Skipping openjdk: most recent version 27.0.1.0.3 not installed
+Warning: Skipping openjdk@17: most recent version 17.0.21.0.3 not installed
+Warning: Skipping openjpeg: most recent version 2.5.4_1 not installed
+Warning: Skipping openssl@3: most recent version 3.5.9 not installed
+Warning: Skipping pandoc: most recent version 3.13 not installed
+Warning: Skipping pgvector: most recent version 0.8.7 not installed
+Warning: Skipping pipx: most recent version 1.18.10 not installed
+Warning: Skipping pkgconf: most recent version 3.0.10 not installed
+Warning: Skipping podman: most recent version 6.1.4 not installed
+Warning: Skipping poppler: most recent version 26.10.0 not installed
+Warning: Skipping postgresql@16: most recent version 16.15_1 not installed
+Warning: Skipping postgresql@17: most recent version 17.11_1 not installed
+Warning: Skipping pydantic: most recent version 2.14.2 not installed
+Warning: Skipping pymupdf: most recent version 2.0_1 not installed
+Warning: Skipping python@3.11: most recent version 3.11.18 not installed
+Warning: Skipping python@3.14: most recent version 3.14.10 not installed
+Warning: Skipping python@3.15: most recent version 3.15.2 not installed
+Warning: Skipping rclone: most recent version 1.75.2 not installed
+Warning: Skipping s2n: most recent version 1.7.13 not installed
+Warning: Skipping sdl2-compat: most recent version 2.32.74 not installed
+Warning: Skipping sdl3: most recent version 3.4.18 not installed
+Warning: Skipping semgrep: most recent version 1.183.0 not installed
+Warning: Skipping simdjson: most recent version 5.1.0 not installed
+Warning: Skipping simdutf: most recent version 9.3.3 not installed
+Warning: Skipping tailscale: most recent version 1.104.4 not installed
+Warning: Skipping tectonic: most recent version 0.17.0_1 not installed
+Warning: Skipping tesseract: most recent version 5.5.4 not installed
+Warning: Skipping topgrade: most recent version 17.14.1 not installed
+Warning: Skipping tor: most recent version 0.4.9.15 not installed
+Warning: Skipping transmission-cli: most recent version 4.1.4 not installed
+Warning: Skipping uv: most recent version 0.13.6 not installed
+Warning: Skipping xorgproto: most recent version 2026.1 not installed
+after cache clear: 24 GB
+done 20:47 — free: 24 GB
+===== disk_guard 2026-11-03 20:30 — free: 12 GB =====
+FAIL mempalace -> googledrive:market-data-backup
+2026/11/03 21:17:09 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/static-archives": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL static-archives -> googledrive:market-data-backup
+2026/11/03 21:17:10 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/market-data-config": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL market-data-config -> googledrive:market-data-backup
+2026/11/03 21:17:12 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/twin-state-registers": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL twin-state-registers -> googledrive:market-data-backup
+2026/11/03 21:17:13 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/home-desktop": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL home-desktop -> googledrive:market-data-backup
+2026/11/03 21:17:14 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/home-documents": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL home-documents -> googledrive:market-data-backup
+2026/11/03 21:17:15 CRITICAL: Failed to create file system for "googledrive:market-data-backup/history": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL history -> gdrive
+done 21:17
+post-upload free: 15 GB
+WARN tier: clearing caches
+Removing: /opt/homebrew/Cellar/ada-url/4.0.0... (56 files, 1.1MB)
+Warning: Skipping aws-c-auth: most recent version 1.0.3 not installed
+Warning: Skipping aws-c-cal: most recent version 1.0.0_1 not installed
+Warning: Skipping aws-c-common: most recent version 1.0.5 not installed
+Warning: Skipping aws-c-event-stream: most recent version 1.0.0_1 not installed
+Warning: Skipping aws-c-http: most recent version 1.1.1 not installed
+Warning: Skipping aws-c-io: most recent version 1.1.1 not installed
+Warning: Skipping aws-c-mqtt: most recent version 1.1.2 not installed
+Warning: Skipping aws-c-s3: most recent version 1.5.2 not installed
+Warning: Skipping aws-c-sdkutils: most recent version 1.0.1 not installed
+Warning: Skipping aws-checksums: most recent version 1.0.1 not installed
+Warning: Skipping awscli: most recent version 2.39.3 not installed
+Warning: Skipping clang-format: most recent version 23.1.4 not installed
+Warning: Skipping cloudflared: most recent version 2026.10.7 not installed
+Warning: Skipping cmake: most recent version 4.4.5 not installed
+Warning: Skipping ffmpeg: most recent version 9.0.2_1 not installed
+Warning: Skipping flyctl: most recent version 0.5.2 not installed
+Warning: Skipping freetype: most recent version 2.15.0 not installed
+Warning: Skipping fribidi: most recent version 1.0.18 not installed
+Warning: Skipping git-lfs: most recent version 3.8.1 not installed
+Warning: Skipping glib: most recent version 2.90.1 not installed
+Warning: Skipping gnupg: most recent version 2.5.24_1 not installed
+Warning: Skipping go: most recent version 1.27.3 not installed
+Warning: Skipping harfbuzz: most recent version 15.0.0_1 not installed
+Warning: Skipping jpeg-turbo: most recent version 3.2.1 not installed
+Warning: Skipping krb5: most recent version 1.22.2_2 not installed
+Warning: Skipping libarchive: most recent version 3.8.11 not installed
+Warning: Skipping libevent: most recent version 2.1.13_1 not installed
+Warning: Skipping libnghttp2: most recent version 1.71.0 not installed
+Warning: Skipping libnghttp3: most recent version 1.19.0 not installed
+Warning: Skipping libpng: most recent version 1.6.59 not installed
+Warning: Skipping libssh2: most recent version 1.11.1_7 not installed
+Warning: Skipping libunistring: most recent version 1.5 not installed
+Warning: Skipping libx11: most recent version 1.8.14 not installed
+Warning: Skipping libxrender: most recent version 0.9.13 not installed
+Warning: Skipping mlx: most recent version 0.32.4 not installed
+Warning: Skipping mlx-c: most recent version 0.8.0 not installed
+Warning: Skipping mupdf: most recent version 1.28.6 not installed
+Warning: Skipping nmap: most recent version 7.993 not installed
+Warning: Skipping node@22: most recent version 22.23.4_2 not installed
+Warning: Skipping nss: most recent version 3.132 not installed
+Warning: Skipping ollama: most recent version 0.40.14 not installed
+Warning: Skipping openjdk: most recent version 27.0.1.0.3 not installed
+Warning: Skipping openjdk@17: most recent version 17.0.21.0.3 not installed
+Warning: Skipping openjpeg: most recent version 2.5.4_1 not installed
+Warning: Skipping openssl@3: most recent version 3.5.9 not installed
+Warning: Skipping pandoc: most recent version 3.13 not installed
+Warning: Skipping pgvector: most recent version 0.8.7 not installed
+Warning: Skipping pipx: most recent version 1.18.11 not installed
+Warning: Skipping pkgconf: most recent version 3.0.10 not installed
+Warning: Skipping podman: most recent version 6.1.4 not installed
+Warning: Skipping poppler: most recent version 26.10.0 not installed
+Warning: Skipping postgresql@16: most recent version 16.15_1 not installed
+Warning: Skipping postgresql@17: most recent version 17.11_1 not installed
+Warning: Skipping pydantic: most recent version 2.14.2 not installed
+Warning: Skipping pymupdf: most recent version 2.0_1 not installed
+Warning: Skipping python@3.11: most recent version 3.11.18 not installed
+Warning: Skipping python@3.14: most recent version 3.14.10 not installed
+Warning: Skipping python@3.15: most recent version 3.15.2 not installed
+Warning: Skipping rclone: most recent version 1.75.2 not installed
+Warning: Skipping s2n: most recent version 1.7.13 not installed
+Warning: Skipping sdl2-compat: most recent version 2.32.74 not installed
+Warning: Skipping sdl3: most recent version 3.4.18 not installed
+Warning: Skipping semgrep: most recent version 1.183.0 not installed
+Warning: Skipping simdjson: most recent version 5.1.1 not installed
+Warning: Skipping svt-av1: most recent version 4.3.0 not installed
+Warning: Skipping tailscale: most recent version 1.104.5 not installed
+Warning: Skipping tectonic: most recent version 0.17.0_1 not installed
+Warning: Skipping tesseract: most recent version 5.5.4 not installed
+Warning: Skipping topgrade: most recent version 17.14.1 not installed
+Warning: Skipping tor: most recent version 0.4.9.15 not installed
+Warning: Skipping transmission-cli: most recent version 4.1.4 not installed
+Warning: Skipping trufflehog: most recent version 3.99.8 not installed
+Warning: Skipping uv: most recent version 0.13.7 not installed
+Warning: Skipping xorgproto: most recent version 2026.1 not installed
+Warning: Skipping zizmor: most recent version 1.32.0 not installed
+Removing: /opt/homebrew/Cellar/hdrhistogram_c/0.11.10... (22 files, 171.7KB)
+Removing: /opt/homebrew/Cellar/merve/1.2.2_3... (19 files, 135.4KB)
+Removing: /opt/homebrew/Cellar/simdutf/9.2.1_1... (65 files, 2.1MB)
+Removing: /Users/umashankar/Library/Logs/Homebrew/python@3.15... (64B)
+Removing: /Users/umashankar/Library/Logs/Homebrew/openssl@4... (64B)
+Removing: /opt/homebrew/lib/python3.14/site-packages/__pycache__/brotli.cpython-314.pyc... (1.9KB)
+Removing: /opt/homebrew/lib/python3.14/site-packages/__pycache__/six.cpython-314.pyc... (42.9KB)
+Removing: /opt/homebrew/lib/python3.14/site-packages/__pycache__/typing_extensions.cpython-314.pyc... (179.4KB)
+Pruned 0 symbolic links and 1 directories from /opt/homebrew
+==> This operation has freed approximately 3.7MB of disk space.
+after cache clear: 15 GB
+done 21:18 — free: 15 GB
+===== disk_guard 2026-11-04 20:30 — free: 22 GB =====
+OK   static-archives -> googledrive:market-data-backup
+2026/11/04 20:50:59 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 0 differences found
+2026/11/04 20:50:59 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 2 matching files
+OK   market-data-config -> googledrive:market-data-backup
+2026/11/04 20:51:11 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 0 differences found
+2026/11/04 20:51:11 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 8 matching files
+OK   twin-state-registers -> googledrive:market-data-backup
+2026/11/04 20:51:24 NOTICE: Google drive root 'market-data-backup/current/home-desktop': 0 differences found
+2026/11/04 20:51:24 NOTICE: Google drive root 'market-data-backup/current/home-desktop': 12 matching files
+OK   home-desktop -> googledrive:market-data-backup
+2026/11/04 20:51:35 NOTICE: Google drive root 'market-data-backup/current/home-documents': 0 differences found
+OK   home-documents -> googledrive:market-data-backup
+OK   history -> gdrive (server-side relay)
+done 20:51
+post-upload free: 23 GB
+WARN tier: clearing caches
+Warning: Skipping aws-c-auth: most recent version 1.0.3 not installed
+Warning: Skipping aws-c-cal: most recent version 1.0.0_1 not installed
+Warning: Skipping aws-c-common: most recent version 1.0.5 not installed
+Warning: Skipping aws-c-event-stream: most recent version 1.0.0_1 not installed
+Warning: Skipping aws-c-http: most recent version 1.1.1 not installed
+Warning: Skipping aws-c-io: most recent version 1.1.2 not installed
+Warning: Skipping aws-c-mqtt: most recent version 1.1.2 not installed
+Warning: Skipping aws-c-s3: most recent version 1.5.2 not installed
+Warning: Skipping aws-c-sdkutils: most recent version 1.0.1 not installed
+Warning: Skipping aws-checksums: most recent version 1.0.1 not installed
+Warning: Skipping awscli: most recent version 2.39.3 not installed
+Warning: Skipping clang-format: most recent version 23.1.4 not installed
+Warning: Skipping cloudflared: most recent version 2026.10.7 not installed
+Warning: Skipping cmake: most recent version 4.4.5 not installed
+Warning: Skipping ffmpeg: most recent version 9.0.2_1 not installed
+Warning: Skipping flyctl: most recent version 0.5.3 not installed
+Warning: Skipping freetype: most recent version 2.15.0 not installed
+Warning: Skipping fribidi: most recent version 1.0.18 not installed
+Warning: Skipping git-lfs: most recent version 3.8.1 not installed
+Warning: Skipping glib: most recent version 2.90.1 not installed
+Warning: Skipping gnupg: most recent version 2.5.24_1 not installed
+Warning: Skipping go: most recent version 1.27.3 not installed
+Warning: Skipping harfbuzz: most recent version 15.0.0_1 not installed
+Warning: Skipping jpeg-turbo: most recent version 3.2.1 not installed
+Warning: Skipping krb5: most recent version 1.22.2_2 not installed
+Warning: Skipping libarchive: most recent version 3.8.11 not installed
+Warning: Skipping libevent: most recent version 2.1.13_1 not installed
+Warning: Skipping libnghttp2: most recent version 1.71.0 not installed
+Warning: Skipping libnghttp3: most recent version 1.19.0 not installed
+Warning: Skipping libpng: most recent version 1.6.59 not installed
+Warning: Skipping libssh2: most recent version 1.11.1_7 not installed
+Warning: Skipping libunistring: most recent version 1.5 not installed
+Warning: Skipping libx11: most recent version 1.8.14 not installed
+Warning: Skipping libxrender: most recent version 0.9.13 not installed
+Warning: Skipping mlx: most recent version 0.32.4 not installed
+Warning: Skipping mlx-c: most recent version 0.8.0 not installed
+Warning: Skipping mupdf: most recent version 1.28.6 not installed
+Warning: Skipping nmap: most recent version 7.993 not installed
+Warning: Skipping node@22: most recent version 22.23.4_2 not installed
+Warning: Skipping nss: most recent version 3.132 not installed
+Warning: Skipping ollama: most recent version 0.40.14 not installed
+Warning: Skipping openjdk: most recent version 27.0.1.0.3 not installed
+Warning: Skipping openjdk@17: most recent version 17.0.21.0.3 not installed
+Warning: Skipping openjpeg: most recent version 2.5.4_1 not installed
+Warning: Skipping openssl@3: most recent version 3.5.9 not installed
+Warning: Skipping pandoc: most recent version 3.13 not installed
+Warning: Skipping pgvector: most recent version 0.8.7 not installed
+Warning: Skipping pipx: most recent version 1.18.12 not installed
+Warning: Skipping pkgconf: most recent version 3.0.10 not installed
+Warning: Skipping podman: most recent version 6.1.4 not installed
+Warning: Skipping poppler: most recent version 26.10.0 not installed
+Warning: Skipping postgresql@16: most recent version 16.15_1 not installed
+Warning: Skipping postgresql@17: most recent version 17.11_1 not installed
+Warning: Skipping pydantic: most recent version 2.14.2 not installed
+Warning: Skipping pymupdf: most recent version 2.0_1 not installed
+Warning: Skipping python@3.11: most recent version 3.11.18 not installed
+Warning: Skipping python@3.14: most recent version 3.14.10 not installed
+Warning: Skipping python@3.15: most recent version 3.15.2 not installed
+Warning: Skipping rclone: most recent version 1.75.2 not installed
+Warning: Skipping s2n: most recent version 1.7.13 not installed
+Warning: Skipping sdl2-compat: most recent version 2.32.74 not installed
+Warning: Skipping sdl3: most recent version 3.4.20 not installed
+Warning: Skipping semgrep: most recent version 1.183.0 not installed
+Warning: Skipping simdjson: most recent version 5.1.1 not installed
+Warning: Skipping svt-av1: most recent version 4.3.0 not installed
+Warning: Skipping tailscale: most recent version 1.104.5 not installed
+Warning: Skipping tectonic: most recent version 0.17.0_1 not installed
+Warning: Skipping tesseract: most recent version 5.5.4 not installed
+Warning: Skipping topgrade: most recent version 17.15.0 not installed
+Warning: Skipping tor: most recent version 0.4.9.15 not installed
+Warning: Skipping transmission-cli: most recent version 4.1.4 not installed
+Warning: Skipping trufflehog: most recent version 3.99.8 not installed
+Warning: Skipping uv: most recent version 0.13.7 not installed
+Warning: Skipping xorgproto: most recent version 2026.1 not installed
+Warning: Skipping zizmor: most recent version 1.32.0 not installed
+after cache clear: 23 GB
+done 20:52 — free: 23 GB
+===== disk_guard 2026-11-05 20:30 — free: 17 GB =====
+OK   static-archives -> googledrive:market-data-backup
+2026/11/05 20:53:19 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 0 differences found
+2026/11/05 20:53:19 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 2 matching files
+OK   market-data-config -> googledrive:market-data-backup
+2026/11/05 20:53:32 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 0 differences found
+2026/11/05 20:53:32 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 8 matching files
+OK   twin-state-registers -> googledrive:market-data-backup
+2026/11/05 20:53:46 NOTICE: Google drive root 'market-data-backup/current/home-desktop': 0 differences found
+2026/11/05 20:53:46 NOTICE: Google drive root 'market-data-backup/current/home-desktop': 12 matching files
+OK   home-desktop -> googledrive:market-data-backup
+2026/11/05 20:53:57 NOTICE: Google drive root 'market-data-backup/current/home-documents': 0 differences found
+OK   home-documents -> googledrive:market-data-backup
+OK   history -> gdrive (server-side relay)
+done 20:54
+post-upload free: 18 GB
+WARN tier: clearing caches
+Warning: Skipping aws-c-auth: most recent version 1.0.3 not installed
+Warning: Skipping aws-c-cal: most recent version 1.0.0_1 not installed
+Warning: Skipping aws-c-common: most recent version 1.0.5 not installed
+Warning: Skipping aws-c-event-stream: most recent version 1.0.0_1 not installed
+Warning: Skipping aws-c-http: most recent version 1.1.1 not installed
+Warning: Skipping aws-c-io: most recent version 1.1.2 not installed
+Warning: Skipping aws-c-mqtt: most recent version 1.1.2 not installed
+Warning: Skipping aws-c-s3: most recent version 1.5.2 not installed
+Warning: Skipping aws-c-sdkutils: most recent version 1.0.1 not installed
+Warning: Skipping aws-checksums: most recent version 1.0.1 not installed
+Warning: Skipping awscli: most recent version 2.39.3 not installed
+Warning: Skipping clang-format: most recent version 23.1.4 not installed
+Warning: Skipping cloudflared: most recent version 2026.10.7 not installed
+Warning: Skipping cmake: most recent version 4.4.5 not installed
+Warning: Skipping ffmpeg: most recent version 9.0.2_1 not installed
+Warning: Skipping flyctl: most recent version 0.5.3 not installed
+Warning: Skipping freetype: most recent version 2.15.0 not installed
+Warning: Skipping fribidi: most recent version 1.0.18 not installed
+Warning: Skipping git-lfs: most recent version 3.8.1 not installed
+Warning: Skipping glib: most recent version 2.90.1 not installed
+Warning: Skipping gnupg: most recent version 2.5.24_1 not installed
+Warning: Skipping go: most recent version 1.27.3 not installed
+Warning: Skipping harfbuzz: most recent version 15.0.0_1 not installed
+Warning: Skipping jpeg-turbo: most recent version 3.2.1 not installed
+Warning: Skipping krb5: most recent version 1.22.2_2 not installed
+Warning: Skipping libarchive: most recent version 3.8.11 not installed
+Warning: Skipping libevent: most recent version 2.1.13_1 not installed
+Warning: Skipping libnghttp2: most recent version 1.71.0 not installed
+Warning: Skipping libnghttp3: most recent version 1.19.0 not installed
+Warning: Skipping libpng: most recent version 1.6.59 not installed
+Warning: Skipping libssh2: most recent version 1.11.1_7 not installed
+Warning: Skipping libunistring: most recent version 1.5 not installed
+Warning: Skipping libx11: most recent version 1.8.14 not installed
+Warning: Skipping libxrender: most recent version 0.9.13 not installed
+Warning: Skipping mlx: most recent version 0.32.4 not installed
+Warning: Skipping mlx-c: most recent version 0.8.0 not installed
+Warning: Skipping mupdf: most recent version 1.28.6 not installed
+Warning: Skipping nmap: most recent version 7.993 not installed
+Warning: Skipping node@22: most recent version 22.23.4_2 not installed
+Warning: Skipping nss: most recent version 3.132 not installed
+Warning: Skipping ollama: most recent version 0.40.14 not installed
+Warning: Skipping openjdk: most recent version 27.0.1.0.3 not installed
+Warning: Skipping openjdk@17: most recent version 17.0.21.0.3 not installed
+Warning: Skipping openjpeg: most recent version 2.5.4_1 not installed
+Warning: Skipping openssl@3: most recent version 3.5.9 not installed
+Warning: Skipping pandoc: most recent version 3.13 not installed
+Warning: Skipping pgvector: most recent version 0.8.7 not installed
+Warning: Skipping pipx: most recent version 1.18.12 not installed
+Warning: Skipping pkgconf: most recent version 3.0.10 not installed
+Warning: Skipping podman: most recent version 6.1.4 not installed
+Warning: Skipping poppler: most recent version 26.10.0 not installed
+Warning: Skipping postgresql@16: most recent version 16.15_1 not installed
+Warning: Skipping postgresql@17: most recent version 17.11_1 not installed
+Warning: Skipping pydantic: most recent version 2.14.2 not installed
+Warning: Skipping pymupdf: most recent version 2.0_1 not installed
+Warning: Skipping python@3.11: most recent version 3.11.18 not installed
+Warning: Skipping python@3.14: most recent version 3.14.10 not installed
+Warning: Skipping python@3.15: most recent version 3.15.2 not installed
+Warning: Skipping rclone: most recent version 1.75.2 not installed
+Warning: Skipping s2n: most recent version 1.7.13 not installed
+Warning: Skipping sdl2-compat: most recent version 2.32.74 not installed
+Warning: Skipping sdl3: most recent version 3.4.20 not installed
+Warning: Skipping semgrep: most recent version 1.183.0 not installed
+Warning: Skipping simdjson: most recent version 5.1.1 not installed
+Warning: Skipping svt-av1: most recent version 4.3.0 not installed
+Warning: Skipping tailscale: most recent version 1.104.5 not installed
+Warning: Skipping tectonic: most recent version 0.17.0_1 not installed
+Warning: Skipping tesseract: most recent version 5.5.4 not installed
+Warning: Skipping topgrade: most recent version 17.15.0 not installed
+Warning: Skipping tor: most recent version 0.4.9.15 not installed
+Warning: Skipping transmission-cli: most recent version 4.1.4 not installed
+Warning: Skipping trufflehog: most recent version 3.99.8 not installed
+Warning: Skipping uv: most recent version 0.13.7 not installed
+Warning: Skipping xorgproto: most recent version 2026.1 not installed
+Warning: Skipping zizmor: most recent version 1.32.0 not installed
+after cache clear: 19 GB
+done 20:54 — free: 19 GB
+===== disk_guard 2026-11-06 20:30 — free: 12 GB =====
+OK   static-archives -> googledrive:market-data-backup
+2026/11/06 20:52:30 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 0 differences found
+2026/11/06 20:52:30 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 2 matching files
+OK   market-data-config -> googledrive:market-data-backup
+2026/11/06 20:52:41 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 0 differences found
+2026/11/06 20:52:41 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 8 matching files
+OK   twin-state-registers -> googledrive:market-data-backup
+2026/11/06 20:52:54 NOTICE: Google drive root 'market-data-backup/current/home-desktop': 0 differences found
+2026/11/06 20:52:54 NOTICE: Google drive root 'market-data-backup/current/home-desktop': 12 matching files
+OK   home-desktop -> googledrive:market-data-backup
+2026/11/06 20:53:05 NOTICE: Google drive root 'market-data-backup/current/home-documents': 0 differences found
+OK   home-documents -> googledrive:market-data-backup
+OK   history -> gdrive (server-side relay)
+done 20:53
+post-upload free: 12 GB
+WARN tier: clearing caches
+Warning: Skipping aws-c-auth: most recent version 1.0.3 not installed
+Warning: Skipping aws-c-cal: most recent version 1.0.0_1 not installed
+Warning: Skipping aws-c-common: most recent version 1.0.5 not installed
+Warning: Skipping aws-c-event-stream: most recent version 1.0.0_1 not installed
+Warning: Skipping aws-c-http: most recent version 1.1.1 not installed
+Warning: Skipping aws-c-io: most recent version 1.1.2 not installed
+Warning: Skipping aws-c-mqtt: most recent version 1.1.2 not installed
+Warning: Skipping aws-c-s3: most recent version 1.5.2 not installed
+Warning: Skipping aws-c-sdkutils: most recent version 1.0.1 not installed
+Warning: Skipping aws-checksums: most recent version 1.0.1 not installed
+Warning: Skipping awscli: most recent version 2.39.3 not installed
+Warning: Skipping clang-format: most recent version 23.1.4 not installed
+Warning: Skipping cloudflared: most recent version 2026.10.7 not installed
+Warning: Skipping cmake: most recent version 4.4.5 not installed
+Warning: Skipping ffmpeg: most recent version 9.0.2_1 not installed
+Warning: Skipping flyctl: most recent version 0.5.3 not installed
+Warning: Skipping freetype: most recent version 2.15.0 not installed
+Warning: Skipping fribidi: most recent version 1.0.18 not installed
+Warning: Skipping git-lfs: most recent version 3.8.1 not installed
+Warning: Skipping glib: most recent version 2.90.1 not installed
+Warning: Skipping gnupg: most recent version 2.5.24_1 not installed
+Warning: Skipping go: most recent version 1.27.3 not installed
+Warning: Skipping harfbuzz: most recent version 15.0.0_1 not installed
+Warning: Skipping jpeg-turbo: most recent version 3.2.1 not installed
+Warning: Skipping krb5: most recent version 1.22.2_2 not installed
+Warning: Skipping libarchive: most recent version 3.8.11 not installed
+Warning: Skipping libevent: most recent version 2.1.13_1 not installed
+Warning: Skipping libnghttp2: most recent version 1.71.0 not installed
+Warning: Skipping libnghttp3: most recent version 1.19.0 not installed
+Warning: Skipping libpng: most recent version 1.6.59 not installed
+Warning: Skipping libssh2: most recent version 1.11.1_7 not installed
+Warning: Skipping libunistring: most recent version 1.5 not installed
+Warning: Skipping libx11: most recent version 1.8.14 not installed
+Warning: Skipping libxrender: most recent version 0.9.13 not installed
+Warning: Skipping mlx: most recent version 0.32.4 not installed
+Warning: Skipping mlx-c: most recent version 0.8.0 not installed
+Warning: Skipping mupdf: most recent version 1.28.6 not installed
+Warning: Skipping nmap: most recent version 7.993 not installed
+Warning: Skipping node@22: most recent version 22.23.4_2 not installed
+Warning: Skipping nss: most recent version 3.132 not installed
+Warning: Skipping ollama: most recent version 0.40.14 not installed
+Warning: Skipping openjdk: most recent version 27.0.1.0.3 not installed
+Warning: Skipping openjdk@17: most recent version 17.0.21.0.3 not installed
+Warning: Skipping openjpeg: most recent version 2.5.4_1 not installed
+Warning: Skipping openssl@3: most recent version 3.5.9 not installed
+Warning: Skipping pandoc: most recent version 3.13 not installed
+Warning: Skipping pgvector: most recent version 0.8.7 not installed
+Warning: Skipping pipx: most recent version 1.18.12 not installed
+Warning: Skipping pkgconf: most recent version 3.0.10 not installed
+Warning: Skipping podman: most recent version 6.1.4 not installed
+Warning: Skipping poppler: most recent version 26.10.0 not installed
+Warning: Skipping postgresql@16: most recent version 16.15_1 not installed
+Warning: Skipping postgresql@17: most recent version 17.11_1 not installed
+Warning: Skipping pydantic: most recent version 2.14.2 not installed
+Warning: Skipping pymupdf: most recent version 2.0_1 not installed
+Warning: Skipping python@3.11: most recent version 3.11.18 not installed
+Warning: Skipping python@3.14: most recent version 3.14.10 not installed
+Warning: Skipping python@3.15: most recent version 3.15.2 not installed
+Warning: Skipping rclone: most recent version 1.75.2 not installed
+Warning: Skipping s2n: most recent version 1.7.13 not installed
+Warning: Skipping sdl2-compat: most recent version 2.32.74 not installed
+Warning: Skipping sdl3: most recent version 3.4.20 not installed
+Warning: Skipping semgrep: most recent version 1.183.0 not installed
+Warning: Skipping simdjson: most recent version 5.1.1 not installed
+Warning: Skipping svt-av1: most recent version 4.3.0 not installed
+Warning: Skipping tailscale: most recent version 1.104.5 not installed
+Warning: Skipping tectonic: most recent version 0.17.0_1 not installed
+Warning: Skipping tesseract: most recent version 5.5.4 not installed
+Warning: Skipping topgrade: most recent version 17.15.0 not installed
+Warning: Skipping tor: most recent version 0.4.9.15 not installed
+Warning: Skipping transmission-cli: most recent version 4.1.4 not installed
+Warning: Skipping trufflehog: most recent version 3.99.8 not installed
+Warning: Skipping uv: most recent version 0.13.7 not installed
+Warning: Skipping xorgproto: most recent version 2026.1 not installed
+Warning: Skipping zizmor: most recent version 1.32.0 not installed
+after cache clear: 12 GB
+CRITICAL tier: verify-then-evict bundles
+  [alert] sent '⚠️ daily_mailer — 1 step(s) failed (06 Nov 2026)' -> umashankartd1991@gmail.com
+done 20:54 — free: 12 GB
+===== disk_guard 2026-11-09 20:30 — free: 14 GB =====
+OK   static-archives -> googledrive:market-data-backup
+2026/11/09 20:54:58 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 0 differences found
+2026/11/09 20:54:58 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 2 matching files
+OK   market-data-config -> googledrive:market-data-backup
+2026/11/09 20:55:29 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 0 differences found
+2026/11/09 20:55:29 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 8 matching files
+OK   twin-state-registers -> googledrive:market-data-backup
+2026/11/09 20:55:42 NOTICE: Google drive root 'market-data-backup/current/home-desktop': 0 differences found
+2026/11/09 20:55:42 NOTICE: Google drive root 'market-data-backup/current/home-desktop': 12 matching files
+OK   home-desktop -> googledrive:market-data-backup
+2026/11/09 20:55:53 NOTICE: Google drive root 'market-data-backup/current/home-documents': 0 differences found
+OK   home-documents -> googledrive:market-data-backup
+OK   history -> gdrive (server-side relay)
+done 20:55
+post-upload free: 14 GB
+WARN tier: clearing caches
+Pruned 0 symbolic links and 5 directories from /opt/homebrew
+after cache clear: 14 GB
+CRITICAL tier: verify-then-evict bundles
+  [alert] sent '⚠️ daily_mailer — 1 step(s) failed (09 Nov 2026)' -> umashankartd1991@gmail.com
+done 20:57 — free: 14 GB
+===== disk_guard 2026-11-10 20:30 — free: 18 GB =====
+OK   static-archives -> googledrive:market-data-backup
+2026/11/10 20:52:50 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 0 differences found
+2026/11/10 20:52:50 NOTICE: Google drive root 'market-data-backup/current/market-data-config': 2 matching files
+OK   market-data-config -> googledrive:market-data-backup
+2026/11/10 20:53:01 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 0 differences found
+2026/11/10 20:53:01 NOTICE: Google drive root 'market-data-backup/current/twin-state-registers': 8 matching files
+OK   twin-state-registers -> googledrive:market-data-backup
+2026/11/10 20:53:23 NOTICE: Google drive root 'market-data-backup/current/home-desktop': 0 differences found
+2026/11/10 20:53:23 NOTICE: Google drive root 'market-data-backup/current/home-desktop': 10 matching files
+OK   home-desktop -> googledrive:market-data-backup
+2026/11/10 20:53:33 NOTICE: Google drive root 'market-data-backup/current/home-documents': 0 differences found
+OK   home-documents -> googledrive:market-data-backup
+OK   history -> gdrive (server-side relay)
+done 20:53
+post-upload free: 19 GB
+WARN tier: clearing caches
+==> Downloading Homebrew API data
+✔︎ JSON API packages.arm64_golden_gate.jws.json
+Removing: /Users/umashankar/Library/Logs/Homebrew/node... (64B)
+==> This operation has freed approximately 64B of disk space.
+after cache clear: 19 GB
+done 20:54 — free: 19 GB
+===== disk_guard 2026-11-11 20:30 — free: 10 GB =====
+FAIL mempalace -> googledrive:market-data-backup
+2026/11/11 20:43:49 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/static-archives": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL static-archives -> googledrive:market-data-backup
+2026/11/11 20:43:49 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/market-data-config": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL market-data-config -> googledrive:market-data-backup
+2026/11/11 20:43:50 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/twin-state-registers": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL twin-state-registers -> googledrive:market-data-backup
+2026/11/11 20:43:50 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/home-desktop": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL home-desktop -> googledrive:market-data-backup
+2026/11/11 20:43:51 CRITICAL: Failed to create file system for "googledrive:market-data-backup/current/home-documents": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL home-documents -> googledrive:market-data-backup
+2026/11/11 20:43:52 CRITICAL: Failed to create file system for "googledrive:market-data-backup/history": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token: invalid_grant: maybe token expired? - try refreshing with "rclone config reconnect googledrive:"
+FAIL history -> gdrive
+done 20:43
+post-upload free: 15 GB
+WARN tier: clearing caches
+==> Downloading Homebrew API data
+✔︎ JSON API packages.arm64_golden_gate.jws.json
+after cache clear: 15 GB
+done 20:45 — free: 15 GB
+===== disk_guard 2026-11-13 20:30 — free: 41 GB =====

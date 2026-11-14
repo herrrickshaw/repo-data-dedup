@@ -42,9 +42,9 @@
     "semantic_hash": ""
   },
   "scripts/pg_cloud_backup.sh": {
-    "mtime": 1786682555.929524,
-    "seen": 1789968875.342286,
-    "ast_hash": "5e235ce82a716b480f5ad19b9b91d75b",
+    "mtime": 1793998044.068993,
+    "seen": 1794202708.5511281,
+    "ast_hash": "841a4f8389778300e125626baf7d5304",
     "semantic_hash": ""
   },
   "scripts/refresh_audit.sh": {
@@ -600,9 +600,9 @@
     "semantic_hash": ""
   },
   "SOP_DATA_SOURCES.md": {
-    "mtime": 1784699173.081691,
-    "seen": 1789968875.343007,
-    "ast_hash": "d3d04ff8d6c5ad0dfabe1e6c689bd60a",
+    "mtime": 1792234061.679873,
+    "seen": 1792992856.752545,
+    "ast_hash": "71c71f99583def32815e37f43e9c4d55",
     "semantic_hash": ""
   },
   "audit/AUDIT_2026-07-22.md": {
@@ -1023,6 +1023,18 @@
     "mtime": 1789439084.188592,
     "seen": 1789968875.342981,
     "ast_hash": "7f75a63643c7ae053747ca3cb1e1ced5",
+    "semantic_hash": ""
+  },
+  "CLAUDE.md": {
+    "mtime": 1792912370.961978,
+    "seen": 1792992856.753474,
+    "ast_hash": "1c88ac97bd5c8579bc0a7bbccda3d562",
+    "semantic_hash": ""
+  },
+  "DATA_SOURCES.md": {
+    "mtime": 1794101854.6862242,
+    "seen": 1794202708.551442,
+    "ast_hash": "eebd3de030e67e7135098e366b79a28e",
     "semantic_hash": ""
   }
 }
