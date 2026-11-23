@@ -1,0 +1,5 @@
+[run]
+source = scripts
+omit =
+    tests/*
+    */conftest.py
