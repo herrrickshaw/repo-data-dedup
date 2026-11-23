@@ -24,6 +24,7 @@ class FakeGh:
     def __call__(self, cmd, capture_output, input):
         assert cmd[0] == "gh" and capture_output is True
         if "-X" in cmd:
+            self.methods = getattr(self, "methods", []) + [cmd[cmd.index("-X") + 1]]
             path = cmd[cmd.index("-X") + 2]
             payload = json.loads(input.decode())
             self.puts.append((path, payload))
@@ -66,6 +67,7 @@ def test_rendered_document_contents(env, tmp_path, distribute):
     assert "Fully re-collectable in ~6 min" in doc and "herrrickshaw/repo-data-dedup" in doc
     assert "**Policy: do not add new LFS objects**" in doc
     assert payload["message"].startswith("docs: DATA_ACCESS") and "sha" not in payload     # creating, not updating
+    assert env.methods == ["PUT"] and path == "repos/herrrickshaw/fuel-retail-outlets/contents/DATA_ACCESS.md"
 
 
 def test_unknown_repo_gets_generic_note(env, tmp_path, distribute):

@@ -50,7 +50,9 @@ class FakeGit:
         if args[:3] == ["git", "ls-tree", "-r"]:
             if repo in self.tree and self.tree[repo] is None:
                 return types.SimpleNamespace(returncode=128, stdout="", stderr="fatal: bad HEAD")
-            return ok("".join(f"{o}|{p}\n" for o, p in self.tree.get(repo, {}).items()))
+            t = self.tree.get(repo, {})
+            pairs = t.items() if isinstance(t, dict) else t
+            return ok("".join(f"{o}|{p}\n" for o, p in pairs))
         raise AssertionError(args)
 
 
@@ -181,3 +183,30 @@ def test_malformed_batch_output_stops_parsing(monkeypatch, tmp_path, stdout):
 
     run_script(monkeypatch, tmp_path, broken)
     assert read(tmp_path / "lfs_inventory.csv") == [["repo", "path_at_head", "lfs_sha256", "size_bytes", "at_head"]]
+
+
+def test_blob_size_threshold_is_below_1024_bytes(monkeypatch, tmp_path):
+    ptr = pointer(SHA1, 11)
+    ptr2 = pointer(SHA2, 22)
+    ok_blob = ptr + " " * (1023 - len(ptr))          # 1023 bytes: scanned
+    edge_blob = ptr2 + " " * (1024 - len(ptr2))      # 1024 bytes: skipped
+    assert len(ok_blob) == 1023 and len(edge_blob) == 1024
+    fake = FakeGit([REPOS[0]], {"alpha": {"o1": ok_blob, "o2": edge_blob}}, {"alpha": {"o1": "a", "o2": "b"}})
+    run_script(monkeypatch, tmp_path, fake)
+    assert [r[3] for r in read(tmp_path / "lfs_inventory.csv")[1:]] == ["11"]
+
+
+def test_first_path_wins_when_a_blob_appears_twice_at_head(monkeypatch, tmp_path):
+    fake = FakeGit([REPOS[0]], {"alpha": {"o1": pointer(SHA1, 9)}}, {"alpha": [("o1", "first/path"), ("o1", "second/path")]})
+    run_script(monkeypatch, tmp_path, fake)
+    assert read(tmp_path / "lfs_inventory.csv")[1][1] == "first/path"
+
+
+def test_gigabyte_totals(monkeypatch, tmp_path, capsys):
+    blobs = {"alpha": {"o1": pointer(SHA1, 4_000_000_000), "o2": pointer(SHA2, 1_000_000_000)},
+             "beta": {"o4": pointer(SHA1, 4_000_000_000)}}
+    fake = FakeGit(REPOS[:2], blobs, {"alpha": {"o1": "a", "o2": "b"}, "beta": {"o4": "c"}})
+    run_script(monkeypatch, tmp_path, fake)
+    out = capsys.readouterr().out
+    assert "TOTAL stored across repos : 9.00 GB" in out and "TOTAL unique content      : 5.00 GB" in out
+    assert "cross-repo duplicate waste: 4.00 GB in 1 objects" in out
